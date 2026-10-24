@@ -1,0 +1,992 @@
+{
+ "progetto": "percona",
+ "date_divisione": {
+  "valid_da": "2020-01-01",
+  "test_da": "2021-01-01"
+ },
+ "split": {
+  "train": [
+   1451,
+   4.166666666666667
+  ],
+  "valid": [
+   976,
+   7.0
+  ],
+  "test": [
+   812,
+   6.0
+  ]
+ },
+ "storia_jira": {
+  "type_changed": 0.1648656992899043,
+  "prio_changed": 0.11701142327878974,
+  "ass_changed": 0.3652361840074097,
+  "est_changed": 0.00030873726458783575
+ },
+ "assegnatario_mancante": 0.0,
+ "test": {
+  "B0 mediana": {
+   "n": 812,
+   "MAE": 22.89353653530377,
+   "MdAE": 4.166666666666667,
+   "SA": 0.25136143515960585,
+   "MdAE_log": 1.0826119473216687,
+   "within2x": 0.31896551724137934,
+   "spearman": NaN
+  },
+  "B1 mediana per tipo": {
+   "n": 812,
+   "MAE": 23.022212643678163,
+   "MdAE": 4.916666666666667,
+   "SA": 0.24715361445204065,
+   "MdAE_log": 1.1121443236638624,
+   "within2x": 0.312807881773399,
+   "spearman": -0.07773897857986144
+  },
+  "B2 log-lineare n. file": {
+   "n": 812,
+   "MAE": 21.45129954366828,
+   "MdAE": 4.270392193582619,
+   "SA": 0.2985238397060904,
+   "MdAE_log": 1.0082584744837666,
+   "within2x": 0.35098522167487683,
+   "spearman": 0.4494408549911794
+  },
+  "B3 testo del titolo": {
+   "n": 812,
+   "MAE": 21.80526305896644,
+   "MdAE": 4.765358745401988,
+   "SA": 0.28694892476492195,
+   "MdAE_log": 0.969940851344361,
+   "within2x": 0.3620689655172414,
+   "spearman": 0.29741539952549173
+  },
+  "B4 ATLM (feature M1)": {
+   "n": 812,
+   "MAE": 18.486089706105222,
+   "MdAE": 4.43420533666497,
+   "SA": 0.3954887814843342,
+   "MdAE_log": 0.8200433242577677,
+   "within2x": 0.4396551724137931,
+   "spearman": 0.5382996160930694
+  },
+  "B4a ATLM (feature M0)": {
+   "n": 812,
+   "MAE": 21.96201336041515,
+   "MdAE": 5.671018058921253,
+   "SA": 0.281823053515895,
+   "MdAE_log": 0.9758451588160022,
+   "within2x": 0.3657635467980296,
+   "spearman": 0.3963527490503655
+  },
+  "B5 analogia k-NN (k=20)": {
+   "n": 812,
+   "MAE": 20.55912236590038,
+   "MdAE": 4.654166666666667,
+   "SA": 0.3276988097207725,
+   "MdAE_log": 0.9242789536495525,
+   "within2x": 0.39285714285714285,
+   "spearman": 0.4307489925175264
+  },
+  "M0 all'apertura": {
+   "n": 812,
+   "MAE": 21.58257626530758,
+   "MdAE": 5.338369209651118,
+   "SA": 0.2942309766819158,
+   "MdAE_log": 0.9061658781901936,
+   "within2x": 0.3854679802955665,
+   "spearman": 0.40850177454025527
+  },
+  "M1 dopo la localizzazione dei file": {
+   "n": 812,
+   "MAE": 19.543742094569268,
+   "MdAE": 4.462272267898712,
+   "SA": 0.3609026280965115,
+   "MdAE_log": 0.8056375128744586,
+   "within2x": 0.43596059113300495,
+   "spearman": 0.5505890070026346
+  },
+  "M2 ex post (+ patch)": {
+   "n": 812,
+   "MAE": 19.035902466682376,
+   "MdAE": 4.454992775667809,
+   "SA": 0.37750942581009495,
+   "MdAE_log": 0.7782990512976573,
+   "within2x": 0.45197044334975367,
+   "spearman": 0.6022651631611113
+  },
+  "M1 senza sviluppatore": {
+   "n": 812,
+   "MAE": 20.482648222615815,
+   "MdAE": 4.51571130243819,
+   "SA": 0.3301995807478991,
+   "MdAE_log": 0.8956904455037307,
+   "within2x": 0.39901477832512317,
+   "spearman": 0.5018595127399589
+  },
+  "M0 senza testo": {
+   "n": 812,
+   "MAE": 22.240000537010292,
+   "MdAE": 5.112165382360618,
+   "SA": 0.27273263095888656,
+   "MdAE_log": 0.9544394565656108,
+   "within2x": 0.3879310344827586,
+   "spearman": 0.34602520071357207
+  },
+  "M1 senza jira": {
+   "n": 812,
+   "MAE": 19.66582097585007,
+   "MdAE": 4.575392157208423,
+   "SA": 0.3569105424552893,
+   "MdAE_log": 0.8057919487306376,
+   "within2x": 0.43349753694581283,
+   "spearman": 0.5461172008389896
+  },
+  "M1 senza testo": {
+   "n": 812,
+   "MAE": 19.496380921393524,
+   "MdAE": 4.78503951354921,
+   "SA": 0.3624513796692871,
+   "MdAE_log": 0.8320702298679783,
+   "within2x": 0.43349753694581283,
+   "spearman": 0.5295781761431942
+  },
+  "M1 senza insieme_file": {
+   "n": 812,
+   "MAE": 19.999213864356026,
+   "MdAE": 4.618527095305685,
+   "SA": 0.34600830490915047,
+   "MdAE_log": 0.8144878719906227,
+   "within2x": 0.41995073891625617,
+   "spearman": 0.5381925595178871
+  },
+  "M1 senza statiche": {
+   "n": 812,
+   "MAE": 19.622873496202995,
+   "MdAE": 4.673013067213758,
+   "SA": 0.3583149624092321,
+   "MdAE_log": 0.8093780275454155,
+   "within2x": 0.43226600985221675,
+   "spearman": 0.5499878940287183
+  },
+  "M1 senza cronologia": {
+   "n": 812,
+   "MAE": 19.779984583213235,
+   "MdAE": 4.687325849249931,
+   "SA": 0.3531772931584163,
+   "MdAE_log": 0.8686581678626144,
+   "within2x": 0.41625615763546797,
+   "spearman": 0.5388460070274046
+  },
+  "M1 senza co_change": {
+   "n": 812,
+   "MAE": 19.463814405120026,
+   "MdAE": 4.446128228541612,
+   "SA": 0.3635163330882246,
+   "MdAE_log": 0.8011626823735315,
+   "within2x": 0.4408866995073892,
+   "spearman": 0.5572212912984211
+  }
+ },
+ "confronti": {
+  "M1 vs B0 mediana": {
+   "dMAE": -3.349794440734507,
+   "lo": -5.227247264562814,
+   "hi": -1.7946639751105014,
+   "p_boot": 0.0002,
+   "p_wilcoxon": 5.549983109075688e-13,
+   "A12_appaiato": 0.6133004926108374,
+   "p_holm": 0.0026000000000000003
+  },
+  "M1 vs B1 mediana per tipo": {
+   "dMAE": -3.4784705491088914,
+   "lo": -5.151837627577885,
+   "hi": -2.0563499211037604,
+   "p_boot": 0.0002,
+   "p_wilcoxon": 3.210044387132756e-17,
+   "A12_appaiato": 0.6219211822660099,
+   "p_holm": 0.0026000000000000003
+  },
+  "M1 vs B2 log-lineare n. file": {
+   "dMAE": -1.9075574490990082,
+   "lo": -3.1014423227767454,
+   "hi": -0.8620735289744441,
+   "p_boot": 0.0002,
+   "p_wilcoxon": 1.2183179956735462e-07,
+   "A12_appaiato": 0.5726600985221675,
+   "p_holm": 0.0026000000000000003
+  },
+  "M1 vs B3 testo del titolo": {
+   "dMAE": -2.261520964397165,
+   "lo": -3.577644512018414,
+   "hi": -1.1565069614425305,
+   "p_boot": 0.0002,
+   "p_wilcoxon": 5.2569291432440445e-08,
+   "A12_appaiato": 0.5591133004926109,
+   "p_holm": 0.0026000000000000003
+  },
+  "M1 vs B4 ATLM (feature M1)": {
+   "dMAE": 1.057652388464047,
+   "lo": -0.21440687933728872,
+   "hi": 2.7892837229326353,
+   "p_boot": 0.1322,
+   "p_wilcoxon": 0.6200092145287757,
+   "A12_appaiato": 0.5147783251231527,
+   "p_holm": 0.39660000000000006
+  },
+  "M1 vs B4a ATLM (feature M0)": {
+   "dMAE": -2.418271265845877,
+   "lo": -3.866803632741054,
+   "hi": -1.2401173189772143,
+   "p_boot": 0.0002,
+   "p_wilcoxon": 1.4650224084219002e-09,
+   "A12_appaiato": 0.5788177339901478,
+   "p_holm": 0.0026000000000000003
+  },
+  "M1 vs B5 analogia k-NN (k=20)": {
+   "dMAE": -1.0153802713311137,
+   "lo": -1.9140313066173593,
+   "hi": -0.28656917262053266,
+   "p_boot": 0.004999999999999999,
+   "p_wilcoxon": 3.711487264337814e-06,
+   "A12_appaiato": 0.5578817733990148,
+   "p_holm": 0.024999999999999994
+  },
+  "M0 vs B0 mediana": {
+   "dMAE": -1.3109602699961989,
+   "lo": -2.0534598937115653,
+   "hi": -0.6095430310859268,
+   "p_boot": 0.001,
+   "p_wilcoxon": 2.230868804096218e-09,
+   "A12_appaiato": 0.6009852216748769,
+   "p_holm": 0.006
+  },
+  "M0 vs B1 mediana per tipo": {
+   "dMAE": -1.4396363783705832,
+   "lo": -2.023176441189082,
+   "hi": -0.8119618651292793,
+   "p_boot": 0.0002,
+   "p_wilcoxon": 7.009726686271356e-13,
+   "A12_appaiato": 0.6169950738916257,
+   "p_holm": 0.0026000000000000003
+  },
+  "M0 vs B3 testo del titolo": {
+   "dMAE": -0.22268679365885732,
+   "lo": -0.6992653239525697,
+   "hi": 0.25437063239390206,
+   "p_boot": 0.34299999999999997,
+   "p_wilcoxon": 0.0007640887441037373,
+   "A12_appaiato": 0.5529556650246306,
+   "p_holm": 0.5012
+  },
+  "M0 vs B4a ATLM (feature M0)": {
+   "dMAE": -0.3794370951075693,
+   "lo": -0.7735153539911198,
+   "hi": 0.02101012734520395,
+   "p_boot": 0.0626,
+   "p_wilcoxon": 0.07399252991085772,
+   "A12_appaiato": 0.5332512315270936,
+   "p_holm": 0.2504
+  },
+  "M1 vs M0": {
+   "dMAE": -2.038834170738308,
+   "lo": -3.3318188246969687,
+   "hi": -1.0264987870327071,
+   "p_boot": 0.0002,
+   "p_wilcoxon": 4.5553447920571486e-06,
+   "A12_appaiato": 0.5665024630541872,
+   "p_holm": 0.0026000000000000003
+  },
+  "M2 vs M1": {
+   "dMAE": -0.5078396278868927,
+   "lo": -1.4321740808563557,
+   "hi": 0.3615683600327306,
+   "p_boot": 0.2506,
+   "p_wilcoxon": 0.00026495049503393676,
+   "A12_appaiato": 0.5467980295566502,
+   "p_holm": 0.5012
+  }
+ },
+ "test_dal_2023": {
+  "B0 mediana": {
+   "n": 88,
+   "MAE": 80.5529924242424,
+   "MdAE": 20.833333333333332,
+   "SA": 0.029015677013694896,
+   "MdAE_log": 2.011037964212661,
+   "within2x": 0.11363636363636363,
+   "spearman": NaN
+  },
+  "M0 all'apertura": {
+   "n": 88,
+   "MAE": 78.879418203828,
+   "MdAE": 18.79229022493565,
+   "SA": 0.04918891058915387,
+   "MdAE_log": 1.7105709061883791,
+   "within2x": 0.17045454545454544,
+   "spearman": 0.260897520855664
+  },
+  "M1 dopo la localizzazione dei file": {
+   "n": 88,
+   "MAE": 73.95012727976068,
+   "MdAE": 18.816168542817202,
+   "SA": 0.10860649479882034,
+   "MdAE_log": 1.394590027742111,
+   "within2x": 0.2159090909090909,
+   "spearman": 0.5703038030154394
+  },
+  "M2 ex post (+ patch)": {
+   "n": 88,
+   "MAE": 69.45681513106301,
+   "MdAE": 16.52563447641713,
+   "SA": 0.16276879868557603,
+   "MdAE_log": 1.341621931950495,
+   "within2x": 0.2840909090909091,
+   "spearman": 0.6599939310330629
+  },
+  "M1 senza sviluppatore": {
+   "n": 88,
+   "MAE": 75.18199764196413,
+   "MdAE": 19.661133767718972,
+   "SA": 0.0937575515919502,
+   "MdAE_log": 1.5972315627471918,
+   "within2x": 0.19318181818181818,
+   "spearman": 0.5114292443157326
+  },
+  "M0 senza testo": {
+   "n": 88,
+   "MAE": 79.5677256604417,
+   "MdAE": 19.504985262933083,
+   "SA": 0.040892064877369516,
+   "MdAE_log": 1.9359991693645653,
+   "within2x": 0.1590909090909091,
+   "spearman": 0.15128988825352546
+  },
+  "M1 senza jira": {
+   "n": 88,
+   "MAE": 74.48822364434126,
+   "MdAE": 21.210882774235174,
+   "SA": 0.10212029089081465,
+   "MdAE_log": 1.3861292052361356,
+   "within2x": 0.1590909090909091,
+   "spearman": 0.5757817350290845
+  },
+  "M1 senza testo": {
+   "n": 88,
+   "MAE": 73.35563937528003,
+   "MdAE": 18.822525385416675,
+   "SA": 0.1157724413153145,
+   "MdAE_log": 1.4541988443945566,
+   "within2x": 0.2159090909090909,
+   "spearman": 0.5757553141351279
+  },
+  "M1 senza insieme_file": {
+   "n": 88,
+   "MAE": 76.03175893277462,
+   "MdAE": 19.76353459663106,
+   "SA": 0.08351454426440019,
+   "MdAE_log": 1.5114405024986648,
+   "within2x": 0.19318181818181818,
+   "spearman": 0.4835904290502467
+  },
+  "M1 senza statiche": {
+   "n": 88,
+   "MAE": 73.94109134626561,
+   "MdAE": 16.230888443816195,
+   "SA": 0.10871541377877636,
+   "MdAE_log": 1.3817129139742796,
+   "within2x": 0.2159090909090909,
+   "spearman": 0.5816383665227726
+  },
+  "M1 senza cronologia": {
+   "n": 88,
+   "MAE": 74.4510874640123,
+   "MdAE": 20.32032646062116,
+   "SA": 0.10256792974108986,
+   "MdAE_log": 1.3847131848307983,
+   "within2x": 0.18181818181818182,
+   "spearman": 0.5742229022856516
+  },
+  "M1 senza co_change": {
+   "n": 88,
+   "MAE": 74.32917247582373,
+   "MdAE": 19.77381964558638,
+   "SA": 0.10403749081766311,
+   "MdAE_log": 1.3799534870648777,
+   "within2x": 0.20454545454545456,
+   "spearman": 0.5611005249539295
+  }
+ },
+ "stima_cambiata_quota": 0.015384615384615385,
+ "sqale": {
+  "tutte": {
+   "n": 447,
+   "SQALE grezzo": {
+    "n": 447,
+    "MAE": 47.5459911757395,
+    "MdAE": 10.916666666666666,
+    "SA": -0.17172246509811484,
+    "MdAE_log": 1.40795585790107,
+    "within2x": 0.25727069351230425,
+    "spearman": 0.47826075563169607
+   },
+   "SQALE ricalibrato": {
+    "n": 447,
+    "MAE": 33.14467760626159,
+    "MdAE": 6.080256009823996,
+    "SA": 0.1831832213541592,
+    "MdAE_log": 1.0997407545419717,
+    "within2x": 0.3087248322147651,
+    "spearman": 0.47826075563169607
+   },
+   "M1": {
+    "n": 447,
+    "MAE": 28.937719193857266,
+    "MdAE": 7.422739775978553,
+    "SA": 0.2868594211693579,
+    "MdAE_log": 0.8986019088584767,
+    "within2x": 0.39373601789709173,
+    "spearman": 0.559556649093157
+   },
+   "M1 senza sviluppatore": {
+    "n": 447,
+    "MAE": 30.580883014052084,
+    "MdAE": 8.002078789193618,
+    "SA": 0.24636532452002546,
+    "MdAE_log": 0.9717362288418039,
+    "within2x": 0.3534675615212528,
+    "spearman": 0.48047324848562495
+   },
+   "M0": {
+    "n": 447,
+    "MAE": 32.439388550595396,
+    "MdAE": 7.943371697696117,
+    "SA": 0.20056435087688518,
+    "MdAE_log": 1.0784738085533396,
+    "within2x": 0.3221476510067114,
+    "spearman": 0.3140803811356259
+   },
+   "M0 vs SQALE ricalibrato": {
+    "dMAE": -0.7052890556661982,
+    "lo": -1.5569392304368732,
+    "hi": 0.16996005652049692,
+    "p_boot": 0.11180000000000001,
+    "p_wilcoxon": 0.9204239914820437,
+    "A12_appaiato": 0.49217002237136465,
+    "p_holm": 0.11180000000000001
+   },
+   "M1 vs SQALE ricalibrato": {
+    "dMAE": -4.206958412404321,
+    "lo": -6.86356932317837,
+    "hi": -1.8583433853058615,
+    "p_boot": 0.0002,
+    "p_wilcoxon": 2.553064667597038e-05,
+    "A12_appaiato": 0.5727069351230425,
+    "p_holm": 0.0006000000000000001
+   },
+   "M1 senza sviluppatore vs SQALE ricalibrato": {
+    "dMAE": -2.5637945922095025,
+    "lo": -5.371455415687441,
+    "hi": 0.02965873020597209,
+    "p_boot": 0.0542,
+    "p_wilcoxon": 0.018388298815844643,
+    "A12_appaiato": 0.5458612975391499,
+    "p_holm": 0.1084
+   }
+  },
+  "refactoring e pulizia": {
+   "n": 5
+  },
+  "oltre_la_dimensione": {
+   "spearman_parziale_tutto": 0.082462509723251,
+   "spearman_parziale_test": 0.2722579828890719,
+   "spearman_ore_densita": 0.16197549129862646,
+   "spearman_ore_per_riga_densita": -0.09868512341576575,
+   "solo righe": {
+    "n": 444,
+    "MAE": 33.26065943617678,
+    "MdAE": 6.119437152411613,
+    "SA": 0.18239774226107774,
+    "MdAE_log": 1.133171611313614,
+    "within2x": 0.3108108108108108,
+    "spearman": 0.4067916636328828
+   },
+   "solo SQALE": {
+    "n": 444,
+    "MAE": 33.2807788634913,
+    "MdAE": 6.140790439538771,
+    "SA": 0.18190317331759875,
+    "MdAE_log": 1.1047338380721103,
+    "within2x": 0.3063063063063063,
+    "spearman": 0.4767039891270407
+   },
+   "righe + SQALE": {
+    "n": 444,
+    "MAE": 33.15029608725359,
+    "MdAE": 6.220893484370283,
+    "SA": 0.1851106567005638,
+    "MdAE_log": 1.125253666874326,
+    "within2x": 0.31981981981981983,
+    "spearman": 0.43098313723622805
+   },
+   "coef_log_sqale": 0.03701761806354709,
+   "righe + SQALE vs solo righe": {
+    "dMAE": -0.11036334892319338,
+    "lo": -0.15913647230720154,
+    "hi": -0.06110017934132337,
+    "p_boot": 0.0002,
+    "p_wilcoxon": 2.820457933436127e-10,
+    "A12_appaiato": 0.6351351351351351
+   },
+   "n_test": 444
+  },
+  "n_train_calibrazione": 1361,
+  "spearman_ore_sqale": 0.28011497514064587,
+  "spearman_ore_ncloc": 0.29349868310805,
+  "mediana_sqale_ore": 3.0,
+  "mediana_ore": 8.0,
+  "quota_refactoring_nel_campione": 0.025995575221238937
+ },
+ "sensibilita": {
+  "solo ore dell'assegnatario": {
+   "quota_issue": 0.7104044458166101,
+   "quota_ore_assegnatario_mediana": 0.8848920863309352,
+   "M1": {
+    "n": 522,
+    "MAE": 15.37948022021572,
+    "MdAE": 3.748321645186225,
+    "SA": 0.43178103232795884,
+    "MdAE_log": 0.6597328497327402,
+    "within2x": 0.5191570881226054,
+    "spearman": 0.6322360275587433
+   },
+   "B0": {
+    "n": 522,
+    "MAE": 19.287590996168586,
+    "MdAE": 4.0,
+    "SA": 0.28738976299618113,
+    "MdAE_log": 0.9839057065042072,
+    "within2x": 0.3793103448275862,
+    "spearman": NaN
+   }
+  },
+  "senza estremi (<0,25 h, >p99)": {
+   "soglia_p99_h": 182.25333333333268,
+   "M1": {
+    "n": 784,
+    "MAE": 12.487139324339234,
+    "MdAE": 4.559971669577539,
+    "SA": 0.37267812019765956,
+    "MdAE_log": 0.8041622381292663,
+    "within2x": 0.4362244897959184,
+    "spearman": 0.513748668900923
+   },
+   "B0": {
+    "n": 784,
+    "MAE": 14.612710459183676,
+    "MdAE": 4.25,
+    "SA": 0.2658948734243024,
+    "MdAE_log": 0.980829253011726,
+    "within2x": 0.34183673469387754,
+    "spearman": NaN
+   }
+  }
+ },
+ "analisi_errori": {
+  "decile_ore": {
+   "1": {
+    "n": 82,
+    "MdAE_log_M1": 1.9714937620170616,
+    "MdAE_log_M0": 2.2150048064293695,
+    "MdAE_log_B0": 2.3353749158170367,
+    "sottostima_M1": 0.0
+   },
+   "2": {
+    "n": 81,
+    "MdAE_log_M1": 1.1767697130323536,
+    "MdAE_log_M0": 1.370601904259053,
+    "MdAE_log_B0": 1.236762627148927,
+    "sottostima_M1": 0.024691358024691357
+   },
+   "3": {
+    "n": 81,
+    "MdAE_log_M1": 0.6948844400305021,
+    "MdAE_log_M0": 0.7648995044719041,
+    "MdAE_log_B0": 0.8690378470236096,
+    "sottostima_M1": 0.12345679012345678
+   },
+   "4": {
+    "n": 81,
+    "MdAE_log_M1": 0.4527807604723004,
+    "MdAE_log_M0": 0.4728689950477061,
+    "MdAE_log_B0": 0.38946476676172326,
+    "sottostima_M1": 0.20987654320987653
+   },
+   "5": {
+    "n": 81,
+    "MdAE_log_M1": 0.4415936489505565,
+    "MdAE_log_M0": 0.4162541947988798,
+    "MdAE_log_B0": 0.13815033848081715,
+    "sottostima_M1": 0.41975308641975306
+   },
+   "6": {
+    "n": 81,
+    "MdAE_log_M1": 0.4575091299129783,
+    "MdAE_log_M0": 0.46684163175991067,
+    "MdAE_log_B0": 0.3946541920039488,
+    "sottostima_M1": 0.6419753086419753
+   },
+   "7": {
+    "n": 81,
+    "MdAE_log_M1": 0.6456883836530372,
+    "MdAE_log_M0": 0.5250732969471876,
+    "MdAE_log_B0": 0.8835009090511643,
+    "sottostima_M1": 0.8271604938271605
+   },
+   "8": {
+    "n": 81,
+    "MdAE_log_M1": 0.6613509065087668,
+    "MdAE_log_M0": 0.7829593741171346,
+    "MdAE_log_B0": 1.2755429968271876,
+    "sottostima_M1": 0.8395061728395061
+   },
+   "9": {
+    "n": 81,
+    "MdAE_log_M1": 1.0956294103164144,
+    "MdAE_log_M0": 1.2979222638198475,
+    "MdAE_log_B0": 1.8567011348983993,
+    "sottostima_M1": 0.9012345679012346
+   },
+   "10": {
+    "n": 82,
+    "MdAE_log_M1": 1.6056910721751954,
+    "MdAE_log_M0": 2.304300888497588,
+    "MdAE_log_B0": 3.040959776678011,
+    "sottostima_M1": 0.9512195121951219
+   }
+  },
+  "type": {
+   "Admin & Maintenance Task": {
+    "n": 156,
+    "MdAE_log_M1": 0.6823916340451777,
+    "MdAE_log_M0": 0.8089883538746623,
+    "MdAE_log_B0": 0.9639458217763175,
+    "sottostima_M1": 0.4423076923076923
+   },
+   "Bug": {
+    "n": 413,
+    "MdAE_log_M1": 0.7726336197811903,
+    "MdAE_log_M0": 0.9448804774959036,
+    "MdAE_log_B0": 1.0319209141694374,
+    "sottostima_M1": 0.5375302663438256
+   },
+   "Improvement": {
+    "n": 149,
+    "MdAE_log_M1": 0.911988429942773,
+    "MdAE_log_M0": 1.0081627086064344,
+    "MdAE_log_B0": 1.1303609869826898,
+    "sottostima_M1": 0.4429530201342282
+   },
+   "New Feature": {
+    "n": 85,
+    "MdAE_log_M1": 0.9871318060280967,
+    "MdAE_log_M0": 0.9274494393404824,
+    "MdAE_log_B0": 1.0878013725638942,
+    "sottostima_M1": 0.4470588235294118
+   }
+  },
+  "esperienza": {
+   "0 issue": {
+    "n": 54,
+    "MdAE_log_M1": 1.4990658778586916,
+    "MdAE_log_M0": 1.498334599011915,
+    "MdAE_log_B0": 1.5358260950908544,
+    "sottostima_M1": 0.5185185185185185
+   },
+   "1-9": {
+    "n": 160,
+    "MdAE_log_M1": 0.9534871723394387,
+    "MdAE_log_M0": 1.1542742474856298,
+    "MdAE_log_B0": 1.231616120291528,
+    "sottostima_M1": 0.4875
+   },
+   "10-49": {
+    "n": 290,
+    "MdAE_log_M1": 0.7354062664420405,
+    "MdAE_log_M0": 0.8213980334197821,
+    "MdAE_log_B0": 1.060235815546056,
+    "sottostima_M1": 0.47586206896551725
+   },
+   "50+": {
+    "n": 308,
+    "MdAE_log_M1": 0.7099914212968812,
+    "MdAE_log_M0": 0.8140557975708983,
+    "MdAE_log_B0": 0.949080554697146,
+    "sottostima_M1": 0.5097402597402597
+   }
+  },
+  "file": {
+   "1": {
+    "n": 280,
+    "MdAE_log_M1": 0.7940424475948911,
+    "MdAE_log_M0": 0.781976474734851,
+    "MdAE_log_B0": 0.949080554697146,
+    "sottostima_M1": 0.45714285714285713
+   },
+   "2-3": {
+    "n": 209,
+    "MdAE_log_M1": 0.7545780827974606,
+    "MdAE_log_M0": 0.8397724555946293,
+    "MdAE_log_B0": 0.949080554697146,
+    "sottostima_M1": 0.4688995215311005
+   },
+   "4-10": {
+    "n": 197,
+    "MdAE_log_M1": 0.8901485822360564,
+    "MdAE_log_M0": 1.036086051876098,
+    "MdAE_log_B0": 1.236762627148927,
+    "sottostima_M1": 0.5532994923857868
+   },
+   ">10": {
+    "n": 126,
+    "MdAE_log_M1": 0.8671218768212707,
+    "MdAE_log_M0": 1.159938249838112,
+    "MdAE_log_B0": 1.6347389667558143,
+    "sottostima_M1": 0.5238095238095238
+   }
+  }
+ },
+ "casi_peggiori": {
+  "sottostime": [
+   {
+    "key": "PS-10383",
+    "hours": 176.0,
+    "p": 2.54,
+    "r": 4.24,
+    "type": "Bug",
+    "n_files": 2,
+    "summary": "MeCab plugin does not enforce phrase adjacency for \"\" phrase search in BOOLEAN MODE"
+   },
+   {
+    "key": "PS-10990",
+    "hours": 104.0,
+    "p": 2.41,
+    "r": 3.77,
+    "type": "Bug",
+    "n_files": 2,
+    "summary": "Crash on Item_cache::walk on specific join executed withing stored procedure"
+   },
+   {
+    "key": "PXC-4814",
+    "hours": 144.0,
+    "p": 5.0,
+    "r": 3.36,
+    "type": "Bug",
+    "n_files": 3,
+    "summary": "Failed OPTIMIZE TABLE due to case sensitivity writes to Binlog with error_code=0 when wsrep_OSU_method='RSU'"
+   },
+   {
+    "key": "PSMDB-840",
+    "hours": 77.42,
+    "p": 2.93,
+    "r": 3.27,
+    "type": "Admin & Maintenance Task",
+    "n_files": 1,
+    "summary": "Create a code contributing guide"
+   },
+   {
+    "key": "PS-7410",
+    "hours": 115.0,
+    "p": 4.93,
+    "r": 3.15,
+    "type": "Admin & Maintenance Task",
+    "n_files": 3,
+    "summary": "Auto-detect and set performance-related RocksDB flags"
+   },
+   {
+    "key": "PS-10110",
+    "hours": 436.0,
+    "p": 18.78,
+    "r": 3.14,
+    "type": "Bug",
+    "n_files": 9,
+    "summary": "Percona Server 8.0.42 MyRocks produces poor query plans"
+   },
+   {
+    "key": "PXC-5208",
+    "hours": 496.0,
+    "p": 23.24,
+    "r": 3.06,
+    "type": "Bug",
+    "n_files": 11,
+    "summary": "Add an option to force SST after a node is restarted following an inconsistency"
+   },
+   {
+    "key": "PS-11392",
+    "hours": 344.0,
+    "p": 18.57,
+    "r": 2.92,
+    "type": "New Feature",
+    "n_files": 57,
+    "summary": "Backport PBKDF2 from 9.7 to 8.0 and 8.4"
+   },
+   {
+    "key": "PS-8313",
+    "hours": 248.0,
+    "p": 14.28,
+    "r": 2.85,
+    "type": "Bug",
+    "n_files": 10,
+    "summary": "[ERROR] [MY-013129] [Server] A message intended for a client cannot be sent there as no client-session is attached. Therefore, we're sending the information to the error-log instead: MY-001158 - Got an error reading communication packets"
+   },
+   {
+    "key": "PS-10083",
+    "hours": 384.0,
+    "p": 23.74,
+    "r": 2.78,
+    "type": "New Feature",
+    "n_files": 8,
+    "summary": "Enhanced Thread Pool Statistics"
+   }
+  ],
+  "sovrastime": [
+   {
+    "key": "PS-9680",
+    "hours": 0.02,
+    "p": 5.41,
+    "r": -5.78,
+    "type": "Bug",
+    "n_files": 4,
+    "summary": "Potential data corruption in MyRocks after RocksDB 7.10.0 changes"
+   },
+   {
+    "key": "PS-9388",
+    "hours": 0.1,
+    "p": 6.03,
+    "r": -4.1,
+    "type": "Admin & Maintenance Task",
+    "n_files": 2,
+    "summary": "Fix routertest_integration_routing gunit tests"
+   },
+   {
+    "key": "PXC-3855",
+    "hours": 0.5,
+    "p": 20.63,
+    "r": -3.72,
+    "type": "Bug",
+    "n_files": 5,
+    "summary": "Assertion `!thd->in_active_multi_stmt_transaction() || thd->in_multi_stmt_transaction_mode()'"
+   },
+   {
+    "key": "PS-8246",
+    "hours": 0.5,
+    "p": 19.97,
+    "r": -3.69,
+    "type": "Bug",
+    "n_files": 30,
+    "summary": "Adapt Encryption UDF MTR test cases to OpenSSL 3.0.x"
+   },
+   {
+    "key": "PS-8030",
+    "hours": 0.25,
+    "p": 9.41,
+    "r": -3.63,
+    "type": "Bug",
+    "n_files": 1,
+    "summary": "Multithreaded replica crashes inside Relay_log_info::cannot_safely_rollback()"
+   },
+   {
+    "key": "PMM-10855",
+    "hours": 0.17,
+    "p": 5.93,
+    "r": -3.57,
+    "type": "Improvement",
+    "n_files": 2,
+    "summary": "Avoid massive gRPC messages formatting for disabled log level"
+   },
+   {
+    "key": "PBM-727",
+    "hours": 0.17,
+    "p": 5.36,
+    "r": -3.47,
+    "type": "Admin & Maintenance Task",
+    "n_files": 4,
+    "summary": "Replace all occurrences of \"apt-get\" with \"apt\""
+   },
+   {
+    "key": "PSMDB-1148",
+    "hours": 1.58,
+    "p": 47.39,
+    "r": -3.4,
+    "type": "Improvement",
+    "n_files": 32,
+    "summary": "Change key rotation approach for vault"
+   },
+   {
+    "key": "PBM-711",
+    "hours": 0.08,
+    "p": 2.41,
+    "r": -3.37,
+    "type": "Admin & Maintenance Task",
+    "n_files": 1,
+    "summary": "Fix table alignment for pbm commands"
+   },
+   {
+    "key": "PXB-2702",
+    "hours": 0.75,
+    "p": 20.79,
+    "r": -3.32,
+    "type": "Bug",
+    "n_files": 3,
+    "summary": "Backup fails when undo truncation log is present"
+   }
+  ]
+ },
+ "importanza_M1": {
+  "dev_prior_med": 0.1082,
+  "text_pred": 0.0825,
+  "n_files": 0.0816,
+  "h_last_min_d": 0.0601,
+  "dev_prior_n": 0.0523,
+  "h_churn_1y": 0.0493,
+  "h_age_min_d": 0.0481,
+  "h_age_max_d": 0.0451,
+  "h_commits_1y": 0.043,
+  "cc_partners_sum": 0.0388,
+  "h_commits_max": 0.0373,
+  "n_dirs": 0.0352,
+  "h_commits_mean": 0.0332,
+  "h_commits_sum": 0.0325,
+  "cc_partners_max": 0.0323
+ },
+ "importanza_M0": {
+  "dev_prior_med": 0.3457,
+  "text_pred": 0.2944,
+  "dev_prior_n": 0.1924,
+  "comp1": 0.0801,
+  "type": 0.0596,
+  "n_components": 0.0198,
+  "priority": 0.008
+ },
+ "origine_mobile_SA": {
+  "2020": {
+   "n": 976,
+   "M1": 0.4190347376068324,
+   "M0": 0.33338108323170945,
+   "B0_MdAE_log": 0.9707789171582248
+  },
+  "2021": {
+   "n": 553,
+   "M1": 0.4706720855036476,
+   "M0": 0.38744880924657144,
+   "B0_MdAE_log": 0.949080554697146
+  },
+  "2022": {
+   "n": 171,
+   "M1": 0.44277708216644895,
+   "M0": 0.4574893341422691,
+   "B0_MdAE_log": 0.9808292530117263
+  }
+ }
+}

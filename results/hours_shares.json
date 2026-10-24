@@ -1,0 +1,29 @@
+{
+ "moodle": {
+  "issue_con_assegnatario_e_worklog": 8272,
+  "quota_ore_assegnatario_pesata": 0.5467004098692687,
+  "quota_issue_ore_solo_assegnatario": 0.003989361702127659,
+  "quota_issue_zero_ore_assegnatario": 0.418036750483559,
+  "mediana_autori_worklog": 3.0,
+  "issue_con_prima_stima_nella_storia": 4421,
+  "quota_prima_stima_entro_T": 0.7692829676543769
+ },
+ "mariadb": {
+  "issue_con_assegnatario_e_worklog": 10064,
+  "quota_ore_assegnatario_pesata": 0.5914964172060763,
+  "quota_issue_ore_solo_assegnatario": 0.34797297297297297,
+  "quota_issue_zero_ore_assegnatario": 0.16106915739268682,
+  "mediana_autori_worklog": 2.0,
+  "issue_con_prima_stima_nella_storia": 2526,
+  "quota_prima_stima_entro_T": 0.8091844813935075
+ },
+ "percona": {
+  "issue_con_assegnatario_e_worklog": 2753,
+  "quota_ore_assegnatario_pesata": 0.7341706679429152,
+  "quota_issue_ore_solo_assegnatario": 0.4071921540138031,
+  "quota_issue_zero_ore_assegnatario": 0.16418452597166727,
+  "mediana_autori_worklog": 1.0,
+  "issue_con_prima_stima_nella_storia": 144,
+  "quota_prima_stima_entro_T": 0.5138888888888888
+ }
+}

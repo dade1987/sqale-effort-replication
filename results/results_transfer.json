@@ -1,0 +1,119 @@
+{
+ "moodle": {
+  "n_test": 5451,
+  "alberi": 100,
+  "B0 mediana del progetto": {
+   "SA": 0.32783361069561556,
+   "MAE": 8.260031798446766,
+   "MdAE_log": 0.916290731874155,
+   "within2x": 0.39662447257383965,
+   "spearman": null
+  },
+  "B0 mediana degli altri progetti": {
+   "SA": 0.31603058556927965,
+   "MAE": 8.406518681587476,
+   "MdAE_log": 1.0098167898849786,
+   "within2x": 0.35663181067694,
+   "spearman": null
+  },
+  "trasferito (altri due progetti)": {
+   "SA": 0.34320014750848227,
+   "MAE": 8.07101714844806,
+   "MdAE_log": 0.862406691769921,
+   "within2x": 0.4136855622821501,
+   "spearman": 0.4072305491371989
+  },
+  "interno (stesse feature)": {
+   "SA": 0.3815442773308638,
+   "MAE": 7.609935369397044,
+   "MdAE_log": 0.7931979071618542,
+   "within2x": 0.4452394056136489,
+   "spearman": 0.39796508505853556
+  },
+  "trasferito + mediana del progetto": {
+   "SA": 0.3761355327213317,
+   "MAE": 7.671442874841158,
+   "MdAE_log": 0.8114832877356353,
+   "within2x": 0.4404696385984223,
+   "spearman": 0.4072305491371989
+  }
+ },
+ "mariadb": {
+  "n_test": 3690,
+  "alberi": 100,
+  "B0 mediana del progetto": {
+   "SA": 0.3568349965272215,
+   "MAE": 15.946166516109606,
+   "MdAE_log": 1.0986122886681098,
+   "within2x": 0.37181571815718156,
+   "spearman": null
+  },
+  "B0 mediana degli altri progetti": {
+   "SA": 0.3505569348567201,
+   "MAE": 16.11926498042758,
+   "MdAE_log": 1.1526795099383853,
+   "within2x": 0.3319783197831978,
+   "spearman": NaN
+  },
+  "trasferito (altri due progetti)": {
+   "SA": 0.4110138755717686,
+   "MAE": 14.600943765742063,
+   "MdAE_log": 0.9362349185558614,
+   "within2x": 0.3964769647696477,
+   "spearman": 0.4223603933734718
+  },
+  "interno (stesse feature)": {
+   "SA": 0.43150025094752775,
+   "MAE": 14.114932944464773,
+   "MdAE_log": 0.8972302156490484,
+   "within2x": 0.4029810298102981,
+   "spearman": 0.4942395719604712
+  },
+  "trasferito + mediana del progetto": {
+   "SA": 0.4092408451589161,
+   "MAE": 14.643120972362778,
+   "MdAE_log": 0.9335219472965153,
+   "within2x": 0.386449864498645,
+   "spearman": 0.4223603933734718
+  }
+ },
+ "percona": {
+  "n_test": 812,
+  "alberi": 100,
+  "B0 mediana del progetto": {
+   "SA": 0.2517556162095439,
+   "MAE": 22.893536535303777,
+   "MdAE_log": 1.0826119473216687,
+   "within2x": 0.31896551724137934,
+   "spearman": NaN
+  },
+  "B0 mediana degli altri progetti": {
+   "SA": 0.24320778306475277,
+   "MAE": 23.180392036124793,
+   "MdAE_log": 1.1257997691305892,
+   "within2x": 0.35714285714285715,
+   "spearman": null
+  },
+  "trasferito (altri due progetti)": {
+   "SA": 0.2843746830492726,
+   "MAE": 21.94541577597757,
+   "MdAE_log": 1.1279032679210843,
+   "within2x": 0.33866995073891626,
+   "spearman": 0.4718555116699481
+  },
+  "interno (stesse feature)": {
+   "SA": 0.32128403159090557,
+   "MAE": 20.768607169088803,
+   "MdAE_log": 0.8855696186844517,
+   "within2x": 0.3805418719211823,
+   "spearman": 0.4874419917034049
+  },
+  "trasferito + mediana del progetto": {
+   "SA": 0.3128526701935337,
+   "MAE": 21.0491769282201,
+   "MdAE_log": 0.9532378791089191,
+   "within2x": 0.37438423645320196,
+   "spearman": 0.4718555116699481
+  }
+ }
+}
