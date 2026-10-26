@@ -27,18 +27,22 @@ df["components"] = df.components_open.fillna("")
 df["comp1"] = df.components.str.split("|").str[0].fillna("")
 df["n_components"] = df.components.map(lambda s: len([c for c in s.split("|") if c]))
 df["assignee"] = df.assignee_T.fillna("git:" + df.fix_author.fillna("").astype(str)).replace("git:", "")
+df["dev_date"] = df.fix_date
+if os.environ.get("DEV_AT") == "start":   # developer and developer history at the start of work (start_of_work.py), not at the first commit
+    sw = pd.read_csv(os.environ["START_FILE"])[["key", "start_date", "assignee_S"]]
+    df = df.merge(sw, on="key", how="left"); df["assignee"] = df.assignee_S.fillna(""); df["dev_date"] = df.start_date.fillna(df.fix_date)
 df["summary"] = df.summary.fillna("")
 df["y"] = np.log(df.hours)
 df["year"] = df.fix_date.str[:4].astype(int)
 
 def prior_dev(df, ycol="y"):
-    """Developer history: only issues of the same assignee RESOLVED before the day of the first commit."""
+    """Developer history: only issues of the same assignee RESOLVED before dev_date (day of the first commit, or start of work with DEV_AT=start)."""
     by = {}
     for a, r, y in zip(df.assignee, df.resolved, df[ycol]):
         by.setdefault(a, []).append((r, y))
     for a in by: by[a].sort()
     n, med = [], []
-    for a, T in zip(df.assignee, df.fix_date):
+    for a, T in zip(df.assignee, df.dev_date):
         if not a: n.append(0); med.append(np.nan); continue
         v = by[a]; i = bisect.bisect_left(v, (T,))
         past = [y for _, y in v[:i]][-50:]
