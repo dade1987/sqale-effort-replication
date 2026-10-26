@@ -29,14 +29,14 @@ for block in p.split("\x1e")[1:]:
         if k in iss:
             links[k]["commits"].add(h); links[k]["files"].update(fl)
 linked=[k for k in iss if k in links and links[k]["files"]]
-print("commit",ncommit,"con chiave",nkey,"issue con ore",len(iss),"collegate",len(linked))
+print("commit",ncommit,"with key",nkey,"issues with hours",len(iss),"linked",len(linked))
 h=[iss[k]["timespent"]/3600 for k in linked]
-print("ore issue collegate: tot",round(sum(h)),"mediana",round(st.median(h),2))
-nf=[len(links[k]["files"]) for k in linked]; print("file per issue mediana",st.median(nf))
+print("hours of linked issues: total",round(sum(h)),"median",round(st.median(h),2))
+nf=[len(links[k]["files"]) for k in linked]; print("median files per issue",st.median(nf))
 fc=collections.Counter(f for k in linked for f in links[k]["files"])
 print("file distinti",len(fc),"file con >=5 issue",sum(v>=5 for v in fc.values()),">=20",sum(v>=20 for v in fc.values()))
 comp=collections.Counter(c["name"] for k in linked for c in (iss[k].get("components") or []))
-print("componenti",len(comp),"con >=50 issue",sum(v>=50 for v in comp.values()))
+print("componenti",len(comp),"con >=50 issues",sum(v>=50 for v in comp.values()))
 yr=collections.Counter((iss[k].get("resolutiondate") or "????")[:4] for k in linked); print(sorted(yr.items()))
 small=[k for k in linked if len(links[k]["files"])<=5 and iss[k]["timespent"]<=8*3600 and (iss[k].get("issuetype") or {}).get("name") in ("Bug","Task","Improvement")]
 print("candidate per agenti AI (<=5 file, <=8h, bug/task/improvement)",len(small))

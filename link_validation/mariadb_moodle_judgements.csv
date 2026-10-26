@@ -1,4 +1,4 @@
-row,project,issue,title,hours,n_commits,commit_subjects,commit_links,n_files,files_first_10,rater_chatgpt,rater_chatgpt_note,rater_claude
+row,project,issue,title,hours,n_commits,commit_subjects,commit_links,n_files,files_first_10,rater_chatgpt,rater_chatgpt_note_original_it,rater_chatgpt_note_en,rater_claude
 1,MariaDB,MDEV-32113,utf8mb3_key_col=utf8mb4_value cannot be used for ref access,68.5,3,"MDEV-32113: utf8mb3_key_col=utf8mb4_value cannot be used for ref
 MDEV-32113: utf8mb3_key_col=utf8mb4_value cannot be used for ref
 MDEV-32113: utf8mb3_key_col=utf8mb4_value cannot be used for ref","https://github.com/MariaDB/server/commit/2fb84b63fb1514c684a5d254ff0df12bb592fa95
@@ -12,7 +12,7 @@ mysql-test/main/mysqltest_tracking_info.result
 mysql-test/suite/sys_vars/r/optimizer_switch_basic.result
 mysql-test/suite/sys_vars/r/sysvars_server_embedded.result
 mysql-test/suite/sys_vars/r/sysvars_server_notembedded.result
-sql/CMakeLists.txt",correct,,correct
+sql/CMakeLists.txt",correct,,,correct
 2,Moodle,MDL-77998,Behat test to verify users can navigate and use the preferences page (Automate MDLQA-8139),28.6,7,"MDL-77998 Behat: Add behat coverage for preferences navigation
 MDL-77998 Behat: Fix Behat failure
 MDL-77998 Behat: Add behat coverage for preferences navigation
@@ -21,7 +21,7 @@ MDL-77998 Behat: Add behat coverage for preferences navigation","https://github.
 https://github.com/moodle/moodle/commit/3d847c154a619f812f4e1148d216f705c990857e
 https://github.com/moodle/moodle/commit/472a76d0c8d1f7c972ca7122f66b8553d3e72c11
 https://github.com/moodle/moodle/commit/5eef98ee05a731e319cccef0cd894e0949b68788
-https://github.com/moodle/moodle/commit/7c5cc9f1405b239eb536810037bae126b16854fd",1,my/tests/behat/preferences_navigation.feature,correct,,correct
+https://github.com/moodle/moodle/commit/7c5cc9f1405b239eb536810037bae126b16854fd",1,my/tests/behat/preferences_navigation.feature,correct,,,correct
 3,MariaDB,MDEV-29698,Server crash or assertion failure upon CREATE OR REPLACE with a MERGE table,3.83,6,"MDEV-29698 Server crash or assertion failure upon CREATE OR REPLACE with a MERGE table
 MDEV-29698 Server crash or assertion failure upon CREATE OR REPLACE with a MERGE table
 MDEV-29698 Server crash or assertion failure upon CREATE OR REPLACE with a MERGE table
@@ -33,7 +33,7 @@ https://github.com/MariaDB/server/commit/c558fe45cdf00bace6a04ce9e58fd9d0015184f
 https://github.com/MariaDB/server/commit/e41703f7741b8e848ff14dac71d79277e1633fe2",4,"mysql-test/main/create_or_replace.result
 mysql-test/main/create_or_replace.test
 sql/sql_insert.cc
-sql/sql_table.cc",correct,,correct
+sql/sql_table.cc",correct,,,correct
 4,Moodle,MDL-70476,Incorrect role name HTML escaping in permissions screen tool tips,1.2,4,"MDL-70476 permission overrides: role names double-escaped in tool tip
 MDL-70476 permission overrides: role names double-escaped in tool tip
 MDL-70476 permission overrides: role names double-escaped in tool tip
@@ -41,11 +41,11 @@ MDL-70476 permission overrides: role names double-escaped in tool tip","https://
 https://github.com/moodle/moodle/commit/ccfc9f7bc9d3a8f9d6874610957b7265ce7c896f
 https://github.com/moodle/moodle/commit/f6ae03bf41dc9a1124b128eef3c824ac0c530a1e
 https://github.com/moodle/moodle/commit/fbc010aca1218c8e1bc7e7a96d19d426ed248175",2,"lib/classes/output/mustache_pix_helper.php
-lib/templates/permissionmanager_role.mustache",correct,,correct
+lib/templates/permissionmanager_role.mustache",correct,,,correct
 5,MariaDB,MDEV-36512,galera_3nodes.GCF-354: certification position less than last committed,1.0,2,"MDEV-36512 : galera_3nodes.GCF-354: certification position less than last committed
 MDEV-36512 : galera_3nodes.GCF-354: certification position less than last committed","https://github.com/MariaDB/server/commit/7aed06887bc901afd84647cd8c3530b2e0a2ac80
 https://github.com/MariaDB/server/commit/b16358bd6e66f020babe03dd50c1225dc7f1d82b",2,"mysql-test/suite/galera_3nodes/r/GCF-354.result
-mysql-test/suite/galera_3nodes/t/GCF-354.test",correct,,correct
+mysql-test/suite/galera_3nodes/t/GCF-354.test",correct,,,correct
 6,Moodle,MDL-79059,Accessibility issues on the Database activity module,2.28,9,"MDL-79059 core: Use full name as alt text for user picture links
 MDL-79059 mod_data: Enclose preset options within a fieldset
 MDL-79059 mod_data: Fix presets accessibility issues
@@ -56,7 +56,7 @@ https://github.com/moodle/moodle/commit/59d5458c7f9bd7c6bc5c3e5c1c8cfee341c63e54
 https://github.com/moodle/moodle/commit/6954a32400051e68131f0d1fab1208677e9453e0
 https://github.com/moodle/moodle/commit/896d5fd05a6947282760edc95e8462065023ceb1",3,"lib/outputrenderers.php
 mod/data/classes/output/presets.php
-mod/data/templates/presets.mustache",correct,,correct
+mod/data/templates/presets.mustache",correct,,,correct
 7,MariaDB,MDEV-35207,ignored error at binlogging by CREATE-TABLE-SELECT leads to assert,55.67,4,"MDEV-35207 incremental commit with extra tests
 MDEV-35207 ignored error at binlogging by CREATE-TABLE-SELECT leads to assert
 MDEV-35207 ignored error at binlogging by CREATE-TABLE-SELECT leads to assert
@@ -67,18 +67,18 @@ https://github.com/MariaDB/server/commit/c2f69f61d029919b74746ad17516bbf15cce146
 mysql-test/suite/rpl/t/rpl_create_select_row.test
 sql/log.cc
 sql/log.h
-sql/sql_insert.cc",correct,"Commit di fix, test aggiuntivi e review notes relativi al binlogging CREATE TABLE SELECT; altre issue menzionate non rendono estranei i commit.",correct
+sql/sql_insert.cc",correct,"Commit di fix, test aggiuntivi e review notes relativi al binlogging CREATE TABLE SELECT; altre issue menzionate non rendono estranei i commit.","Fix commit, additional tests and review notes on CREATE TABLE SELECT binlogging; other issues mentioned do not make the commits unrelated.",correct
 8,MariaDB,MDEV-255,compile handlersocket plugin in 5.5,6.0,2,"MDEV-255: Compile handlersocket plugin in 5.5
 MDEV-255: Compile handlersocket plugin in 5.5","https://github.com/MariaDB/server/commit/2c8390b7851cf8342f89ee5da036f2023b1b7aea
 https://github.com/MariaDB/server/commit/aa8f0606e809f19c23f918286cbfefc5a4172072",2,"plugin/handler_socket/CMakeLists.txt
-plugin/handler_socket/handlersocket/mysql_incl.hpp",correct,,correct
+plugin/handler_socket/handlersocket/mysql_incl.hpp",correct,,,correct
 9,Moodle,MDL-81652,Quiz 'Embedded answers (Cloze)' question layout problem,2.57,2,"MDL-81652 qtype_multianswer: Tackle Bootstrap 5 compatibility.
 MDL-81652 qtype_multianswer: Tackle Bootstrap 5 compatibility.","https://github.com/moodle/moodle/commit/bf8a28b220c01bc25c730b00ff06404fb607bc89
 https://github.com/moodle/moodle/commit/f0b81219934b7646dff44f1ab65fd8771e79eb68",2,"question/format/multianswer/tests/fixtures/multianswer-all-types.xml
-question/type/multianswer/renderer.php",correct,,correct
-10,Moodle,MDL-87914,Switch from PHP serialization to JSON in Flickr public repository,0.95,1,MDL-87914 repository_flickr: switch to JSON from API endpoint.,https://github.com/moodle/moodle/commit/7fe896f5102544d593f1b3a5158620326b662c88,1,public/lib/flickrlib.php,correct,,correct
+question/type/multianswer/renderer.php",correct,,,correct
+10,Moodle,MDL-87914,Switch from PHP serialization to JSON in Flickr public repository,0.95,1,MDL-87914 repository_flickr: switch to JSON from API endpoint.,https://github.com/moodle/moodle/commit/7fe896f5102544d593f1b3a5158620326b662c88,1,public/lib/flickrlib.php,correct,,,correct
 11,Moodle,MDL-31235,Support text format for marking guide criteria and levels,1.52,1,MDL-31235 core_grades: use text filters for criterion fields,https://github.com/moodle/moodle/commit/75b873319734f3c2ef7175721c6a1c2eaf26b814,2,"grade/grading/form/guide/lib.php
-grade/grading/form/guide/renderer.php",correct,,correct
+grade/grading/form/guide/renderer.php",correct,,,correct
 12,Moodle,MDL-80736,Move AWS helper code to core namespace,0.75,1,MDL-80736 libraries: Move AWS helper code from factor_sms to core\aws,https://github.com/moodle/moodle/commit/2f351c5a8e2233b2618c30a6fd42fa7f4dc2959c,13,"admin/tool/mfa/factor/sms/classes/admin_settings_aws_region.php
 admin/tool/mfa/factor/sms/classes/local/aws_helper.php
 admin/tool/mfa/factor/sms/classes/local/client_factory.php
@@ -88,7 +88,7 @@ admin/tool/mfa/factor/sms/tests/admin_settings_aws_region_test.php
 admin/tool/mfa/factor/sms/tests/aws_helper_test.php
 lib/classes/aws/admin_settings_aws_region.php
 lib/classes/aws/aws_helper.php
-lib/classes/aws/client_factory.php",correct,,correct
+lib/classes/aws/client_factory.php",correct,,,correct
 13,Moodle,MDL-65509,Hardcoded language strings in exception dialogues,8.12,2,"MDL-65509 output: use translated strings when showing a fatal error
 MDL-65509 javascript: Make core dialogues translatable","https://github.com/moodle/moodle/commit/a875f3f5131d6cdbb0de92ed66933bdf5fed5576
 https://github.com/moodle/moodle/commit/dc468ac5231705950f7fd15eccd19bfca4764298",11,"lang/en/debug.php
@@ -100,16 +100,16 @@ lib/yui/build/moodle-core-notification-ajaxexception/moodle-core-notification-aj
 lib/yui/build/moodle-core-notification-exception/moodle-core-notification-exception-debug.js
 lib/yui/build/moodle-core-notification-exception/moodle-core-notification-exception-min.js
 lib/yui/build/moodle-core-notification-exception/moodle-core-notification-exception.js
-lib/yui/src/notification/js/ajaxexception.js",correct,,correct
+lib/yui/src/notification/js/ajaxexception.js",correct,,,correct
 14,MariaDB,MDEV-35641,"foreign server ""disappears"" after ALTERing the servers system table to use innodb and FLUSH PRIVILEGES",3.65,1,MDEV-35641 bring call to use_all_columns() forward when reading from mysql.servers,https://github.com/MariaDB/server/commit/f862fe8b2bb359e0bbeb48d0d38047a95dc0e43c,3,"mysql-test/main/servers.result
 mysql-test/main/servers.test
-sql/sql_servers.cc",correct,,correct
+sql/sql_servers.cc",correct,,,correct
 15,MariaDB,MDEV-14249,Wrong character set info of Query_log_event and the query in Query_log_event constructed by different charsets cause error when slave apply the event.,8.0,1,MDEV-14249 Wrong character set info of Query_log_event and the query in Query_log_event constructed by different charsets cause error when slave apply the event.,https://github.com/MariaDB/server/commit/02b7dc7bec4ff95c764a244c5037c69f262651e1,4,"mysql-test/suite/rpl/r/rpl_ctype_latin1.result
 mysql-test/suite/rpl/t/rpl_ctype_latin1.test
 sql/sp.cc
-sql/sql_view.cc",correct,,correct
+sql/sql_view.cc",correct,,,correct
 16,Moodle,MDL-73067,Remove event type key/filter links on the course calendar block,2.77,1,MDL-73067 block_calendar_month: remove event key filter,https://github.com/moodle/moodle/commit/46e4130b6f2915ad538502685601d0753ae5f6bf,2,"blocks/calendar_month/block_calendar_month.php
-blocks/calendar_month/tests/behat/block_calendar_month.feature",correct,,correct
+blocks/calendar_month/tests/behat/block_calendar_month.feature",correct,,,correct
 17,MariaDB,MDEV-13626,Merge InnoDB test cases from MySQL 5.7,54.0,19,"MDEV-13626 Merge InnoDB test cases from MySQL 5.7 (part 1)
 MDEV-13626 Merge InnoDB test cases from MySQL 5.7
 MDEV-13626: Make test more robust
@@ -127,14 +127,14 @@ mysql-test/suite/innodb/r/alter_crash.result
 mysql-test/suite/innodb/r/blob-crash.result
 mysql-test/suite/innodb/r/buf_pool_resize_oom.result
 mysql-test/suite/innodb/r/cascade_lock_wait.result
-mysql-test/suite/innodb/r/import_update_stats.result",correct,,correct
+mysql-test/suite/innodb/r/import_update_stats.result",correct,,,correct
 18,MariaDB,MDEV-32144,"Debug assertion failure w == MAYBE_NOP in mtr_t::memcpy(), trx_undo_write_xid()",2.0,2,"MDEV-32144 fixup
 MDEV-32144 Debug assertion failure w == MAYBE_NOP in mtr_t::memcpy()","https://github.com/MariaDB/server/commit/2d6dc65de56be1d151374cd0257e616407cd1c26
-https://github.com/MariaDB/server/commit/384eb570a654261639dc1fc73c347f0d3759f567",1,storage/innobase/trx/trx0undo.cc,correct,,correct
+https://github.com/MariaDB/server/commit/384eb570a654261639dc1fc73c347f0d3759f567",1,storage/innobase/trx/trx0undo.cc,correct,,,correct
 19,MariaDB,MDEV-12574,MAX(old_decimal) produces a column of the old DECIMAL type,2.17,1,MDEV-12574 MAX(old_decimal) produces a column of the old DECIMAL type,https://github.com/MariaDB/server/commit/ee6ac4d313c5e8846c4f7b92a923154984528215,4,"mysql-test/r/type_decimal.result
 mysql-test/t/type_decimal.test
 sql/field.cc
-sql/field.h",correct,,correct
+sql/field.h",correct,,,correct
 20,Moodle,MDL-86348,Upgrade GeoIP2 PHP API and Maxmind DB Reader API to latest versions,26.28,1,MDL-86348 libraries: Upgrade GeoIP2 and Maxmind DB Reader,https://github.com/moodle/moodle/commit/42b8deeb6370a5fc29d1e6b502da3f9752cd8de9,15,"public/lib/maxmind/GeoIp2/CHANGELOG.md
 public/lib/maxmind/GeoIp2/README.md
 public/lib/maxmind/GeoIp2/composer.json
@@ -144,7 +144,7 @@ public/lib/maxmind/GeoIp2/src/Model/Asn.php
 public/lib/maxmind/GeoIp2/src/Model/City.php
 public/lib/maxmind/GeoIp2/src/Model/Isp.php
 public/lib/maxmind/GeoIp2/src/Record/Location.php
-public/lib/maxmind/GeoIp2/src/WebService/Client.php",correct,,correct
+public/lib/maxmind/GeoIp2/src/WebService/Client.php",correct,,,correct
 21,Moodle,MDL-65348,Insights about upcoming activities due should be generated from time(),19.5,2,"MDL-65348 analytics: Upcoming periodic from time()
 MDL-65348 lang string: updating an outdated lang string","https://github.com/moodle/moodle/commit/352ab7464e9c2aa6280d80627529702ef755aaf8
 https://github.com/moodle/moodle/commit/f991482446449037848574ac0267fa93dddb9088",11,"analytics/classes/analysis.php
@@ -156,9 +156,9 @@ lang/en/cache.php
 lib/db/caches.php
 lib/db/install.xml
 lib/db/upgrade.php
-lib/tests/time_splittings_test.php",correct,La modifica della stringa cachedef_modelfirstanalyses si riferisce alla nuova cache introdotta dal commit principale.,correct
+lib/tests/time_splittings_test.php",correct,La modifica della stringa cachedef_modelfirstanalyses si riferisce alla nuova cache introdotta dal commit principale.,The change to the cachedef_modelfirstanalyses string refers to the new cache introduced by the main commit.,correct
 22,MariaDB,MDEV-30072,Wrong ORDER BY for a partitioned prefix key + NOPAD,0.5,1,MDEV-30072 Wrong ORDER BY for a partitioned prefix key + NOPAD,https://github.com/MariaDB/server/commit/54715a1074a0c9fc12a5d52152df73826a484df7,2,"mysql-test/main/ctype_uca_partitions.result
-mysql-test/main/ctype_uca_partitions.test",correct,Il bug funzionale era già stato corretto in MDEV-30034; il commit collegato introduce test di regressione specifici per MDEV-30072.,correct
+mysql-test/main/ctype_uca_partitions.test",correct,Il bug funzionale era già stato corretto in MDEV-30034; il commit collegato introduce test di regressione specifici per MDEV-30072.,The functional bug had already been fixed in MDEV-30034; the linked commit adds regression tests specific to MDEV-30072.,correct
 23,Moodle,MDL-50364,Month not translated in date picker with form API,1.12,6,"MDL-50364 forms: calendar header renderer uses translated months
 MDL-50364 forms: calendar header renderer uses translated months
 MDL-50364 forms: consistent access to language strings from JS.
@@ -176,29 +176,29 @@ public/lib/form/yui/build/moodle-form-dateselector/moodle-form-dateselector-debu
 public/lib/form/yui/build/moodle-form-dateselector/moodle-form-dateselector-min.js
 public/lib/form/yui/build/moodle-form-dateselector/moodle-form-dateselector.js
 public/lib/form/yui/src/dateselector/js/dateselector.js
-public/lib/formslib.php",correct,,correct
+public/lib/formslib.php",correct,,,correct
 24,MariaDB,MDEV-39653,AddressSanitizer: heap-use-after-free in my_mb_wc_latin1/../Field_xmltype::store after invalid xml,3.0,1,MDEV-39653 AddressSanitizer: heap-use-after-free in my_mb_wc_latin1/../Field_xmltype::store after invalid xml.,https://github.com/MariaDB/server/commit/6b79d98fc000960f3d64f3ad7791fefbaa102c1d,3,"plugin/type_xmltype/mysql-test/type_xmltype/type_xmltype.result
 plugin/type_xmltype/mysql-test/type_xmltype/type_xmltype.test
-plugin/type_xmltype/sql_type_xmltype.cc",correct,,correct
+plugin/type_xmltype/sql_type_xmltype.cc",correct,,,correct
 25,Moodle,MDL-85021,"Fix Feedback ""Edit questions"" after BS5 upgrade",0.55,1,MDL-85021 mod_feedback: Fix 'Edit questions' UI after BS5 upgrade,https://github.com/moodle/moodle/commit/788cf22867448a20c181f1dcc0d2acd332937cc0,4,"mod/feedback/classes/complete_form.php
 theme/boost/scss/moodle/modules.scss
 theme/boost/style/moodle.css
-theme/classic/style/moodle.css",correct,,correct
+theme/classic/style/moodle.css",correct,,,correct
 26,MariaDB,MDEV-10864,Wrong result for WHERE .. (f2=COMPRESS('test') OR f2=COMPRESS('TEST')),2.0,1,MDEV-10864 Wrong result for WHERE .. (f2=COMPRESS('test') OR f2=COMPRESS('TEST')),https://github.com/MariaDB/server/commit/9f837c6e1a54ea05be92112fe7520ffe0134b260,7,"mysql-test/r/func_compress.result
 mysql-test/r/func_crypt.result
 mysql-test/r/func_str.result
 mysql-test/t/func_compress.test
 mysql-test/t/func_crypt.test
 mysql-test/t/func_str.test
-sql/item_strfunc.h",correct,,correct
+sql/item_strfunc.h",correct,,,correct
 27,Moodle,MDL-86667,Usability issues in the site registration form,10.9,3,"MDL-86667 registration: Unset fields after site being unregistered
 MDL-86667 registration: Unset fields after site being unregistered
 MDL-86667 registration: Unset fields after site being unregistered","https://github.com/moodle/moodle/commit/052d50f8a4fc6952bcfaaea15ac491c588ec4c67
 https://github.com/moodle/moodle/commit/206f146ae7f61e8192c1c4f0d48c3e10c214134a
 https://github.com/moodle/moodle/commit/8e409341bd5ee02abbb24c684062b927e9a8512e",2,"lib/classes/hub/registration.php
-public/lib/classes/hub/registration.php",correct,,correct
+public/lib/classes/hub/registration.php",correct,,,correct
 28,MariaDB,MDEV-23706,Galera test failure on galera_autoinc_sst_mariabackup,1.0,1,MDEV-23706 : Galera test failure on galera_autoinc_sst_mariabackup,https://github.com/MariaDB/server/commit/5c07ce406b4ce28064832e72afc79845aac7a46a,2,"mysql-test/suite/galera/r/galera_autoinc_sst_mariabackup.result
-mysql-test/suite/galera/t/galera_autoinc_sst_mariabackup.test",correct,,correct
+mysql-test/suite/galera/t/galera_autoinc_sst_mariabackup.test",correct,,,correct
 29,Moodle,MDL-78689,Remove/add power level of user with the change in capabilities,21.75,3,"MDL-78689 core: Version bump
 MDL-78689 core_communication: Add sync provider feature
 MDL-78689 communication_matrix: Add support for sync provider feature","https://github.com/moodle/moodle/commit/27a3f34993be0167307ed9accad2b603d4aa46b5
@@ -212,7 +212,7 @@ communication/provider/matrix/classes/communication_feature.php
 communication/tests/api_test.php
 communication/tests/communication_test_helper_trait.php
 lang/en/communication.php
-lib/db/tasks.php",correct,La sincronizzazione dei provider aggiorna i membri della stanza e richiama set_matrix_power_levels(): collegamento funzionale con il livello di potere degli utenti.,correct
+lib/db/tasks.php",correct,La sincronizzazione dei provider aggiorna i membri della stanza e richiama set_matrix_power_levels(): collegamento funzionale con il livello di potere degli utenti.,Provider synchronisation updates the room members and calls set_matrix_power_levels(): functionally linked to the users' power level.,correct
 30,MariaDB,MDEV-39179,Incorrect NULL handling in UPDATE ... RETURNING result,12.75,2,"MDEV-39179: Incorrect NULL handling in UPDATE ... RETURNING result
 MDEV-39179: Incorrect NULL handling in UPDATE ... RETURNING result","https://github.com/MariaDB/server/commit/01d97cde1888b121b4fe5ce797abd8adc9bcd6a1
 https://github.com/MariaDB/server/commit/9b325e1b7dc17118469af9bbe936821302b54828",9,"mysql-test/main/update.result
@@ -223,7 +223,7 @@ sql/item.cc
 sql/item.h
 sql/sql_update.cc
 sql/sql_update.h
-sql/sql_yacc.yy",correct,,correct
+sql/sql_yacc.yy",correct,,,correct
 31,Moodle,MDL-84424,Behat to verify that an admin can create learning plans from a template (Automate MDLQA-9259),21.4,10,"MDL-84424 behat: add template_competencies generator and improve test
 MDL-84424 behat: add template_competencies generator and improve test
 MDL-84424 tool_lp: admin can create learning plans from template
@@ -233,7 +233,7 @@ https://github.com/moodle/moodle/commit/1d7a3099c60844854d21be870b0743e2833a781d
 https://github.com/moodle/moodle/commit/244db143eb660714cf7beb0751848b8ac8873d1d
 https://github.com/moodle/moodle/commit/49e490d20949ecf62f8a504ef5b8b34f0ea63645
 https://github.com/moodle/moodle/commit/52fbae2907e2ae9b93c27b5b0efb45c6fa870d43",2,"admin/tool/lp/tests/behat/link_unlink_lp.feature
-competency/tests/generator/behat_core_competency_generator.php",correct,,correct
+competency/tests/generator/behat_core_competency_generator.php",correct,,,correct
 32,MariaDB,MDEV-20077,Warning on full history partition is delayed until next DML statement,11.33,2,"MDEV-20077 compilation fix
 MDEV-20077 Warning on full history partition is delayed until next DML statement","https://github.com/MariaDB/server/commit/182b8a29e7a1a0f0fbffeed39518c2c9dc026e13
 https://github.com/MariaDB/server/commit/ddc416c60698e1f8939faff0cb09c5b5af8e03a7",9,"mysql-test/suite/versioning/r/delete_history.result
@@ -244,33 +244,33 @@ sql/ha_partition.cc
 sql/partition_info.cc
 sql/partition_info.h
 sql/sql_base.cc
-sql/sql_lex.h",correct,,correct
+sql/sql_lex.h",correct,,,correct
 33,Moodle,MDL-64597,Need to execute init script twice when re-initialising Behat for parallel runs for upgraded instances,1.0,4,"MDL-64597 behat: Properly import behat_util when dropping parallel sites
 MDL-64597 behat: Properly import behat_util when dropping parallel sites
 MDL-64597 behat: Properly import behat_util when dropping parallel sites
 MDL-64597 behat: Properly import behat_util when dropping parallel sites","https://github.com/moodle/moodle/commit/57d2a28425c93127b39624012f3b302b4fcdedb8
 https://github.com/moodle/moodle/commit/7c2b9ffcf6b509c2f7bcc7a595bd6210be12de9d
 https://github.com/moodle/moodle/commit/a48bccf7532875fd0652072a047619ed5260b17f
-https://github.com/moodle/moodle/commit/b895b8b74f052efb881aab9a32c935304d111cc9",1,admin/tool/behat/cli/util.php,correct,,correct
+https://github.com/moodle/moodle/commit/b895b8b74f052efb881aab9a32c935304d111cc9",1,admin/tool/behat/cli/util.php,correct,,,correct
 34,Moodle,MDL-74128,Report builder Behat page instance type for viewing a report,2.5,2,"MDL-74128 reportbuilder: Behat helper for navigating to view page.
 MDL-74128 reportbuilder: Behat helper for navigating to view page.","https://github.com/moodle/moodle/commit/203a55f57a36897682475d02603405f22e5a952a
 https://github.com/moodle/moodle/commit/bc05916cbff8a323b0a5f65192175d025284dae8",2,"reportbuilder/tests/behat/audience.feature
-reportbuilder/tests/behat/behat_reportbuilder.php",correct,,correct
+reportbuilder/tests/behat/behat_reportbuilder.php",correct,,,correct
 35,Moodle,MDL-81285,MFA: Provide a clear failure when Security key not supported for browsers,1.45,1,MDL-81285 factor_webauthn: inform user on failed key registration.,https://github.com/moodle/moodle/commit/fae40c06e513146efdf859a578e914ec6183a281,4,"admin/tool/mfa/factor/webauthn/amd/build/register.min.js
 admin/tool/mfa/factor/webauthn/amd/build/register.min.js.map
 admin/tool/mfa/factor/webauthn/amd/src/register.js
-admin/tool/mfa/factor/webauthn/lang/en/factor_webauthn.php",correct,,correct
+admin/tool/mfa/factor/webauthn/lang/en/factor_webauthn.php",correct,,,correct
 36,MariaDB,MDEV-19312,Threadpool : make thread injection rate depend on thread_pool_stall_limit/thread_pool_oversubscribe,8.0,1,MDEV-19312 Make throttling interval depend on thread_pool_stall_limit,https://github.com/MariaDB/server/commit/daeaa600ef4cbd9ee79cc2a6fd34bd753137db41,6,"mysql-test/suite/sys_vars/r/sysvars_server_notembedded.result
 mysql-test/suite/sys_vars/r/thread_pool_stall_limit_basic.result
 mysql-test/suite/sys_vars/t/thread_pool_stall_limit_basic.test
 sql/sys_vars.cc
 sql/threadpool.h
-sql/threadpool_generic.cc",correct,,correct
+sql/threadpool_generic.cc",correct,,,correct
 37,MariaDB,MDEV-32833,InnoDB wrong error message,2.5,1,MDEV-32833 InnoDB wrong error message,https://github.com/MariaDB/server/commit/47fc64c19f5525161a840405f4ac98963fdaafc1,5,"mysql-test/suite/innodb/r/foreign-keys.result
 mysql-test/suite/innodb/r/innodb.result
 mysql-test/suite/innodb/t/foreign-keys.test
 storage/innobase/include/trx0trx.h
-storage/innobase/trx/trx0trx.cc",correct,,correct
+storage/innobase/trx/trx0trx.cc",correct,,,correct
 38,MariaDB,MDEV-37379,Assertion `index->is_readable()' failed in dict_create_index_tree_in_mem on REPLACE DELAYED,19.42,10,"MDEV-37379 Assertion `index->is_readable()' failed on REPLACE DELAYED
 MDEV-37379 Assertion `index->is_readable()' failed on REPLACE DELAYED
 MDEV-37379 UBSAN invalid-bool-load on INSERT DELAYED GTT
@@ -282,7 +282,7 @@ https://github.com/MariaDB/server/commit/642453643d0630fc8c8d38322917a29ee778a8e
 https://github.com/MariaDB/server/commit/7f499f7c99ede57eae9a9c5b34b34a470c73d098",4,"mysql-test/main/global_temporary_table.result
 mysql-test/main/global_temporary_table.test
 mysql-test/suite/binlog/r/global_temporary_table.result
-sql/sql_insert.cc",correct,Entrambe le famiglie di fix (REPLACE DELAYED e INSERT DELAYED su GTT) ricadono nella stessa issue.,correct
+sql/sql_insert.cc",correct,Entrambe le famiglie di fix (REPLACE DELAYED e INSERT DELAYED su GTT) ricadono nella stessa issue.,Both families of fixes (REPLACE DELAYED and INSERT DELAYED on GTT) belong to the same issue.,correct
 39,Moodle,MDL-85672,Site Registration: Additional and updated details,12.97,4,"MDL-85672 registration: Agreement privacy notice URL updated
 MDL-85672 registration: Remove unused methods from form class
 MDL-85672 registration: Fix Cibot format errors
@@ -292,7 +292,7 @@ https://github.com/moodle/moodle/commit/ac9dfd7f857b19aa9c5d86b1f1e8b29d58519238
 https://github.com/moodle/moodle/commit/be8adf13735fa1be8dbc462f3898df8552057b8e",4,"public/lang/en/deprecated.txt
 public/lang/en/hub.php
 public/lib/classes/hub/registration.php
-public/lib/classes/hub/site_registration_form.php",correct,,correct
+public/lib/classes/hub/site_registration_form.php",correct,,,correct
 40,Moodle,MDL-65768,Upgrade phpCAS to 1.3.7,2.47,2,"MDL-65768 auth_cas: update phpCAS to 1.3.7
 MDL-65768 auth_cas: update of moodle documentation","https://github.com/moodle/moodle/commit/97133133cdc1eb696f27009cfa7f966917f9a0f2
 https://github.com/moodle/moodle/commit/d6884bb3d59a0435b15d7befcfeeca8557a71c1e",17,"auth/cas/CAS/CAS.php
@@ -304,12 +304,12 @@ auth/cas/CAS/CAS/PGTStorage/AbstractStorage.php
 auth/cas/CAS/CAS/PGTStorage/Db.php
 auth/cas/CAS/CAS/PGTStorage/File.php
 auth/cas/CAS/CAS/ProxiedService/Http/Abstract.php
-auth/cas/CAS/CAS/ProxiedService/Imap.php",correct,,correct
+auth/cas/CAS/CAS/ProxiedService/Imap.php",correct,,,correct
 41,Moodle,MDL-83263,Undefined array key warning when reverting grade overrides,1.78,3,"MDL-83263 grade: Handle undefined array key on grade override revert
 MDL-83263 grade: Handle undefined array key on grade override revert
 MDL-83263 grade: Handle undefined array key on grade override revert","https://github.com/moodle/moodle/commit/8ea2f036c14f31560eef01e3d7e3e347d3042823
 https://github.com/moodle/moodle/commit/a6461663199940d8d49e4a853db8b4ed907077e9
-https://github.com/moodle/moodle/commit/fcbe432066e339cd3ecc129eb5dc3c61281a3041",1,grade/edit/tree/grade.php,correct,,correct
+https://github.com/moodle/moodle/commit/fcbe432066e339cd3ecc129eb5dc3c61281a3041",1,grade/edit/tree/grade.php,correct,,,correct
 42,MariaDB,MDEV-3915,COM_CHANGE_USER allows fast password brute-forcing,1.33,2,"MDEV-3915 COM_CHANGE_USER allows fast password brute-forcing
 MDEV-3915 COM_CHANGE_USER allows fast password brute-forcing","https://github.com/MariaDB/server/commit/994ae8e70e4543b6a527f67c4aacd9e05105aacc
 https://github.com/MariaDB/server/commit/bfc71e63a77972fa4ab934855b6ab712bea323a1",8,"client/mysqltest.cc
@@ -319,24 +319,24 @@ mysql-test/t/change_user_notembedded.test
 sql/sql_class.cc
 sql/sql_class.h
 sql/sql_parse.cc
-tests/mysql_client_test.c",correct,,correct
+tests/mysql_client_test.c",correct,,,correct
 43,MariaDB,MDEV-38313,Add WantedBy=sockets.target to mariadb.socket systemd,2.0,1,MDEV-38313 Add WantedBy=sockets.target to systemd socket definations,https://github.com/MariaDB/server/commit/9fa3f51f59f5b7a6d84c68a45e6a6579f55847b3,4,"support-files/mariadb-extra.socket.in
 support-files/mariadb-extra@.socket.in
 support-files/mariadb.socket.in
-support-files/mariadb@.socket.in",correct,,correct
+support-files/mariadb@.socket.in",correct,,,correct
 44,Moodle,MDL-83691,Setting up MFA breaks the return url for the sms edit form,13.5,3,"MDL-83691 core_sms: Avoid saving unnecessary data in the database
 MDL-83691 core: Version and upgrade fixes
 MDL-83691 core_sms: Avoid saving unnecessary data in the database","https://github.com/moodle/moodle/commit/7dac99c1910818ef34f673251cbab2d3f55e6942
 https://github.com/moodle/moodle/commit/a71c98f540ee76b179889982ec749ccb5cded1a5
 https://github.com/moodle/moodle/commit/cc77d48e7ccf1747f1d8f31d73a1f855de23c7ab",3,"lib/db/upgrade.php
 sms/configure.php
-version.php",correct,"Rimozione di returnurl/saveandreturn dalla configurazione salvata, migrazione dati e adeguamento versione.",correct
+version.php",correct,"Rimozione di returnurl/saveandreturn dalla configurazione salvata, migrazione dati e adeguamento versione.","Removal of returnurl/saveandreturn from the saved configuration, data migration and version bump.",correct
 45,MariaDB,MDEV-12846,sql_mode=ORACLE: using Oracle-style placeholders in direct query execution makes the server crash,1.0,1,MDEV-12846 sql_mode=ORACLE: using Oracle-style placeholders in direct query execution makes the server crash,https://github.com/MariaDB/server/commit/b8f906dd4b2094deb30812c5d0b6c71151be1d6b,3,"mysql-test/suite/compat/oracle/r/ps.result
 mysql-test/suite/compat/oracle/t/ps.test
-sql/sql_lex.cc",correct,,correct
+sql/sql_lex.cc",correct,,,correct
 46,MariaDB,MDEV-33348,ALTER TABLE lock waiting stages are indistinguishable,12.0,1,MDEV-33348 ALTER TABLE lock waiting stages are indistinguishable,https://github.com/MariaDB/server/commit/5d37cac793e5a9e44835ea819ff089f22d27f9a4,3,"mysql-test/main/alter_table_online.result
 mysql-test/main/alter_table_online.test
-sql/sql_table.cc",correct,,correct
+sql/sql_table.cc",correct,,,correct
 47,Moodle,MDL-71234,Create user tours for the activity information output component,17.6,2,"MDL-71234 usertours: Create tours for the activity completion output
 MDL-71234 usertours: Create tours for the activity completion output","https://github.com/moodle/moodle/commit/32ae33d19a92b067b31bbf8baaf531856c6494c6
 https://github.com/moodle/moodle/commit/860b5d8abc9309bfaad0e9778691bdb12d5b8668",9,"admin/tool/usertours/classes/manager.php
@@ -347,20 +347,20 @@ admin/tool/usertours/tours/311_activity_information_activity_page_teacher.json
 admin/tool/usertours/tours/311_activity_information_course_page_student.json
 admin/tool/usertours/tours/311_activity_information_course_page_teacher.json
 admin/tool/usertours/version.php
-course/classes/output/cm_format.php",correct,,correct
+course/classes/output/cm_format.php",correct,,,correct
 48,Moodle,MDL-66104,Make HTMLPurifier handling of ‹nolink› tags to support them everywhere,1.88,3,"MDL-66104 output: HTMLPurifier to allow <nolink> tags everywhere
 MDL-66104 output: HTMLPurifier to allow <nolink> tags everywhere
 MDL-66104 output: HTMLPurifier to allow <nolink> tags everywhere","https://github.com/moodle/moodle/commit/764167136fd21eaa3386f61cf2cc7fa7cb4538c5
 https://github.com/moodle/moodle/commit/a58897441e7c5cc3eccce9628ac96fc579090f8f
 https://github.com/moodle/moodle/commit/cd1a80769f4a4918364d98e19d770528f7516a60",2,"lib/tests/htmlpurifier_test.php
-lib/weblib.php",correct,,correct
+lib/weblib.php",correct,,,correct
 49,MariaDB,MDEV-28652,"SUBSTRING(str,pos,len) returns incorrect result in view (returns an empty string)",3.27,1,"MDEV-28652 SUBSTRING(str,pos,len) returns incorrect result in view (returns an empty string)",https://github.com/MariaDB/server/commit/74184074a06f9fd736064f77c1e78c310f9f0cae,3,"mysql-test/main/func_str.result
 mysql-test/main/func_str.test
-sql/item_strfunc.cc",correct,,correct
+sql/item_strfunc.cc",correct,,,correct
 50,MariaDB,MDEV-22351,InnoDB may report incorrect binlog position information after RESET MASTER,4.25,2,"MDEV-22351 InnoDB may recover wrong information after RESET MASTER
 MDEV-22351: InnoDB may report incorrect binlog position information after RESET MASTER","https://github.com/MariaDB/server/commit/0e10d7ea14cf795ada8aee7fe1afc590ef6de32c
 https://github.com/MariaDB/server/commit/398dc1fd3cde05669e6e635396da0f9b0738aa6e",5,"mysql-test/suite/mariabackup/binlog.result
 mysql-test/suite/mariabackup/binlog.test
 storage/innobase/include/trx0rseg.h
 storage/innobase/include/trx0sys.h
-storage/innobase/trx/trx0rseg.cc",correct,,correct
+storage/innobase/trx/trx0rseg.cc",correct,,,correct

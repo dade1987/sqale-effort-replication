@@ -1,0 +1,155 @@
+{
+ "n_sample": 100,
+ "all": {
+  "n": 100,
+  "judgement": {
+   "correct": 99,
+   "partial": 1
+  },
+  "missing_commit": {
+   "no": 96,
+   "yes": 4
+  },
+  "precision_strict": 0.99,
+  "precision_strict_CI95": [
+   0.9455124752390653,
+   0.9982326134344527
+  ],
+  "precision_incl_partial": 1.0,
+  "precision_incl_partial_CI95": [
+   0.963005192523998,
+   0.9999999999999998
+  ],
+  "no_missing_commit": 0.96,
+  "no_missing_commit_CI95": [
+   0.9016278276739262,
+   0.9843369494481519
+  ],
+  "missing_commits_reported": {
+   "MDEV-7850": "aee03ea, 9b1ea69",
+   "MDEV-8919": "afbd28a",
+   "MDL-76867": "0b54a57",
+   "PMM-2060": "23c0179, 5e7cc2d"
+  },
+  "median_seconds_per_issue": 28.0
+ },
+ "moodle": {
+  "n": 40,
+  "judgement": {
+   "correct": 39,
+   "partial": 1
+  },
+  "missing_commit": {
+   "no": 39,
+   "yes": 1
+  },
+  "precision_strict": 0.975,
+  "precision_strict_CI95": [
+   0.8711834051199223,
+   0.9955732825922052
+  ],
+  "precision_incl_partial": 1.0,
+  "precision_incl_partial_CI95": [
+   0.9123754607496077,
+   1.0
+  ],
+  "no_missing_commit": 0.975,
+  "no_missing_commit_CI95": [
+   0.8711834051199223,
+   0.9955732825922052
+  ],
+  "missing_commits_reported": {
+   "MDL-76867": "0b54a57"
+  },
+  "median_seconds_per_issue": 48.0
+ },
+ "mariadb": {
+  "n": 40,
+  "judgement": {
+   "correct": 40
+  },
+  "missing_commit": {
+   "no": 38,
+   "yes": 2
+  },
+  "precision_strict": 1.0,
+  "precision_strict_CI95": [
+   0.9123754607496077,
+   1.0
+  ],
+  "precision_incl_partial": 1.0,
+  "precision_incl_partial_CI95": [
+   0.9123754607496077,
+   1.0
+  ],
+  "no_missing_commit": 0.95,
+  "no_missing_commit_CI95": [
+   0.834958291820748,
+   0.9861796228538989
+  ],
+  "missing_commits_reported": {
+   "MDEV-7850": "aee03ea, 9b1ea69",
+   "MDEV-8919": "afbd28a"
+  },
+  "median_seconds_per_issue": 13.0
+ },
+ "percona": {
+  "n": 20,
+  "judgement": {
+   "correct": 20
+  },
+  "missing_commit": {
+   "no": 19,
+   "yes": 1
+  },
+  "precision_strict": 1.0,
+  "precision_strict_CI95": [
+   0.8388698745050667,
+   0.9999999999999998
+  ],
+  "precision_incl_partial": 1.0,
+  "precision_incl_partial_CI95": [
+   0.8388698745050667,
+   0.9999999999999998
+  ],
+  "no_missing_commit": 0.95,
+  "no_missing_commit_CI95": [
+   0.7638641064874331,
+   0.9911187805671267
+  ],
+  "missing_commits_reported": {
+   "PMM-2060": "23c0179, 5e7cc2d"
+  },
+  "median_seconds_per_issue": 15.5
+ },
+ "second_rater": {
+  "judgement": {
+   "n": 30,
+   "percent_agreement": 1.0,
+   "cohen_kappa": null,
+   "gwet_ac1": 1.0,
+   "author": {
+    "correct": 30
+   },
+   "second_rater": {
+    "correct": 30
+   },
+   "disagreements": []
+  },
+  "missing_commit": {
+   "n": 30,
+   "percent_agreement": 1.0,
+   "cohen_kappa": null,
+   "gwet_ac1": 1.0,
+   "author": {
+    "no": 30
+   },
+   "second_rater": {
+    "no": 30
+   },
+   "disagreements": []
+  },
+  "median_seconds_second_rater": 50.5,
+  "median_seconds_author_same_30": 27.5
+ }
+}

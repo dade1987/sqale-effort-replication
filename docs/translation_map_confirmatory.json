@@ -1,0 +1,22 @@
+{
+ "result_keys": {
+  "progetto": "project",
+  "parametri": "parameters",
+  "seme": "seed",
+  "margine_dMAE": "dMAE_margin",
+  "rho_parziale": "partial_rho",
+  "IC90": "CI90",
+  "IC90_percento_MAE": "CI90_percent_of_MAE",
+  "MAE_solo_righe": "MAE_lines_only",
+  "esito": "verdict",
+  "p_unilaterale_rho_gt_0": "p_one_sided_rho_gt_0"
+ },
+ "verdicts": {
+  "supportata: effetto rilevante (IC sopra 0,10)": "supported: relevant effect (CI above 0.10)",
+  "trascurabile in pratica (IC dentro +-0,10)": "practically negligible (CI inside +-0.10)",
+  "positiva ma di entita' incerta (IC sopra 0, non tutto sopra 0,10)": "positive but of uncertain size (CI above 0, not all above 0.10)",
+  "inconcludente": "inconclusive",
+  "SQALE aiuta in modo rilevante (IC sotto -2% del MAE)": "SQALE helps relevantly (CI below -2% of MAE)",
+  "equivalente: nessun aiuto rilevante (IC dentro +-2% del MAE)": "equivalent: no relevant help (CI inside +-2% of MAE)"
+ }
+}

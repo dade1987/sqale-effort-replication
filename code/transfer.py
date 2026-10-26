@@ -41,12 +41,12 @@ for tgt in D:
     a, b = [D[p] for p in D if p != tgt]
     best = min(range(100, 1501, 100), key=lambda r: np.mean(np.abs(b.y - fit(a, r).predict(X(b)))) + np.mean(np.abs(a.y - fit(b, r).predict(X(a)))))
     y, yo = te.hours.values, own.hours.values
-    pr = {"B0 mediana del progetto": np.full(len(te), np.median(yo)),
-          "B0 mediana degli altri progetti": np.full(len(te), np.median(src.hours)),
-          "trasferito (altri due progetti)": np.exp(fit(src, best).predict(X(te))),
-          "interno (stesse feature)": np.exp(fit(own, best).predict(X(te))),
-          "trasferito + mediana del progetto": np.exp(fit(src, best).predict(X(te)) - np.median(src.y) + np.median(own.y))}
-    res[tgt] = {"n_test": len(te), "alberi": best, **{k: dict(SA=sa(y, p, yo), MAE=float(np.mean(np.abs(y - p))),
+    pr = {"B0 project median": np.full(len(te), np.median(yo)),
+          "B0 median of the other projects": np.full(len(te), np.median(src.hours)),
+          "transferred (other two projects)": np.exp(fit(src, best).predict(X(te))),
+          "within project (same features)": np.exp(fit(own, best).predict(X(te))),
+          "transferred + project median": np.exp(fit(src, best).predict(X(te)) - np.median(src.y) + np.median(own.y))}
+    res[tgt] = {"n_test": len(te), "trees": best, **{k: dict(SA=sa(y, p, yo), MAE=float(np.mean(np.abs(y - p))),
                 MdAE_log=float(np.median(np.abs(np.log(y / p)))), within2x=float(np.mean(np.abs(np.log(y / p)) <= np.log(2))),
                 spearman=float(stats.spearmanr(y, p)[0]) if np.std(p) > 0 else None) for k, p in pr.items()}}
     print(tgt, best); print(pd.DataFrame({k: v for k, v in res[tgt].items() if isinstance(v, dict)}).T.round(3).to_string())

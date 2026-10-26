@@ -15,8 +15,8 @@ def count(base, api, jql):
     return json.load(urllib.request.urlopen(q, timeout=120))["count"]
 jobs = []
 for p, (base, api, j0) in SRC.items():
-    for y, t, h in itertools.product(range(2013, 2027), TYPES + ["tutti"], [True, False]):
-        jql = f'{j0} AND resolved >= "{y}-01-01" AND resolved < "{y + 1}-01-01"' + ("" if t == "tutti" else f' AND issuetype = "{t}"') + (" AND timespent > 0" if h else "")
+    for y, t, h in itertools.product(range(2013, 2027), TYPES + ["all"], [True, False]):
+        jql = f'{j0} AND resolved >= "{y}-01-01" AND resolved < "{y + 1}-01-01"' + ("" if t == "all" else f' AND issuetype = "{t}"') + (" AND timespent > 0" if h else "")
         jobs.append((p, y, t, h, base, api, jql))
 def run(j):
     for _ in range(4):
@@ -24,8 +24,8 @@ def run(j):
         except Exception as e: err = e
     return (*j[:4], None)
 with ThreadPoolExecutor(6) as ex: rows = list(ex.map(run, jobs))
-d = pd.DataFrame(rows, columns=["progetto", "anno", "tipo", "con_ore", "n"])
-d = d.pivot_table(index=["progetto", "anno", "tipo"], columns="con_ore", values="n").rename(columns={True: "con_ore", False: "tutte"}).reset_index()
-d["quota_con_ore"] = d.con_ore / d.tutte
+d = pd.DataFrame(rows, columns=["project", "year", "type", "with_hours", "n"])
+d = d.pivot_table(index=["project", "year", "type"], columns="with_hours", values="n").rename(columns={True: "with_hours", False: "all"}).reset_index()
+d["share_with_hours"] = d.with_hours / d["all"]
 d.to_csv("representativeness.csv", index=False)
-print(d[d.tipo == "tutti"].to_string())
+print(d[d.type == "all"].to_string())

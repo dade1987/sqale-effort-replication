@@ -1,0 +1,44 @@
+{
+ "project": "mariadb",
+ "parameters": {
+  "B": 5000,
+  "seed": 2026,
+  "SESOI_rho": 0.1,
+  "dMAE_margin": 0.02
+ },
+ "H1": {
+  "n": 862,
+  "partial_rho": 0.02339037782859298,
+  "CI90": [
+   -0.03752109983981926,
+   0.08393531061593573
+  ],
+  "p_one_sided_rho_gt_0": 0.25579999999999997,
+  "verdict": "practically negligible (CI inside +-0.10)"
+ },
+ "H2": {
+  "n": 851,
+  "partial_rho": -0.008436753794329186,
+  "CI90": [
+   -0.08519472055384246,
+   0.05277214085030533
+  ],
+  "p_one_sided_rho_gt_0": 0.5796,
+  "verdict": "practically negligible (CI inside +-0.10)"
+ },
+ "H3": {
+  "n_train": 880,
+  "n_test": 862,
+  "MAE_lines_only": 15.731334696788734,
+  "dMAE": -0.019393780301367906,
+  "CI90": [
+   -0.055910923392356204,
+   0.01635913313943629
+  ],
+  "CI90_percent_of_MAE": [
+   -0.35541118709888875,
+   0.10399075129191492
+  ],
+  "verdict": "equivalent: no relevant help (CI inside +-2% of MAE)"
+ }
+}

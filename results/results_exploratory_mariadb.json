@@ -18,7 +18,7 @@
    "within2x": 0.40768463073852296,
    "spearman": 0.42833589213915413
   },
-  "M0+E2 storia componente": {
+  "M0+E2 component history": {
    "n": 2004,
    "MAE": 18.80607611191329,
    "MdAE": 3.9273691942237727,
@@ -36,7 +36,7 @@
    "within2x": 0.40768463073852296,
    "spearman": 0.41651479082150233
   },
-  "M0+E6 issue simili": {
+  "M0+E6 similar issues": {
    "n": 2004,
    "MAE": 18.60337385507242,
    "MdAE": 4.0348290423464865,
@@ -72,7 +72,7 @@
    "within2x": 0.4431137724550898,
    "spearman": 0.5698295931380148
   },
-  "M1+E2 storia file e componente": {
+  "M1+E2 file and component history": {
    "n": 2004,
    "MAE": 16.952365356451473,
    "MdAE": 3.689357421852494,
@@ -90,7 +90,7 @@
    "within2x": 0.4241516966067864,
    "spearman": 0.5676347657825859
   },
-  "M1+E6 issue simili": {
+  "M1+E6 similar issues": {
    "n": 2004,
    "MAE": 16.966133979859233,
    "MdAE": 3.5580527390522274,
@@ -117,7 +117,7 @@
    "within2x": 0.4481037924151697,
    "spearman": 0.5736530921890964
   },
-  "M0 + E4 media con ATLM (w=0.7)": {
+  "M0 + E4 blend with ATLM (w=0.7)": {
    "n": 2004,
    "MAE": 18.752356446271193,
    "MdAE": 3.87174752208268,
@@ -126,7 +126,7 @@
    "within2x": 0.4101796407185629,
    "spearman": 0.4167832539324738
   },
-  "M1 + E4 media con ATLM (w=0.7)": {
+  "M1 + E4 blend with ATLM (w=0.7)": {
    "n": 2004,
    "MAE": 16.929441882355633,
    "MdAE": 3.524081945534958,
@@ -135,7 +135,7 @@
    "within2x": 0.4306387225548902,
    "spearman": 0.5751832340158789
   },
-  "M1+E1+E2+E3 + E4 media con ATLM (w=0.6)": {
+  "M1+E1+E2+E3 + E4 blend with ATLM (w=0.6)": {
    "n": 2004,
    "MAE": 16.54696137339321,
    "MdAE": 3.6884902963771067,
@@ -164,7 +164,7 @@
    "within2x": 0.4013550135501355,
    "spearman": 0.4960130700056135
   },
-  "M0+E2 storia componente": {
+  "M0+E2 component history": {
    "n": 3690,
    "MAE": 15.075860650491606,
    "MdAE": 4.19827764933534,
@@ -182,7 +182,7 @@
    "within2x": 0.3981029810298103,
    "spearman": 0.4958216738257205
   },
-  "M0+E6 issue simili": {
+  "M0+E6 similar issues": {
    "n": 3690,
    "MAE": 15.046454784198872,
    "MdAE": 3.978906982503788,
@@ -218,7 +218,7 @@
    "within2x": 0.44959349593495934,
    "spearman": 0.6169581221370547
   },
-  "M1+E2 storia file e componente": {
+  "M1+E2 file and component history": {
    "n": 3690,
    "MAE": 13.537814067091706,
    "MdAE": 3.8676460123330516,
@@ -236,7 +236,7 @@
    "within2x": 0.44471544715447153,
    "spearman": 0.6059489576684479
   },
-  "M1+E6 issue simili": {
+  "M1+E6 similar issues": {
    "n": 3690,
    "MAE": 13.436856188257817,
    "MdAE": 3.717104605790858,
@@ -263,7 +263,7 @@
    "within2x": 0.45636856368563683,
    "spearman": 0.6207159794253441
   },
-  "M0 + E4 media con ATLM (w=0.7)": {
+  "M0 + E4 blend with ATLM (w=0.7)": {
    "n": 3690,
    "MAE": 15.022554539937873,
    "MdAE": 4.1125578418754705,
@@ -272,7 +272,7 @@
    "within2x": 0.3951219512195122,
    "spearman": 0.47728596959591196
   },
-  "M1 + E4 media con ATLM (w=0.7)": {
+  "M1 + E4 blend with ATLM (w=0.7)": {
    "n": 3690,
    "MAE": 13.26967541909473,
    "MdAE": 3.738392253451368,
@@ -281,7 +281,7 @@
    "within2x": 0.45528455284552843,
    "spearman": 0.6179469672451052
   },
-  "M1+E1+E2+E3 + E4 media con ATLM (w=0.6)": {
+  "M1+E1+E2+E3 + E4 blend with ATLM (w=0.6)": {
    "n": 3690,
    "MAE": 13.126549772050021,
    "MdAE": 3.8593344341901554,
@@ -290,7 +290,7 @@
    "within2x": 0.45338753387533876,
    "spearman": 0.6306666535458428
   },
-  "E6 solo issue simili": {
+  "E6 similar issues only": {
    "n": 3690,
    "MAE": 15.634740715475475,
    "MdAE": 4.064321107613559,
@@ -300,18 +300,18 @@
    "spearman": 0.2537117005708903
   }
  },
- "scelta_in_validazione": {
+ "chosen_on_validation": {
   "M0": "M0+E1+E2",
   "M1": "M1+E1+E2+E3"
  },
- "confronti_test": {
+ "test_comparisons": {
   "M0+E1+E2 vs M0": {
    "dMAE": -0.21039656213034788,
    "lo": -0.4149176688849118,
    "hi": -0.054356409408039714,
    "p_boot": 0.005399999999999999,
    "p_wilcoxon": 0.0007248352566099694,
-   "A12_appaiato": 0.5238482384823848,
+   "A12_paired": 0.5238482384823848,
    "p_holm": 0.010799999999999999
   },
   "M1+E1+E2+E3 vs M1": {
@@ -320,13 +320,13 @@
    "hi": 0.17047486895843988,
    "p_boot": 0.37939999999999996,
    "p_wilcoxon": 0.15172090190688448,
-   "A12_appaiato": 0.5170731707317073,
+   "A12_paired": 0.5170731707317073,
    "p_holm": 0.37939999999999996
   }
  },
- "sqale_sottoinsieme": {
+ "sqale_subset": {
   "n": 828,
-  "SQALE ricalibrato": {
+  "SQALE recalibrated": {
    "n": 828,
    "MAE": 17.00500379406404,
    "MdAE": 3.8652484539372782,
@@ -349,7 +349,7 @@
     "hi": 0.015173642578939418,
     "p_boot": 0.0542,
     "p_wilcoxon": 0.002259307218739682,
-    "A12_appaiato": 0.5434782608695652
+    "A12_paired": 0.5434782608695652
    }
   },
   "M1": {
@@ -366,7 +366,7 @@
     "hi": -0.6902679433345605,
     "p_boot": 0.005399999999999999,
     "p_wilcoxon": 1.7725730332800723e-07,
-    "A12_appaiato": 0.6014492753623188
+    "A12_paired": 0.6014492753623188
    }
   },
   "M0+E1+E2": {
@@ -383,7 +383,7 @@
     "hi": -0.02620181602686872,
     "p_boot": 0.0418,
     "p_wilcoxon": 0.0017199866903480066,
-    "A12_appaiato": 0.5458937198067633
+    "A12_paired": 0.5458937198067633
    }
   },
   "M1+E1+E2+E3": {
@@ -400,66 +400,66 @@
     "hi": -0.6200583495667489,
     "p_boot": 0.0066,
     "p_wilcoxon": 5.26673838451585e-07,
-    "A12_appaiato": 0.5881642512077294
+    "A12_paired": 0.5881642512077294
    }
   }
  },
- "classi": {
-  "classe piu' frequente": {
-   "accuratezza": 0.43929539295392955,
+ "classes": {
+  "most frequent class": {
+   "accuracy": 0.43929539295392955,
    "F1_macro": 0.2034770601895437,
-   "kappa_pesata": 0.0,
-   "errore_di_due_classi": 0.23929539295392954
+   "weighted_kappa": 0.0,
+   "two_class_error": 0.23929539295392954
   },
   "M0": {
-   "accuratezza": 0.4913279132791328,
+   "accuracy": 0.4913279132791328,
    "F1_macro": 0.4500183453606601,
-   "kappa_pesata": 0.3666263857510639,
-   "errore_di_due_classi": 0.048238482384823846
+   "weighted_kappa": 0.3666263857510639,
+   "two_class_error": 0.048238482384823846
   },
   "M1": {
-   "accuratezza": 0.567479674796748,
+   "accuracy": 0.567479674796748,
    "F1_macro": 0.5569631236444123,
-   "kappa_pesata": 0.5258211505600912,
-   "errore_di_due_classi": 0.036314363143631435
+   "weighted_kappa": 0.5258211505600912,
+   "two_class_error": 0.036314363143631435
   },
   "M0+E1+E2": {
-   "accuratezza": 0.4924119241192412,
+   "accuracy": 0.4924119241192412,
    "F1_macro": 0.4636722177682035,
-   "kappa_pesata": 0.3966633853168229,
-   "errore_di_due_classi": 0.041192411924119245
+   "weighted_kappa": 0.3966633853168229,
+   "two_class_error": 0.041192411924119245
   },
   "M1+E1+E2+E3": {
-   "accuratezza": 0.562059620596206,
+   "accuracy": 0.562059620596206,
    "F1_macro": 0.5551431378168273,
-   "kappa_pesata": 0.5302517850432169,
-   "errore_di_due_classi": 0.034688346883468835
+   "weighted_kappa": 0.5302517850432169,
+   "two_class_error": 0.034688346883468835
   },
-  "SQALE ricalibrato (sottoinsieme)": {
+  "SQALE recalibrated (subset)": {
    "n": 828,
-   "accuratezza": 0.40458937198067635,
+   "accuracy": 0.40458937198067635,
    "F1_macro": 0.31268369825886566,
-   "kappa_pesata": 0.20549158547387048
+   "weighted_kappa": 0.20549158547387048
   },
-  "classe piu' frequente (stesso sottoinsieme)": {
-   "accuratezza": 0.43478260869565216,
+  "most frequent class (same subset)": {
+   "accuracy": 0.43478260869565216,
    "F1_macro": 0.20202020202020202,
-   "kappa_pesata": 0.0
+   "weighted_kappa": 0.0
   },
-  "M0 (stesso sottoinsieme)": {
-   "accuratezza": 0.48792270531400966,
+  "M0 (same subset)": {
+   "accuracy": 0.48792270531400966,
    "F1_macro": 0.4540781485377205,
-   "kappa_pesata": 0.39491951710261564
+   "weighted_kappa": 0.39491951710261564
   },
-  "M1 (stesso sottoinsieme)": {
-   "accuratezza": 0.5483091787439613,
+  "M1 (same subset)": {
+   "accuracy": 0.5483091787439613,
    "F1_macro": 0.5448012020339693,
-   "kappa_pesata": 0.5281123491923525
+   "weighted_kappa": 0.5281123491923525
   },
-  "quote_reali": "[0.43929539 0.32140921 0.23929539]"
+  "actual_shares": "[0.43929539 0.32140921 0.23929539]"
  },
- "pulizia R1 (assegnatario >= 50% delle ore)": {
-  "quota_test_tenuta": 0.5471544715447154,
+ "cleaning R1 (assignee >= 50% of hours)": {
+  "share_test_kept": 0.5471544715447154,
   "M1": {
    "n": 2019,
    "MAE": 12.975089865251707,

@@ -26,6 +26,6 @@ def one(p):
     return dict(p, ncloc=meas.get("ncloc"), sqale_index=meas.get("sqale_index"), langs=langs, profiles=prof, settings=sets,
                 qg=qg.get("qualityGate"), errs=[x.get("_err") for x in (m, qp, st, qg) if "_err" in x])
 with ThreadPoolExecutor(6) as ex: res = list(ex.map(one, S))
-with open("campione.jsonl", "w") as f:
+with open("sample.jsonl", "w") as f:
     for r in res: f.write(json.dumps(r) + "\n")
 print("ok", len(res))

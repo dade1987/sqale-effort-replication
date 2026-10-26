@@ -18,7 +18,7 @@
    "within2x": 0.4180327868852459,
    "spearman": 0.4353064764923275
   },
-  "M0+E2 storia componente": {
+  "M0+E2 component history": {
    "n": 976,
    "MAE": 15.193481162964348,
    "MdAE": 4.370643365772163,
@@ -36,7 +36,7 @@
    "within2x": 0.4364754098360656,
    "spearman": 0.4295972601511402
   },
-  "M0+E6 issue simili": {
+  "M0+E6 similar issues": {
    "n": 976,
    "MAE": 15.196336518215032,
    "MdAE": 4.462529541531593,
@@ -72,7 +72,7 @@
    "within2x": 0.47848360655737704,
    "spearman": 0.5657579450660388
   },
-  "M1+E2 storia file e componente": {
+  "M1+E2 file and component history": {
    "n": 976,
    "MAE": 13.582487183201664,
    "MdAE": 4.048841184334321,
@@ -90,7 +90,7 @@
    "within2x": 0.4805327868852459,
    "spearman": 0.5404595591685968
   },
-  "M1+E6 issue simili": {
+  "M1+E6 similar issues": {
    "n": 976,
    "MAE": 13.286379070993448,
    "MdAE": 4.230211655392964,
@@ -117,7 +117,7 @@
    "within2x": 0.48565573770491804,
    "spearman": 0.5707059119085789
   },
-  "M0 + E4 media con ATLM (w=0.7)": {
+  "M0 + E4 blend with ATLM (w=0.7)": {
    "n": 976,
    "MAE": 15.328484708840293,
    "MdAE": 4.313317407672864,
@@ -126,7 +126,7 @@
    "within2x": 0.41598360655737704,
    "spearman": 0.38075242315790786
   },
-  "M1 + E4 media con ATLM (w=0.9)": {
+  "M1 + E4 blend with ATLM (w=0.9)": {
    "n": 976,
    "MAE": 13.331741331403851,
    "MdAE": 4.101316343127351,
@@ -135,7 +135,7 @@
    "within2x": 0.48668032786885246,
    "spearman": 0.5313748168940279
   },
-  "M1+E1+E2+E3 + E4 media con ATLM (w=0.8)": {
+  "M1+E1+E2+E3 + E4 blend with ATLM (w=0.8)": {
    "n": 976,
    "MAE": 13.215529066643954,
    "MdAE": 3.987231958422637,
@@ -164,7 +164,7 @@
    "within2x": 0.4051724137931034,
    "spearman": 0.46582634092992165
   },
-  "M0+E2 storia componente": {
+  "M0+E2 component history": {
    "n": 812,
    "MAE": 21.604517732698213,
    "MdAE": 5.350921198235676,
@@ -182,7 +182,7 @@
    "within2x": 0.39901477832512317,
    "spearman": 0.45927608050775187
   },
-  "M0+E6 issue simili": {
+  "M0+E6 similar issues": {
    "n": 812,
    "MAE": 21.31944389995353,
    "MdAE": 5.122649108148315,
@@ -218,7 +218,7 @@
    "within2x": 0.43226600985221675,
    "spearman": 0.5688630521377442
   },
-  "M1+E2 storia file e componente": {
+  "M1+E2 file and component history": {
    "n": 812,
    "MAE": 19.702732934997382,
    "MdAE": 4.642219953553315,
@@ -236,7 +236,7 @@
    "within2x": 0.4458128078817734,
    "spearman": 0.546838350339304
   },
-  "M1+E6 issue simili": {
+  "M1+E6 similar issues": {
    "n": 812,
    "MAE": 19.618521802699583,
    "MdAE": 4.590425392584992,
@@ -263,7 +263,7 @@
    "within2x": 0.43472906403940886,
    "spearman": 0.5644719839608062
   },
-  "M0 + E4 media con ATLM (w=0.7)": {
+  "M0 + E4 blend with ATLM (w=0.7)": {
    "n": 812,
    "MAE": 21.569020514647463,
    "MdAE": 5.11690876697485,
@@ -272,7 +272,7 @@
    "within2x": 0.37807881773399016,
    "spearman": 0.4270677559539992
   },
-  "M1 + E4 media con ATLM (w=0.9)": {
+  "M1 + E4 blend with ATLM (w=0.9)": {
    "n": 812,
    "MAE": 19.405160580797606,
    "MdAE": 4.391938728419425,
@@ -281,7 +281,7 @@
    "within2x": 0.4433497536945813,
    "spearman": 0.5535852796618904
   },
-  "M1+E1+E2+E3 + E4 media con ATLM (w=0.8)": {
+  "M1+E1+E2+E3 + E4 blend with ATLM (w=0.8)": {
    "n": 812,
    "MAE": 19.299142858188578,
    "MdAE": 4.4843707032688,
@@ -290,7 +290,7 @@
    "within2x": 0.4248768472906404,
    "spearman": 0.5749893873506519
   },
-  "E6 solo issue simili": {
+  "E6 similar issues only": {
    "n": 812,
    "MAE": 22.028858802729534,
    "MdAE": 4.984742899385974,
@@ -300,18 +300,18 @@
    "spearman": 0.33833100040803354
   }
  },
- "scelta_in_validazione": {
+ "chosen_on_validation": {
   "M0": "M0+E1+E2",
   "M1": "M1+E1+E2+E3"
  },
- "confronti_test": {
+ "test_comparisons": {
   "M0+E1+E2 vs M0": {
    "dMAE": -0.4138318644340041,
    "lo": -1.0405336057124244,
    "hi": 0.19626887455755654,
    "p_boot": 0.20700000000000002,
    "p_wilcoxon": 0.019520134597138267,
-   "A12_appaiato": 0.5480295566502463,
+   "A12_paired": 0.5480295566502463,
    "p_holm": 0.41400000000000003
   },
   "M1+E1+E2+E3 vs M1": {
@@ -320,13 +320,13 @@
    "hi": 0.5220200493363802,
    "p_boot": 0.7746,
    "p_wilcoxon": 0.3635290472225534,
-   "A12_appaiato": 0.5295566502463054,
+   "A12_paired": 0.5295566502463054,
    "p_holm": 0.7746
   }
  },
- "sqale_sottoinsieme": {
+ "sqale_subset": {
   "n": 447,
-  "SQALE ricalibrato": {
+  "SQALE recalibrated": {
    "n": 447,
    "MAE": 33.14467760626159,
    "MdAE": 6.080256009823996,
@@ -349,7 +349,7 @@
     "hi": 0.16996005652049692,
     "p_boot": 0.11180000000000001,
     "p_wilcoxon": 0.9204239914820437,
-    "A12_appaiato": 0.49217002237136465
+    "A12_paired": 0.49217002237136465
    }
   },
   "M1": {
@@ -366,7 +366,7 @@
     "hi": -1.8583433853058615,
     "p_boot": 0.0002,
     "p_wilcoxon": 2.553064667597038e-05,
-    "A12_appaiato": 0.5727069351230425
+    "A12_paired": 0.5727069351230425
    }
   },
   "M0+E1+E2": {
@@ -383,7 +383,7 @@
     "hi": -0.10010019509994277,
     "p_boot": 0.0378,
     "p_wilcoxon": 0.10769495697354162,
-    "A12_appaiato": 0.5167785234899329
+    "A12_paired": 0.5167785234899329
    }
   },
   "M1+E1+E2+E3": {
@@ -400,66 +400,66 @@
     "hi": -1.633436504412898,
     "p_boot": 0.001,
     "p_wilcoxon": 5.422739089165901e-07,
-    "A12_appaiato": 0.6174496644295302
+    "A12_paired": 0.6174496644295302
    }
   }
  },
- "classi": {
-  "classe piu' frequente": {
-   "accuratezza": 0.4051724137931034,
+ "classes": {
+  "most frequent class": {
+   "accuracy": 0.4051724137931034,
    "F1_macro": 0.19222903885480572,
-   "kappa_pesata": 0.0,
-   "errore_di_due_classi": 0.291871921182266
+   "weighted_kappa": 0.0,
+   "two_class_error": 0.291871921182266
   },
   "M0": {
-   "accuratezza": 0.4273399014778325,
+   "accuracy": 0.4273399014778325,
    "F1_macro": 0.40123077883649655,
-   "kappa_pesata": 0.3178402869548801,
-   "errore_di_due_classi": 0.02832512315270936
+   "weighted_kappa": 0.3178402869548801,
+   "two_class_error": 0.02832512315270936
   },
   "M1": {
-   "accuratezza": 0.4938423645320197,
+   "accuracy": 0.4938423645320197,
    "F1_macro": 0.4960379269824547,
-   "kappa_pesata": 0.4331410417189199,
-   "errore_di_due_classi": 0.03694581280788178
+   "weighted_kappa": 0.4331410417189199,
+   "two_class_error": 0.03694581280788178
   },
   "M0+E1+E2": {
-   "accuratezza": 0.458128078817734,
+   "accuracy": 0.458128078817734,
    "F1_macro": 0.4464572196208283,
-   "kappa_pesata": 0.35376428384767067,
-   "errore_di_due_classi": 0.03940886699507389
+   "weighted_kappa": 0.35376428384767067,
+   "two_class_error": 0.03940886699507389
   },
   "M1+E1+E2+E3": {
-   "accuratezza": 0.5012315270935961,
+   "accuracy": 0.5012315270935961,
    "F1_macro": 0.507662391631058,
-   "kappa_pesata": 0.45881513987931977,
-   "errore_di_due_classi": 0.0332512315270936
+   "weighted_kappa": 0.45881513987931977,
+   "two_class_error": 0.0332512315270936
   },
-  "SQALE ricalibrato (sottoinsieme)": {
+  "SQALE recalibrated (subset)": {
    "n": 447,
-   "accuratezza": 0.30648769574944074,
+   "accuracy": 0.30648769574944074,
    "F1_macro": 0.22240969290658733,
-   "kappa_pesata": 0.09997955555004856
+   "weighted_kappa": 0.09997955555004856
   },
-  "classe piu' frequente (stesso sottoinsieme)": {
-   "accuratezza": 0.31096196868008946,
+  "most frequent class (same subset)": {
+   "accuracy": 0.31096196868008946,
    "F1_macro": 0.15813424345847554,
-   "kappa_pesata": 0.0
+   "weighted_kappa": 0.0
   },
-  "M0 (stesso sottoinsieme)": {
-   "accuratezza": 0.3713646532438479,
+  "M0 (same subset)": {
+   "accuracy": 0.3713646532438479,
    "F1_macro": 0.3434925712678277,
-   "kappa_pesata": 0.2502467411294541
+   "weighted_kappa": 0.2502467411294541
   },
-  "M1 (stesso sottoinsieme)": {
-   "accuratezza": 0.4697986577181208,
+  "M1 (same subset)": {
+   "accuracy": 0.4697986577181208,
    "F1_macro": 0.4516571828516436,
-   "kappa_pesata": 0.3753659834974713
+   "weighted_kappa": 0.3753659834974713
   },
-  "quote_reali": "[0.40517241 0.30295567 0.29187192]"
+  "actual_shares": "[0.40517241 0.30295567 0.29187192]"
  },
- "pulizia R1 (assegnatario >= 50% delle ore)": {
-  "quota_test_tenuta": 0.6145320197044335,
+ "cleaning R1 (assignee >= 50% of hours)": {
+  "share_test_kept": 0.6145320197044335,
   "M1": {
    "n": 499,
    "MAE": 16.95120990246178,

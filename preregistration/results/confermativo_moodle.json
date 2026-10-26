@@ -1,0 +1,44 @@
+{
+ "progetto": "moodle",
+ "parametri": {
+  "B": 5000,
+  "seme": 2026,
+  "SESOI_rho": 0.1,
+  "margine_dMAE": 0.02
+ },
+ "H1": {
+  "n": 851,
+  "rho_parziale": -0.024420519170156217,
+  "IC90": [
+   -0.09462900784170851,
+   0.02630119068461795
+  ],
+  "p_unilaterale_rho_gt_0": 0.7944,
+  "esito": "trascurabile in pratica (IC dentro +-0,10)"
+ },
+ "H2": {
+  "n": 822,
+  "rho_parziale": -0.003998893044062969,
+  "IC90": [
+   -0.06567924409956441,
+   0.06273230731066064
+  ],
+  "p_unilaterale_rho_gt_0": 0.5548,
+  "esito": "trascurabile in pratica (IC dentro +-0,10)"
+ },
+ "H3": {
+  "n_train": 875,
+  "n_test": 851,
+  "MAE_solo_righe": 8.347844528514345,
+  "dMAE": 0.0008964636236900731,
+  "IC90": [
+   -0.0013485569515998038,
+   0.0030304894036309133
+  ],
+  "IC90_percento_MAE": [
+   -0.016154552794957297,
+   0.03630265744982969
+  ],
+  "esito": "equivalente: nessun aiuto rilevante (IC dentro +-2% del MAE)"
+ }
+}

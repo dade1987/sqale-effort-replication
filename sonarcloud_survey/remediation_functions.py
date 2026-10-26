@@ -1,6 +1,6 @@
 import json, urllib.request, urllib.parse, time
 from concurrent.futures import ThreadPoolExecutor
-R=[json.loads(l) for l in open("campione.jsonl")]
+R=[json.loads(l) for l in open("sample.jsonl")]
 ok=[r for r in R if r["langs"] and r["profiles"]]
 def get(q):
     for t in range(4):

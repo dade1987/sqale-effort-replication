@@ -1,0 +1,59 @@
+{
+ "n_sample": 200,
+ "n_cmake_or_scan_error": 0,
+ "n_with_measures": 187,
+ "n_all_files_measured": 170,
+ "median_stmt_parsed_pct": 100.0,
+ "all_issues_with_measures": {
+  "n": 187,
+  "spearman_official_vs_sonarcxx": 0.418,
+  "median_sqale_h_official": 12.0,
+  "median_sqale_h_sonarcxx": 25.75,
+  "median_ratio_official_over_sonarcxx": 0.232,
+  "ratio_p10_p90": [
+   0.02,
+   4.555
+  ],
+  "median_hours_logged": 6.5,
+  "spearman_official_vs_ncloc": 0.571,
+  "spearman_sonarcxx_vs_ncloc": 0.89,
+  "mae_raw_h_official": 50.42,
+  "mae_raw_h_sonarcxx": 90.74,
+  "partial_rho_official": 0.046,
+  "partial_rho_official_ci90": [
+   -0.067,
+   0.188
+  ],
+  "partial_rho_sonarcxx_same_issues": 0.037,
+  "partial_rho_sonarcxx_ci90": [
+   -0.125,
+   0.196
+  ]
+ },
+ "issues_all_files_measured": {
+  "n": 170,
+  "spearman_official_vs_sonarcxx": 0.446,
+  "median_sqale_h_official": 11.62,
+  "median_sqale_h_sonarcxx": 21.47,
+  "median_ratio_official_over_sonarcxx": 0.257,
+  "ratio_p10_p90": [
+   0.027,
+   4.775
+  ],
+  "median_hours_logged": 6.25,
+  "spearman_official_vs_ncloc": 0.604,
+  "spearman_sonarcxx_vs_ncloc": 0.881,
+  "mae_raw_h_official": 41.85,
+  "mae_raw_h_sonarcxx": 74.36,
+  "partial_rho_official": 0.016,
+  "partial_rho_official_ci90": [
+   -0.108,
+   0.145
+  ],
+  "partial_rho_sonarcxx_same_issues": -0.01,
+  "partial_rho_sonarcxx_ci90": [
+   -0.175,
+   0.142
+  ]
+ }
+}

@@ -20,12 +20,12 @@ for p, (f, st) in P.items():
         if ch: first_est[j["key"]] = min(c[0] for c in ch)[:10]
     fe = pd.Series(first_est)
     before = [fe[k] <= T[k] for k in fe.index if k in T]
-    out[p] = {"issue_con_assegnatario_e_worklog": int(len(a)),
-              "quota_ore_assegnatario_pesata": float(a.hours_assignee.sum() / a.hours_wl_total.sum()),
-              "quota_issue_ore_solo_assegnatario": float((a.hours_assignee == a.hours_wl_total).mean()),
-              "quota_issue_zero_ore_assegnatario": float((a.hours_assignee == 0).mean()),
-              "mediana_autori_worklog": float(a.n_wl_authors.median()),
-              "issue_con_prima_stima_nella_storia": int(len(before)),
-              "quota_prima_stima_entro_T": float(np.mean(before)) if before else None}
+    out[p] = {"issues_with_assignee_and_worklog": int(len(a)),
+              "assignee_share_of_hours_weighted": float(a.hours_assignee.sum() / a.hours_wl_total.sum()),
+              "share_issues_assignee_hours_only": float((a.hours_assignee == a.hours_wl_total).mean()),
+              "share_issues_zero_assignee_hours": float((a.hours_assignee == 0).mean()),
+              "median_worklog_authors": float(a.n_wl_authors.median()),
+              "issues_with_first_estimate_in_history": int(len(before)),
+              "share_first_estimate_by_T": float(np.mean(before)) if before else None}
 json.dump(out, open("hours_shares.json", "w"), indent=1)
 print(json.dumps(out, indent=1))

@@ -1,8 +1,8 @@
-row,project,issue,title,hours,n_commits,commit_subjects,commit_links,n_files,files_first_10,rater_chatgpt,rater_chatgpt_note,rater_claude
+row,project,issue,title,hours,n_commits,commit_subjects,commit_links,n_files,files_first_10,rater_chatgpt,rater_chatgpt_note_original_it,rater_chatgpt_note_en,rater_claude
 1,PBM,PBM-698,Release notes 1.6.0,4.58,1,PBM-698 Release notes for 1.6.0 (#575),https://github.com/percona/percona-backup-mongodb/commit/961d9bab4e240347a4b8575ac863bfe7b39dda30,3,"percona-backup-mongodb/doc/source/conf.py
 percona-backup-mongodb/doc/source/release-notes.rst
-percona-backup-mongodb/doc/source/release-notes/1.6.0.rst",correct,,correct
-2,PMM,PMM-5656,"InnoDB Checkpoint Age graph not showing ""max checkpoint age"" metric from PXC 8.0",4.83,1,PMM-5656 InnoDB Checkpoint Age graph not showing max checkpoint age metric from PXC 8.0 (#1223),https://github.com/percona/grafana-dashboards/commit/f3f59d748122e66950e87349e88f0b0aeb6466ad,1,grafana-dashboards/dashboards/MySQL_InnoDB_Details.json,correct,,correct
+percona-backup-mongodb/doc/source/release-notes/1.6.0.rst",correct,,,correct
+2,PMM,PMM-5656,"InnoDB Checkpoint Age graph not showing ""max checkpoint age"" metric from PXC 8.0",4.83,1,PMM-5656 InnoDB Checkpoint Age graph not showing max checkpoint age metric from PXC 8.0 (#1223),https://github.com/percona/grafana-dashboards/commit/f3f59d748122e66950e87349e88f0b0aeb6466ad,1,grafana-dashboards/dashboards/MySQL_InnoDB_Details.json,correct,,,correct
 3,PS,PS-5067,Port immediate data scrubbing to 8.0,0.17,1,PS-5067: Immediate data scrubbing in 8.0,https://github.com/percona/percona-server/commit/586a72ee4842d36e47580d0606b694ed7884e5a4,13,"percona-server/mysql-test/include/search_pattern_in_file.inc
 percona-server/mysql-test/suite/innodb/r/innodb_scrub.result
 percona-server/mysql-test/suite/innodb/t/innodb_scrub-master.opt
@@ -12,8 +12,8 @@ percona-server/storage/innobase/btr/btr0btr.cc
 percona-server/storage/innobase/btr/btr0scrub.cc
 percona-server/storage/innobase/buf/buf0dblwr.cc
 percona-server/storage/innobase/handler/ha_innodb.cc
-percona-server/storage/innobase/include/btr0scrub.h",correct,,correct
-4,PS,PS-5202,Improve formatting on Data at Rest Encryption docs,125.7,1,PS-5202 Improve text and formatting for Data-At-Rest-Encryption,https://github.com/percona/percona-server/commit/c201f0a5a3dadf626ab763d23fea79312ce2be88,1,percona-server/doc/source/management/data_at_rest_encryption.rst,correct,,correct
+percona-server/storage/innobase/include/btr0scrub.h",correct,,,correct
+4,PS,PS-5202,Improve formatting on Data at Rest Encryption docs,125.7,1,PS-5202 Improve text and formatting for Data-At-Rest-Encryption,https://github.com/percona/percona-server/commit/c201f0a5a3dadf626ab763d23fea79312ce2be88,1,percona-server/doc/source/management/data_at_rest_encryption.rst,correct,,,correct
 5,PT,PT-1853,Added --no-check-foreign-keys to pt-osc,5.5,3,"PT-1853 Disabled FK checks in MySQL
 PT-1853 Changed wording
 PT-1853 Added disable fk checks in MySQL","https://github.com/percona/percona-toolkit/commit/2e62d07ba0f0672c21be02479e287620407e279b
@@ -21,56 +21,56 @@ https://github.com/percona/percona-toolkit/commit/8ff3451362321c19c9d0e4d57b14ef
 https://github.com/percona/percona-toolkit/commit/9f2b72e0dfca8f28ce37ac9319ce1b69a8b19234",4,"percona-toolkit/bin/pt-online-schema-change
 percona-toolkit/t/pt-online-schema-change/pt-1853.t
 percona-toolkit/t/pt-online-schema-change/rename_self_ref_fk_constraints.t
-percona-toolkit/t/pt-online-schema-change/rename_self_ref_fk_constraints_pt_1802.t",correct,,correct
-6,PBM,PBM-522,PITR: log a chunk slicing event by the agent,2.0,1,PBM-522 feature: log in the agent when a PITR chunk is created,https://github.com/percona/percona-backup-mongodb/commit/1b0ada32b207d974983e18fe855f1394ba30583f,1,percona-backup-mongodb/pbm/pitr/pitr.go,correct,,correct
+percona-toolkit/t/pt-online-schema-change/rename_self_ref_fk_constraints_pt_1802.t",correct,,,correct
+6,PBM,PBM-522,PITR: log a chunk slicing event by the agent,2.0,1,PBM-522 feature: log in the agent when a PITR chunk is created,https://github.com/percona/percona-backup-mongodb/commit/1b0ada32b207d974983e18fe855f1394ba30583f,1,percona-backup-mongodb/pbm/pitr/pitr.go,correct,,,correct
 7,PMM,PMM-3313,Add PostgreSQL to PMM Server,8.0,2,"PMM-3313 Add PostgreSQL to PMM Server (#97)
 PMM-3313 Add PostgreSQL to PMM Server (#97)","https://github.com/percona/pmm-server/commit/bfaf459b17f2552dd99d76b9904a3a060794cc8a
-https://github.com/percona/pmm-server/commit/e7ae944081db6c2564d62868482381fd0328a780",1,pmm-server/supervisord.conf,correct,Due commit associati allo stesso intervento PostgreSQL nel server PMM.,correct
-8,PS,PS-7742,Enabling binary log encryption breaks basic replication setup on Percona Server for MySQL,55.12,1,PS-7742: Enabling binlog encryption breaks basic replication setup on PS,https://github.com/percona/percona-server/commit/386648484a60d2a7f30c64a9382b5c727e01d858,1,percona-server/mysys/mf_iocache.cc,correct,,correct
+https://github.com/percona/pmm-server/commit/e7ae944081db6c2564d62868482381fd0328a780",1,pmm-server/supervisord.conf,correct,Due commit associati allo stesso intervento PostgreSQL nel server PMM.,Two commits belonging to the same PostgreSQL change in the PMM server.,correct
+8,PS,PS-7742,Enabling binary log encryption breaks basic replication setup on Percona Server for MySQL,55.12,1,PS-7742: Enabling binlog encryption breaks basic replication setup on PS,https://github.com/percona/percona-server/commit/386648484a60d2a7f30c64a9382b5c727e01d858,1,percona-server/mysys/mf_iocache.cc,correct,,,correct
 9,PS,PS-8198,Fix the Reliability Improvements section after disabling psdom extension (5.7),0.67,2,"PS-8198 Fix the Reliability Improvements section after disabling psdom extension (5.7) (#4779)
 PS-8198 Fix the Reliability Improvements section after disabling psdom extension (5.7) (#4754)","https://github.com/percona/percona-server/commit/2bf1f8f47d7f9191a7cda7b62c4b0b705fce4f5c
 https://github.com/percona/percona-server/commit/2fecb0320453c2f931cdf46420123ae56c1db08b",2,"percona-server/doc/source/reliability/innodb_corrupt_table_action.rst
-percona-server/doc/source/reliability/log_connection_error.rst",correct,,correct
+percona-server/doc/source/reliability/log_connection_error.rst",correct,,,correct
 10,PS,PS-6733,Added binary search to the Data masking plugin.,3.25,2,"PS-6733: Use binary search in data masking dictionaries
 PS-6733: Use binary search in data masking dictionaries","https://github.com/percona/percona-server/commit/579356a6a5fe37eb0b101e9b786a286cd6c3c186
 https://github.com/percona/percona-server/commit/db14563df3b3df94e8205f8cbbd0534426b09abe",2,"percona-server/plugin/data_masking/src/udf/udf_gen_blacklist.cc
-percona-server/plugin/data_masking/src/udf/udf_gen_dictionary_load.cc",correct,,correct
+percona-server/plugin/data_masking/src/udf/udf_gen_dictionary_load.cc",correct,,,correct
 11,PSMDB,PSMDB-718,Audit log messages include datatype output,4.5,2,"PSMDB-718 use strict json format in audit logs
 PSMDB-718 use strict json format in audit logs","https://github.com/percona/percona-server-mongodb/commit/be0c6f7081562f2246f7f02ed8beb501f9acd209
-https://github.com/percona/percona-server-mongodb/commit/f3df54cc6237bea4aa2445bdad67f35340bffc41",1,percona-server-mongodb/src/mongo/db/audit/audit.cpp,correct,,correct
+https://github.com/percona/percona-server-mongodb/commit/f3df54cc6237bea4aa2445bdad67f35340bffc41",1,percona-server-mongodb/src/mongo/db/audit/audit.cpp,correct,,,correct
 12,PXC,PXC-3848,Cluster node crashes when using ALTER USER CURRENT_USER() ...,13.47,1,PXC-3848: Cluster node crashes when using ALTER USER CURRENT_USER(),https://github.com/percona/percona-xtradb-cluster/commit/5ddd31434c3bd0e635066debb058189b67245627,6,"percona-xtradb-cluster/mysql-test/suite/galera/r/MW-416.result
 percona-xtradb-cluster/mysql-test/suite/galera/t/MW-416-master.opt
 percona-xtradb-cluster/mysql-test/suite/galera/t/MW-416.test
 percona-xtradb-cluster/sql/sql_parse.cc
 percona-xtradb-cluster/sql/sql_parse.h
-percona-xtradb-cluster/sql/sql_rewrite.cc",correct,,correct
+percona-xtradb-cluster/sql/sql_rewrite.cc",correct,,,correct
 13,PS,PS-7118,Add ability to set LOWER_CASE_TABLE_NAMES option before initializing data directory,3.5,1,PS-7118: Bug#27948395	LOWER_CASE_TABLE_NAMES OPTION NOT WORKING,https://github.com/percona/percona-server/commit/52a014581a4963664c3f80d29edc842c0629b686,2,"percona-server/build-ps/debian/percona-server-server.postinst
-percona-server/build-ps/debian/percona-server-server.templates",correct,,correct
-14,PS,PS-6034,Misc typos on the Installing Percona Server for MySQL on Red Hat Enterprise Linux and CentOS page,1.33,1,PS-6034 Misc typos on the Installing Percona Server for MySQL on Red Hat Enterprise Linux and CentOS page,https://github.com/percona/percona-server/commit/1652515f49b136c1a3a841f07773ec93f4cf9c40,1,percona-server/doc/source/installation/yum_repo.rst,correct,,correct
+percona-server/build-ps/debian/percona-server-server.templates",correct,,,correct
+14,PS,PS-6034,Misc typos on the Installing Percona Server for MySQL on Red Hat Enterprise Linux and CentOS page,1.33,1,PS-6034 Misc typos on the Installing Percona Server for MySQL on Red Hat Enterprise Linux and CentOS page,https://github.com/percona/percona-server/commit/1652515f49b136c1a3a841f07773ec93f4cf9c40,1,percona-server/doc/source/installation/yum_repo.rst,correct,,,correct
 15,PXC,PXC-2900,Assertion on implicit transaction commit,13.17,1,PXC-2900: Assertion on implicit transaction commit,https://github.com/percona/percona-xtradb-cluster/commit/5f376af4b16c9be08edf869e86d700ca68b70e35,7,"percona-xtradb-cluster/mysql-test/suite/galera/r/galera_insert_multi.result
 percona-xtradb-cluster/mysql-test/suite/galera/t/galera_insert_multi.test
 percona-xtradb-cluster/mysql-test/suite/sys_vars/t/wsrep_incoming_addresses_basic.test
 percona-xtradb-cluster/sql/sql_class.cc
 percona-xtradb-cluster/sql/sql_class.h
 percona-xtradb-cluster/sql/wsrep_client_service.cc
-percona-xtradb-cluster/sql/wsrep_trans_observer.h",correct,,correct
+percona-xtradb-cluster/sql/wsrep_trans_observer.h",correct,,,correct
 16,PXC,PXC-3699,wsrep_cluster_name documentation wrong about dynamic option,4.0,2,"PXC-3699 wsrep_cluster_name documentation wrong about dynamic option (5.6) (#1587)
 PXC-3699 wsrep_cluster_name documentation wrong about dynamic option (5.6)","https://github.com/percona/percona-xtradb-cluster/commit/61a72d9f77300ea2cc0ad114619259d3d6d2f213
-https://github.com/percona/percona-xtradb-cluster/commit/d6ebddfe81aa6547a36396a7d3286052cafe0252",1,percona-xtradb-cluster/doc/source/wsrep-system-index.rst,correct,,correct
-17,PXC,PXC-3553,[MTR] Fix main.mysqlpump_extended test,1.26,1,PXC-3553 - [MTR] Fix main.mysqlpump_extended test,https://github.com/percona/percona-xtradb-cluster/commit/1ff396e9963da6c4d8aad5f803e8881e0bba4e83,1,percona-xtradb-cluster/mysql-test/t/mysqlpump_extended.test,correct,,correct
+https://github.com/percona/percona-xtradb-cluster/commit/d6ebddfe81aa6547a36396a7d3286052cafe0252",1,percona-xtradb-cluster/doc/source/wsrep-system-index.rst,correct,,,correct
+17,PXC,PXC-3553,[MTR] Fix main.mysqlpump_extended test,1.26,1,PXC-3553 - [MTR] Fix main.mysqlpump_extended test,https://github.com/percona/percona-xtradb-cluster/commit/1ff396e9963da6c4d8aad5f803e8881e0bba4e83,1,percona-xtradb-cluster/mysql-test/t/mysqlpump_extended.test,correct,,,correct
 18,PS,PS-4825,Backport MTR fixes from 8.0,1.0,1,PS-4825: Backport MTR fixes from 8.0,https://github.com/percona/percona-server/commit/f11fc4304f3f7b14086d99e85ebed26fac68111b,4,"percona-server/mysql-test/suite/innodb/r/general_ts_encrypt.result
 percona-server/mysql-test/suite/innodb/r/percona_force_encryption.result
 percona-server/mysql-test/suite/innodb/t/general_ts_encrypt.test
-percona-server/mysql-test/suite/innodb/t/percona_force_encryption.test",correct,,correct
+percona-server/mysql-test/suite/innodb/t/percona_force_encryption.test",correct,,,correct
 19,PXC,PXC-3184, Modify startup to correct crash when socat not found and SST Fails ,18.92,1,PXC-3184: Node crashes on startup if socat isn't found and SST fails,https://github.com/percona/percona-xtradb-cluster/commit/54a4497ffd6b88e45ac63d7e48564c6cfb3cbcec,3,"percona-xtradb-cluster/sql/mysqld.cc
 percona-xtradb-cluster/sql/wsrep_mysqld.cc
-percona-xtradb-cluster/sql/wsrep_sst.cc",correct,,correct
-20,PXC,PXC-3634,Erroneous documentation on Bootstrapping XtradbCluster,1.5,1,PXC-3634 Erroneous documentation on Bootstrapping XtradbCluster,https://github.com/percona/percona-xtradb-cluster/commit/68ae8a0e47a98102c9307da0e73859d85ef226bc,1,percona-xtradb-cluster/doc/source/configure.rst,correct,,correct
-21,PS,PS-7460,mysql (client) has an additional libncurses dependency,2.0,1,PS-7460 Inclulde libncurses to bunary tarball,https://github.com/percona/percona-server/commit/db839d1025335e1844d5477a9f710ae64b4d9c50,1,percona-server/build-ps/build-binary.sh,correct,,correct
+percona-xtradb-cluster/sql/wsrep_sst.cc",correct,,,correct
+20,PXC,PXC-3634,Erroneous documentation on Bootstrapping XtradbCluster,1.5,1,PXC-3634 Erroneous documentation on Bootstrapping XtradbCluster,https://github.com/percona/percona-xtradb-cluster/commit/68ae8a0e47a98102c9307da0e73859d85ef226bc,1,percona-xtradb-cluster/doc/source/configure.rst,correct,,,correct
+21,PS,PS-7460,mysql (client) has an additional libncurses dependency,2.0,1,PS-7460 Inclulde libncurses to bunary tarball,https://github.com/percona/percona-server/commit/db839d1025335e1844d5477a9f710ae64b4d9c50,1,percona-server/build-ps/build-binary.sh,correct,,,correct
 22,PS,PS-1095,LP #1690723: integer overflow with thread_pool_stall_limit in PS 5.6/5.7,5.2,1,PS-1095: Fixed a possible integer overflow in threadpool_unix,https://github.com/percona/percona-server/commit/f85d18dde1dcb45deff68109cb60a6dc573f92d4,4,"percona-server/mysql-test/r/percona_bug_ps1095.result
 percona-server/mysql-test/t/percona_bug_ps1095-master.opt
 percona-server/mysql-test/t/percona_bug_ps1095.test
-percona-server/sql/threadpool_unix.cc",correct,,correct
+percona-server/sql/threadpool_unix.cc",correct,,,correct
 23,PMM,PMM-4173,ProxySQL exporter are not presented in pmm-admin list output,2.17,2,"PMM-4173 Add proxysql to list command output. (#45)
 PMM-4173 Add proxysql to list command output. (#45)","https://github.com/percona/pmm/commit/e7577ceaf18ec4abe4578a122bc2419515c64cef
 https://github.com/percona/pmm/commit/e7577ceaf18ec4abe4578a122bc2419515c64cef",14,"pmm-admin/commands/inventory/add_agent_proxysql_exporter.go
@@ -82,7 +82,7 @@ pmm-admin/commands/management/add_proxysql.go
 pmm-admin/commands/management/remove.go
 pmm/commands/inventory/add_agent_proxysql_exporter.go
 pmm/commands/inventory/add_service_proxysql.go
-pmm/commands/inventory/list_agents.go",correct,,correct
+pmm/commands/inventory/list_agents.go",correct,,,correct
 24,K8SPSMDB,K8SPSMDB-176,The Operator was updated to use Percona Backup for MongoDB version 1.1,123.98,4,"K8SPSMDB-176 fix for 4.0 and 3.6 for new PBM
 K8SPSMDB-176 fix liveness test
 K8SPSMDB-176 fix tests after PBM update
@@ -98,7 +98,7 @@ percona-server-mongodb-operator/e2e-tests/init-deploy/compare/clusterAdmin-42.js
 percona-server-mongodb-operator/e2e-tests/init-deploy/compare/userAdmin-42.json
 percona-server-mongodb-operator/e2e-tests/license/compare/golicense
 percona-server-mongodb-operator/e2e-tests/liveness/compare/statefulset_liveness-rs0-changed.yml
-percona-server-mongodb-operator/e2e-tests/one-pod/compare/statefulset_one-pod-rs0.yml",partial,"Parziale: il commit f161827 corregge il rate limiting di golicense nella pipeline CI, non l’aggiornamento a Percona Backup for MongoDB. Gli altri commit riguardano compatibilità e test PBM.",correct
+percona-server-mongodb-operator/e2e-tests/one-pod/compare/statefulset_one-pod-rs0.yml",partial,"Parziale: il commit f161827 corregge il rate limiting di golicense nella pipeline CI, non l’aggiornamento a Percona Backup for MongoDB. Gli altri commit riguardano compatibilità e test PBM.","Partial: commit f161827 fixes golicense rate limiting in the CI pipeline, not the upgrade to Percona Backup for MongoDB. The other commits concern PBM compatibility and tests.",correct
 25,PS,PS-8042,Audit Log v2 initial design and implementation,1127.75,103,"PS-8042: Refactor system variables handling in audit_log_filter
 PS-8042: Fix LogWriter access to configuration data
 PS-8042: Fix registry srv reloading during plugin reinstallation
@@ -116,16 +116,16 @@ percona-server/plugin/audit_log_filter/audit_action.h
 percona-server/plugin/audit_log_filter/audit_base_component.h
 percona-server/plugin/audit_log_filter/audit_base_mediator.h
 percona-server/plugin/audit_log_filter/audit_encryption.cc
-percona-server/plugin/audit_log_filter/audit_encryption.h",correct,,correct
+percona-server/plugin/audit_log_filter/audit_encryption.h",correct,,,correct
 26,PBM,PBM-164,Restore of logical backup on configsvr throws 'error dropping collection',19.0,1,PBM-164 Workaround to restore config servers,https://github.com/percona/percona-backup-mongodb/commit/047ac8771bdde82374d7f5228f83bf315817b1d9,4,"percona-backup-mongodb/grpc/api/api.go
 percona-backup-mongodb/grpc/client/client.go
 percona-backup-mongodb/grpc/server/server.go
-percona-backup-mongodb/internal/restore/restore.go",correct,,correct
+percona-backup-mongodb/internal/restore/restore.go",correct,,,correct
 27,PBM,PBM-608,Enable Kerberos authentication for PBM by adding support for GSSAPI,1.25,2,"PBM-608: Enable GSSAPI support for PBM (#491)
 PBM-608: fix docker builds for k8s","https://github.com/percona/percona-backup-mongodb/commit/6e9a37e7ea698ab88917c828737ccb4c290feab3
 https://github.com/percona/percona-backup-mongodb/commit/b8324dcf33532475dc52e548433392696601326f",2,"percona-backup-mongodb/Makefile
-percona-backup-mongodb/docker/Dockerfile.k8s",correct,,correct
-28,PMM,PMM-4385,Scraped targets by jobs - make no sense ,3.25,1,PMM-4385 Scraped targets by jobs - make no sense (#398),https://github.com/percona/grafana-dashboards/commit/cb217b591b8295443d6e8cb06afcaf2dab959982,1,grafana-dashboards/dashboards/Prometheus.json,correct,,correct
+percona-backup-mongodb/docker/Dockerfile.k8s",correct,,,correct
+28,PMM,PMM-4385,Scraped targets by jobs - make no sense ,3.25,1,PMM-4385 Scraped targets by jobs - make no sense (#398),https://github.com/percona/grafana-dashboards/commit/cb217b591b8295443d6e8cb06afcaf2dab959982,1,grafana-dashboards/dashboards/Prometheus.json,correct,,,correct
 29,PBM,PBM-447,pbm-speed-test: Add a tool to field-test compression and upload speeds,46.0,3,"PBM-447 Fix formatting
 PBM-447 Troubleshooting page with pbm-speed-test functionality
 PBM-447 Speed test","https://github.com/percona/percona-backup-mongodb/commit/23eb9abe101c99c2537cadd2667ee454a509f91d
@@ -139,13 +139,13 @@ percona-backup-mongodb/doc/source/.res/code-block/bash/pbm-speed-test-storage-he
 percona-backup-mongodb/doc/source/.res/code-block/bash/pbm-speed-test-storage.txt
 percona-backup-mongodb/doc/source/.res/replace.txt
 percona-backup-mongodb/doc/source/.res/text/yum-available-versions.txt
-percona-backup-mongodb/doc/source/.res/text/yum-versions-list.txt",correct,,correct
+percona-backup-mongodb/doc/source/.res/text/yum-versions-list.txt",correct,,,correct
 30,PS,PS-3839,Implement innodb data scrubbing,66.0,1,PS-3839: Removing unneccessary scrubbing debug variable,https://github.com/percona/percona-server/commit/79a1211269ac6f528d04202aa125699db8e3683e,6,"percona-server/mysql-test/suite/perfschema/r/show_sanity.result
 percona-server/mysql-test/suite/sys_vars/r/innodb_debug_force_scrubbing_basic.result
 percona-server/mysql-test/suite/sys_vars/t/innodb_debug_force_scrubbing_basic.test
 percona-server/mysql-test/suite/sys_vars/t/innodb_redo_log_encrypt_basic.test
 percona-server/storage/innobase/btr/btr0scrub.cc
-percona-server/storage/innobase/handler/ha_innodb.cc",partial,Parziale: il solo commit rimuove una variabile di debug dello scrubbing e aggiorna test; non include l’implementazione principale dello scrubbing indicata dal titolo della issue.,partial
+percona-server/storage/innobase/handler/ha_innodb.cc",partial,Parziale: il solo commit rimuove una variabile di debug dello scrubbing e aggiorna test; non include l’implementazione principale dello scrubbing indicata dal titolo della issue.,Partial: the only commit removes a scrubbing debug variable and updates tests; it does not include the main scrubbing implementation named in the issue title.,partial
 31,K8SPSMDB,K8SPSMDB-282,Add built-in support for Percona Monitoring and Management,18.5,3,"K8SPSMDB-282 document PMM support (#501)
 K8SPSMDB-282 add PMM to docs
 K8SPSMDB-282 integrate pmm into PSMDBO (#443)","https://github.com/percona/percona-server-mongodb-operator/commit/058cfe710b96ad5ba95dd458d40f59372872a157
@@ -159,22 +159,22 @@ percona-server-mongodb-operator/e2e-tests/monitoring-2-0/compare/statefulset_mon
 percona-server-mongodb-operator/e2e-tests/monitoring-2-0/run
 percona-server-mongodb-operator/pkg/controller/perconaservermongodb/psmdb_controller.go
 percona-server-mongodb-operator/pkg/psmdb/pmm.go
-percona-server-mongodb-operator/source/conf.py",correct,,correct
+percona-server-mongodb-operator/source/conf.py",correct,,,correct
 32,PXB,PXB-1978,xbcloud fails to obtain data from S3 bucket,21.0,2,"PXB-1978 xbcloud fails to obtain data from S3 bucket
 PXB-1978 xbcloud fails to obtain data from S3 bucket","https://github.com/percona/percona-xtrabackup/commit/2b4107444684562a2d56d459a3abd5b88b35deb2
 https://github.com/percona/percona-xtrabackup/commit/e6b350e877c41d40a1aba0a86dcb66d534c6cf0d",4,"percona-xtrabackup/storage/innobase/xtrabackup/src/xbcloud/s3.cc
 percona-xtrabackup/storage/innobase/xtrabackup/src/xbcloud/s3.h
 percona-xtrabackup/storage/innobase/xtrabackup/src/xbcloud/xbcloud-t.cc
-percona-xtrabackup/storage/innobase/xtrabackup/src/xbcloud/xbcloud.cc",correct,,correct
+percona-xtrabackup/storage/innobase/xtrabackup/src/xbcloud/xbcloud.cc",correct,,,correct
 33,PS,PS-4814,TokuDB 'fast' replace into is incompatible with 8.0 row replication,5.75,1,PS-4814 : TokuDB 'fast' replace into is incompatible with 8.0 row replication,https://github.com/percona/percona-server/commit/9f278a7de296f6580318d04071204e82b14ac5da,6,"percona-server/mysql-test/suite/tokudb.rpl/r/rpl_row_replace_into.result
 percona-server/mysql-test/suite/tokudb.rpl/t/rpl_row_replace_into.test
 percona-server/mysql-test/suite/tokudb/r/i_s_tokudb_lock_waits_released.result
 percona-server/mysql-test/suite/tokudb/r/replace-ignore.result
 percona-server/storage/tokudb/ha_tokudb.cc
-percona-server/storage/tokudb/ha_tokudb.h",correct,,correct
-34,PXB,PXB-1890,Update error message in 2.4 to point that MySQL 8.0 can be backed up with PXB 8.0,0.48,1,PXB-1890: Update error message in 2.4 to point that MySQL 8.0 can be backed up with PXB 8.0,https://github.com/percona/percona-xtrabackup/commit/8ef4c2b8c9040c8b564a5b03424df67e148c83e3,1,percona-xtrabackup/storage/innobase/xtrabackup/src/backup_mysql.cc,correct,,correct
+percona-server/storage/tokudb/ha_tokudb.h",correct,,,correct
+34,PXB,PXB-1890,Update error message in 2.4 to point that MySQL 8.0 can be backed up with PXB 8.0,0.48,1,PXB-1890: Update error message in 2.4 to point that MySQL 8.0 can be backed up with PXB 8.0,https://github.com/percona/percona-xtrabackup/commit/8ef4c2b8c9040c8b564a5b03424df67e148c83e3,1,percona-xtrabackup/storage/innobase/xtrabackup/src/backup_mysql.cc,correct,,,correct
 35,PMM,PMM-5427,Labels change (which occurs e.g. when the metrics resolution is changed on the PMM Settings page) was breaking the PostgreSQL dashboards,2.33,1,PMM-5427 Resolution fix for PostgreSQL Dashboards (#604),https://github.com/percona/grafana-dashboards/commit/12335a54cbe67e93d8b149d2b489e8452847ddb2,2,"grafana-dashboards/dashboards/PostgreSQL_Instance_Summary.json
-grafana-dashboards/dashboards/PostgreSQL_Instances_Overview.json",correct,Il diff modifica espressioni PromQL PostgreSQL per aggregare le serie per service_name; coerente con la risoluzione delle metriche.,correct
+grafana-dashboards/dashboards/PostgreSQL_Instances_Overview.json",correct,Il diff modifica espressioni PromQL PostgreSQL per aggregare le serie per service_name; coerente con la risoluzione delle metriche.,The diff changes PostgreSQL PromQL expressions to aggregate series by service_name; consistent with the metrics fix.,correct
 36,PMM,PMM-3285,Problem with rendering after upgrade,6.5,4,"PMM-3285-Problem-with-rendering-after-upgrade
 PMM-3285 Problem with rendering after upgrade
 PMM-3285-Problem-with-rendering-after-upgrade
@@ -182,13 +182,13 @@ PMM-3285 Problem with rendering after upgrade","https://github.com/percona/pmm/c
 https://github.com/percona/pmm/commit/468a321e922005e77ce65699148fb6a34a5b38f8
 https://github.com/percona/pmm/commit/3ef64c43c8768c1f6ec8736ad0229a475078761f
 https://github.com/percona/pmm/commit/468a321e922005e77ce65699148fb6a34a5b38f8",2,"pmm-update/ansible/v011700/main.yml
-pmm/ansible/v011700/main.yml",correct,,correct
+pmm/ansible/v011700/main.yml",correct,,,correct
 37,PMM,PMM-5056,The average values for Query time in the Details and Profile sections were different.,9.83,1,PMM-5056 Fix avg calculation. (#86),https://github.com/percona/qan-api2/commit/44cf8262eb6e170cc21199017bd962e2da705d35,4,"qan-api2/services/analytics/object_details.go
 qan-api2/test_data/GetMetrics_group_by_queryid.json
 qan-api2/test_data/GetMetrics_sparklines_90_points.json
-qan-api2/test_data/GetMetrics_total.json",correct,,correct
+qan-api2/test_data/GetMetrics_total.json",correct,,,correct
 38,PMM,PMM-1939,Exporters Dashboards ,1.0,1,PMM-1939 Added Exporters Dashboards,https://github.com/percona/grafana-dashboards/commit/8df084ad635ed13373f7eca8edc262ec8c2a39c7,2,"grafana-dashboards/dashboards/Prometheus_Exporter_Status.json
-grafana-dashboards/dashboards/Prometheus_Exporters_Overview.json",correct,,correct
+grafana-dashboards/dashboards/Prometheus_Exporters_Overview.json",correct,,,correct
 39,PMM,PMM-7240,DBaaS: Change from Dashboard to Grafana Page,44.0,1,PMM-7240 Remove DBaaS dashboard (#1124),https://github.com/percona/grafana-dashboards/commit/6be88560560f06f28afbd90bd7f00a61bcc607a0,143,"grafana-dashboards/dashboards/pmm-dbaas.json
 grafana-dashboards/pmm-app/src/plugin.json
 grafana-dashboards/pmm-app/src/pmm-dbaas/DBaaS.messages.ts
@@ -198,7 +198,7 @@ grafana-dashboards/pmm-app/src/pmm-dbaas/DBaaS.tsx
 grafana-dashboards/pmm-app/src/pmm-dbaas/DBaaS.types.ts
 grafana-dashboards/pmm-app/src/pmm-dbaas/components/AddClusterButton/AddClusterButton.styles.ts
 grafana-dashboards/pmm-app/src/pmm-dbaas/components/AddClusterButton/AddClusterButton.test.tsx
-grafana-dashboards/pmm-app/src/pmm-dbaas/components/AddClusterButton/AddClusterButton.tsx",correct,,correct
+grafana-dashboards/pmm-app/src/pmm-dbaas/components/AddClusterButton/AddClusterButton.tsx",correct,,,correct
 40,PMM,PMM-8590,[FE] Add presentation of new dimensions collected by pg_stat_monitor in QAN - PlanID and Query_plan,16.0,1,PMM-8590 Add plan query to QAN details (#1265),https://github.com/percona/grafana-dashboards/commit/f29436f6f7bdde79350afd0faf9a3ccb8cea561a,16,"grafana-dashboards/pmm-app/package-lock.json
 grafana-dashboards/pmm-app/src/pmm-qan/panel/components/Details/Details.constants.ts
 grafana-dashboards/pmm-app/src/pmm-qan/panel/components/Details/Details.messages.ts
@@ -208,28 +208,28 @@ grafana-dashboards/pmm-app/src/pmm-qan/panel/components/Details/Plan/Plan.hooks.
 grafana-dashboards/pmm-app/src/pmm-qan/panel/components/Details/Plan/Plan.messages.ts
 grafana-dashboards/pmm-app/src/pmm-qan/panel/components/Details/Plan/Plan.service.ts
 grafana-dashboards/pmm-app/src/pmm-qan/panel/components/Details/Plan/Plan.styles.ts
-grafana-dashboards/pmm-app/src/pmm-qan/panel/components/Details/Plan/Plan.test.tsx",partial,"Parziale: il commit contiene esplicitamente anche interventi per PMM-8626 e PMM-8589 oltre alle modifiche per PMM-8590, come attestano descrizione e diff.",correct
-41,PMM,PMM-5707,GRANT command from documentation doesn't work on PXC 8.0,0.58,1,PMM-5707 GRANT command incorrect (#146),https://github.com/percona/pmm-doc/commit/521a5d40e7222aabebded65b128c9ce9468a30d8,1,pmm-doc/source/conf-mysql-requirements.rst,correct,,correct
+grafana-dashboards/pmm-app/src/pmm-qan/panel/components/Details/Plan/Plan.test.tsx",partial,"Parziale: il commit contiene esplicitamente anche interventi per PMM-8626 e PMM-8589 oltre alle modifiche per PMM-8590, come attestano descrizione e diff.","Partial: the commit explicitly also contains work for PMM-8626 and PMM-8589 besides the changes for PMM-8590, as its description and diff show.",correct
+41,PMM,PMM-5707,GRANT command from documentation doesn't work on PXC 8.0,0.58,1,PMM-5707 GRANT command incorrect (#146),https://github.com/percona/pmm-doc/commit/521a5d40e7222aabebded65b128c9ce9468a30d8,1,pmm-doc/source/conf-mysql-requirements.rst,correct,,,correct
 42,PXC,PXC-3107,Remove plugin dir parameter from SST parameters,3.0,1,PXC-3107: Remove plugin dir parameter from SST parameters,https://github.com/percona/percona-xtradb-cluster/commit/fdee9f9dcfc4ccac96099b60e6ab5b71bcc86d73,2,"percona-xtradb-cluster/scripts/wsrep_sst_common.sh
-percona-xtradb-cluster/sql/wsrep_sst.cc",correct,,correct
+percona-xtradb-cluster/sql/wsrep_sst.cc",correct,,,correct
 43,PS,PS-5235,wrong command line option for innodb_parallel_dblwr_encrypt variable,0.58,2,"PS-5235: innodb_parallel_dblwr_encrypt - fix cli syntax
 PS-5235: innodb_parallel_dblwr_encrypt - fix cli syntax","https://github.com/percona/percona-server/commit/3cf65623cacfe239d42ae3d17de66aa814f219a9
-https://github.com/percona/percona-server/commit/4eb0eecae2e84b5587a7b028f55602f78409cebd",1,percona-server/doc/source/management/data_at_rest_encryption.rst,correct,,correct
+https://github.com/percona/percona-server/commit/4eb0eecae2e84b5587a7b028f55602f78409cebd",1,percona-server/doc/source/management/data_at_rest_encryption.rst,correct,,,correct
 44,PT,PT-1485,pt-mysql-summary has broken Security section in versions bigger then 5.6,1.0,1,PT-1485 pt-mysql-summary has broken Security section in versions bigger then 5.6,https://github.com/percona/percona-toolkit/commit/f5ef9d28c5ae91dc85259553eebb1f69ac6ce29a,3,"percona-toolkit/Changelog
 percona-toolkit/bin/pt-mysql-summary
-percona-toolkit/t/pt-mysql-summary/pt-mysql-summary.t",correct,,correct
+percona-toolkit/t/pt-mysql-summary/pt-mysql-summary.t",correct,,,correct
 45,K8SPXC,K8SPXC-934,Create secret for system users even if 'secretsName' option is commented in CR,2.0,1,K8SPXC-934 set default name for system user secret (#1085),https://github.com/percona/percona-xtradb-cluster-operator/commit/19784295c9ea2fc55a3f83bcf9feaf8fe2b6b904,4,"percona-xtradb-cluster-operator/deploy/cr.yaml
 percona-xtradb-cluster-operator/go.mod
 percona-xtradb-cluster-operator/go.sum
-percona-xtradb-cluster-operator/pkg/apis/pxc/v1/pxc_types.go",correct,Include un aggiornamento delle dipendenze Go accessorio al cambiamento dei secret; non considerato commit estraneo.,correct
+percona-xtradb-cluster-operator/pkg/apis/pxc/v1/pxc_types.go",correct,Include un aggiornamento delle dipendenze Go accessorio al cambiamento dei secret; non considerato commit estraneo.,Includes a Go dependency update incidental to the secrets change; not considered an unrelated commit.,correct
 46,PXC,PXC-2269,"pxc_encrypt_cluster_traffic is not dynamic, but it allows set global",7.0,2,"PXC-2269 : pxc_encrypt_cluster_traffic is not dynamic, but it allows set global
 PXC-2269 : pxc_encrypt_cluster_traffic is not dynamic, but it allows set global","https://github.com/percona/percona-xtradb-cluster/commit/9aed21b12d9eeba06dc191597250b9866280f17c
-https://github.com/percona/percona-xtradb-cluster/commit/d79473094bdfe2912f3be47ccfa8cad5d941842e",1,percona-xtradb-cluster/sql/sys_vars.cc,correct,,correct
+https://github.com/percona/percona-xtradb-cluster/commit/d79473094bdfe2912f3be47ccfa8cad5d941842e",1,percona-xtradb-cluster/sql/sys_vars.cc,correct,,,correct
 47,PMM,PMM-6817,Fix failing DBaaS UI tests,3.0,1,PMM-6817 Fix UI tests (#1023) (#1024),https://github.com/percona/grafana-dashboards/commit/27c410412c74e07c1f9cf5b7af42c923d0b733a2,2,"grafana-dashboards/pmm-app/tests/pages/dbaasPage.js
-grafana-dashboards/pmm-app/tests/pages/pmmDemoPage.js",correct,,correct
-48,PBM,PBM-257,rename option storages_config to storage_config,0.58,1,PBM-257: storages-config to storage-config,https://github.com/percona/percona-backup-mongodb/commit/a3489b4f3d75a7d772d9fdff5565bc8a63d5d86d,1,percona-backup-mongodb/doc/source/running.rst,correct,,correct
-49,PS,PS-6773,Initialize values in sha256_password_authenticate,4.5,1,PS-6773 - Conditional jump or move depends on uninitialised value(s) in sha256_password_authenticate,https://github.com/percona/percona-server/commit/0d816a75a3f82761aca2b1f7d6458fc7369bed46,1,percona-server/sql/auth/sql_authentication.cc,correct,,correct
+grafana-dashboards/pmm-app/tests/pages/pmmDemoPage.js",correct,,,correct
+48,PBM,PBM-257,rename option storages_config to storage_config,0.58,1,PBM-257: storages-config to storage-config,https://github.com/percona/percona-backup-mongodb/commit/a3489b4f3d75a7d772d9fdff5565bc8a63d5d86d,1,percona-backup-mongodb/doc/source/running.rst,correct,,,correct
+49,PS,PS-6773,Initialize values in sha256_password_authenticate,4.5,1,PS-6773 - Conditional jump or move depends on uninitialised value(s) in sha256_password_authenticate,https://github.com/percona/percona-server/commit/0d816a75a3f82761aca2b1f7d6458fc7369bed46,1,percona-server/sql/auth/sql_authentication.cc,correct,,,correct
 50,PS,PS-5790,keyring_vault tests are failing on Jenkins,9.5,1,PS-5790: keyring_vault tests are failing on Jenkins,https://github.com/percona/percona-server/commit/7b19cc70973ee5d28c67205013215113a32bc90d,4,"percona-server/plugin/keyring_vault/tests/mtr/delete_secret_directory.inc
 percona-server/plugin/keyring_vault/tests/mtr/is_vault_server_up.inc
 percona-server/plugin/keyring_vault/tests/mtr/mount_point_service.inc
-percona-server/plugin/keyring_vault/vault_curl.cc",correct,,correct
+percona-server/plugin/keyring_vault/vault_curl.cc",correct,,,correct

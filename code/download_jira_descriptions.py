@@ -11,7 +11,7 @@ def get(ch):
     for t in range(5):
         try: return [{"key": i["key"], "description": i["fields"].get("description") or ""} for i in json.load(urllib.request.urlopen(u, timeout=120))["issues"]]
         except Exception as e: err = e; time.sleep(2 ** t)
-    print("errore", ch[0], err, file=sys.stderr); return []
+    print("error", ch[0], err, file=sys.stderr); return []
 with open(out, "w") as f, ThreadPoolExecutor(4) as ex:
     for i, rs in enumerate(ex.map(get, chunks)):
         for r in rs: f.write(json.dumps(r) + "\n")

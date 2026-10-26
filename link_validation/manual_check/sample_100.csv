@@ -1,0 +1,246 @@
+order,key,project,issue_url,title,hours,n_commits,n_files,commits,commit_urls
+1,MDL-84419,moodle,https://tracker.moodle.org/browse/MDL-84419,Scheduled task timing is incorrect when daylight saving time begins,3.87,3,2,"abd0c137fe  MDL-84419 core_task: Scheduled task timing is wrong when DST begins
+d4f2a8b417  MDL-84419 core_task: Scheduled task timing is wrong when DST begins
+f9a2a3332d  MDL-84419 core_task: Scheduled task timing is wrong when DST begins",https://github.com/moodle/moodle/commit/abd0c137fed7de01361f6b121717ae3b75b57dad
+2,MDEV-19435,mariadb,https://jira.mariadb.org/browse/MDEV-19435,buf_fix_count > 0 for corrupted page when it exits the LRU list ,20,1,9,e9145aab44  MDEV-19435 buf_fix_count > 0 for corrupted page when it exits the LRU list,https://github.com/MariaDB/server/commit/e9145aab44f3c052868836f2fe1b9ca87ae6895b
+3,MDL-70282,moodle,https://tracker.moodle.org/browse/MDL-70282,Improve OAuth 2 exception information,4.85,2,4,"5070f0d7ce  MDL-70282 oauth: Improve error information
+6a6cd2bb5d  MDL-70282 oauth: Improve error information",https://github.com/moodle/moodle/commit/5070f0d7ce5f60b282c1c291eeb74f41c0ebab4e
+4,MDL-57636,moodle,https://tracker.moodle.org/browse/MDL-57636,Available courses shown twice if user is not enrolled in any course.,0.48,3,2,"352ddf9d42  MDL-57636 frontpage: Fix display enrolled courses
+8b9fc06993  MDL-57636 frontpage: Fix display enrolled courses
+98125d376a  MDL-57636 frontpage: Fix display enrolled courses",https://github.com/moodle/moodle/commit/352ddf9d4233083d6850d0ebe32fdaee693ff591
+5,MDEV-23987,mariadb,https://jira.mariadb.org/browse/MDEV-23987,update of udf_example.c ,3,1,1,b9bf38d111  MDEV-23987 Make udf_example.c portable and warning-free,https://github.com/MariaDB/server/commit/b9bf38d1112530ac8b33a97f8ff2039a6a16ecd7
+6,MDL-78738,moodle,https://tracker.moodle.org/browse/MDL-78738,Avatar setting should reference a stored file,9.35,3,14,"0a5c1ea5f9  MDL-78738 core_course: Add helper to get the course image
+235d5b9b72  MDL-78738 core_testing: Add helper to run adhoc tasks
+8b97071c94  MDL-78738 core_communication: Set avatar from a stored_file",https://github.com/moodle/moodle/commit/0a5c1ea5f96e78aadb16c832227ffc624f15db74
+7,MDL-69170,moodle,https://tracker.moodle.org/browse/MDL-69170,Add a timecreated field to the adhoc task table,1.25,2,4,"d369c098be  MDL-69170 task: Added timecreated field to adhoc task table
+e63b6b8665  MDL-69170 task: Added timecreated field to adhoc task table",https://github.com/moodle/moodle/commit/d369c098bed6b0e6d19295de69c6b8de32f058a3
+8,MDEV-25402,mariadb,https://jira.mariadb.org/browse/MDEV-25402,Assertion `!str || str != Ptr' failed in String::copy,2.75,1,3,2ed148c8d7  MDEV-25402 Assertion `!str || str != Ptr' failed in String::copy,https://github.com/MariaDB/server/commit/2ed148c8d7b0133ecd17377587facadc7e76e9e8
+9,MDEV-25859,mariadb,https://jira.mariadb.org/browse/MDEV-25859,Update HeidiSQL to 11.3,0.5,1,1,cebc435592  MDEV-25859 - HeidiSQL 11.3,https://github.com/MariaDB/server/commit/cebc435592043a83d5f430aec8bdaa79cd7c1d44
+10,MDL-61199,moodle,https://tracker.moodle.org/browse/MDL-61199,Mobile features should be updated to the new ones in Moodle Mobile 3.7,1.75,1,2,bf25884677  MDL-61199 tool_mobile: Add new features to the list,https://github.com/moodle/moodle/commit/bf25884677aa941d5b0c6296651341adfb3cc211
+11,MDEV-30752,mariadb,https://jira.mariadb.org/browse/MDEV-30752,Assertion `!index->is_ibuf()' failed around cmp_dtuple_rec_with_match_bytes,2.5,1,1,550b8d76b3  MDEV-30752	Assertion `!index->is_ibuf()' failed around 			cmp_dtuple_rec_with_match_bytes,https://github.com/MariaDB/server/commit/550b8d76b3be360b1c7984a2531e094cd4c37f8c
+12,MDL-76867,moodle,https://tracker.moodle.org/browse/MDL-76867,Improve plugin management UI,37.78,13,80,"0d18f6d0d4  MDL-76867 core_admin: Migrate blocks admin ui to plugin management
+1b7b8e21e0  MDL-76867 core_admin: Rebuild js.
+51cfde0d3f  MDL-76867 core: Add plugin management page
+573066ba5f  MDL-76867 core_admin: Standardise plugin management when plugin missing from disk
+6809289cf4  MDL-76867 core: Plugintype coding style fixes
+6aba049a64  MDL-76867 core_admin: Migrate media plugin management to dynamic table
+6d978dd35a  MDL-76867 core_admin: Add support for editor sorting via ajax
+9bc9204a52  MDL-76867 core_admin: Migrate admin tool management to plugin management
+9f1c596dbd  MDL-76867 core_admin: Migrate module management table to dynamic table
+e2de093fe8  MDL-76867 editor_tiny: Add plugin management page
+f4a48a517b  MDL-76867 core_table: Allow dynamic table filterset to be specified
+f54cc61e4b  MDL-76867 core_admin: Migrate editors admin ui to plugin management
+fdb1df2bfd  MDL-76867 core: Add plugintype_supports_disabling to plugininfo",https://github.com/moodle/moodle/commit/0d18f6d0d4d127efeb6ef44d209958b2ce93d311
+13,PXC-3675,percona,https://perconadev.atlassian.net/browse/PXC-3675,PXC 8.0.25 PS merge - Q2 2021,105.08,1,68,7d5a24be97  PXC-3675: Resolving conflicts,https://github.com/percona/percona-xtradb-cluster/commit/7d5a24be97f673619c696496de80648c4c9203bd
+14,K8SPSMDB-180,percona,https://perconadev.atlassian.net/browse/K8SPSMDB-180,"Replset and cluster having ""ready"" status set before mongo initialization and replicasets configuration finished",41.33,1,210,dd74a865a8  K8SPSMDB-180 updating cluster status when all mongo servers are live in the cluster (#369),https://github.com/percona/percona-server-mongodb-operator/commit/dd74a865a8a02e99b204b7fb39983cc55400bb1e
+15,MDEV-39779,mariadb,https://jira.mariadb.org/browse/MDEV-39779,Flaky binlog.binlog_gtid_index test,1.75,1,1,ca0e7216e1  MDEV-39779: binlog.binlog_gtid_index sporadic failure,https://github.com/MariaDB/server/commit/ca0e7216e18cb01f74e95b20619e94b209757f4b
+16,PMM-5008,percona,https://perconadev.atlassian.net/browse/PMM-5008,Management API for adding a Service accepts any Node type,7.32,2,17,"3be10d58c7  PMM-5008 Tests for node type validation. (#72)
+bea72b881a  PMM-5008 Validation of node type in management API. (#315)",https://github.com/percona/pmm-managed/commit/3be10d58c72bc55088889691aba378c316b21858
+17,MDL-77600,moodle,https://tracker.moodle.org/browse/MDL-77600,Update upgrade_stale_php_files_present() before 4.2 release,1.65,1,1,4e663020ae  MDL-77600 install: update the list of stale files for 4.2,https://github.com/moodle/moodle/commit/4e663020aee89f9b713736cea6e38d0eb5e36754
+18,MDL-89921,moodle,https://tracker.moodle.org/browse/MDL-89921,Linear navigation footer is shown on error pages raised inside an activity,3.97,1,2,2198489555  MDL-89921 output: Hide linear navigation footer on error pages,https://github.com/moodle/moodle/commit/219848955535e81b6bf16208f400e93817743499
+19,MDL-61880,moodle,https://tracker.moodle.org/browse/MDL-61880,Oauth2 field mappings are reset and endpoints lost when identity issuer settings saved,20.73,9,2,"0c2426d207  MDL-61880 tool_oauth2: don't rely on discovery when editing issuers
+177caaa3b5  MDL-61880 core: don't clear issuer fields not present in form data
+33b1897e55  MDL-61880 core: Retain OAuth 2.0 user field mappings after issuer update
+3f17ea00e7  MDL-61880 core: don't clear issuer fields not present in form data
+52d523fa9c  MDL-61880 core: Retain OAuth 2.0 user field mappings after issuer update
+565fe67086  MDL-61880 core: Retain OAuth 2.0 user field mappings after issuer update
+93318586a5  MDL-61880 tool_oauth2: don't rely on discovery when editing issuers
+b76ac53c9d  MDL-61880 core: don't clear issuer fields not present in form data
+c48e83db0e  MDL-61880 tool_oauth2: don't rely on discovery when editing issuers",https://github.com/moodle/moodle/commit/0c2426d20702780ddf13ef9cb9619f88033ab612
+20,MDL-75671,moodle,https://tracker.moodle.org/browse/MDL-75671,Refactor utility classes for layout and spacing renamed in Bootstrap 5,23.22,4,540,"0a03018116  MDL-75671 theme_boost: Refactor spacing classes for BS5
+6a5cb2e2a2  MDL-75671 theme_boost: Refactor border direction classes for BS5
+6baf2046d5  MDL-75671 theme_boost: Refactor float classes for BS5
+f179890ad5  MDL-75671 theme_boost: Refactor text direction classes for BS5",https://github.com/moodle/moodle/commit/0a03018116ad8be3d7a019dca8aa83af0178e3b0
+21,MDEV-35583,mariadb,https://jira.mariadb.org/browse/MDEV-35583,explicitly initialize THR_KEY_mysys calling MY_INIT and my_end,1.25,2,2,"2af103f728  MDEV-35583 Tests failing on macOS
+d92d271648  MDEV-35583 Tests failing on macOS",https://github.com/MariaDB/server/commit/2af103f728825cb42ebb1b7d91e79e2660d35979
+22,PSQLADM-366,percona,https://perconadev.atlassian.net/browse/PSQLADM-366,Scheduler admin script allows invalid options,2,1,2,672c46faab  PSQLADM-366: Scheduler admin script allows invalid options,https://github.com/percona/proxysql-admin-tool/commit/672c46faab8ea3340e29dcbc0bf83613c6ecda07
+23,PXB-2101,percona,https://perconadev.atlassian.net/browse/PXB-2101,prepare fails due to duplicate sdi,59,1,8,6d83ada5fa  PXB-2101 prepare fails due to duplicate sdi,https://github.com/percona/percona-xtrabackup/commit/6d83ada5fa65070ff2cffc6cbbb99386add42497
+24,MDEV-33525,mariadb,https://jira.mariadb.org/browse/MDEV-33525,Recreate/reuse temporary table,20,1,3,b620b3949a  MDEV-33525: Recreate/reuse temporary table,https://github.com/MariaDB/server/commit/b620b3949a0e021774058adf58250fa25471bbc4
+25,MDL-80499,moodle,https://tracker.moodle.org/browse/MDL-80499,"Editing date fields in Database modules incorrectly displays the date, using the user's timezone",2.5,3,3,"0012117629  MDL-80499 datafield_date: specify UTC time when editing field content.
+3f9277723b  MDL-80499 datafield_date: specify UTC time when editing field content.
+f1d798a1e0  MDL-80499 datafield_date: specify UTC time when editing field content.",https://github.com/moodle/moodle/commit/0012117629fe0303a8056f81526bb2ace8f6e310
+26,MDEV-15894,mariadb,https://jira.mariadb.org/browse/MDEV-15894,"Error, while using  aggregated functions/window functions in anchor part",6,1,3,"1d98333ad9  MDEV-15894 Error, while using aggregated functions/window functions in anchor part",https://github.com/MariaDB/server/commit/1d98333ad986d89215f903798a1787ab20308c6b
+27,MDEV-27701,mariadb,https://jira.mariadb.org/browse/MDEV-27701,Race on trx->lock.wait_lock between lock_rec_move() and lock_sys_t::cancel(),76.25,2,10,"a474e3278c  MDEV-27701 Race on trx->lock.wait_lock between lock_rec_move() and lock_sys_t::cancel()
+f9214e8c6f  MDEV-27701 Race on trx->lock.wait_lock between lock_rec_move() and lock_sys_t::cancel()",https://github.com/MariaDB/server/commit/a474e3278c202d5b429134071cedada3d525af95
+28,MDEV-21978,mariadb,https://jira.mariadb.org/browse/MDEV-21978,make my_vsnprintf to use gcc-compatible format extensions,36.83,1,4,"b668a960cd  MDEV-21978 Add `%sQ`, `%sB`, `%uE` & `%sT` to `my_vsnprintf`",https://github.com/MariaDB/server/commit/b668a960cd0aa5e38311b44b2c806be97e524c95
+29,MDL-70608,moodle,https://tracker.moodle.org/browse/MDL-70608,Update language pack installs / updates to run asynchronously to avoid timeouts when multiple are used,5.67,4,7,"af9ad8b2b6  MDL-70608 lang: Recommend running the scheduled task to update packs
+b21d428307  MDL-70608 lang: Install langpacks asynchronously via ad hoc task
+c85215e955  MDL-70608 lang: Install langpacks asynchronously via ad hoc task
+d83ceadf07  MDL-70608 lang: Recommend running the scheduled task to update packs",https://github.com/moodle/moodle/commit/af9ad8b2b6fcaaca8287e703f14b965649f4e423
+30,MDL-67186,moodle,https://tracker.moodle.org/browse/MDL-67186,Add custom fields to groups and groupings,2.97,1,29,d8a4cc9533  MDL-67186 group: add custom fields,https://github.com/moodle/moodle/commit/d8a4cc95334438fdd2c16e3ec891c8c19a517116
+31,MDL-78849,moodle,https://tracker.moodle.org/browse/MDL-78849,"""Continue as guest"" button shows when already logged in as guest and being redirected to login page",0.92,4,1,"2f213c96ce  MDL-78849 user: correct logical operator behaviour for guest button.
+3cc243bbd9  MDL-78849 user: correct logical operator behaviour for guest button.
+9390787a34  MDL-78849 user: correct logical operator behaviour for guest button.
+ca991dbe29  MDL-78849 user: correct logical operator behaviour for guest button.",https://github.com/moodle/moodle/commit/2f213c96ceabdb1352e9430520f9725784e21917
+32,MDEV-10811,mariadb,https://jira.mariadb.org/browse/MDEV-10811,"Change design from ""Item is Type_handler"" to ""Item has Type_handler""",14,2,8,"8b4f181c60  MDEV-10811 Change design from ""Item is Type_handler"" to ""Item has Type_handler""
+9ea06588f8  MDEV-10811 Change design from ""Item is Type_handler"" to ""Item has Type_handler""",https://github.com/MariaDB/server/commit/8b4f181c60acc163438b7f85365b4f429e49a3a8
+33,MDL-62149,moodle,https://tracker.moodle.org/browse/MDL-62149,See questions link for random question slot on quiz edit page doesn't include tags in filter,5.5,1,5,8f0f0a5903  MDL-62149 quiz: include tag ids in random question link,https://github.com/moodle/moodle/commit/8f0f0a5903774275e39fabd226dd51bb26eae374
+34,MDL-64342,moodle,https://tracker.moodle.org/browse/MDL-64342,"Messaging: Only make ajax request when privacy setting is changed, not per click",1.2,2,2,"9779a220fa  MDL-64342 core_message: make ajax call when privacy setting is changed
+a57e09230f  MDL-64342 core_message: make ajax call when privacy setting is changed",https://github.com/moodle/moodle/commit/9779a220fa4235b8fa361d97e46f1fd7b3bfd483
+35,MDL-63427,moodle,https://tracker.moodle.org/browse/MDL-63427,"""Logged in user"" block UI improvements",0.5,1,5,e3b53ef1f4  MDL-63427 block_myprofile: My profile block UI improvements,https://github.com/moodle/moodle/commit/e3b53ef1f48f95c403200d2862274bdae2a4fd74
+36,MDEV-21773,mariadb,https://jira.mariadb.org/browse/MDEV-21773,galera_as_slave_gtid MTR failed: query failed: 1064: You have an error in your SQL syntax;,10.58,1,3,8e8f9671cb  MDEV-21773: added missing include file to mtr tests,https://github.com/MariaDB/server/commit/8e8f9671cbef43ef347e2c942de074278847241f
+37,MDL-86914,moodle,https://tracker.moodle.org/browse/MDL-86914,"The completion ""Status"" column is not consistent with the rest of activities in Activities overview for Choice",26.97,2,1,"3e03aec140  MDL-86914 choice: Fix inconsistent completion status column in overview
+8faa28992c  MDL-86914 choice: Fix inconsistent completion status column in overview",https://github.com/moodle/moodle/commit/3e03aec14027dab31d3dddf74aa579317e6c7c63
+38,MDL-84820,moodle,https://tracker.moodle.org/browse/MDL-84820,MoodleNet: Bootstrap upgrade broke sharing Modal,17.62,4,3,"1b2ffbab58  MDL-84820 moodlenet: correct activity modal icon size/alignment.
+7895aca40a  MDL-84820 moodlenet: correct activity modal icon size/alignment.
+a5588f890e  MDL-84820 moodlenet: correct activity modal icon size/alignment.
+a955ef2bca  MDL-84820 moodlenet: correct activity modal icon size/alignment.",https://github.com/moodle/moodle/commit/1b2ffbab58b6b9664dced0cb21536d062885ffeb
+39,MDEV-30441,mariadb,https://jira.mariadb.org/browse/MDEV-30441,ASAN heap-use-after-free in Field_blob::pack/pack_row,5.67,1,3,ac9c38fde0  MDEV-30441 ASAN heap-use-after-free in Field_blob::pack/pack_row,https://github.com/MariaDB/server/commit/ac9c38fde0d0c7f924fbca227acefc1e0fb6823b
+40,MDL-74303,moodle,https://tracker.moodle.org/browse/MDL-74303,Launches fail if platforms omit 'alg' in JWKS,6.17,1,2,0dcb53ec19  MDL-74303 lib: pull upstream lib/lti1p3 changes to support JWKS parsing,https://github.com/moodle/moodle/commit/0dcb53ec198a2826e1679ae0bc823245a317daee
+41,MDEV-22551,mariadb,https://jira.mariadb.org/browse/MDEV-22551,"Server crashes in skip_trailing_space upon ANALYZE on table with long unique, or Assertion `marked_for_read()' fails",24.17,1,4,"c01b3d9169  MDEV-22551 Server crashes in skip_trailing_space upon ANALYZE on table with long unique, or Assertion `marked_for_read()' fails",https://github.com/MariaDB/server/commit/c01b3d91690bac611752b61b1cfcd95f21cf3ab4
+42,MDEV-23010,mariadb,https://jira.mariadb.org/browse/MDEV-23010,UPDATE privilege at Database and Table level fail to update with SELECT command denied to user,1,1,3,e54a7ac1b3  MDEV-23010 UPDATE privilege at Database and Table level fail to update with SELECT command denied to user,https://github.com/MariaDB/server/commit/e54a7ac1b38f77b64a0aafeb165082a9788d56f8
+43,MDEV-8919,mariadb,https://jira.mariadb.org/browse/MDEV-8919,Wrong result for CAST(9999999999999999999.0),4,1,9,d682dc2e70  MDEV-8919 Wrong result for CAST(9999999999999999999.0),https://github.com/MariaDB/server/commit/d682dc2e709c22bdd6012295b55d3908fe6c546d
+44,MDL-66877,moodle,https://tracker.moodle.org/browse/MDL-66877,Some activity names aren't formatted in WebServices,6.92,6,12,"0d588f2275  MDL-66877 mod: Fix unfiltered activity names in page headings
+27d6bd5de1  MDL-66877 mod: Fix unfiltered activity names in page headings
+62ff1b954f  MDL-66877 mod: Fix WebServices returning unfiltered activity names
+907db7f06b  MDL-66877 mod: Fix WebServices returning unfiltered activity names
+a44b2f35d0  MDL-66877 mod: Fix WebServices returning unfiltered activity names
+f02178c481  MDL-66877 mod: Fix unfiltered activity names in page headings",https://github.com/moodle/moodle/commit/0d588f22751bdffc52683ca9c46a707f1ee4b664
+45,MDL-84918,moodle,https://tracker.moodle.org/browse/MDL-84918,Admin / Environment checks for zend.exception_ignore_args,11.3,10,3,"2e541fe5b0  MDL-84918 core: Add initial environment requirements for Moodle 5.1
+3823915d80  MDL-84918 core: Add zend.exception_ignore_args environment check
+3e30033749  MDL-84918 core: Add initial environment requirements for Moodle 5.1
+69809efd38  MDL-84918 core: Add initial environment requirements for Moodle 5.1
+69cca28118  MDL-84918 core: Add zend.exception_ignore_args environment check
+abae164f41  MDL-84918 core: Add zend.exception_ignore_args environment check
+c7912e21ba  MDL-84918 core: Add initial environment requirements for Moodle 5.1
+d289ea56b4  MDL-84918 core: Add initial environment requirements for Moodle 5.1
+d6b955be71  MDL-84918 core: Add zend.exception_ignore_args environment check
+f597c8bc2d  MDL-84918 core: Add zend.exception_ignore_args environment check",https://github.com/moodle/moodle/commit/2e541fe5b03336967b4b1f1c47c31bc117505e1f
+46,MDL-64701,moodle,https://tracker.moodle.org/browse/MDL-64701,Course custom fields search area should not be in Other search category,1,1,2,23533bc467  MDL-64701 search: change category for customfield search area,https://github.com/moodle/moodle/commit/23533bc4678a3907219a7e92cb3e12ec1b10185e
+47,MDL-70792,moodle,https://tracker.moodle.org/browse/MDL-70792,CSS changes for the moremenu,32.68,7,10,"0360bc2ab3  MDL-70792 aria: Only set focus on items when triggered by keypress
+122b0fc91e  MDL-70792 aria: Dropdown menu keyboard interaction fixes
+13cdef5dc4  MDL-70792 output: Menu items should have -1 tab index
+1bd98e1641  MDL-70792 theme_boost: Remove default outline on focused menu items
+62a90218e1  MDL-70792 aria: Dropdown menu keyboard interaction fixes
+b3c3f4e0ba  MDL-70792 aria: Only set focus on items when triggered by keypress
+ef132f0ab4  MDL-70792 output: Menu items should have -1 tab index",https://github.com/moodle/moodle/commit/0360bc2ab32cdd8f1075061cfcfdbf78ce729189
+48,PS-7967,percona,https://perconadev.atlassian.net/browse/PS-7967,Document how to make NVME ZBD permissions/ownership/scheduler settings permanent,5.5,1,1,416a16de03  PS-7967 Document how to make NVME ZBD permissions/ownership/scheduler settings permanent (8.0),https://github.com/percona/percona-server/commit/416a16de034ca8d281bafe67ad428d73c2bcbc91
+49,MDEV-35738,mariadb,https://jira.mariadb.org/browse/MDEV-35738,MariaDB cannot be compiled with -fsanitize=pointer-compare due to two invalid pointer pairs,6.08,1,5,d3afdd162b  MDEV-35738 mariadb build -fsanitize=pointer-compare,https://github.com/MariaDB/server/commit/d3afdd162bf8aecde785ccff0fd3dbe47e14923f
+50,MDL-75906,moodle,https://tracker.moodle.org/browse/MDL-75906,Update security.txt for 4.2 release and related minors,1.93,5,1,"3178ffa04a  MDL-75906 core: Updated security.txt expiry
+b33e5466df  MDL-75906 core: Updated security.txt expiry
+d4cdf52873  MDL-75906 core: Updated security.txt expiry
+efa1cab75a  MDL-75906 core: Updated security.txt expiry
+f37baf7b59  MDL-75906 core: Updated security.txt expiry",https://github.com/moodle/moodle/commit/3178ffa04a10110bc6c6cae360b984f2d9805875
+51,MDEV-19604,mariadb,https://jira.mariadb.org/browse/MDEV-19604,WolfSSL breaks binlog_encryption.binlog_incident,3,1,2,7d3a759d42  MDEV-19604 WolfSSL breaks binlog_encryption.binlog_incident,https://github.com/MariaDB/server/commit/7d3a759d42f92894820b6eeb6a0e798a5a57c464
+52,MDEV-39223,mariadb,https://jira.mariadb.org/browse/MDEV-39223,Reversed executable comments incorrectly written in binlog and could break replication,5,2,5,"5d77bf057f  MDEV-39223 Reversed executable comments incorrectly written in binlog
+6defa5de6e  MDEV-39223 more tests",https://github.com/MariaDB/server/commit/5d77bf057f45f4b5203ffeb440e7fb7a2e374e57
+53,MDL-80848,moodle,https://tracker.moodle.org/browse/MDL-80848,Forum code does not handle things happening at the same time well,64.75,3,6,"00f653d756  MDL-80848 mod_forum: to have id as the backup sorting condition
+b4598bf783  MDL-80848 mod_forum: to have id as the backup sorting condition
+c43616b1e4  MDL-80848 mod_forum: to have id as the backup sorting condition",https://github.com/moodle/moodle/commit/00f653d75686661807e97410e8f97751723c292d
+54,MDEV-7850,mariadb,https://jira.mariadb.org/browse/MDEV-7850,Extend GTID Binlog Events with Thread Id,238.52,13,37,"01cf1cb84b  MDEV-7850: Optimize Query_log_event::begin_event()
+043255332e  MDEV-7850 make Thread-id available in Gtid
+6ef122ad98  MDEV-7850 Thread-id in Gtid
+72b63bfc44  MDEV-7850 Thread-id in Gtid
+876fa749e4  MDEV-7850: Test adaptation and updated header flags
+a4e5862e10  MDEV-7850: Extend GTID Binlog Events with Thread Id
+b1e7a10f8d  MDEV-7850: Extend GTID Binlog Events with Thread Id
+b47ee3d0ed  MDEV-7850: main and innodb MTR test suite fixes
+bcd3dd4649  MDEV-7850 tests
+c37b2087b4  MDEV-7850: Extend GTID Binlog Events with Thread Id
+e28985af2d  MDEV-7850 MariaDB doesn't show thread_id for ROW-based events in binlog
+e4afa61053  MDEV-7850: Extend GTID Binlog Events with Thread Id
+f9b6c90642  MDEV-7850: Extend GTID Binlog Events with Thread Id",https://github.com/MariaDB/server/commit/01cf1cb84bd6b4f12a515e63bb8e540ee3f9dc24
+55,PMM-4582,percona,https://perconadev.atlassian.net/browse/PMM-4582,Combine Disk Dashboards into one   ,3.17,1,4,8bcff2b498  PMM-4582 Combine Disk Dashboards into one (#447),https://github.com/percona/grafana-dashboards/commit/8bcff2b4984334a538d261d0bbfd355076af0500
+56,MDEV-23600,mariadb,https://jira.mariadb.org/browse/MDEV-23600,SIGFPE in row_search_with_covering_prefix,9.83,3,11,"94e9dc95d4  MDEV-23600 Division by 0 in row_search_with_covering_prefix
+c029d45623  MDEV-23600 follow-up: uninitialized rec_field_is_prefix
+d412f76c2f  MDEV-23600 SIGFPE in row_search_with_covering_prefix",https://github.com/MariaDB/server/commit/94e9dc95d4bebf711f001e16bbb53fd8d6a58b8c
+57,MDEV-35074,mariadb,https://jira.mariadb.org/browse/MDEV-35074,main.selectivity_notembedded and main.selectivity_innodb_notembedded fail with view protocol,3,1,3,5673cbe094  MDEV-35074: selectivity_notembedded fails with --view-protocol,https://github.com/MariaDB/server/commit/5673cbe0941e105eb73b5ecf651a529f8e717b52
+58,MDL-79959,moodle,https://tracker.moodle.org/browse/MDL-79959,Add custom field picker for SSO identification in repository_equella,12.35,1,5,05c23b4c70  MDL-79959 repository: Add custom field picker for SSO identification.,https://github.com/moodle/moodle/commit/05c23b4c708589daf0a64fe9a6371a55a509cfce
+59,PXC-3021,percona,https://perconadev.atlassian.net/browse/PXC-3021,Change package versioning to maj.min.patch-p1.p2,14,2,4,"1c9a7de982  PXC-3021 add wsrep version to binary tarball version output
+8f258e3236  PXC-3021 chnage package versioning to maj.min.patch-p1.p2",https://github.com/percona/percona-xtradb-cluster/commit/1c9a7de98279a22ed7108014362c012a4b9e7b1b
+60,MDL-62707,moodle,https://tracker.moodle.org/browse/MDL-62707,"codingerror in Global Search when ""search within enrolled courses only"" is set",5.5,4,2,"9a2db9e2ec  MDL-62707 search: account for no matching courses when listing areas.
+c19a18ecd4  MDL-62707 search: account for no matching courses when listing areas.
+c24a16a819  MDL-62707 search: account for no matching courses when listing areas.
+e7e62a4b2e  MDL-62707 search: account for no matching courses when listing areas.",https://github.com/moodle/moodle/commit/9a2db9e2ec43f26bf6eff00a24bd0ad6abc132f0
+61,MDL-74826,moodle,https://tracker.moodle.org/browse/MDL-74826,"Add new ""Disabled feature"" within Mobile app settings for the new Reports option introduced in 4.0",4.75,2,1,"62bee73724  MDL-74826 tool_mobile: Add reportbuilder option in disabledfeatures
+948616f4a0  MDL-74826 tool_mobile: Add reportbuilder option in disabledfeatures",https://github.com/moodle/moodle/commit/62bee73724e4b97f41759bc9a40332baa08b37d2
+62,PXC-2966,percona,https://perconadev.atlassian.net/browse/PXC-2966,Run clang-format on the pxc code,3,1,89,1ee09ccd94  PXC-2966: Clang-format wsrep related code,https://github.com/percona/percona-xtradb-cluster/commit/1ee09ccd94eeec6d44b5bf14151619cd50c62976
+63,MDEV-6768,mariadb,https://jira.mariadb.org/browse/MDEV-6768,Wrong result with aggregate with join with no result set,21.5,2,8,"16258677b3  MDEV-6768 Wrong result with aggregate with join with no result set
+7f96dd50e2  MDEV-6768 Wrong result with aggregate with join with no result set",https://github.com/MariaDB/server/commit/16258677b37011b543fd68a41eae4abd45f64f68
+64,MDEV-26664,mariadb,https://jira.mariadb.org/browse/MDEV-26664,Store UUIDs in a more efficient manner,26.17,2,16,"3f3ec40c91  MDEV-26664 fixup: clang -Winconsistent-missing-override
+b9f19f7eae  MDEV-26664 Store UUIDs in a more efficient manner",https://github.com/MariaDB/server/commit/3f3ec40c91bd088d9499bde776529d6378376d91
+65,MDL-72000,moodle,https://tracker.moodle.org/browse/MDL-72000,Support custom user profile fields in course participants export,1.92,1,1,25be710d23  MDL-72000 user: support custom user fields in participants export.,https://github.com/moodle/moodle/commit/25be710d236c5f4c1e689bb569d826ff12d2aa98
+66,MDEV-22805,mariadb,https://jira.mariadb.org/browse/MDEV-22805,SIGSEGV in check_fields on UPDATE (optimized builds) | Assertion `thd->lex->sql_command == SQLCOM_UPDATE' failed.,42.17,2,4,"27b762e23d  MDEV-22805 SIGSEGV in check_fields on UPDATE
+97b10b7fdc  MDEV-22805: SIGSEGV in check_fields on UPDATE",https://github.com/MariaDB/server/commit/27b762e23d8305bbc65dc61d283fe192e2dbd00a
+67,MDEV-16517,mariadb,https://jira.mariadb.org/browse/MDEV-16517,Join using subselects with in clause containing data element crashes with signal 6 ,4,1,3,778df04661  MDEV-16517: Server crash in Item_func_in::val_int() when             IN predicate defined with non-constant values is pushed down,https://github.com/MariaDB/server/commit/778df04661c72544baed4363a55b07362d5020ed
+68,MDEV-23610,mariadb,https://jira.mariadb.org/browse/MDEV-23610,"Slave user can't run ""SHOW SLAVE STATUS"" anymore after upgrade to 10.5, mysql_upgrade should take of that",58.5,3,20,"2b347e9fc5  MDEV-23610: Slave user can't run ""SHOW SLAVE STATUS"" anymore after upgrade to 10.5, mysql_upgrade should take of that
+6da68049b5  MDEV-23610: Slave user can't run ""SHOW SLAVE STATUS"" anymore after upgrade to 10.5, mysql_upgrade should take of that
+c815ffb975  MDEV-23610: Slave user can't run ""SHOW SLAVE STATUS"" anymore after upgrade to 10.5, mysql_upgrade should take of that",https://github.com/MariaDB/server/commit/2b347e9fc5934905bf686f2f4833b35b3a9ccf56
+69,MDEV-14318,mariadb,https://jira.mariadb.org/browse/MDEV-14318,cmake updates to build on arm64,4,1,1,83b471348d  MDEV-14318 - cmake updates to build on arm64,https://github.com/MariaDB/server/commit/83b471348d6fc4e9bb4bd2e5e23b304979708a8e
+70,PMM-2856,percona,https://perconadev.atlassian.net/browse/PMM-2856,RDS/Aurora disk related graphs are empty,5.5,1,1,319195c2b2  PMM-2856 RDS/Aurora disk related graphs empty,https://github.com/percona/grafana-dashboards/commit/319195c2b24d0a3c730b1498692d44c0ebd37723
+71,MDEV-30985,mariadb,https://jira.mariadb.org/browse/MDEV-30985,Slave stops with error on ALTER ONLINE with Geometry Types,23.5,4,8,"5f206259e5  MDEV-30985 Replica stops with error on ALTER ONLINE with Geometry Types
+ae43b81d5f  MDEV-30985 Replica stops with error on ALTER ONLINE with Geometry Types
+afb459edbe  MDEV-30985 Replica stops with error on ALTER ONLINE with Geometry Types
+c4f662a01c  MDEV-30985 Replica stops with error on ALTER ONLINE with Geometry Types",https://github.com/MariaDB/server/commit/5f206259e58e295c8d16557ae3d3b1282746fb59
+72,MDEV-8522,mariadb,https://jira.mariadb.org/browse/MDEV-8522,InnoDB: Assertion failure in file fil0fil.cc line 475,1,1,2,53623d932a  MDEV-8522: InnoDB: Assertion failure in file fil0fil.cc line 475,https://github.com/MariaDB/server/commit/53623d932a89dd4760fd28db42956b341ac451ed
+73,PMM-5012,percona,https://perconadev.atlassian.net/browse/PMM-5012,Docs: Add PostgreSQL and ProxySQL to the introduction,0.25,1,1,c625220fd5  PMM-5012 PostgreSQL and ProxySQL have been added to the home page int… (#45),https://github.com/percona/pmm-doc/commit/c625220fd50cfba81f5e7888ce7250c782b21273
+74,MDEV-34449,mariadb,https://jira.mariadb.org/browse/MDEV-34449,spider/bugfix.mdev_28683 failing the valgrind build,1.23,2,1,"3b956f8329  MDEV-34449 Default ha_spider::bulk_size to 0.
+c0ed3bedcd  MDEV-34449 Default ha_spider::bulk_size to 0.",https://github.com/MariaDB/server/commit/3b956f832996f2a133e07afba93d7ae324028b8c
+75,MDL-86817,moodle,https://tracker.moodle.org/browse/MDL-86817,"Adhoc task mod_qbank\task\transfer_question_categories fails with ""Duplicate entry"" error after upgrade to Moodle 5.0.2+",1,3,4,"01c187418b  MDL-86817 qbank: Prevent unique key violations during migration
+458be6f714  MDL-86817 qbank: Prevent unique key violations during migration
+9398da22a4  MDL-86817 qbank: Prevent unique key violations during migration",https://github.com/moodle/moodle/commit/01c187418ba4f743826189499e9575e50398f897
+76,MDL-64129,moodle,https://tracker.moodle.org/browse/MDL-64129,Unable to expand favourites section on message drawer overview page in theme Clean,0.17,1,4,eae1a1eda7  MDL-64129 messaging: messaging accordion,https://github.com/moodle/moodle/commit/eae1a1eda7ac6d5fb45dc2fb76e0063bfbf19143
+77,PBM-157,percona,https://perconadev.atlassian.net/browse/PBM-157,No primary found at backup time after replica set failover,10.75,1,5,72986f92bf  PBM-157: Refresh client state before backup (and every N x seconds) to fix stale agent states (#175),https://github.com/percona/percona-backup-mongodb/commit/72986f92bfd2403e1b8ef8298b08509072a4c218
+78,PMM-4338,percona,https://perconadev.atlassian.net/browse/PMM-4338,Enable full authentication and authorisation checks,13,4,6,"b64e28fc8a  PMM-4338 Add fallback to Grafana admin. (#231)
+e38ef48008  PMM-4338 Enable authentication. (#226)
+d8c0e5f03d  
+7757231c80  ",https://github.com/percona/pmm-managed/commit/b64e28fc8a92f303a4326df20875901d6b36470e
+79,PXC-3539,percona,https://perconadev.atlassian.net/browse/PXC-3539,PXC-5.7.32 upgrade is failing on debian/ubuntu distros,4.5,1,2,539550b45d  PXC-3539 fix upgrade on debian distros,https://github.com/percona/percona-xtradb-cluster/commit/539550b45dc80435031afb71ab88e80c449b54b4
+80,MDL-76478,moodle,https://tracker.moodle.org/browse/MDL-76478,Browsers auto-completing the user's password into inappropriate password unmask form fields,1.18,4,3,"11721f7ff5  MDL-76478 formslib: Fix autocomplete bug of existing passwords
+7f638dac59  MDL-76478 formslib: Fix autocomplete bug of existing passwords
+940006d39f  MDL-76478 formslib: Fix autocomplete bug of existing passwords
+d561d97273  MDL-76478 formslib: Fix autocomplete bug of existing passwords",https://github.com/moodle/moodle/commit/11721f7ff5c2f4e98e82b6308939894406bb30fb
+81,PXB-2530,percona,https://perconadev.atlassian.net/browse/PXB-2530,Update privileges documentation,4,1,1,b287980f2e  PXB-2530 Update privileges documentation (2.4),https://github.com/percona/percona-xtrabackup/commit/b287980f2e2fe019fddb0a5120f693c786d5f4c4
+82,MDEV-37502,mariadb,https://jira.mariadb.org/browse/MDEV-37502,Make Server Debug + Clang compile ready,11.08,4,7,"4f1170d9db  MDEV-37502: clang/debug/rocksdb - stack frame size
+8ce0eee0e0  MDEV-37502: clang+debug mroonga remove -Wno-unused-but-set-variable
+ab6bcd85b3  MDEV-37502: mroonga+clang+debug violates its own setting of compile flags sign-compare
+f278c7a3e7  MDEV-37502 mroonga + clang + Debug with exceeds stack frame size",https://github.com/MariaDB/server/commit/4f1170d9db3728eddb12bc1a247a77b70fb743f6
+83,MDL-87323,moodle,https://tracker.moodle.org/browse/MDL-87323,"Logs report Event name ""Activity report viewed"" parameter ID missing error",0.63,3,2,"08d0f1021a  MDL-87323 report_outline: fix report viewed event URL.
+6fd62e9bfc  MDL-87323 report_outline: fix report viewed event URL.
+afc3ce8fff  MDL-87323 report_outline: fix report viewed event URL.",https://github.com/moodle/moodle/commit/08d0f1021a2479773e502de114247ca497e39f8d
+84,MDEV-19349,mariadb,https://jira.mariadb.org/browse/MDEV-19349,mysql_install_db: segfault at tmp_file_prefix check,3.08,1,2,aba9115426  MDEV-19349 mysql_install_db: segfault at tmp_file_prefix check,https://github.com/MariaDB/server/commit/aba911542641c93553bad0307021983998042d69
+85,MDL-77936,moodle,https://tracker.moodle.org/browse/MDL-77936,"Double horizontal divider in gradebook setup ""Actions"" menu",0.77,2,1,"24885f8084  MDL-77936 grade: omit second cell action divider when not required.
+b97ffab51a  MDL-77936 grade: omit second cell action divider when not required.",https://github.com/moodle/moodle/commit/24885f80844caf64cd6f2573853f206c2d78f834
+86,MDL-85433,moodle,https://tracker.moodle.org/browse/MDL-85433,Support Site menu activities block in Single Activity format,58.67,5,27,"047bc9ec26  MDL-85433 course: Remove restriction to display course description
+2513bca047  MDL-85433 navigation: Generalise secondary navigation for single format
+6939cebb29  MDL-85433 site_main_menu: Add support to subsections
+badade3137  MDL-85433 block: Update behaviour for default course blocks
+c5d66da007  MDL-85433 singleactivity: Support multiple activities",https://github.com/moodle/moodle/commit/047bc9ec267d5944661c01d03c0bdd197f84075d
+87,PMM-4056,percona,https://perconadev.atlassian.net/browse/PMM-4056,Total has wrong details,8.92,1,2,ed1f03265f  PMM-4056 Fix calculation of total in object detail section.,https://github.com/percona/qan-api2/commit/ed1f03265f6541cb1b7f72bf2bd16e7c44777846
+88,MDEV-27583,mariadb,https://jira.mariadb.org/browse/MDEV-27583,InnoDB uses different constants for FK cascade error message in SQL vs error log,0.67,1,3,73c391afc5  MDEV-27583 InnoDB uses different constants for FK cascade error message in SQL vs error log,https://github.com/MariaDB/server/commit/73c391afc5f9315658e0486a375dbce2d109b9b5
+89,PMM-2060,percona,https://perconadev.atlassian.net/browse/PMM-2060,Replace default Config for Grafana in PMM,1.5,8,5,"9692cc5b6c  PMM-2060 set Percona snapshot server
+d0ef03e33a  PMM-2060 set Percona snapshot server
+d777624097  PMM-2060 set Percona snapshot server
+2361a6272f  
+7c9da79a81  
+9692cc5b6c  PMM-2060 set Percona snapshot server
+d0ef03e33a  PMM-2060 set Percona snapshot server
+d777624097  PMM-2060 set Percona snapshot server",https://github.com/percona/pmm-update/commit/9692cc5b6c718c6612e6b9e53b063b84382a65a7
+90,MDEV-14396,mariadb,https://jira.mariadb.org/browse/MDEV-14396,Assertion `(ha_alter_info->handler_flags & ~INNOBASE_INPLACE_IGNORE) == Alter_inplace_info::CHANGE_CREATE_OPTION' failed in create_option_need_rebuild,0.83,1,5,761e6574c8  MDEV-14396 Assertion failed in create_option_need_rebuild,https://github.com/MariaDB/server/commit/761e6574c879998817d932198906545815987091
+91,PSMDB-788,percona,https://perconadev.atlassian.net/browse/PSMDB-788,Fix LDAP rebind procedure to allow LDAP referrals to work with ldapBindMethod==sasl,1.67,5,1,"056de3c59d  PSMDB-788 fix condition in LDAP rebind procedure
+6bd736b865  PSMDB-788 fix condition in LDAP rebind procedure
+b7337f1f8b  PSMDB-788 fix condition in LDAP rebind procedure
+cc0fbbb1be  PSMDB-788 fix condition in LDAP rebind procedure
+cd0f559d71  PSMDB-788 fix condition in LDAP rebind procedure",https://github.com/percona/percona-server-mongodb/commit/056de3c59dac1ef59737ef5fcae10c130d424fb0
+92,MDEV-15060,mariadb,https://jira.mariadb.org/browse/MDEV-15060,Assertion `0' failed in row_log_table_apply_op after instant ADD when the table is emptied during subsequent ALTER TABLE,11.75,1,6,6c43068d63  MDEV-15060 Assertion in row_log_table_apply_op after instant ADD when the table is emptied during subsequent ALTER TABLE,https://github.com/MariaDB/server/commit/6c43068d6342bd1a7c1dbb24079ac4da4ba9b4ff
+93,MDEV-33480,mariadb,https://jira.mariadb.org/browse/MDEV-33480,"Windows MSI installer, convert from WIX v3 to v4",24.83,7,7,"12a54c7452  MDEV-33480 Windows MSI installer, convert from WIX v3 to supported versions
+2c2fd35b8a  MDEV-33480 Windows MSI installer, convert from WIX v3 to supported versions
+54073ef20f  MDEV-33480 Windows MSI installer, convert from WIX v3 to supported versions
+59a8520958  MDEV-33480 Windows MSI installer, convert from WIX v3 to supported versions
+8313e576da  MDEV-33480 Windows MSI installer, convert from WIX v3 to supported versions
+bf6311c49e  MDEV-33480 Windows MSI installer, convert from WIX v3 to supported versions
+f31017196e  MDEV-33480 Windows MSI installer, convert from WIX v3 to supported versions",https://github.com/MariaDB/server/commit/12a54c74523aace15fa39b969d9db65a3f975df5
+94,MDL-76903,moodle,https://tracker.moodle.org/browse/MDL-76903,Hidden final page in Book prevents activity completion,9.93,4,5,"20b4efad5c  MDL-76903 mod_book: Fix activity completion
+5270236fc4  MDL-76903 mod_book: Fix activity completion
+717c74a448  MDL-76903 mod_book: Fix activity completion
+e489ae2492  MDL-76903 mod_book: Fix activity completion",https://github.com/moodle/moodle/commit/20b4efad5c97f471442de90b87a2607e86a1419c
+95,MDEV-27149,mariadb,https://jira.mariadb.org/browse/MDEV-27149,Add variable rocksdb_ignore_error  to skip error at startup,3,1,6,fa7a67ff49  MDEV-27149: Add rocksdb_ignore_datadic_errors,https://github.com/MariaDB/server/commit/fa7a67ff499582fad6e4f1ff8198689325dee0dd
+96,MDL-78141,moodle,https://tracker.moodle.org/browse/MDL-78141,PHP 8.2: Dynamic Properties are deprecated for ADOdb for Moodle 4.2,9.83,1,20,a385c75dca  MDL-78141 libraries: Apply some changes from ADOdb 5.22.5,https://github.com/moodle/moodle/commit/a385c75dca1d840c6c7f865db17b7855c9324d3a
+97,MDL-65446,moodle,https://tracker.moodle.org/browse/MDL-65446,CLI install doesn't use provided default admin email address,3.75,3,1,"9075a96e5d  MDL-65446 admin: fix admin email option for cli install
+94cbb103ef  MDL-65446 admin: fix admin email option for cli install
+c32af3a710  MDL-65446 admin: fix admin email option for cli install",https://github.com/moodle/moodle/commit/9075a96e5d35bd085cc9cc8dc206e2842fa10ff6
+98,PXB-2466,percona,https://perconadev.atlassian.net/browse/PXB-2466,Xbcrypt crashes when overwriting an existing file,3.5,1,2,764a424d6a  PXB-2466 Xbcrypt crashes when overwriting an existing file,https://github.com/percona/percona-xtrabackup/commit/764a424d6a05cb4401e8caf9c7528bbad22d22f2
+99,MDEV-26102,mariadb,https://jira.mariadb.org/browse/MDEV-26102,dgcov: add support for *.gcda.gcov.json.gz files of gcov 9.1+,33,2,2,"43173ef261  MDEV-26102 dgcov: add support for *.gcda.gcov.json.gz files of gcov 9.1+
+7baf24a0f8  MDEV-26102 followup",https://github.com/MariaDB/server/commit/43173ef2614030afbf0d393a93932e7e8bab1d3e
+100,PXB-1783,percona,https://perconadev.atlassian.net/browse/PXB-1783,Xtrabackup GTID is incorrect after prepare,9,2,1,"0b69e21921  PXB-1783: Create GTID based slave - update procedure
+576ab82361  PXB-1783: Create GTID based slave - update procedure",https://github.com/percona/percona-xtrabackup/commit/0b69e2192114405de3fb047fea616cabf2f0b316
