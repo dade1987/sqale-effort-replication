@@ -1,0 +1,992 @@
+{
+ "project": "percona",
+ "split_dates": {
+  "valid_from": "2020-01-01",
+  "test_from": "2021-01-01"
+ },
+ "split": {
+  "train": [
+   1451,
+   4.166666666666667
+  ],
+  "valid": [
+   976,
+   7.0
+  ],
+  "test": [
+   812,
+   6.0
+  ]
+ },
+ "jira_history": {
+  "type_changed": 0.1648656992899043,
+  "prio_changed": 0.11701142327878974,
+  "ass_changed": 0.3652361840074097,
+  "est_changed": 0.00030873726458783575
+ },
+ "assignee_missing": 0.0,
+ "test": {
+  "B0 median": {
+   "n": 812,
+   "MAE": 22.89353653530377,
+   "MdAE": 4.166666666666667,
+   "SA": 0.25136143515960585,
+   "MdAE_log": 1.0826119473216687,
+   "within2x": 0.31896551724137934,
+   "spearman": NaN
+  },
+  "B1 median per type": {
+   "n": 812,
+   "MAE": 23.022212643678163,
+   "MdAE": 4.916666666666667,
+   "SA": 0.24715361445204065,
+   "MdAE_log": 1.1121443236638624,
+   "within2x": 0.312807881773399,
+   "spearman": -0.07773897857986144
+  },
+  "B2 log-linear on number of files": {
+   "n": 812,
+   "MAE": 21.45129954366828,
+   "MdAE": 4.270392193582619,
+   "SA": 0.2985238397060904,
+   "MdAE_log": 1.0082584744837666,
+   "within2x": 0.35098522167487683,
+   "spearman": 0.4494408549911794
+  },
+  "B3 title text": {
+   "n": 812,
+   "MAE": 21.80526305896644,
+   "MdAE": 4.765358745401988,
+   "SA": 0.28694892476492195,
+   "MdAE_log": 0.969940851344361,
+   "within2x": 0.3620689655172414,
+   "spearman": 0.29741539952549173
+  },
+  "B4 ATLM (feature M1)": {
+   "n": 812,
+   "MAE": 19.390704963190817,
+   "MdAE": 4.459539854240873,
+   "SA": 0.36590707545333545,
+   "MdAE_log": 0.8655006883117686,
+   "within2x": 0.4224137931034483,
+   "spearman": 0.5207035353345189
+  },
+  "B4a ATLM (feature M0)": {
+   "n": 812,
+   "MAE": 22.385151264450148,
+   "MdAE": 5.43487186166087,
+   "SA": 0.2679860758729766,
+   "MdAE_log": 1.0107195863176064,
+   "within2x": 0.3497536945812808,
+   "spearman": 0.3192281679519557
+  },
+  "B5 analogy k-NN (k=10)": {
+   "n": 812,
+   "MAE": 20.94256106321839,
+   "MdAE": 4.75,
+   "SA": 0.31516003068059406,
+   "MdAE_log": 0.917622290583897,
+   "within2x": 0.39408866995073893,
+   "spearman": 0.43284946903908167
+  },
+  "M0 at start of work": {
+   "n": 812,
+   "MAE": 21.741494426209563,
+   "MdAE": 4.7983905871798465,
+   "SA": 0.2890342145424678,
+   "MdAE_log": 0.9146058411080396,
+   "within2x": 0.39285714285714285,
+   "spearman": 0.41201120646984835
+  },
+  "M1 after file localisation": {
+   "n": 812,
+   "MAE": 20.092265690842243,
+   "MdAE": 4.588020478730215,
+   "SA": 0.34296542921674733,
+   "MdAE_log": 0.8403824622200136,
+   "within2x": 0.42857142857142855,
+   "spearman": 0.5475883404393403
+  },
+  "M2 ex post (+ patch)": {
+   "n": 812,
+   "MAE": 19.143840795309472,
+   "MdAE": 4.263042595918269,
+   "SA": 0.3739797485446341,
+   "MdAE_log": 0.788605827451048,
+   "within2x": 0.45197044334975367,
+   "spearman": 0.6114501375691677
+  },
+  "M1 without developer": {
+   "n": 812,
+   "MAE": 20.482648222615815,
+   "MdAE": 4.51571130243819,
+   "SA": 0.3301995807478991,
+   "MdAE_log": 0.8956904455037307,
+   "within2x": 0.39901477832512317,
+   "spearman": 0.5018595127399589
+  },
+  "M0 without text": {
+   "n": 812,
+   "MAE": 22.20501449026366,
+   "MdAE": 5.0234598456866975,
+   "SA": 0.27387670512957873,
+   "MdAE_log": 0.9486872310764873,
+   "within2x": 0.37192118226600984,
+   "spearman": 0.37558544722587234
+  },
+  "M1 without jira": {
+   "n": 812,
+   "MAE": 19.854590175401412,
+   "MdAE": 4.486165584584743,
+   "SA": 0.350737625378006,
+   "MdAE_log": 0.8303415966981673,
+   "within2x": 0.43226600985221675,
+   "spearman": 0.5560645736424155
+  },
+  "M1 without text": {
+   "n": 812,
+   "MAE": 20.059291159429222,
+   "MdAE": 4.868029942318984,
+   "SA": 0.3440437250857695,
+   "MdAE_log": 0.8444475843172015,
+   "within2x": 0.43103448275862066,
+   "spearman": 0.5351158208849406
+  },
+  "M1 without change_set": {
+   "n": 812,
+   "MAE": 20.483752914324203,
+   "MdAE": 4.5467617810907335,
+   "SA": 0.33016345636781996,
+   "MdAE_log": 0.8393185650500523,
+   "within2x": 0.4273399014778325,
+   "spearman": 0.5308907204674216
+  },
+  "M1 without static": {
+   "n": 812,
+   "MAE": 19.8503892740326,
+   "MdAE": 4.610482244129647,
+   "SA": 0.3508749985080567,
+   "MdAE_log": 0.8190035590069564,
+   "within2x": 0.4408866995073892,
+   "spearman": 0.5449385024538527
+  },
+  "M1 without history": {
+   "n": 812,
+   "MAE": 20.466560705265568,
+   "MdAE": 4.499063886774573,
+   "SA": 0.3307256565633312,
+   "MdAE_log": 0.8486364922137413,
+   "within2x": 0.41379310344827586,
+   "spearman": 0.5511329742899379
+  },
+  "M1 without co_change": {
+   "n": 812,
+   "MAE": 20.0807354649924,
+   "MdAE": 4.42476185562451,
+   "SA": 0.34334247763472325,
+   "MdAE_log": 0.8275888990851684,
+   "within2x": 0.4236453201970443,
+   "spearman": 0.5482903786988752
+  }
+ },
+ "comparisons": {
+  "M1 vs B0 median": {
+   "dMAE": -2.80127084446153,
+   "lo": -4.490511571609375,
+   "hi": -1.4027453491989508,
+   "p_boot": 0.0002,
+   "p_wilcoxon": 1.7814583179625335e-15,
+   "A12_paired": 0.6305418719211823,
+   "p_holm": 0.0026000000000000003
+  },
+  "M1 vs B1 median per type": {
+   "dMAE": -2.929946952835915,
+   "lo": -4.385227209313765,
+   "hi": -1.6386279195389233,
+   "p_boot": 0.0002,
+   "p_wilcoxon": 2.628517843766432e-17,
+   "A12_paired": 0.6317733990147784,
+   "p_holm": 0.0026000000000000003
+  },
+  "M1 vs B2 log-linear on number of files": {
+   "dMAE": -1.3590338528260317,
+   "lo": -2.4278801350360903,
+   "hi": -0.37454521350834613,
+   "p_boot": 0.0073999999999999995,
+   "p_wilcoxon": 2.1586791578269594e-07,
+   "A12_paired": 0.5726600985221675,
+   "p_holm": 0.029599999999999998
+  },
+  "M1 vs B3 title text": {
+   "dMAE": -1.7129973681241892,
+   "lo": -2.790026750411754,
+   "hi": -0.821949384895158,
+   "p_boot": 0.0002,
+   "p_wilcoxon": 1.3312948372663274e-09,
+   "A12_paired": 0.5862068965517241,
+   "p_holm": 0.0026000000000000003
+  },
+  "M1 vs B4 ATLM (feature M1)": {
+   "dMAE": 0.7015607276514305,
+   "lo": -0.21958304734535916,
+   "hi": 1.8277013450913233,
+   "p_boot": 0.1486,
+   "p_wilcoxon": 0.2054085060301859,
+   "A12_paired": 0.5221674876847291,
+   "p_holm": 0.2972
+  },
+  "M1 vs B4a ATLM (feature M0)": {
+   "dMAE": -2.2928855736078986,
+   "lo": -3.6607537004239035,
+   "hi": -1.1254432295298415,
+   "p_boot": 0.0002,
+   "p_wilcoxon": 5.017640179180951e-12,
+   "A12_paired": 0.6120689655172413,
+   "p_holm": 0.0026000000000000003
+  },
+  "M1 vs B5 analogy k-NN (k=10)": {
+   "dMAE": -0.8502953723761453,
+   "lo": -1.4961842199642603,
+   "hi": -0.33186602256464903,
+   "p_boot": 0.0018000000000000002,
+   "p_wilcoxon": 6.385059932342014e-05,
+   "A12_paired": 0.5578817733990148,
+   "p_holm": 0.009000000000000001
+  },
+  "M0 vs B0 median": {
+   "dMAE": -1.1520421090942166,
+   "lo": -1.7569620378672406,
+   "hi": -0.5779290582992451,
+   "p_boot": 0.0002,
+   "p_wilcoxon": 8.123632707093464e-13,
+   "A12_paired": 0.6206896551724138,
+   "p_holm": 0.0026000000000000003
+  },
+  "M0 vs B1 median per type": {
+   "dMAE": -1.280718217468601,
+   "lo": -1.7537401810731936,
+   "hi": -0.7504996609551418,
+   "p_boot": 0.0002,
+   "p_wilcoxon": 5.787809045685048e-14,
+   "A12_paired": 0.6231527093596059,
+   "p_holm": 0.0026000000000000003
+  },
+  "M0 vs B3 title text": {
+   "dMAE": -0.06376863275687514,
+   "lo": -0.42748616346486473,
+   "hi": 0.34610637792004384,
+   "p_boot": 0.7206,
+   "p_wilcoxon": 4.519613021207228e-06,
+   "A12_paired": 0.5665024630541872,
+   "p_holm": 0.7206
+  },
+  "M0 vs B4a ATLM (feature M0)": {
+   "dMAE": -0.643656838240585,
+   "lo": -0.9867904164364456,
+   "hi": -0.28056448064324957,
+   "p_boot": 0.0014,
+   "p_wilcoxon": 0.00012087390022086428,
+   "A12_paired": 0.5529556650246306,
+   "p_holm": 0.0084
+  },
+  "M1 vs M0": {
+   "dMAE": -1.649228735367314,
+   "lo": -2.855415952416762,
+   "hi": -0.702619340712383,
+   "p_boot": 0.0002,
+   "p_wilcoxon": 2.564943888180857e-05,
+   "A12_paired": 0.5578817733990148,
+   "p_holm": 0.0026000000000000003
+  },
+  "M2 vs M1": {
+   "dMAE": -0.9484248955327749,
+   "lo": -1.8464706316908328,
+   "hi": -0.14281496543585745,
+   "p_boot": 0.023,
+   "p_wilcoxon": 1.7997874061116613e-06,
+   "A12_paired": 0.5714285714285714,
+   "p_holm": 0.069
+  }
+ },
+ "test_from_2023": {
+  "B0 median": {
+   "n": 88,
+   "MAE": 80.5529924242424,
+   "MdAE": 20.833333333333332,
+   "SA": 0.029015677013694896,
+   "MdAE_log": 2.011037964212661,
+   "within2x": 0.11363636363636363,
+   "spearman": NaN
+  },
+  "M0 at start of work": {
+   "n": 88,
+   "MAE": 78.840995372168,
+   "MdAE": 19.525113559753294,
+   "SA": 0.04965205871144984,
+   "MdAE_log": 1.6998162264415924,
+   "within2x": 0.17045454545454544,
+   "spearman": 0.2419273189949058
+  },
+  "M1 after file localisation": {
+   "n": 88,
+   "MAE": 74.9732519117062,
+   "MdAE": 15.960267112453273,
+   "SA": 0.0962737688729085,
+   "MdAE_log": 1.5749308993334137,
+   "within2x": 0.20454545454545456,
+   "spearman": 0.5404658067739125
+  },
+  "M2 ex post (+ patch)": {
+   "n": 88,
+   "MAE": 70.07837625291353,
+   "MdAE": 14.599782985478406,
+   "SA": 0.15527651209346416,
+   "MdAE_log": 1.272086122430294,
+   "within2x": 0.3068181818181818,
+   "spearman": 0.6714165641869178
+  },
+  "M1 without developer": {
+   "n": 88,
+   "MAE": 75.18199764196413,
+   "MdAE": 19.661133767718972,
+   "SA": 0.0937575515919502,
+   "MdAE_log": 1.5972315627471918,
+   "within2x": 0.19318181818181818,
+   "spearman": 0.5114292443157326
+  },
+  "M0 without text": {
+   "n": 88,
+   "MAE": 78.92356510678019,
+   "MdAE": 20.286659155654412,
+   "SA": 0.04865676461437474,
+   "MdAE_log": 1.6692671777945243,
+   "within2x": 0.1590909090909091,
+   "spearman": 0.2601314156970213
+  },
+  "M1 without jira": {
+   "n": 88,
+   "MAE": 74.85896037747472,
+   "MdAE": 15.655104184319269,
+   "SA": 0.09765143697249135,
+   "MdAE_log": 1.5047300989798982,
+   "within2x": 0.18181818181818182,
+   "spearman": 0.5548211591569375
+  },
+  "M1 without text": {
+   "n": 88,
+   "MAE": 74.18925531467124,
+   "MdAE": 14.278554022164109,
+   "SA": 0.10572404976360894,
+   "MdAE_log": 1.4602377029443683,
+   "within2x": 0.23863636363636365,
+   "spearman": 0.5588899768262366
+  },
+  "M1 without change_set": {
+   "n": 88,
+   "MAE": 76.25645528232631,
+   "MdAE": 14.220416464724487,
+   "SA": 0.08080605850513889,
+   "MdAE_log": 1.6402012883746981,
+   "within2x": 0.2159090909090909,
+   "spearman": 0.46320230588049033
+  },
+  "M1 without static": {
+   "n": 88,
+   "MAE": 74.17796411585236,
+   "MdAE": 13.453276371247146,
+   "SA": 0.10586015367124668,
+   "MdAE_log": 1.5763420439826685,
+   "within2x": 0.23863636363636365,
+   "spearman": 0.5566442008399353
+  },
+  "M1 without history": {
+   "n": 88,
+   "MAE": 75.40382388487122,
+   "MdAE": 14.677436736800544,
+   "SA": 0.09108366204660157,
+   "MdAE_log": 1.5694789366239035,
+   "within2x": 0.1590909090909091,
+   "spearman": 0.5662525992754446
+  },
+  "M1 without co_change": {
+   "n": 88,
+   "MAE": 74.58360951190275,
+   "MdAE": 15.13562268707542,
+   "SA": 0.1009705113574999,
+   "MdAE_log": 1.468282037512974,
+   "within2x": 0.22727272727272727,
+   "spearman": 0.5615761010451462
+  }
+ },
+ "share_estimate_changed": 0.015384615384615385,
+ "sqale": {
+  "all": {
+   "n": 447,
+   "SQALE raw": {
+    "n": 447,
+    "MAE": 47.5459911757395,
+    "MdAE": 10.916666666666666,
+    "SA": -0.17172246509811484,
+    "MdAE_log": 1.40795585790107,
+    "within2x": 0.25727069351230425,
+    "spearman": 0.47826075563169607
+   },
+   "SQALE recalibrated": {
+    "n": 447,
+    "MAE": 33.14467760626159,
+    "MdAE": 6.080256009823996,
+    "SA": 0.1831832213541592,
+    "MdAE_log": 1.0997407545419717,
+    "within2x": 0.3087248322147651,
+    "spearman": 0.47826075563169607
+   },
+   "M1": {
+    "n": 447,
+    "MAE": 29.977139068532058,
+    "MdAE": 7.899769937753494,
+    "SA": 0.2612439783589583,
+    "MdAE_log": 0.9096702025508614,
+    "within2x": 0.378076062639821,
+    "spearman": 0.5378883642876999
+   },
+   "M1 without developer": {
+    "n": 447,
+    "MAE": 30.580883014052084,
+    "MdAE": 8.002078789193618,
+    "SA": 0.24636532452002546,
+    "MdAE_log": 0.9717362288418039,
+    "within2x": 0.3534675615212528,
+    "spearman": 0.48047324848562495
+   },
+   "M0": {
+    "n": 447,
+    "MAE": 32.920437390907324,
+    "MdAE": 7.77037134369693,
+    "SA": 0.18870939278126997,
+    "MdAE_log": 1.1216093577184596,
+    "within2x": 0.3131991051454139,
+    "spearman": 0.3012070554175228
+   },
+   "M0 vs SQALE recalibrated": {
+    "dMAE": -0.22424021535426647,
+    "lo": -0.8667541769309465,
+    "hi": 0.4850918355423315,
+    "p_boot": 0.5094,
+    "p_wilcoxon": 0.2475389905335802,
+    "A12_paired": 0.4809843400447427,
+    "p_holm": 0.5094
+   },
+   "M1 vs SQALE recalibrated": {
+    "dMAE": -3.167538537729528,
+    "lo": -5.382491465488336,
+    "hi": -1.0954830091381214,
+    "p_boot": 0.003,
+    "p_wilcoxon": 4.286019320389532e-05,
+    "A12_paired": 0.5861297539149888,
+    "p_holm": 0.009000000000000001
+   },
+   "M1 without developer vs SQALE recalibrated": {
+    "dMAE": -2.5637945922095025,
+    "lo": -5.2129435203955765,
+    "hi": -0.02197002506622857,
+    "p_boot": 0.047,
+    "p_wilcoxon": 0.018388298815844643,
+    "A12_paired": 0.5458612975391499,
+    "p_holm": 0.094
+   }
+  },
+  "refactoring and clean-up": {
+   "n": 5
+  },
+  "beyond_size": {
+   "partial_spearman_all": 0.082462509723251,
+   "partial_spearman_test": 0.2722579828890719,
+   "spearman_hours_density": 0.16197549129862646,
+   "spearman_hours_per_line_density": -0.09868512341576575,
+   "lines only": {
+    "n": 444,
+    "MAE": 33.26065943617678,
+    "MdAE": 6.119437152411613,
+    "SA": 0.18239774226107774,
+    "MdAE_log": 1.133171611313614,
+    "within2x": 0.3108108108108108,
+    "spearman": 0.4067916636328828
+   },
+   "SQALE only": {
+    "n": 444,
+    "MAE": 33.2807788634913,
+    "MdAE": 6.140790439538771,
+    "SA": 0.18190317331759875,
+    "MdAE_log": 1.1047338380721103,
+    "within2x": 0.3063063063063063,
+    "spearman": 0.4767039891270407
+   },
+   "lines + SQALE": {
+    "n": 444,
+    "MAE": 33.15029608725359,
+    "MdAE": 6.220893484370283,
+    "SA": 0.1851106567005638,
+    "MdAE_log": 1.125253666874326,
+    "within2x": 0.31981981981981983,
+    "spearman": 0.43098313723622805
+   },
+   "coef_log_sqale": 0.03701761806354709,
+   "lines + SQALE vs lines only": {
+    "dMAE": -0.11036334892319338,
+    "lo": -0.16655681461305938,
+    "hi": -0.053430853309328674,
+    "p_boot": 0.0002,
+    "p_wilcoxon": 2.820457933436127e-10,
+    "A12_paired": 0.6351351351351351
+   },
+   "n_test": 444
+  },
+  "n_train_calibration": 1361,
+  "spearman_hours_sqale": 0.28011497514064587,
+  "spearman_hours_ncloc": 0.29349868310805,
+  "median_sqale_hours": 3.0,
+  "median_hours": 8.0,
+  "share_refactoring_in_sample": 0.025995575221238937
+ },
+ "sensitivity": {
+  "assignee hours only": {
+   "share_issues": 0.7104044458166101,
+   "median_assignee_share_of_hours": 0.8848920863309352,
+   "M1": {
+    "n": 522,
+    "MAE": 15.336400530729685,
+    "MdAE": 3.9746021056356335,
+    "SA": 0.4333726788814757,
+    "MdAE_log": 0.725121424695881,
+    "within2x": 0.48659003831417624,
+    "spearman": 0.6062783892237223
+   },
+   "B0": {
+    "n": 522,
+    "MAE": 19.287590996168586,
+    "MdAE": 4.0,
+    "SA": 0.28738976299618113,
+    "MdAE_log": 0.9839057065042072,
+    "within2x": 0.3793103448275862,
+    "spearman": NaN
+   }
+  },
+  "without extremes (<0.25 h, >p99)": {
+   "p99_threshold_h": 182.25333333333268,
+   "M1": {
+    "n": 784,
+    "MAE": 12.890720631692412,
+    "MdAE": 4.58562844838217,
+    "SA": 0.3524032295436884,
+    "MdAE_log": 0.805978334330651,
+    "within2x": 0.44642857142857145,
+    "spearman": 0.506801516050052
+   },
+   "B0": {
+    "n": 784,
+    "MAE": 14.612710459183676,
+    "MdAE": 4.25,
+    "SA": 0.2658948734243024,
+    "MdAE_log": 0.980829253011726,
+    "within2x": 0.34183673469387754,
+    "spearman": NaN
+   }
+  }
+ },
+ "error_analysis": {
+  "hours_decile": {
+   "1": {
+    "n": 82,
+    "MdAE_log_M1": 2.033270798382463,
+    "MdAE_log_M0": 2.222240417397888,
+    "MdAE_log_B0": 2.3353749158170367,
+    "underestimate_M1": 0.0
+   },
+   "2": {
+    "n": 81,
+    "MdAE_log_M1": 1.0309463173731677,
+    "MdAE_log_M0": 1.1995455966637683,
+    "MdAE_log_B0": 1.236762627148927,
+    "underestimate_M1": 0.04938271604938271
+   },
+   "3": {
+    "n": 81,
+    "MdAE_log_M1": 0.6340207429383232,
+    "MdAE_log_M0": 0.8247154271905291,
+    "MdAE_log_B0": 0.8690378470236096,
+    "underestimate_M1": 0.12345679012345678
+   },
+   "4": {
+    "n": 81,
+    "MdAE_log_M1": 0.4352057621833132,
+    "MdAE_log_M0": 0.4290093555892214,
+    "MdAE_log_B0": 0.38946476676172326,
+    "underestimate_M1": 0.2716049382716049
+   },
+   "5": {
+    "n": 81,
+    "MdAE_log_M1": 0.4215863487817979,
+    "MdAE_log_M0": 0.37857924421437295,
+    "MdAE_log_B0": 0.13815033848081715,
+    "underestimate_M1": 0.48148148148148145
+   },
+   "6": {
+    "n": 81,
+    "MdAE_log_M1": 0.5392532801719387,
+    "MdAE_log_M0": 0.3450607501171512,
+    "MdAE_log_B0": 0.3946541920039488,
+    "underestimate_M1": 0.6666666666666666
+   },
+   "7": {
+    "n": 81,
+    "MdAE_log_M1": 0.6489639262887223,
+    "MdAE_log_M0": 0.619355558582857,
+    "MdAE_log_B0": 0.8835009090511643,
+    "underestimate_M1": 0.7901234567901234
+   },
+   "8": {
+    "n": 81,
+    "MdAE_log_M1": 0.7985422217529075,
+    "MdAE_log_M0": 0.9296608917105731,
+    "MdAE_log_B0": 1.2755429968271876,
+    "underestimate_M1": 0.8395061728395061
+   },
+   "9": {
+    "n": 81,
+    "MdAE_log_M1": 1.1731920187819211,
+    "MdAE_log_M0": 1.5231682581899455,
+    "MdAE_log_B0": 1.8567011348983993,
+    "underestimate_M1": 0.9259259259259259
+   },
+   "10": {
+    "n": 82,
+    "MdAE_log_M1": 1.8116967765654548,
+    "MdAE_log_M0": 2.524635496945439,
+    "MdAE_log_B0": 3.040959776678011,
+    "underestimate_M1": 0.9634146341463414
+   }
+  },
+  "type": {
+   "Admin & Maintenance Task": {
+    "n": 156,
+    "MdAE_log_M1": 0.6159974947517171,
+    "MdAE_log_M0": 0.7794957822906432,
+    "MdAE_log_B0": 0.9639458217763175,
+    "underestimate_M1": 0.4807692307692308
+   },
+   "Bug": {
+    "n": 413,
+    "MdAE_log_M1": 0.853916804257683,
+    "MdAE_log_M0": 0.9210042071442519,
+    "MdAE_log_B0": 1.0319209141694374,
+    "underestimate_M1": 0.5472154963680388
+   },
+   "Improvement": {
+    "n": 149,
+    "MdAE_log_M1": 0.841943443219966,
+    "MdAE_log_M0": 0.9480463955393255,
+    "MdAE_log_B0": 1.1303609869826898,
+    "underestimate_M1": 0.44966442953020136
+   },
+   "New Feature": {
+    "n": 85,
+    "MdAE_log_M1": 0.9631844819236899,
+    "MdAE_log_M0": 0.9352564264559176,
+    "MdAE_log_B0": 1.0878013725638942,
+    "underestimate_M1": 0.4823529411764706
+   }
+  },
+  "experience": {
+   "0 issues": {
+    "n": 44,
+    "MdAE_log_M1": 1.5471699364855773,
+    "MdAE_log_M0": 1.771197182457854,
+    "MdAE_log_B0": 1.6422277352570913,
+    "underestimate_M1": 0.5909090909090909
+   },
+   "1-9": {
+    "n": 94,
+    "MdAE_log_M1": 1.0352670684791834,
+    "MdAE_log_M0": 1.1786092119982534,
+    "MdAE_log_B0": 1.2171361600044726,
+    "underestimate_M1": 0.5319148936170213
+   },
+   "10-49": {
+    "n": 340,
+    "MdAE_log_M1": 0.8690633630015687,
+    "MdAE_log_M0": 0.94202590865265,
+    "MdAE_log_B0": 1.1719140257640475,
+    "underestimate_M1": 0.5294117647058824
+   },
+   "50+": {
+    "n": 334,
+    "MdAE_log_M1": 0.7026784352432547,
+    "MdAE_log_M0": 0.7566235894807818,
+    "MdAE_log_B0": 0.949080554697146,
+    "underestimate_M1": 0.47604790419161674
+   }
+  },
+  "file": {
+   "1": {
+    "n": 280,
+    "MdAE_log_M1": 0.7891104199702956,
+    "MdAE_log_M0": 0.7667441920871045,
+    "MdAE_log_B0": 0.949080554697146,
+    "underestimate_M1": 0.48214285714285715
+   },
+   "2-3": {
+    "n": 209,
+    "MdAE_log_M1": 0.802773323577437,
+    "MdAE_log_M0": 0.8061648032799146,
+    "MdAE_log_B0": 0.949080554697146,
+    "underestimate_M1": 0.49760765550239233
+   },
+   "4-10": {
+    "n": 197,
+    "MdAE_log_M1": 0.9638544969228202,
+    "MdAE_log_M0": 1.1859322396798888,
+    "MdAE_log_B0": 1.236762627148927,
+    "underestimate_M1": 0.5431472081218274
+   },
+   ">10": {
+    "n": 126,
+    "MdAE_log_M1": 0.9158792691956914,
+    "MdAE_log_M0": 1.1932332217426838,
+    "MdAE_log_B0": 1.6347389667558143,
+    "underestimate_M1": 0.5476190476190477
+   }
+  }
+ },
+ "worst_cases": {
+  "underestimates": [
+   {
+    "key": "PS-10383",
+    "hours": 176.0,
+    "p": 3.85,
+    "r": 3.82,
+    "type": "Bug",
+    "n_files": 2,
+    "summary": "MeCab plugin does not enforce phrase adjacency for \"\" phrase search in BOOLEAN MODE"
+   },
+   {
+    "key": "PS-10110",
+    "hours": 436.0,
+    "p": 15.5,
+    "r": 3.34,
+    "type": "Bug",
+    "n_files": 9,
+    "summary": "Percona Server 8.0.42 MyRocks produces poor query plans"
+   },
+   {
+    "key": "PS-8313",
+    "hours": 248.0,
+    "p": 9.3,
+    "r": 3.28,
+    "type": "Bug",
+    "n_files": 10,
+    "summary": "[ERROR] [MY-013129] [Server] A message intended for a client cannot be sent there as no client-session is attached. Therefore, we're sending the information to the error-log instead: MY-001158 - Got an error reading communication packets"
+   },
+   {
+    "key": "PSMDB-840",
+    "hours": 77.42,
+    "p": 2.95,
+    "r": 3.27,
+    "type": "Admin & Maintenance Task",
+    "n_files": 1,
+    "summary": "Create a code contributing guide"
+   },
+   {
+    "key": "PXC-5208",
+    "hours": 496.0,
+    "p": 19.34,
+    "r": 3.24,
+    "type": "Bug",
+    "n_files": 11,
+    "summary": "Add an option to force SST after a node is restarted following an inconsistency"
+   },
+   {
+    "key": "PS-10990",
+    "hours": 104.0,
+    "p": 4.15,
+    "r": 3.22,
+    "type": "Bug",
+    "n_files": 2,
+    "summary": "Crash on Item_cache::walk on specific join executed withing stored procedure"
+   },
+   {
+    "key": "PS-7410",
+    "hours": 115.0,
+    "p": 5.1,
+    "r": 3.12,
+    "type": "Admin & Maintenance Task",
+    "n_files": 3,
+    "summary": "Auto-detect and set performance-related RocksDB flags"
+   },
+   {
+    "key": "PXC-4814",
+    "hours": 144.0,
+    "p": 6.81,
+    "r": 3.05,
+    "type": "Bug",
+    "n_files": 3,
+    "summary": "Failed OPTIMIZE TABLE due to case sensitivity writes to Binlog with error_code=0 when wsrep_OSU_method='RSU'"
+   },
+   {
+    "key": "PS-8042",
+    "hours": 1127.75,
+    "p": 54.37,
+    "r": 3.03,
+    "type": "New Feature",
+    "n_files": 390,
+    "summary": "Audit Log v2 initial design and implementation"
+   },
+   {
+    "key": "K8SPXC-645",
+    "hours": 54.67,
+    "p": 3.1,
+    "r": 2.87,
+    "type": "Bug",
+    "n_files": 3,
+    "summary": "PITR ERROR collect binlog files - converting NULL to string is unsupported"
+   }
+  ],
+  "overestimates": [
+   {
+    "key": "PS-9680",
+    "hours": 0.02,
+    "p": 4.98,
+    "r": -5.7,
+    "type": "Bug",
+    "n_files": 4,
+    "summary": "Potential data corruption in MyRocks after RocksDB 7.10.0 changes"
+   },
+   {
+    "key": "PS-9388",
+    "hours": 0.1,
+    "p": 8.86,
+    "r": -4.48,
+    "type": "Admin & Maintenance Task",
+    "n_files": 2,
+    "summary": "Fix routertest_integration_routing gunit tests"
+   },
+   {
+    "key": "PMM-10855",
+    "hours": 0.17,
+    "p": 5.92,
+    "r": -3.57,
+    "type": "Improvement",
+    "n_files": 2,
+    "summary": "Avoid massive gRPC messages formatting for disabled log level"
+   },
+   {
+    "key": "PS-8030",
+    "hours": 0.25,
+    "p": 7.75,
+    "r": -3.43,
+    "type": "Bug",
+    "n_files": 1,
+    "summary": "Multithreaded replica crashes inside Relay_log_info::cannot_safely_rollback()"
+   },
+   {
+    "key": "PSQLADM-385",
+    "hours": 0.33,
+    "p": 10.09,
+    "r": -3.41,
+    "type": "Improvement",
+    "n_files": 2,
+    "summary": "Support MySQL / PXC 5.5 with proxysql-admin"
+   },
+   {
+    "key": "PXC-3855",
+    "hours": 0.5,
+    "p": 14.83,
+    "r": -3.39,
+    "type": "Bug",
+    "n_files": 5,
+    "summary": "Assertion `!thd->in_active_multi_stmt_transaction() || thd->in_multi_stmt_transaction_mode()'"
+   },
+   {
+    "key": "PSMDB-1148",
+    "hours": 1.58,
+    "p": 44.25,
+    "r": -3.33,
+    "type": "Improvement",
+    "n_files": 32,
+    "summary": "Change key rotation approach for vault"
+   },
+   {
+    "key": "PBM-727",
+    "hours": 0.17,
+    "p": 4.56,
+    "r": -3.31,
+    "type": "Admin & Maintenance Task",
+    "n_files": 4,
+    "summary": "Replace all occurrences of \"apt-get\" with \"apt\""
+   },
+   {
+    "key": "PBM-711",
+    "hours": 0.08,
+    "p": 2.25,
+    "r": -3.3,
+    "type": "Admin & Maintenance Task",
+    "n_files": 1,
+    "summary": "Fix table alignment for pbm commands"
+   },
+   {
+    "key": "PS-8246",
+    "hours": 0.5,
+    "p": 13.05,
+    "r": -3.26,
+    "type": "Bug",
+    "n_files": 30,
+    "summary": "Adapt Encryption UDF MTR test cases to OpenSSL 3.0.x"
+   }
+  ]
+ },
+ "importance_M1": {
+  "dev_prior_med": 0.1002,
+  "n_files": 0.0981,
+  "text_pred": 0.089,
+  "dev_prior_n": 0.0661,
+  "h_last_min_d": 0.0539,
+  "h_churn_1y": 0.0488,
+  "h_age_min_d": 0.0477,
+  "h_age_max_d": 0.0429,
+  "h_commits_1y": 0.0423,
+  "n_dirs": 0.0421,
+  "cc_partners_sum": 0.0326,
+  "h_commits_max": 0.0326,
+  "h_commits_mean": 0.0322,
+  "comp1": 0.0318,
+  "cc_partners_max": 0.0301
+ },
+ "importance_M0": {
+  "text_pred": 0.3482,
+  "dev_prior_med": 0.2827,
+  "dev_prior_n": 0.1766,
+  "comp1": 0.1059,
+  "type": 0.0576,
+  "n_components": 0.0191,
+  "priority": 0.0099
+ },
+ "rolling_origin_SA": {
+  "2020": {
+   "n": 976,
+   "M1": 0.4092113438774011,
+   "M0": 0.328668417896528,
+   "B0_MdAE_log": 0.9707789171582248
+  },
+  "2021": {
+   "n": 553,
+   "M1": 0.45301498205066226,
+   "M0": 0.3835981269479659,
+   "B0_MdAE_log": 0.949080554697146
+  },
+  "2022": {
+   "n": 171,
+   "M1": 0.43592783539619817,
+   "M0": 0.44276357939916855,
+   "B0_MdAE_log": 0.9808292530117263
+  }
+ }
+}
