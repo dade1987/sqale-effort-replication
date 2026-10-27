@@ -1,6 +1,6 @@
 # Per-issue effort models (version after the methodological review).
 # Two prediction scenarios:
-#   M0 "at assignment": Jira fields as at creation, assignee at the first commit and their history, title text.
+#   M0 "at start of work": Jira fields as at creation, the developer known at the start of work and their history, title text.
 #   M1 "after file localisation": M0 + set of touched files and their metrics at the parent commit (the files are an oracle).
 #   M2 ex post: M1 + patch size.
 # Removed fix-dependent features: n_new, h_ownership, dev_fix_prior_n.
@@ -20,7 +20,7 @@ f, sf, name = sys.argv[1:4]
 V0, T0 = os.environ.get("VALID_START", "2021-01-01"), os.environ.get("TEST_START", "2023-01-01")
 df = pd.read_csv(f).merge(pd.read_csv(sf), on="key", how="left")
 df = df[df.hours > 0].sort_values(["fix_date", "key"]).reset_index(drop=True)
-# Jira fields reconstructed at creation, and assignee at the first commit
+# Jira fields reconstructed at creation; developer at the start of work (DEV_AT=commit: at the first commit)
 df["type"] = df.type_open.fillna(df.type)
 df["priority"] = df.priority_open
 df["components"] = df.components_open.fillna("")
@@ -28,8 +28,10 @@ df["comp1"] = df.components.str.split("|").str[0].fillna("")
 df["n_components"] = df.components.map(lambda s: len([c for c in s.split("|") if c]))
 df["assignee"] = df.assignee_T.fillna("git:" + df.fix_author.fillna("").astype(str)).replace("git:", "")
 df["dev_date"] = df.fix_date
-if os.environ.get("DEV_AT") == "start":   # developer and developer history at the start of work (start_of_work.py), not at the first commit
-    sw = pd.read_csv(os.environ["START_FILE"])[["key", "start_date", "assignee_S"]]
+# Developer and developer history at the start of work (start_of_work.py): the default since the EMSE revision.
+# DEV_AT=commit restores the earlier definition (assignee at the first fix commit), kept as a sensitivity analysis.
+if os.environ.get("DEV_AT", "start") == "start":
+    sw = pd.read_csv(os.environ.get("START_FILE", sf.replace("_history.csv", "_start_of_work.csv")))[["key", "start_date", "assignee_S"]]
     df = df.merge(sw, on="key", how="left"); df["assignee"] = df.assignee_S.fillna(""); df["dev_date"] = df.start_date.fillna(df.fix_date)
 df["summary"] = df.summary.fillna("")
 df["y"] = np.log(df.hours)
@@ -170,7 +172,7 @@ kbest = min([3, 5, 10, 20, 40], key=lambda k: np.mean(np.abs(np.log(va.hours.val
 pred[f"B5 analogy k-NN (k={kbest})"] = knn(trva, te, kbest)
 
 models = {}
-for lab, groups in {"M0 at assignment": A, "M1 after file localisation": B, "M2 ex post (+ patch)": B + ["patch"],
+for lab, groups in {"M0 at start of work": A, "M1 after file localisation": B, "M2 ex post (+ patch)": B + ["patch"],
                     "M1 without developer": [g for g in B if g != "developer"],
                     "M0 without text": ["jira", "developer"]}.items():
     m, cols = fit_gbm(tr, va, groups)
@@ -182,7 +184,7 @@ for g in B:
     m, cols = fit_gbm(tr, va, groups); m2, _ = fit_gbm(trva, None, groups, rounds=max(50, m.best_iteration))
     pred[f"M1 without {g}"] = np.exp(m2.predict(frame(te, cols, trva)))
 res["test"] = {k: metrics(y, p, ytr) for k, p in pred.items()}
-M0, M1 = "M0 at assignment", "M1 after file localisation"
+M0, M1 = "M0 at start of work", "M1 after file localisation"
 cmp = {}
 for k in pred:
     if k.startswith("B"): cmp[f"M1 vs {k}"] = compare(y, pred[M1], pred[k], grp)

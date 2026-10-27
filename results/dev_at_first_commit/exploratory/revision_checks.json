@@ -1,0 +1,253 @@
+{
+ "moodle": {
+  "timing_test_issues": {
+   "n": 5451,
+   "median_days_first_worklog_to_first_commit": 4.0,
+   "share_issues_with_hours_logged_before_first_commit_day": 0.5956705191707944,
+   "median_share_of_hours_before_first_commit_day": 0.2597402597402597,
+   "mean_share_of_hours_before_first_commit_day": 0.3668362478051788,
+   "share_issues_more_than_half_hours_before": 0.3920381581361218
+  },
+  "selection_exploratory_test": {
+   "analysable": {
+    "n": 860,
+    "median_hours": 3.2666666666666666,
+    "share_bug": 0.5593023255813954,
+    "median_files": 4.0,
+    "median_dev_prior_issues": 100.0
+   },
+   "excluded": {
+    "n": 134,
+    "median_hours": 2.541666666666667,
+    "share_bug": 0.6268656716417911,
+    "median_files": 2.0,
+    "median_dev_prior_issues": 69.0
+   }
+  },
+  "selection_holdout": {
+   "analysable_H1": {
+    "n": 851,
+    "median_hours": 3.25,
+    "share_bug": 0.5840188014101058,
+    "median_files": 4.0,
+    "median_dev_prior_issues": 99.0
+   },
+   "excluded": {
+    "n": 149,
+    "median_hours": 2.35,
+    "share_bug": 0.5771812080536913,
+    "median_files": 2.0,
+    "median_dev_prior_issues": 83.0
+   }
+  },
+  "nonlinear": {
+   "n_train": 875,
+   "rounds": {
+    "size": 53,
+    "size+SQALE": 54
+   },
+   "exploratory_test": {
+    "n": 854,
+    "MAE_size": 7.338589474649866,
+    "MAE_size_sqale": 7.362773434469227,
+    "dMAE": 0.02418395981936167,
+    "ci95": [
+     -0.021408380629636244,
+     0.08033830138559477
+    ],
+    "pct": 0.3295450699743021,
+    "ci95_pct": [
+     -0.2917233714133828,
+     1.0947376422010282
+    ]
+   },
+   "holdout": {
+    "n": 851,
+    "MAE_size": 8.214750919718966,
+    "MAE_size_sqale": 8.226189501516084,
+    "dMAE": 0.011438581797115975,
+    "ci95": [
+     -0.035116154710139756,
+     0.05415250367483176
+    ],
+    "pct": 0.13924441421173728,
+    "ci95_pct": [
+     -0.4274768042673789,
+     0.6592105372889914
+    ]
+   }
+  },
+  "size_classes": {
+   "n": 854,
+   "acc_sqale": 0.5772833723653396,
+   "acc_most_frequent": 0.5655737704918032,
+   "acc_diff": 0.0117096018735363,
+   "acc_diff_ci95": [
+    -0.014109675287018375,
+    0.043345496093174105
+   ],
+   "kappa_w": 0.10222962698690352,
+   "kappa_w_ci95": [
+    0.05669128128104525,
+    0.15168913288310076
+   ]
+  }
+ },
+ "mariadb": {
+  "timing_test_issues": {
+   "n": 3622,
+   "median_days_first_worklog_to_first_commit": 11.0,
+   "share_issues_with_hours_logged_before_first_commit_day": 0.7794036443953617,
+   "median_share_of_hours_before_first_commit_day": 0.7423963133640553,
+   "mean_share_of_hours_before_first_commit_day": 0.5896376368754838,
+   "share_issues_more_than_half_hours_before": 0.6101601325234677
+  },
+  "selection_exploratory_test": {
+   "analysable": {
+    "n": 828,
+    "median_hours": 5.25,
+    "share_bug": 0.8852657004830918,
+    "median_files": 4.0,
+    "median_dev_prior_issues": 254.5
+   },
+   "excluded": {
+    "n": 132,
+    "median_hours": 2.6333333333333333,
+    "share_bug": 0.9318181818181818,
+    "median_files": 2.0,
+    "median_dev_prior_issues": 123.5
+   }
+  },
+  "selection_holdout": {
+   "analysable_H1": {
+    "n": 862,
+    "median_hours": 6.041666666666666,
+    "share_bug": 0.8631090487238979,
+    "median_files": 4.0,
+    "median_dev_prior_issues": 271.5
+   },
+   "excluded": {
+    "n": 138,
+    "median_hours": 2.583333333333333,
+    "share_bug": 0.8985507246376812,
+    "median_files": 2.0,
+    "median_dev_prior_issues": 141.5
+   }
+  },
+  "nonlinear": {
+   "n_train": 880,
+   "rounds": {
+    "size": 53,
+    "size+SQALE": 74
+   },
+   "exploratory_test": {
+    "n": 808,
+    "MAE_size": 17.07656271286011,
+    "MAE_size_sqale": 16.931658595919878,
+    "dMAE": -0.1449041169402352,
+    "ci95": [
+     -0.32384379533384267,
+     0.0413124294212783
+    ],
+    "pct": -0.848555528280349,
+    "ci95_pct": [
+     -1.8964226043567929,
+     0.2419247369388133
+    ]
+   },
+   "holdout": {
+    "n": 862,
+    "MAE_size": 15.497170810463448,
+    "MAE_size_sqale": 15.343229542782423,
+    "dMAE": -0.15394126768102517,
+    "ci95": [
+     -0.2996181954758035,
+     -0.049079020757182915
+    ],
+    "pct": -0.9933507835964899,
+    "ci95_pct": [
+     -1.9333735114638213,
+     -0.3166966497139305
+    ]
+   }
+  },
+  "size_classes": {
+   "n": 808,
+   "acc_sqale": 0.4034653465346535,
+   "acc_most_frequent": 0.4282178217821782,
+   "acc_diff": -0.024752475247524754,
+   "acc_diff_ci95": [
+    -0.13226648133891872,
+    0.07858692393859548
+   ],
+   "kappa_w": 0.21079570035608508,
+   "kappa_w_ci95": [
+    0.15776178693775808,
+    0.2538604204422074
+   ]
+  }
+ },
+ "percona": {
+  "timing_test_issues": {
+   "n": 812,
+   "median_days_first_worklog_to_first_commit": 7.0,
+   "share_issues_with_hours_logged_before_first_commit_day": 0.7586206896551724,
+   "median_share_of_hours_before_first_commit_day": 0.8591596638655462,
+   "mean_share_of_hours_before_first_commit_day": 0.6379480580263377,
+   "share_issues_more_than_half_hours_before": 0.6674876847290641
+  },
+  "selection_exploratory_test": {
+   "analysable": {
+    "n": 447,
+    "median_hours": 11.0,
+    "share_bug": 0.5458612975391499,
+    "median_files": 5.0,
+    "median_dev_prior_issues": 27.0
+   },
+   "excluded": {
+    "n": 365,
+    "median_hours": 4.0,
+    "share_bug": 0.41643835616438357,
+    "median_files": 1.0,
+    "median_dev_prior_issues": 54.0
+   }
+  },
+  "nonlinear": {
+   "n_train": 1346,
+   "rounds": {
+    "size": 117,
+    "size+SQALE": 128
+   },
+   "exploratory_test": {
+    "n": 444,
+    "MAE_size": 32.69997011620713,
+    "MAE_size_sqale": 32.107529479014495,
+    "dMAE": -0.5924406371926333,
+    "ci95": [
+     -0.9896810129028537,
+     -0.21627425176014128
+    ],
+    "pct": -1.81174672358187,
+    "ci95_pct": [
+     -3.0265502059658966,
+     -0.6613897535427684
+    ]
+   }
+  },
+  "size_classes": {
+   "n": 444,
+   "acc_sqale": 0.30405405405405406,
+   "acc_most_frequent": 0.3108108108108108,
+   "acc_diff": -0.006756756756756757,
+   "acc_diff_ci95": [
+    -0.076743220807969,
+    0.05826670474014841
+   ],
+   "kappa_w": 0.09483539716097855,
+   "kappa_w_ci95": [
+    0.04588630559277823,
+    0.14968776114318802
+   ]
+  }
+ }
+}

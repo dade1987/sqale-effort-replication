@@ -4,7 +4,7 @@ import sys, json, numpy as np, pandas as pd
 from common import metrics, compare, holm
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]; D = f"{ROOT}/data"; OUT = f"{ROOT}/results/exploratory"
-M0, M1 = "M0 at assignment", "M1 after file localisation"
+M0, M1 = "M0 at start of work", "M1 after file localisation"
 out = {}
 for p in ["moodle", "mariadb", "percona"]:
     T0 = "2021-01-01" if p == "percona" else "2023-01-01"
