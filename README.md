@@ -10,12 +10,12 @@ It also contains the preregistered confirmatory study (2,000 hold-out issues fro
 |---|---|
 | `data/links/` | Issue → commit links with logged hours, type, resolution date, components and changed files (`<project>_links.jsonl.gz`) |
 | `data/features/` | Per-issue features (Table 2 of the paper) |
-| `data/history/` | Jira fields reconstructed at creation, assignee at the first fix commit, expert estimates and assignee hours |
+| `data/history/` | Jira fields reconstructed at creation, assignee at the first fix commit, the start of work and the developer at that moment (`<project>_start_of_work.csv`), expert estimates and assignee hours |
 | `data/extra/` | Features for the exploratory analyses (file and component history, text embeddings and their keys) and per-issue worklog timing (`<project>_worklog_timing.csv`) |
 | `data/sqale/` | SQALE results per issue (`sqale_min`, `ncloc`, files analysed) and the sampled keys |
 | `data/confirmatory/` | SQALE scans of the hold-out (`holdout_scan_<project>.jsonl`) and of the exploratory sample (`exploratory_sample_scan_<project>.jsonl`), as read by the preregistered script |
 | `data/official_cxx/` | Official SonarQube Cloud C/C++ analyser results on 200 MariaDB hold-out issues, and the sampled keys |
-| `data/predictions/` | Per-issue test predictions of every model and baseline |
+| `data/predictions/` | Per-issue test predictions of every model and baseline; `dev_at_first_commit/` holds those of the earlier definition (sensitivity analysis) |
 | `code/` | Main pipeline: download, linking, features, SQALE scans, models (see below) |
 | `preregistration/` | The frozen preregistration files and the script that re-runs them (see below) |
 | `exploratory/` | Exploratory analyses of Sections 6 and 8 that are not preregistered |
@@ -40,16 +40,17 @@ Issue keys, titles and commit hashes are public and are kept. The raw Jira chang
 5. `download_jira_history.py` and `history_features.py`: download the change histories and reconstruct the Jira fields at creation.
 6. `sample_sqale.py` and `sqale_scan.py`: draw the SQALE samples and analyse the touched files with SonarQube Community Build 26.9. C/C++ files use sonar-cxx 2.4.0-beta1 and cppcheck 2.13.
 7. `download_jira_descriptions.py` and `extra_features.py`: compute the features for the exploratory analyses.
-8. `model.py`: the main analysis (RQ1–RQ3). `exploratory.py`: the exploratory models. `transfer.py`: cross-project transfer.
-9. `representativeness.py` and `hours_shares.py`: compute the selection profile and the share of hours logged by the assignee.
+8. `start_of_work.py`: finds the start of work S (the earlier of the first worklog day and the first fix commit day) and the developer at S (the assignee at the start of that day, otherwise the author of the first worklog). It reads the raw Jira histories, which contain names, so its pseudonymised output is distributed instead (`data/history/<project>_start_of_work.csv`).
+9. `model.py`: the main analysis (RQ1–RQ4). M0 uses the developer and their history at S. `DEV_AT=commit` restores the earlier definition (the assignee at the first fix commit), whose results are in `results/dev_at_first_commit/`. `exploratory.py`: the exploratory models. `transfer.py`: cross-project transfer.
+10. `representativeness.py` and `hours_shares.py`: compute the selection profile and the share of hours logged by the assignee.
 
-Step 8 runs from the distributed data alone:
+Step 9 runs from the distributed data alone:
 
 ```
 cd code && sh run_models.sh
 ```
 
-We re-ran it on the distributed data. MariaDB and Percona reproduce the published results to at least 11 decimal places. In Moodle one test issue gets a slightly different LightGBM prediction, which moves some metrics in the fifth decimal place (for example, M1 MAE 6.900964 instead of 6.900957); no number in the paper changes.
+The distributed results were produced by this script from the distributed data.
 
 ## Preregistered confirmatory study (`preregistration/`)
 
@@ -107,6 +108,8 @@ sh exploratory/run_all.sh
 | `other_algorithms.py` | Table 12, random forest, XGBoost, CatBoost and a neural network | `other_algorithms_<project>.json` |
 | `official_cxx_compare.py`, `official_cxx_models.py` | Table 13, official C/C++ analyser vs sonar-cxx | `official_cxx_compare.json`, `official_cxx_models.json` |
 | `revision_checks.py` | Timing of the logged work, excluded issues, nonlinear size models, uncertainty of Table 10 | `revision_checks.json` |
+| `size_classes_cutpoints.py` | Table 10 and the alternative cut-points (2/8 h, 8/40 h) | `size_classes_cutpoints.json` |
+| `other_quality_measures.py` | Partial ρ of hours with other quality and history measures given size | `other_quality_measures.json` |
 | `figure1_partial_rho.py` | Figure 1 (English and Italian labels) | `fig1_partial_rho_en.png`, `fig1_partial_rho_it.png` |
 
 `common.py` holds the metrics and paired tests shared with `code/model.py`.
