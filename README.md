@@ -50,7 +50,7 @@ Step 9 runs from the distributed data alone:
 cd code && sh run_models.sh
 ```
 
-The distributed results were produced by this script from the distributed data.
+On 28 October 2026 we re-ran the whole package from a fresh clone of this repository (`code/run_models.sh`, `preregistration/run_confirmatory.py`, `exploratory/run_all.sh`). The main and exploratory model results and all predictions are identical to the distributed files. The cross-project transfer, the confirmatory results and the comparison of other algorithms differ only by floating-point noise (at most 4·10⁻⁵ h in one transfer MAE, otherwise below 10⁻⁴ in relative terms); no number in the paper changes. `docs/table_map.md` lists the script and result file behind each table and figure.
 
 ## Preregistered confirmatory study (`preregistration/`)
 
