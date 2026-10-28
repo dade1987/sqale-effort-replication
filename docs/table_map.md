@@ -1,0 +1,26 @@
+# Where each table and figure of the paper comes from
+
+| Paper | Script | Result file | Keys |
+|---|---|---|---|
+| Table 1, dataset | `code/link_issues_commits.py`, `code/representativeness.py` | `data/links/<project>_links.jsonl.gz`, `results/representativeness.csv` | issue and hour counts per project |
+| §3.3, hours logged by the assignee | `code/hours_shares.py` | `results/hours_shares.json` | `<project>` |
+| Table 2, features of M1 | `code/features.py` | `data/features/<project>_features.csv` | columns |
+| Table 3, SQALE on the exploratory samples | `code/model.py` | `results/results_<project>.json` | `sqale.all` (`SQALE raw`, `SQALE recalibrated`), `sqale.spearman_*`, `sqale.median_*` |
+| Table 4, SQALE beyond lines of code | `code/model.py`, `exploratory/size_collinearity.py` | `results/results_<project>.json`, `results/exploratory/size_collinearity.json` | `sqale.beyond_size` |
+| Table 5, preregistered tests | `preregistration/run_confirmatory.py` | `results/confirmatory/confirmatory_<project>.json`, `holm_4_tests.json` | H1–H3 |
+| Table 6, secondary analyses | `exploratory/confirmatory_secondary.py`, `exploratory/debt_removed.py` | `results/confirmatory/secondary_results.json`, `results/exploratory/debt_removed.json` | |
+| Figure 1, partial ρ | `exploratory/figure1_partial_rho.py` | `results/exploratory/fig1_partial_rho_{en,it}.png` | |
+| Table 7, models on the full test sets | `code/model.py` | `results/results_<project>.json` | `test`, `comparisons` |
+| Table 8, models against recalibrated SQALE | `code/model.py` | `results/results_<project>.json` | `sqale.all` (`M1`, `M0`, `M1 without developer`, `… vs SQALE recalibrated`) |
+| Table 9, learned models against experts | `code/model.py` | `results/results_mariadb.json`, `results/results_moodle.json` | `expert (first estimate)`, `expert (first estimate before work)`, `expert (final estimate)` |
+| §6.4, other analyses | `code/model.py`, `code/transfer.py` | `results/results_<project>.json`, `results/results_transfer.json` | `error_analysis`, `rolling_origin_SA`, `importance_M0`, `importance_M1`, `sensitivity` |
+| §6.5, model variants E1–E6 | `code/exploratory.py` | `results/results_exploratory_<project>.json` | `test`, `test_comparisons` |
+| Table 10, size classes | `exploratory/size_classes_cutpoints.py`, `exploratory/revision_checks.py` (intervals) | `results/exploratory/size_classes_cutpoints.json`, `results/exploratory/revision_checks.json` | |
+| Table 11, by issue type | `exploratory/by_issue_type.py` | `results/exploratory/by_issue_type.json` | |
+| §6.5, nonlinear size models, timing of logged work, excluded issues | `exploratory/revision_checks.py` | `results/exploratory/revision_checks.json` | |
+| §6.5, other quality and history measures | `exploratory/other_quality_measures.py` | `results/exploratory/other_quality_measures.json` | |
+| Table 12, other algorithms | `exploratory/other_algorithms.py` | `results/exploratory/other_algorithms_<project>.json` | `test`, `vs_lightgbm` |
+| Table 13, official C/C++ analyser | `exploratory/official_cxx_compare.py`, `exploratory/official_cxx_models.py` | `results/exploratory/official_cxx_compare.json`, `official_cxx_models.json` | |
+| §8, sensitivity: developer at the first fix commit | `code/model.py` with `DEV_AT=commit` | `results/dev_at_first_commit/` | |
+| §3.2, link validation | `link_validation/manual_check/analyze_manual_check.py` | `link_validation/manual_check/results_manual_check.json` | |
+| §2 and §8, SonarQube Cloud survey | `sonarcloud_survey/*.py` | `sonarcloud_survey/remediation_functions.json`, `active_use.jsonl` | |
