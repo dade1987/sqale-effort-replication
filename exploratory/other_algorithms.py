@@ -22,9 +22,16 @@ df["comp1"] = df.components.str.split("|").str[0].fillna("")
 df["n_components"] = df.components.map(lambda s: len([c for c in s.split("|") if c]))
 df["assignee"] = df.assignee_T.fillna("git:" + df.fix_author.fillna("").astype(str)).replace("git:", "")
 df["dev_date"] = df.fix_date
-if os.environ.get("DEV_AT", "start") == "start":   # developer at the start of work, as in code/model.py
-    sw = pd.read_csv(os.environ.get("START_FILE", sf.replace("_history.csv", "_start_of_work.csv")))[["key", "start_date", "assignee_S"]]
-    df = df.merge(sw, on="key", how="left"); df["assignee"] = df.assignee_S.fillna(""); df["dev_date"] = df.start_date.fillna(df.fix_date)
+# As in code/model.py. Developer, developer history and title at the start of work S (start_of_work.py): the default since the EMSE revision.
+# DEV_AT=start: assignee at S, or the author of the first worklog only if that worklog is on day S; title as it was at S.
+# DEV_AT=start_lenient: first-worklog author even when the worklog is after S, current title (sensitivity analysis).
+# DEV_AT=commit: assignee at the first fix commit, current title (sensitivity analysis).
+DEV_AT = os.environ.get("DEV_AT", "start")
+if DEV_AT in ("start", "start_lenient"):
+    sw = pd.read_csv(os.environ.get("START_FILE", sf.replace("_history.csv", "_start_of_work.csv")))[["key", "start_date", "assignee_S", "assignee_S_lenient", "title_at_start"]]
+    df = df.merge(sw, on="key", how="left"); df["dev_date"] = df.start_date.fillna(df.fix_date)
+    df["assignee"] = (df.assignee_S if DEV_AT == "start" else df.assignee_S_lenient).fillna("")
+    if DEV_AT == "start": df["summary"] = df.title_at_start.fillna(df.summary)
 df["summary"] = df.summary.fillna("")
 df["y"] = np.log(df.hours)
 df["year"] = df.fix_date.str[:4].astype(int)

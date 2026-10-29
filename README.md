@@ -10,12 +10,12 @@ It also contains the preregistered confirmatory study (2,000 hold-out issues fro
 |---|---|
 | `data/links/` | Issue → commit links with logged hours, type, resolution date, components and changed files (`<project>_links.jsonl.gz`) |
 | `data/features/` | Per-issue features (Table 2 of the paper) |
-| `data/history/` | Jira fields reconstructed at creation, assignee at the first fix commit, the start of work and the developer at that moment (`<project>_start_of_work.csv`), expert estimates and assignee hours |
+| `data/history/` | Jira fields reconstructed at creation, assignee at the first fix commit, the start of work with the developer and the title at that moment (`<project>_start_of_work.csv`), expert estimates and assignee hours |
 | `data/extra/` | Features for the exploratory analyses (file and component history, text embeddings and their keys) and per-issue worklog timing (`<project>_worklog_timing.csv`) |
 | `data/sqale/` | SQALE results per issue (`sqale_min`, `ncloc`, files analysed) and the sampled keys |
 | `data/confirmatory/` | SQALE scans of the hold-out (`holdout_scan_<project>.jsonl`) and of the exploratory sample (`exploratory_sample_scan_<project>.jsonl`), as read by the preregistered script |
 | `data/official_cxx/` | Official SonarQube Cloud C/C++ analyser results on 200 MariaDB hold-out issues, and the sampled keys |
-| `data/predictions/` | Per-issue test predictions of every model and baseline; `dev_at_first_commit/` holds those of the earlier definition (sensitivity analysis) |
+| `data/predictions/` | Per-issue test predictions of every model and baseline; `dev_at_start_current_titles/` and `dev_at_first_commit/` hold those of the earlier definitions (sensitivity analyses) |
 | `code/` | Main pipeline: download, linking, features, SQALE scans, models (see below) |
 | `preregistration/` | The frozen preregistration files and the script that re-runs them (see below) |
 | `exploratory/` | Exploratory analyses of Sections 6 and 8 that are not preregistered |
@@ -40,8 +40,8 @@ Issue keys, titles and commit hashes are public and are kept. The raw Jira chang
 5. `download_jira_history.py` and `history_features.py`: download the change histories and reconstruct the Jira fields at creation.
 6. `sample_sqale.py` and `sqale_scan.py`: draw the SQALE samples and analyse the touched files with SonarQube Community Build 26.9. C/C++ files use sonar-cxx 2.4.0-beta1 and cppcheck 2.13.
 7. `download_jira_descriptions.py` and `extra_features.py`: compute the features for the exploratory analyses.
-8. `start_of_work.py`: finds the start of work S (the earlier of the first worklog day and the first fix commit day) and the developer at S (the assignee at the start of that day, otherwise the author of the first worklog). It reads the raw Jira histories, which contain names, so its pseudonymised output is distributed instead (`data/history/<project>_start_of_work.csv`).
-9. `model.py`: the main analysis (RQ1–RQ4). M0 uses the developer and their history at S. `DEV_AT=commit` restores the earlier definition (the assignee at the first fix commit), whose results are in `results/dev_at_first_commit/`. `exploratory.py`: the exploratory models. `transfer.py`: cross-project transfer.
+8. `download_jira_titles.py` and `start_of_work.py`: find the start of work S (the earlier of the first worklog day and the first fix commit day), the developer at S (the assignee at the start of that day; otherwise the author of the first worklog, only if that worklog is on day S) and the title as it was at S (title changes made on or after S are undone). `start_of_work.py` reads the raw Jira histories, which contain names, so its pseudonymised output is distributed instead (`data/history/<project>_start_of_work.csv`).
+9. `model.py`: the main analysis (RQ1–RQ4). M0 uses the developer, their history and the title at S. Two earlier definitions are kept as sensitivity analyses: `DEV_AT=start_lenient` (first-worklog author even when that worklog is after S, current title; results in `results/dev_at_start_current_titles/`) and `DEV_AT=commit` (assignee at the first fix commit, current title; results in `results/dev_at_first_commit/`). The text embeddings of the exploratory variant E1 use the current title and description. `exploratory.py`: the exploratory models. `transfer.py`: cross-project transfer.
 10. `representativeness.py` and `hours_shares.py`: compute the selection profile and the share of hours logged by the assignee.
 
 Step 9 runs from the distributed data alone:
@@ -50,7 +50,7 @@ Step 9 runs from the distributed data alone:
 cd code && sh run_models.sh
 ```
 
-On 28 October 2026 we re-ran the whole package from a fresh clone of this repository (`code/run_models.sh`, `preregistration/run_confirmatory.py`, `exploratory/run_all.sh`). The main and exploratory model results and all predictions are identical to the distributed files. The cross-project transfer, the confirmatory results and the comparison of other algorithms differ only by floating-point noise (at most 4·10⁻⁵ h in one transfer MAE, otherwise below 10⁻⁴ in relative terms); no number in the paper changes. `docs/table_map.md` lists the script and result file behind each table and figure.
+For version 1.1, on 28 October 2026, we re-ran the whole package from a fresh clone of this repository (`code/run_models.sh`, `preregistration/run_confirmatory.py`, `exploratory/run_all.sh`). The main and exploratory model results and all predictions are identical to the distributed files. The cross-project transfer, the confirmatory results and the comparison of other algorithms differ only by floating-point noise (at most 4·10⁻⁵ h in one transfer MAE, otherwise below 10⁻⁴ in relative terms); no number in the paper changes. `docs/table_map.md` lists the script and result file behind each table and figure.
 
 ## Preregistered confirmatory study (`preregistration/`)
 
@@ -110,6 +110,8 @@ sh exploratory/run_all.sh
 | `revision_checks.py` | Timing of the logged work, excluded issues, nonlinear size models, uncertainty of Table 10 | `revision_checks.json` |
 | `size_classes_cutpoints.py` | Table 10 and the alternative cut-points (2/8 h, 8/40 h) | `size_classes_cutpoints.json` |
 | `other_quality_measures.py` | Partial ρ of hours with other quality and history measures given size | `other_quality_measures.json` |
+| `h2_two_part.py` | H2 in two parts: any debt on the changed lines, and its amount where it is positive | `h2_two_part_<project>.json` |
+| `positive_control_h1.py` | Positive control for H1 (history measures through the frozen H1 code) and power simulation; slow, not in `run_all.sh` | `positive_control_h1_<project>.json` |
 | `figure1_partial_rho.py` | Figure 1 (English and Italian labels) | `fig1_partial_rho_en.png`, `fig1_partial_rho_it.png` |
 
 `common.py` holds the metrics and paired tests shared with `code/model.py`.

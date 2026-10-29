@@ -12,6 +12,7 @@ python3 official_cxx_models.py
 python3 revision_checks.py
 python3 size_classes_cutpoints.py
 python3 other_quality_measures.py
+for p in moodle mariadb; do python3 h2_two_part.py $p; done
 for p in percona moodle mariadb; do
   if [ $p = percona ]; then export VALID_START=2020-01-01 TEST_START=2021-01-01; else export VALID_START=2021-01-01 TEST_START=2023-01-01; fi
   python3 other_algorithms.py ../data/features/${p}_features.csv ../data/history/${p}_history.csv $p ../data/predictions/${p}_predictions.csv

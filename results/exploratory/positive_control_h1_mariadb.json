@@ -1,0 +1,103 @@
+{
+ "project": "mariadb",
+ "n": 862,
+ "note": "Same sample, covariate, bootstrap (B=5000, seed 2026, developer clusters) and verdict rules as H1; only the measure differs. History measures are over all files touched by the fix (features.py).",
+ "sqale_min": {
+  "n": 862,
+  "rho_parziale": 0.02339037782859298,
+  "IC90": [
+   -0.03752109983981926,
+   0.08393531061593573
+  ],
+  "p_unilaterale_rho_gt_0": 0.25579999999999997,
+  "esito": "trascurabile in pratica (IC dentro +-0,10)"
+ },
+ "h_commits_1y": {
+  "n": 862,
+  "rho_parziale": 0.14125474520544298,
+  "IC90": [
+   0.07646756241205985,
+   0.2133838854684096
+  ],
+  "p_unilaterale_rho_gt_0": 0.0002,
+  "esito": "positiva ma di entita' incerta (IC sopra 0, non tutto sopra 0,10)"
+ },
+ "h_churn_1y": {
+  "n": 862,
+  "rho_parziale": 0.11350231616724321,
+  "IC90": [
+   0.03880372093753682,
+   0.17053943748727354
+  ],
+  "p_unilaterale_rho_gt_0": 0.005999999999999999,
+  "esito": "positiva ma di entita' incerta (IC sopra 0, non tutto sopra 0,10)"
+ },
+ "h_commits_sum": {
+  "n": 862,
+  "rho_parziale": 0.049572737537715406,
+  "IC90": [
+   -0.008284517238400221,
+   0.1274821551001159
+  ],
+  "p_unilaterale_rho_gt_0": 0.0758,
+  "esito": "inconcludente"
+ },
+ "st_ccn_sum": {
+  "n": 862,
+  "rho_parziale": 0.10360585107110132,
+  "IC90": [
+   0.04228225737186828,
+   0.17437688573922083
+  ],
+  "p_unilaterale_rho_gt_0": 0.005399999999999999,
+  "esito": "positiva ma di entita' incerta (IC sopra 0, non tutto sopra 0,10)"
+ },
+ "power_simulation": {
+  "n_sim": 200,
+  "B_per_test": 1000,
+  "by_beta": {
+   "0.0": {
+    "mean_partial_rho": 0.02090313947918574,
+    "power_lower90_above_0": 0.025,
+    "power_lower90_above_SESOI": 0.0,
+    "hours_ratio_per_sd": 1.0
+   },
+   "0.05": {
+    "mean_partial_rho": 0.061351325722695485,
+    "power_lower90_above_0": 0.26,
+    "power_lower90_above_SESOI": 0.005,
+    "hours_ratio_per_sd": 1.0512710963760241
+   },
+   "0.08": {
+    "mean_partial_rho": 0.07457655495649519,
+    "power_lower90_above_0": 0.37,
+    "power_lower90_above_SESOI": 0.0,
+    "hours_ratio_per_sd": 1.0832870676749586
+   },
+   "0.1": {
+    "mean_partial_rho": 0.09187556637592664,
+    "power_lower90_above_0": 0.545,
+    "power_lower90_above_SESOI": 0.0,
+    "hours_ratio_per_sd": 1.1051709180756477
+   },
+   "0.12": {
+    "mean_partial_rho": 0.0998810825845871,
+    "power_lower90_above_0": 0.64,
+    "power_lower90_above_SESOI": 0.0,
+    "hours_ratio_per_sd": 1.1274968515793757
+   },
+   "0.15": {
+    "mean_partial_rho": 0.12003863473268442,
+    "power_lower90_above_0": 0.77,
+    "power_lower90_above_SESOI": 0.045,
+    "hours_ratio_per_sd": 1.161834242728283
+   },
+   "0.2": {
+    "mean_partial_rho": 0.14293041541572296,
+    "power_lower90_above_0": 0.89,
+    "power_lower90_above_SESOI": 0.11,
+    "hours_ratio_per_sd": 1.2214027581601699
+   }
+  }
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "project": "moodle",
+ "n": 822,
+ "share_zero_debt_on_changed_lines": 0.7761557177615572,
+ "median_hours_zero": 2.8,
+ "median_hours_positive": 4.475,
+ "median_changed_lines_zero": 3.0,
+ "median_changed_lines_positive": 33.0,
+ "H2_frozen": {
+  "n": 822,
+  "rho_parziale": -0.003998893044062969,
+  "IC90": [
+   -0.06483695707441509,
+   0.06168080761450631
+  ],
+  "p_unilaterale_rho_gt_0": 0.5468,
+  "esito": "trascurabile in pratica (IC dentro +-0,10)"
+ },
+ "part1_any_debt": {
+  "n": 822,
+  "rho_parziale": -0.0005728336773022521,
+  "IC90": [
+   -0.06269727130924711,
+   0.0656674229514595
+  ],
+  "p_unilaterale_rho_gt_0": 0.5206,
+  "esito": "trascurabile in pratica (IC dentro +-0,10)"
+ },
+ "part2_amount_if_positive": {
+  "n": 184,
+  "rho_parziale": -0.048111531852171256,
+  "IC90": [
+   -0.16295984384678455,
+   0.06616176952027875
+  ],
+  "p_unilaterale_rho_gt_0": 0.741,
+  "esito": "inconcludente"
+ }
+}

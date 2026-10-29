@@ -1,0 +1,103 @@
+{
+ "project": "moodle",
+ "n": 851,
+ "note": "Same sample, covariate, bootstrap (B=5000, seed 2026, developer clusters) and verdict rules as H1; only the measure differs. History measures are over all files touched by the fix (features.py).",
+ "sqale_min": {
+  "n": 851,
+  "rho_parziale": -0.024420519170156217,
+  "IC90": [
+   -0.09462900784170851,
+   0.02630119068461795
+  ],
+  "p_unilaterale_rho_gt_0": 0.7944,
+  "esito": "trascurabile in pratica (IC dentro +-0,10)"
+ },
+ "h_commits_1y": {
+  "n": 851,
+  "rho_parziale": 0.19762051028608194,
+  "IC90": [
+   0.13108866266113053,
+   0.26197082235712843
+  ],
+  "p_unilaterale_rho_gt_0": 0.0002,
+  "esito": "supportata: effetto rilevante (IC sopra 0,10)"
+ },
+ "h_churn_1y": {
+  "n": 851,
+  "rho_parziale": 0.1596581926379455,
+  "IC90": [
+   0.0919563531318207,
+   0.22461607096324004
+  ],
+  "p_unilaterale_rho_gt_0": 0.0002,
+  "esito": "positiva ma di entita' incerta (IC sopra 0, non tutto sopra 0,10)"
+ },
+ "h_commits_sum": {
+  "n": 851,
+  "rho_parziale": 0.02314845241628811,
+  "IC90": [
+   -0.037336792879780256,
+   0.08007043182868567
+  ],
+  "p_unilaterale_rho_gt_0": 0.2536,
+  "esito": "trascurabile in pratica (IC dentro +-0,10)"
+ },
+ "st_ccn_sum": {
+  "n": 851,
+  "rho_parziale": 0.029618107983852,
+  "IC90": [
+   -0.02635239712533718,
+   0.07885064682715699
+  ],
+  "p_unilaterale_rho_gt_0": 0.189,
+  "esito": "trascurabile in pratica (IC dentro +-0,10)"
+ },
+ "power_simulation": {
+  "n_sim": 200,
+  "B_per_test": 1000,
+  "by_beta": {
+   "0.0": {
+    "mean_partial_rho": -0.02498386360566978,
+    "power_lower90_above_0": 0.0,
+    "power_lower90_above_SESOI": 0.0,
+    "hours_ratio_per_sd": 1.0
+   },
+   "0.05": {
+    "mean_partial_rho": 0.009847513779519965,
+    "power_lower90_above_0": 0.0,
+    "power_lower90_above_SESOI": 0.0,
+    "hours_ratio_per_sd": 1.0512710963760241
+   },
+   "0.08": {
+    "mean_partial_rho": 0.026221127676013468,
+    "power_lower90_above_0": 0.01,
+    "power_lower90_above_SESOI": 0.0,
+    "hours_ratio_per_sd": 1.0832870676749586
+   },
+   "0.1": {
+    "mean_partial_rho": 0.0449913968714346,
+    "power_lower90_above_0": 0.07,
+    "power_lower90_above_SESOI": 0.0,
+    "hours_ratio_per_sd": 1.1051709180756477
+   },
+   "0.12": {
+    "mean_partial_rho": 0.05231167692667084,
+    "power_lower90_above_0": 0.08,
+    "power_lower90_above_SESOI": 0.0,
+    "hours_ratio_per_sd": 1.1274968515793757
+   },
+   "0.15": {
+    "mean_partial_rho": 0.08312015673420756,
+    "power_lower90_above_0": 0.26,
+    "power_lower90_above_SESOI": 0.0,
+    "hours_ratio_per_sd": 1.161834242728283
+   },
+   "0.2": {
+    "mean_partial_rho": 0.11313335114823406,
+    "power_lower90_above_0": 0.56,
+    "power_lower90_above_SESOI": 0.0,
+    "hours_ratio_per_sd": 1.2214027581601699
+   }
+  }
+ }
+}

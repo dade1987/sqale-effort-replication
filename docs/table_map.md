@@ -10,7 +10,7 @@
 | Table 5, preregistered tests | `preregistration/run_confirmatory.py` | `results/confirmatory/confirmatory_<project>.json`, `holm_4_tests.json` | H1–H3 |
 | Table 6, secondary analyses | `exploratory/confirmatory_secondary.py`, `exploratory/debt_removed.py` | `results/confirmatory/secondary_results.json`, `results/exploratory/debt_removed.json` | |
 | Figure 1, partial ρ | `exploratory/figure1_partial_rho.py` | `results/exploratory/fig1_partial_rho_{en,it}.png` | |
-| Table 7, models on the full test sets | `code/model.py` | `results/results_<project>.json` | `test`, `comparisons` |
+| Table 7 (and 7b, MdAE and within 2×), models on the full test sets | `code/model.py` | `results/results_<project>.json`, `data/predictions/<project>_predictions.csv` | `test` (MAE, MdAE, SA, within2x, spearman), `comparisons` |
 | Table 8, models against recalibrated SQALE | `code/model.py` | `results/results_<project>.json` | `sqale.all` (`M1`, `M0`, `M1 without developer`, `… vs SQALE recalibrated`) |
 | Table 9, learned models against experts | `code/model.py` | `results/results_mariadb.json`, `results/results_moodle.json` | `expert (first estimate)`, `expert (first estimate before work)`, `expert (final estimate)` |
 | §6.4, other analyses | `code/model.py`, `code/transfer.py` | `results/results_<project>.json`, `results/results_transfer.json` | `error_analysis`, `rolling_origin_SA`, `importance_M0`, `importance_M1`, `sensitivity` |
@@ -21,6 +21,9 @@
 | §6.5, other quality and history measures | `exploratory/other_quality_measures.py` | `results/exploratory/other_quality_measures.json` | |
 | Table 12, other algorithms | `exploratory/other_algorithms.py` | `results/exploratory/other_algorithms_<project>.json` | `test`, `vs_lightgbm` |
 | Table 13, official C/C++ analyser | `exploratory/official_cxx_compare.py`, `exploratory/official_cxx_models.py` | `results/exploratory/official_cxx_compare.json`, `official_cxx_models.json` | |
+| §8, sensitivity: lenient developer rule and current titles | `code/model.py` with `DEV_AT=start_lenient` | `results/dev_at_start_current_titles/`, `data/predictions/dev_at_start_current_titles/` | |
 | §8, sensitivity: developer at the first fix commit | `code/model.py` with `DEV_AT=commit` | `results/dev_at_first_commit/` | |
+| §6.3, H2 in two parts | `exploratory/h2_two_part.py` | `results/exploratory/h2_two_part_<project>.json` | |
+| §6.3 or §8, positive control for H1 and minimum detectable effect | `exploratory/positive_control_h1.py` | `results/exploratory/positive_control_h1_<project>.json` | |
 | §3.2, link validation | `link_validation/manual_check/analyze_manual_check.py` | `link_validation/manual_check/results_manual_check.json` | |
 | §2 and §8, SonarQube Cloud survey | `sonarcloud_survey/*.py` | `sonarcloud_survey/remediation_functions.json`, `active_use.jsonl` | |
