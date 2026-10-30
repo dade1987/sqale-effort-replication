@@ -6,7 +6,9 @@ import numpy as np, pandas as pd
 rng = np.random.default_rng(2026)
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]; D = f"{ROOT}/data"; OUT = f"{ROOT}/results/exploratory"
-R = [json.loads(l) for f in sorted(glob.glob(f'{D}/official_cxx/cloud_w*.jsonl')) for l in open(f)]
+# One fresh SonarQube Cloud project per issue (the first scan, cloud_w*.jsonl, carried stale file measures over between issues; see official_cxx_full.py)
+S200 = set(open(f'{D}/official_cxx/sample200_keys.txt').read().split())
+R = [r for f in sorted(glob.glob(f'{D}/official_cxx/fresh_w*.jsonl')) + [f'{D}/official_cxx/fresh_redo.jsonl'] for r in map(json.loads, open(f)) if r['key'] in S200]
 cloud = pd.DataFrame([{k: v for k, v in r.items() if k != 'per_file'} for r in R]).drop_duplicates('key', keep='last')
 cloud = cloud[cloud.get('error').isna() & (cloud.files_measured > 0)] if 'error' in cloud else cloud[cloud.files_measured > 0]
 cxx = pd.read_json(f'{D}/confirmatory/holdout_scan_mariadb.jsonl', lines=True).drop_duplicates('key')[['key', 'sqale_min', 'ncloc']]

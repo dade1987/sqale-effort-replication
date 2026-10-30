@@ -1,10 +1,10 @@
 {
  "n": 187,
  "MAE_h": {
-  "SQALE official, raw": 50.42,
+  "SQALE official, raw": 51.12,
   "SQALE official, recalibrated (CV)": 13.91,
   "SQALE sonar-cxx, recalibrated": 13.8,
-  "SQALE sonar-cxx, recalibrated (CV)": 13.51,
+  "SQALE sonar-cxx, recalibrated (CV)": 13.55,
   "M0": 13.53,
   "M1": 13.2
  },
@@ -12,29 +12,29 @@
  "M1_vs_official_recal_cv": {
   "dMAE_h": -0.71,
   "ci95": [
-   -4.27,
-   3.01
+   -4.26,
+   3.03
   ],
-  "p_boot": 0.69,
+  "p_boot": 0.6916,
   "pct_of_baseline_MAE": -5.1
  },
  "M0_vs_official_recal_cv": {
   "dMAE_h": -0.38,
   "ci95": [
-   -1.37,
-   0.48
+   -1.36,
+   0.47
   ],
-  "p_boot": 0.4168,
+  "p_boot": 0.3996,
   "pct_of_baseline_MAE": -2.7
  },
  "M1_vs_official_raw": {
-  "dMAE_h": -37.21,
+  "dMAE_h": -37.91,
   "ci95": [
-   -65.42,
-   -11.34
+   -66.26,
+   -11.81
   ],
   "p_boot": 0.0,
-  "pct_of_baseline_MAE": -73.8
+  "pct_of_baseline_MAE": -74.2
  },
  "M1_vs_sonarcxx_recal": {
   "dMAE_h": -0.59,
@@ -46,30 +46,30 @@
   "pct_of_baseline_MAE": -4.3
  },
  "official_recal_cv_vs_sonarcxx_recal": {
-  "dMAE_h": 0.11,
+  "dMAE_h": 0.12,
   "ci95": [
-   -0.46,
-   0.52
+   -0.44,
+   0.5
   ],
-  "p_boot": 0.6624,
-  "pct_of_baseline_MAE": 0.8
+  "p_boot": 0.6268,
+  "pct_of_baseline_MAE": 0.9
  },
  "official_recal_cv_vs_sonarcxx_recal_cv": {
-  "dMAE_h": 0.4,
+  "dMAE_h": 0.36,
   "ci95": [
-   -0.09,
-   0.81
+   -0.11,
+   0.77
   ],
-  "p_boot": 0.1076,
-  "pct_of_baseline_MAE": 3.0
+  "p_boot": 0.1316,
+  "pct_of_baseline_MAE": 2.7
  },
  "M1_vs_sonarcxx_recal_cv": {
-  "dMAE_h": -0.31,
+  "dMAE_h": -0.35,
   "ci95": [
-   -3.76,
-   3.38
+   -3.84,
+   3.36
   ],
-  "p_boot": 0.8388,
-  "pct_of_baseline_MAE": -2.3
+  "p_boot": 0.8188,
+  "pct_of_baseline_MAE": -2.6
  }
 }

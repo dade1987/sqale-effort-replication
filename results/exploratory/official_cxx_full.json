@@ -1,0 +1,91 @@
+{
+ "population_H1": 862,
+ "scanned": 862,
+ "with_measures": 821,
+ "lost": {
+  "n": 41,
+  "median_hours_lost": 5.7,
+  "median_hours_measured": 6.083333333333333,
+  "median_ncloc_lost": 3936.0,
+  "median_ncloc_measured": 5286.0
+ },
+ "median_stmt_parsed_pct": 100.0,
+ "carryover_fix": {
+  "compared": 797,
+  "identical": 439,
+  "higher_fresh": 246,
+  "lower_fresh": 112,
+  "zero_debt_share_before": 0.12421580928481807,
+  "zero_debt_share_fresh": 0.053952321204516936,
+  "zero_debt_share_first200": 0.06417112299465241,
+  "zero_debt_share_new662": 0.07097791798107256,
+  "median_ratio_fresh_before": 1.0
+ },
+ "primary": {
+  "n": 821,
+  "rho_parziale": 0.09280255113980251,
+  "IC90": [
+   0.016853642187473105,
+   0.17768920293795112
+  ],
+  "p_unilaterale_rho_gt_0": 0.0212,
+  "esito": "positiva ma di entita' incerta (IC sopra 0, non tutto sopra 0,10)"
+ },
+ "secondary_all_files_measured": {
+  "n": 737,
+  "rho_parziale": 0.06906809540122633,
+  "IC90": [
+   -0.015116757223379232,
+   0.15483415050812743
+  ],
+  "p_unilaterale_rho_gt_0": 0.0908,
+  "esito": "inconcludente"
+ },
+ "sonarcxx_same_issues": {
+  "n": 821,
+  "rho_parziale": 0.03577614096537307,
+  "IC90": [
+   -0.026753152511802946,
+   0.09625926216269154
+  ],
+  "p_unilaterale_rho_gt_0": 0.1658,
+  "esito": "trascurabile in pratica (IC dentro +-0,10)"
+ },
+ "first_200_same_code": {
+  "n": 187,
+  "rho_parziale": 0.0407709913426754,
+  "IC90": [
+   -0.08227856663082472,
+   0.18358387589332836
+  ],
+  "p_unilaterale_rho_gt_0": 0.2938,
+  "esito": "inconcludente"
+ },
+ "new_662_same_code": {
+  "n": 634,
+  "rho_parziale": 0.10772609033067045,
+  "IC90": [
+   0.021016888617498397,
+   0.20628682953789798
+  ],
+  "p_unilaterale_rho_gt_0": 0.02,
+  "esito": "positiva ma di entita' incerta (IC sopra 0, non tutto sopra 0,10)"
+ },
+ "spearman_official_vs_ncloc": 0.6063794206413312,
+ "spearman_official_vs_sonarcxx": 0.40945668709934424,
+ "spearman_sonarcxx_vs_ncloc": 0.8873414167018351,
+ "h3_style": {
+  "n": 821,
+  "MAE_lines_only": 15.613629033245477,
+  "dMAE": -0.03717428741902957,
+  "IC90": [
+   -0.1019602011635216,
+   0.017273536095834874
+  ],
+  "IC90_pct_MAE": [
+   -0.6530205178208206,
+   0.11063114192770318
+  ],
+  "verdict": "equivalent (CI inside +-2% of MAE)"
+ }
+}
