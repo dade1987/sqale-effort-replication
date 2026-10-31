@@ -4,13 +4,15 @@
 # Usage: python3 official_cxx_scan.py <keys.txt> <worker> <n_workers> <out.jsonl>
 # Needs: a MariaDB/server clone (MARIADB_REPO), sonar-scanner (SONAR_SCANNER), a SonarQube Cloud organisation (SONAR_ORG)
 # and a token with analysis rights, passed to the scanner and the API as SONAR_TOKEN. The paper used organisation "dade1987".
+# Each issue is analysed once, in its own new project (<ORG>_mdb_fx_<KEY>), with the analysis cache off: re-analysing one project
+# for many issues carried file measures over from earlier analyses (0 debt with a stale ncloc). Run with all 862 keys (data/official_cxx/fresh_keys.txt).
 import json, gzip, subprocess, sys, os, shutil, re, time, urllib.request
 keysf, wk, nw, out = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]), sys.argv[4]
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REPO = os.environ.get("MARIADB_REPO", "mariadb-server"); DS = f"{ROOT}/data/links/mariadb_links.jsonl.gz"
 SCAN = os.environ.get("SONAR_SCANNER", "sonar-scanner")
-ORG = os.environ.get("SONAR_ORG", "dade1987"); PK = f"{ORG}_mdb_cloud_w{wk}"
+ORG = os.environ.get("SONAR_ORG", "dade1987")
 CSUF = (".c", ".cc", ".cpp", ".cxx", ".h", ".hpp", ".hh", ".hxx", ".ic", ".inl"); TU = (".c", ".cc", ".cpp", ".cxx")
 WT = os.path.abspath(f"worktree_w{wk}")
 G = lambda *a, cwd=REPO, **k: subprocess.run(["git", "-C", cwd, *a], capture_output=True, **k)
@@ -18,8 +20,6 @@ def api(path, method="GET", data=None):
     req = urllib.request.Request("https://sonarcloud.io" + path, method=method, data=data)
     if os.environ.get("SONAR_TOKEN"): req.add_header("Authorization", "Bearer " + os.environ["SONAR_TOKEN"])
     return json.load(urllib.request.urlopen(req, timeout=120))
-try: api("/api/projects/create", "POST", f"organization={ORG}&project={PK}&name={PK}&visibility=public".encode())
-except Exception: pass
 keys = open(keysf).read().split(); keys = keys[wk::nw]
 done = {r["key"] for r in map(json.loads, open(out)) if "error" not in r} if os.path.exists(out) else set()
 ds = {d["key"]: d for d in (json.loads(l) for l in gzip.open(DS, "rt")) if d["key"] in set(keys)}
@@ -27,6 +27,9 @@ if not os.path.exists(WT): G("worktree", "add", "-f", "--detach", WT, "HEAD")
 for k in keys:
     if k in done or k not in ds: continue
     t0 = time.time(); d = ds[k]; rec = {"key": k}
+    PK = f"{ORG}_mdb_fx_{k.replace('-', '_')}"   # fresh project per issue: nothing carried over from earlier analyses
+    try: api("/api/projects/create", "POST", f"organization={ORG}&project={PK}&name={PK}&visibility=public".encode())
+    except Exception: pass
     times = []
     for c in d["commits"]:
         r = G("show", "-s", "--format=%ct %P", c, text=True).stdout.split()
@@ -69,7 +72,7 @@ for k in keys:
             if sel:
                 json.dump(sel, open(os.path.join(WT, "cc_sel.json"), "w"))
                 r = subprocess.run([SCAN, "-Dsonar.host.url=https://sonarcloud.io", f"-Dsonar.organization={ORG}", f"-Dsonar.projectKey={PK}", "-Dsonar.token=" + os.environ.get("SONAR_TOKEN", ""),
-                                    "-Dsonar.sources=" + ",".join(sorted(sources)), "-Dsonar.cfamily.compile-commands=cc_sel.json", "-Dsonar.scm.disabled=true",
+                                    "-Dsonar.sources=" + ",".join(sorted(sources)), "-Dsonar.cfamily.compile-commands=cc_sel.json", "-Dsonar.scm.disabled=true", "-Dsonar.analysisCache.enabled=false",
                                     "-Dsonar.cpd.exclusions=**/*", "-Dsonar.qualitygate.wait=true", "-Dsonar.qualitygate.timeout=1200"], cwd=WT, capture_output=True, text=True)
                 log = r.stdout + r.stderr
                 m = re.search(r"([\d.]+)% of statements were parsed successfully", log); rec["stmt_parsed_pct"] = float(m.group(1)) if m else None

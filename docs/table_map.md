@@ -13,14 +13,16 @@
 | Table 7 (and 7b, MdAE and within 2×), models on the full test sets | `code/model.py` | `results/results_<project>.json`, `data/predictions/<project>_predictions.csv` | `test` (MAE, MdAE, SA, within2x, spearman), `comparisons` |
 | Table 8, models against recalibrated SQALE | `code/model.py` | `results/results_<project>.json` | `sqale.all` (`M1`, `M0`, `M1 without developer`, `… vs SQALE recalibrated`) |
 | Table 9, learned models against experts | `code/model.py` | `results/results_mariadb.json`, `results/results_moodle.json` | `expert (first estimate)`, `expert (first estimate before work)`, `expert (final estimate)` |
-| §6.4, other analyses | `code/model.py`, `code/transfer.py` | `results/results_<project>.json`, `results/results_transfer.json` | `error_analysis`, `rolling_origin_SA`, `importance_M0`, `importance_M1`, `sensitivity` |
-| §6.5, model variants E1–E6 | `code/exploratory.py` | `results/results_exploratory_<project>.json` | `test`, `test_comparisons` |
-| Table 10, size classes | `exploratory/size_classes_cutpoints.py`, `exploratory/revision_checks.py` (intervals) | `results/exploratory/size_classes_cutpoints.json`, `results/exploratory/revision_checks.json` | |
-| Table 11, by issue type | `exploratory/by_issue_type.py` | `results/exploratory/by_issue_type.json` | |
+| Online appendix A (errors, rolling origin, importance, sensitivity, transfer) | `code/model.py`, `code/transfer.py` | `results/results_<project>.json`, `results/results_transfer.json` | `error_analysis`, `rolling_origin_SA`, `importance_M0`, `importance_M1`, `sensitivity` |
+| Online appendix B, model variants E1–E6 | `code/exploratory.py` | `results/results_exploratory_<project>.json` | `test`, `test_comparisons` |
+| Online appendix Table B1, size classes | `exploratory/size_classes_cutpoints.py`, `exploratory/revision_checks.py` (intervals) | `results/exploratory/size_classes_cutpoints.json`, `results/exploratory/revision_checks.json` | |
+| Online appendix Table B2, by issue type | `exploratory/by_issue_type.py` | `results/exploratory/by_issue_type.json` | |
 | §6.5, nonlinear size models, timing of logged work, excluded issues | `exploratory/revision_checks.py` | `results/exploratory/revision_checks.json` | |
 | §6.5, other quality and history measures | `exploratory/other_quality_measures.py` | `results/exploratory/other_quality_measures.json` | |
-| Table 12, other algorithms | `exploratory/other_algorithms.py` | `results/exploratory/other_algorithms_<project>.json` | `test`, `vs_lightgbm` |
-| Table 13, official C/C++ analyser | `exploratory/official_cxx_compare.py`, `exploratory/official_cxx_models.py` | `results/exploratory/official_cxx_compare.json`, `official_cxx_models.json` | |
+| Online appendix Table B3, other algorithms | `exploratory/other_algorithms.py` | `results/exploratory/other_algorithms_<project>.json` | `test`, `vs_lightgbm` |
+| Table 10, official C/C++ analyser on the 187 measured issues of the first 200 (re-measured in fresh SonarQube Cloud projects) | `exploratory/official_cxx_compare.py`, `exploratory/official_cxx_models.py` | `results/exploratory/official_cxx_compare.json`, `official_cxx_models.json` | |
+| §6.5 and Figure 1, official C/C++ analyser on all 862 MariaDB hold-out issues (821 measured) | `exploratory/official_cxx_full.py` | `results/exploratory/official_cxx_full.json` | `primary`, `carryover_fix`, `h3_style` |
+| Online appendix Table C1, SQALE by rule type, size-neutral variant, debt ratio and A–E rating | `exploratory/sqale_rules_scan.py` (per-rule scan), `exploratory/rule_types.py` | `data/rules/`, `results/exploratory/rule_types_<project>.json` | `tests`, `effort_share`, `rating_counts` |
 | §8, sensitivity: lenient developer rule and current titles | `code/model.py` with `DEV_AT=start_lenient` | `results/dev_at_start_current_titles/`, `data/predictions/dev_at_start_current_titles/` | |
 | §8, sensitivity: developer at the first fix commit | `code/model.py` with `DEV_AT=commit` | `results/dev_at_first_commit/` | |
 | §6.3, H2 in two parts | `exploratory/h2_two_part.py` | `results/exploratory/h2_two_part_<project>.json` | |

@@ -14,7 +14,8 @@ It also contains the preregistered confirmatory study (2,000 hold-out issues fro
 | `data/extra/` | Features for the exploratory analyses (file and component history, text embeddings and their keys) and per-issue worklog timing (`<project>_worklog_timing.csv`) |
 | `data/sqale/` | SQALE results per issue (`sqale_min`, `ncloc`, files analysed) and the sampled keys |
 | `data/confirmatory/` | SQALE scans of the hold-out (`holdout_scan_<project>.jsonl`) and of the exploratory sample (`exploratory_sample_scan_<project>.jsonl`), as read by the preregistered script |
-| `data/official_cxx/` | Official SonarQube Cloud C/C++ analyser results on 200 MariaDB hold-out issues, and the sampled keys |
+| `data/official_cxx/` | Official SonarQube Cloud C/C++ analyser (CFamily) on all 862 MariaDB hold-out issues of H1, one fresh SonarQube Cloud project per issue (`fresh_w*.jsonl`, `fresh_redo.jsonl`; 821 measured). `cloud_w*`, `full_w*`, `nocache_w*` are the earlier scans, kept only to document the carry-over artifact (see below) |
+| `data/rules/` | Per-rule SQALE effort of the touched files for the 2,000 hold-out issues, and the rule metadata (online appendix C) |
 | `data/predictions/` | Per-issue test predictions of every model and baseline; `dev_at_start_current_titles/` and `dev_at_first_commit/` hold those of the earlier definitions (sensitivity analyses) |
 | `code/` | Main pipeline: download, linking, features, SQALE scans, models (see below) |
 | `preregistration/` | The frozen preregistration files and the script that re-runs them (see below) |
@@ -102,13 +103,15 @@ sh exploratory/run_all.sh
 
 | Script | Paper | Output in `results/exploratory/` |
 |---|---|---|
-| `by_issue_type.py` | Table 11, error by issue type | `by_issue_type.json` |
+| `by_issue_type.py` | Online appendix Table B2, error by issue type | `by_issue_type.json` |
 | `size_collinearity.py` | SQALE vs size, partial ρ in the exploratory data | `size_collinearity.json` |
 | `debt_removed.py` | Debt removed by the first fix commit | `debt_removed.json` |
-| `other_algorithms.py` | Table 12, random forest, XGBoost, CatBoost and a neural network | `other_algorithms_<project>.json` |
-| `official_cxx_compare.py`, `official_cxx_models.py` | Table 13, official C/C++ analyser vs sonar-cxx | `official_cxx_compare.json`, `official_cxx_models.json` |
-| `revision_checks.py` | Timing of the logged work, excluded issues, nonlinear size models, uncertainty of Table 10 | `revision_checks.json` |
-| `size_classes_cutpoints.py` | Table 10 and the alternative cut-points (2/8 h, 8/40 h) | `size_classes_cutpoints.json` |
+| `other_algorithms.py` | Online appendix Table B3, random forest, XGBoost, CatBoost and a neural network | `other_algorithms_<project>.json` |
+| `official_cxx_compare.py`, `official_cxx_models.py` | Table 10, official C/C++ analyser vs sonar-cxx on the first 200 sampled issues | `official_cxx_compare.json`, `official_cxx_models.json` |
+| `official_cxx_full.py` | §6.5 and Figure 1, official C/C++ analyser on all 862 MariaDB hold-out issues (821 measured): partial ρ 0.09 (90% CI 0.02–0.18) | `official_cxx_full.json` |
+| `rule_types.py` | Online appendix Table C1, SQALE by rule type, size-neutral variant, debt ratio and A–E rating (per-rule data from `sqale_rules_scan.py`) | `rule_types_<project>.json` |
+| `revision_checks.py` | Timing of the logged work, excluded issues, nonlinear size models, uncertainty of Table B1 | `revision_checks.json` |
+| `size_classes_cutpoints.py` | Online appendix Table B1 and the alternative cut-points (2/8 h, 8/40 h) | `size_classes_cutpoints.json` |
 | `other_quality_measures.py` | Partial ρ of hours with other quality and history measures given size | `other_quality_measures.json` |
 | `h2_two_part.py` | H2 in two parts: any debt on the changed lines, and its amount where it is positive | `h2_two_part_<project>.json` |
 | `positive_control_h1.py` | Positive control for H1 (history measures through the frozen H1 code) and power simulation; slow, not in `run_all.sh` | `positive_control_h1_<project>.json` |
@@ -118,7 +121,7 @@ sh exploratory/run_all.sh
 
 All outputs match the analyses reported in the paper. In `revision_checks.py` the developer clusters of the bootstrap are ordered by developer identifier, so the confidence intervals depend on the pseudonyms. The intervals in the paper are the ones computed from this package.
 
-`official_cxx_scan.py` and `official_cxx_run.sh` re-run the official analyser. They need a clone of MariaDB/server (`MARIADB_REPO`), `sonar-scanner` (`SONAR_SCANNER`), a SonarQube Cloud organisation (`SONAR_ORG`) and a token with analysis rights in `SONAR_TOKEN`. They are not part of `run_all.sh`.
+`official_cxx_scan.py` and `official_cxx_run.sh` re-run the official analyser on all 862 issues, each in its own new SonarQube Cloud project with the analysis cache off. Re-analysing one project for many issues made SonarQube Cloud carry file measures over from earlier analyses (0 debt with a stale line count); the earlier scans (`cloud_w*`, `full_w*`, `nocache_w*`) are kept only to document this, and `official_cxx_full.json` (`carryover_fix`) compares them with the fresh scan. They need a clone of MariaDB/server (`MARIADB_REPO`), `sonar-scanner` (`SONAR_SCANNER`), a SonarQube Cloud organisation (`SONAR_ORG`) and a token with analysis rights in `SONAR_TOKEN`. They are not part of `run_all.sh`. `sqale_rules_scan.py` re-runs the per-rule scan of the 2,000 hold-out issues on a local SonarQube (same set-up as `preregistration/sqale_lines.py`).
 
 ## Link validation (`link_validation/`)
 
