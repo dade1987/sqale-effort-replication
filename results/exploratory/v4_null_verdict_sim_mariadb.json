@@ -1,0 +1,38 @@
+{
+ "project": "mariadb",
+ "n": 862,
+ "n_dev": 70,
+ "n_sim": 200,
+ "B": 1000,
+ "runs": {
+  "0.0": {
+   "verdict_share": {
+    "trascurabile in pratica (IC dentro +-0,10)": 0.85,
+    "inconcludente": 0.12,
+    "positiva ma di entita' incerta (IC sopra 0, non tutto sopra 0,10)": 0.03
+   },
+   "mean_rho": -4.9417507133757424e-05,
+   "sd_rho": 0.030436985323774514
+  },
+  "0.05": {
+   "verdict_share": {
+    "trascurabile in pratica (IC dentro +-0,10)": 0.475,
+    "positiva ma di entita' incerta (IC sopra 0, non tutto sopra 0,10)": 0.36,
+    "inconcludente": 0.15,
+    "supportata: effetto rilevante (IC sopra 0,10)": 0.015
+   },
+   "mean_rho": 0.04727585492516302,
+   "sd_rho": 0.033478375457487206
+  },
+  "0.1": {
+   "verdict_share": {
+    "positiva ma di entita' incerta (IC sopra 0, non tutto sopra 0,10)": 0.8,
+    "trascurabile in pratica (IC dentro +-0,10)": 0.1,
+    "supportata: effetto rilevante (IC sopra 0,10)": 0.04,
+    "inconcludente": 0.06
+   },
+   "mean_rho": 0.09496035593271185,
+   "sd_rho": 0.03142776452856174
+  }
+ }
+}

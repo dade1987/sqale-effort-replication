@@ -1,0 +1,278 @@
+{
+ "project": "moodle",
+ "n_H1": 851,
+ "a_H3_positive_control": {
+  "sqale_min (= H3)": {
+   "n_train": 875,
+   "n_test": 851,
+   "MAE_lines_only": 8.347844528514345,
+   "dMAE": 0.0008964636236900731,
+   "IC90": [
+    -0.0012922658113731801,
+    0.0030841709212244147
+   ],
+   "IC90_pct_MAE": [
+    -0.015480233333995298,
+    0.03694571587539257
+   ],
+   "verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "h_commits_1y": {
+   "n_train": 875,
+   "n_test": 851,
+   "MAE_lines_only": 8.347844528514345,
+   "dMAE": -0.10235493257535923,
+   "IC90": [
+    -0.1834206056276225,
+    -0.029801612960162358
+   ],
+   "IC90_pct_MAE": [
+    -2.197221150934223,
+    -0.35699769992561314
+   ],
+   "verdict": "inconclusive"
+  },
+  "h_churn_1y": {
+   "n_train": 875,
+   "n_test": 851,
+   "MAE_lines_only": 8.347844528514345,
+   "dMAE": -0.06484693534916396,
+   "IC90": [
+    -0.15598046623894155,
+    0.014333601880885448
+   ],
+   "IC90_pct_MAE": [
+    -1.8685118740070878,
+    0.17170422654524903
+   ],
+   "verdict": "equivalent (CI inside +-2% of MAE)"
+  }
+ },
+ "c_H1_twoway_dev_component": {
+  "n": 851,
+  "n_dev": 178,
+  "n_comp": 196,
+  "rho_parziale": -0.024420519170156217,
+  "IC90": [
+   -0.14755481867766512,
+   0.07217916126485326
+  ],
+  "esito": "inconcludente"
+ },
+ "d_H1_dev_component_fixed_effects": {
+  "n": 851,
+  "rho_parziale": -0.04443426558725472,
+  "IC90": [
+   -0.11156420051999956,
+   0.029907716056660306
+  ],
+  "esito": "inconcludente",
+  "note": "developer-clustered bootstrap, B = 5000; developers and components with < 5 issues pooled into 'other'"
+ },
+ "e_models_vs_experts": {
+  "M1 vs first estimate, total hours": {
+   "n": 61,
+   "MdAE_log_model": 0.7260791521739796,
+   "MdAE_log_expert": 0.9387635877262138,
+   "within2x_model": 0.4426229508196721,
+   "within2x_expert": 0.4098360655737705,
+   "dMdAE_log_model_minus_expert": -0.21268443555223426,
+   "dMdAE_log_CI90": [
+    -0.44224120332513817,
+    0.12135581423904884
+   ],
+   "dWithin2x_model_minus_expert": 0.03278688524590162,
+   "dWithin2x_CI90": [
+    -0.109375,
+    0.2
+   ]
+  },
+  "M0 vs first estimate, total hours": {
+   "n": 61,
+   "MdAE_log_model": 1.390905632837798,
+   "MdAE_log_expert": 0.9387635877262138,
+   "within2x_model": 0.29508196721311475,
+   "within2x_expert": 0.4098360655737705,
+   "dMdAE_log_model_minus_expert": 0.4521420451115842,
+   "dMdAE_log_CI90": [
+    -0.10340979336722002,
+    0.8596712517006163
+   ],
+   "dWithin2x_model_minus_expert": -0.11475409836065575,
+   "dWithin2x_CI90": [
+    -0.26785714285714285,
+    0.06382978723404253
+   ]
+  },
+  "M1 vs first estimate, assignee-only hours": {
+   "n": 53,
+   "MdAE_log_model": 0.9498915921745673,
+   "MdAE_log_expert": 0.8109302162163288,
+   "within2x_model": 0.33962264150943394,
+   "within2x_expert": 0.4339622641509434,
+   "dMdAE_log_model_minus_expert": 0.13896137595823854,
+   "dMdAE_log_CI90": [
+    -0.20219005787052902,
+    0.4854402372926353
+   ],
+   "dWithin2x_model_minus_expert": -0.09433962264150947,
+   "dWithin2x_CI90": [
+    -0.2553191489361702,
+    0.033333333333333326
+   ]
+  },
+  "M0 vs first estimate, assignee-only hours": {
+   "n": 53,
+   "MdAE_log_model": 1.5305348547459563,
+   "MdAE_log_expert": 0.8109302162163288,
+   "within2x_model": 0.20754716981132076,
+   "within2x_expert": 0.4339622641509434,
+   "dMdAE_log_model_minus_expert": 0.7196046385296275,
+   "dMdAE_log_CI90": [
+    0.230538745576495,
+    1.1981930095119115
+   ],
+   "dWithin2x_model_minus_expert": -0.22641509433962265,
+   "dWithin2x_CI90": [
+    -0.38184491978609625,
+    -0.0985800046178711
+   ]
+  },
+  "M1 vs first estimate before work, total hours": {
+   "n": 49,
+   "MdAE_log_model": 0.737411626759072,
+   "MdAE_log_expert": 0.8295154545196677,
+   "within2x_model": 0.42857142857142855,
+   "within2x_expert": 0.46938775510204084,
+   "dMdAE_log_model_minus_expert": -0.09210382776059567,
+   "dMdAE_log_CI90": [
+    -0.2713135523708466,
+    0.33869315073243833
+   ],
+   "dWithin2x_model_minus_expert": -0.04081632653061229,
+   "dWithin2x_CI90": [
+    -0.19447831978319785,
+    0.11538461538461536
+   ]
+  },
+  "M0 vs first estimate before work, total hours": {
+   "n": 49,
+   "MdAE_log_model": 1.390905632837798,
+   "MdAE_log_expert": 0.8295154545196677,
+   "within2x_model": 0.2653061224489796,
+   "within2x_expert": 0.46938775510204084,
+   "dMdAE_log_model_minus_expert": 0.5613901783181303,
+   "dMdAE_log_CI90": [
+    0.1705098110366321,
+    0.9729907830432845
+   ],
+   "dWithin2x_model_minus_expert": -0.20408163265306123,
+   "dWithin2x_CI90": [
+    -0.36363636363636365,
+    -0.043478260869565244
+   ]
+  },
+  "M1 vs first estimate before work, assignee-only hours": {
+   "n": 42,
+   "MdAE_log_model": 0.9683872754869538,
+   "MdAE_log_expert": 0.7756773506765378,
+   "within2x_model": 0.3333333333333333,
+   "within2x_expert": 0.4523809523809524,
+   "dMdAE_log_model_minus_expert": 0.19270992481041604,
+   "dMdAE_log_CI90": [
+    -0.10144789905923901,
+    0.6759444259310979
+   ],
+   "dWithin2x_model_minus_expert": -0.11904761904761907,
+   "dWithin2x_CI90": [
+    -0.36363636363636365,
+    0.021739130434782594
+   ]
+  },
+  "M0 vs first estimate before work, assignee-only hours": {
+   "n": 42,
+   "MdAE_log_model": 1.5054689408978998,
+   "MdAE_log_expert": 0.7756773506765378,
+   "within2x_model": 0.19047619047619047,
+   "within2x_expert": 0.4523809523809524,
+   "dMdAE_log_model_minus_expert": 0.7297915902213621,
+   "dMdAE_log_CI90": [
+    0.25646212420944203,
+    1.3114790866581794
+   ],
+   "dWithin2x_model_minus_expert": -0.2619047619047619,
+   "dWithin2x_CI90": [
+    -0.45714285714285713,
+    -0.10000000000000003
+   ]
+  },
+  "M1 vs final estimate, total hours": {
+   "n": 62,
+   "MdAE_log_model": 0.7317453894665258,
+   "MdAE_log_expert": 0.9416125982835326,
+   "within2x_model": 0.43548387096774194,
+   "within2x_expert": 0.4032258064516129,
+   "dMdAE_log_model_minus_expert": -0.20986720881700682,
+   "dMdAE_log_CI90": [
+    -0.4299079718783432,
+    0.10290336346199191
+   ],
+   "dWithin2x_model_minus_expert": 0.03225806451612906,
+   "dWithin2x_CI90": [
+    -0.10389610389610388,
+    0.18840579710144928
+   ]
+  },
+  "M0 vs final estimate, total hours": {
+   "n": 62,
+   "MdAE_log_model": 1.4303375977916981,
+   "MdAE_log_expert": 0.9416125982835326,
+   "within2x_model": 0.2903225806451613,
+   "within2x_expert": 0.4032258064516129,
+   "dMdAE_log_model_minus_expert": 0.4887249995081655,
+   "dMdAE_log_CI90": [
+    -0.060630585243948265,
+    0.8926493289354628
+   ],
+   "dWithin2x_model_minus_expert": -0.11290322580645157,
+   "dWithin2x_CI90": [
+    -0.2631578947368421,
+    0.06060606060606061
+   ]
+  },
+  "M1 vs final estimate, assignee-only hours": {
+   "n": 54,
+   "MdAE_log_model": 0.9683872754869538,
+   "MdAE_log_expert": 0.8194983573378225,
+   "within2x_model": 0.3333333333333333,
+   "within2x_expert": 0.42592592592592593,
+   "dMdAE_log_model_minus_expert": 0.1488889181491313,
+   "dMdAE_log_CI90": [
+    -0.21494870509262776,
+    0.4854402372926353
+   ],
+   "dWithin2x_model_minus_expert": -0.09259259259259262,
+   "dWithin2x_CI90": [
+    -0.25,
+    0.03508771929824561
+   ]
+  },
+  "M0 vs final estimate, assignee-only hours": {
+   "n": 54,
+   "MdAE_log_model": 1.5499074475364698,
+   "MdAE_log_expert": 0.8194983573378225,
+   "within2x_model": 0.2037037037037037,
+   "within2x_expert": 0.42592592592592593,
+   "dMdAE_log_model_minus_expert": 0.7304090901986473,
+   "dMdAE_log_CI90": [
+    0.230538745576495,
+    1.2125537132585382
+   ],
+   "dWithin2x_model_minus_expert": -0.22222222222222224,
+   "dWithin2x_CI90": [
+    -0.375,
+    -0.08926587301587294
+   ]
+  }
+ }
+}
