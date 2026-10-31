@@ -1,0 +1,45 @@
+{
+ "project": "mariadb",
+ "bootstrap": "twoway",
+ "n_holdout": 862,
+ "n": 1400,
+ "n_sim": 200,
+ "B": 1000,
+ "runs": {
+  "0.0": {
+   "verdict_share": {
+    "trascurabile in pratica (IC dentro +-0,10)": 0.57,
+    "inconcludente": 0.43
+   },
+   "mean_rho": -0.0007875272950251869,
+   "sd_rho": 0.027169796358951708
+  },
+  "0.05": {
+   "verdict_share": {
+    "inconcludente": 0.71,
+    "positiva ma di entita' incerta (IC sopra 0, non tutto sopra 0,10)": 0.105,
+    "trascurabile in pratica (IC dentro +-0,10)": 0.185
+   },
+   "mean_rho": 0.04717486495653765,
+   "sd_rho": 0.025730507363723808
+  },
+  "0.09": {
+   "verdict_share": {
+    "positiva ma di entita' incerta (IC sopra 0, non tutto sopra 0,10)": 0.525,
+    "inconcludente": 0.455,
+    "trascurabile in pratica (IC dentro +-0,10)": 0.02
+   },
+   "mean_rho": 0.08419288204479208,
+   "sd_rho": 0.02806409385499554
+  },
+  "0.1": {
+   "verdict_share": {
+    "positiva ma di entita' incerta (IC sopra 0, non tutto sopra 0,10)": 0.695,
+    "inconcludente": 0.285,
+    "trascurabile in pratica (IC dentro +-0,10)": 0.02
+   },
+   "mean_rho": 0.09320065321080998,
+   "sd_rho": 0.02830668469234869
+  }
+ }
+}

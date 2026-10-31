@@ -1,0 +1,48 @@
+{
+ "project": "mariadb",
+ "bootstrap": "dev",
+ "n_holdout": 862,
+ "n": 1400,
+ "n_sim": 200,
+ "B": 1000,
+ "runs": {
+  "0.0": {
+   "verdict_share": {
+    "trascurabile in pratica (IC dentro +-0,10)": 0.965,
+    "inconcludente": 0.025,
+    "positiva ma di entita' incerta (IC sopra 0, non tutto sopra 0,10)": 0.01
+   },
+   "mean_rho": -0.0007875272950251869,
+   "sd_rho": 0.027169796358951708
+  },
+  "0.05": {
+   "verdict_share": {
+    "positiva ma di entita' incerta (IC sopra 0, non tutto sopra 0,10)": 0.415,
+    "trascurabile in pratica (IC dentro +-0,10)": 0.54,
+    "inconcludente": 0.045
+   },
+   "mean_rho": 0.04717486495653765,
+   "sd_rho": 0.025730507363723808
+  },
+  "0.09": {
+   "verdict_share": {
+    "positiva ma di entita' incerta (IC sopra 0, non tutto sopra 0,10)": 0.83,
+    "trascurabile in pratica (IC dentro +-0,10)": 0.145,
+    "supportata: effetto rilevante (IC sopra 0,10)": 0.01,
+    "inconcludente": 0.015
+   },
+   "mean_rho": 0.08419288204479208,
+   "sd_rho": 0.02806409385499554
+  },
+  "0.1": {
+   "verdict_share": {
+    "positiva ma di entita' incerta (IC sopra 0, non tutto sopra 0,10)": 0.885,
+    "inconcludente": 0.015,
+    "trascurabile in pratica (IC dentro +-0,10)": 0.09,
+    "supportata: effetto rilevante (IC sopra 0,10)": 0.01
+   },
+   "mean_rho": 0.09320065321080998,
+   "sd_rho": 0.02830668469234869
+  }
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "project": "moodle",
+ "bootstrap": "twoway",
+ "n_holdout": 851,
+ "n": 851,
+ "n_sim": 200,
+ "B": 1000,
+ "runs": {
+  "0.0": {
+   "verdict_share": {
+    "inconcludente": 0.92,
+    "trascurabile in pratica (IC dentro +-0,10)": 0.08
+   },
+   "mean_rho": 0.0032360761400153392,
+   "sd_rho": 0.03667341183818557
+  },
+  "0.05": {
+   "verdict_share": {
+    "inconcludente": 0.86,
+    "positiva ma di entita' incerta (IC sopra 0, non tutto sopra 0,10)": 0.1,
+    "trascurabile in pratica (IC dentro +-0,10)": 0.04
+   },
+   "mean_rho": 0.05391455500877781,
+   "sd_rho": 0.03163801969408494
+  },
+  "0.1": {
+   "verdict_share": {
+    "inconcludente": 0.335,
+    "positiva ma di entita' incerta (IC sopra 0, non tutto sopra 0,10)": 0.665
+   },
+   "mean_rho": 0.11027049363083387,
+   "sd_rho": 0.032606529613114596
+  }
+ }
+}
