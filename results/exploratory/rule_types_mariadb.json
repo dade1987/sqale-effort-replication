@@ -1,0 +1,198 @@
+{
+ "project": "mariadb",
+ "n": 862,
+ "rules_per_group": {
+  "size_adding": [
+   "cppcheck:unreadVariable",
+   "cppcheck:unusedAllocatedMemory",
+   "cppcheck:unusedPrivateFunction",
+   "cppcheck:unusedStructMember",
+   "cppcheck:unusedVariable",
+   "cxx:TooLongLine",
+   "cxx:TooManyLinesOfCodeInFile",
+   "cxx:TooManyLinesOfCodeInFunction"
+  ],
+  "complexity": [
+   "cxx:ClassComplexity",
+   "cxx:FileComplexity",
+   "cxx:FunctionCognitiveComplexity",
+   "cxx:FunctionComplexity",
+   "cxx:TooManyParameters",
+   "cxx:TooManyStatementsPerLine"
+  ],
+  "convention": [
+   "cxx:ClassName",
+   "cxx:FileHeader",
+   "cxx:FileName",
+   "cxx:FixmeTagPresence",
+   "cxx:FunctionName",
+   "cxx:MethodName",
+   "cxx:MissingNewLineAtEndOfFile",
+   "cxx:TabCharacter",
+   "cxx:TodoTagPresence",
+   "cxx:UndocumentedApi"
+  ],
+  "other": [
+   "cppcheck:arrayIndexThenCheck",
+   "cppcheck:clarifyCalculation",
+   "cppcheck:clarifyCondition",
+   "cppcheck:comparisonOfTwoFuncsReturningBoolError",
+   "cppcheck:constParameterCallback",
+   "cppcheck:constParameterPointer",
+   "cppcheck:constParameterReference",
+   "cppcheck:constVariable",
+   "cppcheck:constVariablePointer",
+   "cppcheck:constVariableReference",
+   "cppcheck:cstyleCast",
+   "cppcheck:duplicateBreak",
+   "cppcheck:duplicateCondition",
+   "cppcheck:knownConditionTrueFalse",
+   "cppcheck:missingOverride",
+   "cppcheck:noConstructor",
+   "cppcheck:noCopyConstructor",
+   "cppcheck:noExplicitConstructor",
+   "cppcheck:operatorEqShouldBeLeftUnimplemented",
+   "cppcheck:pointerLessThanZero",
+   "cppcheck:redundantAssignment",
+   "cppcheck:redundantCondition",
+   "cppcheck:redundantContinue",
+   "cppcheck:redundantInitialization",
+   "cppcheck:redundantPointerOp",
+   "cppcheck:shadowArgument",
+   "cppcheck:shadowFunction",
+   "cppcheck:shadowVariable",
+   "cppcheck:unassignedVariable",
+   "cppcheck:unreachableCode",
+   "cppcheck:unsignedLessThanZero",
+   "cppcheck:useStlAlgorithm",
+   "cppcheck:uselessAssignmentArg",
+   "cppcheck:uselessOverride",
+   "cppcheck:variableScope",
+   "cxx:ParsingErrorRecovery"
+  ]
+ },
+ "effort_share": {
+  "size_adding": 0.04544735083704223,
+  "complexity": 0.15939284966329806,
+  "convention": 0.7565706715653235,
+  "other": 0.0385891279343362
+ },
+ "issues_with_nonzero": {
+  "size_adding": 684,
+  "complexity": 816,
+  "convention": 862,
+  "other": 423
+ },
+ "spearman_with_ncloc": {
+  "size_adding": 0.8991114879547402,
+  "complexity": 0.9458730993576621,
+  "convention": 0.795732363009288,
+  "other": 0.27364275719706294,
+  "size_neutral": 0.8761998677507231,
+  "debt_ratio": -0.05005914400355749,
+  "rating": -0.20388639436251477
+ },
+ "rating_counts": {
+  "A": 798,
+  "B": 50,
+  "C": 13,
+  "D": 1,
+  "E": 0
+ },
+ "median_hours_by_rating": {
+  "A": 6.5,
+  "B": 4.758333333333333,
+  "C": 4.166666666666667,
+  "D": 17.416666666666668,
+  "E": null
+ },
+ "tests": {
+  "total_H1": {
+   "n": 862,
+   "rho_parziale": 0.02339037782859298,
+   "IC90": [
+    -0.03752109983981926,
+    0.08393531061593573
+   ],
+   "p_unilaterale_rho_gt_0": 0.25579999999999997,
+   "esito": "trascurabile in pratica (IC dentro +-0,10)"
+  },
+  "size_adding": {
+   "n": 862,
+   "rho_parziale": 0.05138454308356473,
+   "IC90": [
+    -0.007939798322938672,
+    0.1015355398160212
+   ],
+   "p_unilaterale_rho_gt_0": 0.0766,
+   "esito": "inconcludente",
+   "p_holm": 0.3064
+  },
+  "complexity": {
+   "n": 862,
+   "rho_parziale": 0.05792025671371101,
+   "IC90": [
+    0.0019268357297239167,
+    0.11846089499423762
+   ],
+   "p_unilaterale_rho_gt_0": 0.0448,
+   "esito": "positiva ma di entita' incerta (IC sopra 0, non tutto sopra 0,10)",
+   "p_holm": 0.2688
+  },
+  "convention": {
+   "n": 862,
+   "rho_parziale": 0.05769007762162641,
+   "IC90": [
+    -0.0028383098279052958,
+    0.11657968663273563
+   ],
+   "p_unilaterale_rho_gt_0": 0.0596,
+   "esito": "inconcludente",
+   "p_holm": 0.298
+  },
+  "other": {
+   "n": 862,
+   "rho_parziale": 0.09923322721777322,
+   "IC90": [
+    0.021491022238117042,
+    0.16356592074976475
+   ],
+   "p_unilaterale_rho_gt_0": 0.0148,
+   "esito": "positiva ma di entita' incerta (IC sopra 0, non tutto sopra 0,10)",
+   "p_holm": 0.1036
+  },
+  "size_neutral": {
+   "n": 862,
+   "rho_parziale": 0.027957550294557442,
+   "IC90": [
+    -0.03226717880296211,
+    0.08663291757207311
+   ],
+   "p_unilaterale_rho_gt_0": 0.2052,
+   "esito": "trascurabile in pratica (IC dentro +-0,10)",
+   "p_holm": 0.4104
+  },
+  "debt_ratio": {
+   "n": 862,
+   "rho_parziale": 0.05490071611855294,
+   "IC90": [
+    -0.014036604641588612,
+    0.11849015921628316
+   ],
+   "p_unilaterale_rho_gt_0": 0.0932,
+   "esito": "inconcludente",
+   "p_holm": 0.3064
+  },
+  "rating": {
+   "n": 862,
+   "rho_parziale": 0.004642213840615242,
+   "IC90": [
+    -0.061428433021931274,
+    0.05923656725980078
+   ],
+   "p_unilaterale_rho_gt_0": 0.4836,
+   "esito": "trascurabile in pratica (IC dentro +-0,10)",
+   "p_holm": 0.4836
+  }
+ }
+}

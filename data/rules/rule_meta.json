@@ -1,0 +1,3415 @@
+{
+ "Web:S1827": {
+  "name": "Attributes deprecated in HTML5 should not be used",
+  "lang": "web",
+  "tags": [
+   "html5",
+   "obsolete"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "Web"
+ },
+ "cppcheck:arrayIndexThenCheck": {
+  "name": "Array index 'i' is used before limits check",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:clarifyCalculation": {
+  "name": "Clarify calculation precedence for '+' and '?'",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:clarifyCondition": {
+  "name": "Suspicious condition (assignment + comparison); Clarify expression with parentheses",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:comparisonOfTwoFuncsReturningBoolError": {
+  "name": "Comparison of two functions returning boolean value using relational (<, >, <= or >=) operator",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:constParameterCallback": {
+  "name": "Parameter 'x' can be declared with const, however it seems that 'f' is a callback function",
+  "lang": "cxx",
+  "tags": [
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:constParameterPointer": {
+  "name": "Parameter 'x' can be declared with const",
+  "lang": "cxx",
+  "tags": [
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:constParameterReference": {
+  "name": "Parameter 'x' can be declared with const",
+  "lang": "cxx",
+  "tags": [
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:constVariable": {
+  "name": "Variable 'x' can be declared with const",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:constVariablePointer": {
+  "name": "Variable 'x' can be declared with const",
+  "lang": "cxx",
+  "tags": [
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:constVariableReference": {
+  "name": "Variable 'x' can be declared with const",
+  "lang": "cxx",
+  "tags": [
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:cstyleCast": {
+  "name": "C-style pointer casting",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:duplicateBreak": {
+  "name": "Consecutive return, break, continue, goto or throw statements are unnecessary",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:duplicateCondition": {
+  "name": "The if condition is the same as the previous if condition",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:knownConditionTrueFalse": {
+  "name": "Condition 'x' is always false",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:missingOverride": {
+  "name": "The function '' overrides a function in a base class but is not marked with a 'override' specifier",
+  "lang": "cxx",
+  "tags": [
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:noConstructor": {
+  "name": "The class 'classname' does not declare a constructor although it has private member variables which likely require initialization",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:noCopyConstructor": {
+  "name": "Class 'class' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)",
+  "lang": "cxx",
+  "tags": [
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:noExplicitConstructor": {
+  "name": "Class 'classname' has a constructor with 1 argument that is not explicit",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:operatorEqShouldBeLeftUnimplemented": {
+  "name": "'operator=' should either return reference to 'this' instance or be declared private and left unimplemented",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:pointerLessThanZero": {
+  "name": "A pointer can not be negative so it is either pointless or an error to check if it is",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:redundantAssignment": {
+  "name": "Variable 'var' is reassigned a value before the old one has been used",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:redundantCondition": {
+  "name": "Redundant condition: If x > 11 the condition x > 10 is always true",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:redundantContinue": {
+  "name": "'continue' is redundant since it is the last statement in a loop",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:redundantInitialization": {
+  "name": "Redundant initialization for 'var'. The initialized value is overwritten before it is read",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:redundantPointerOp": {
+  "name": "Redundant pointer operation on 'varname' - it's already a pointer",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:shadowArgument": {
+  "name": "Local variable 'argument' shadows outer argument",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:shadowFunction": {
+  "name": "Local variable 'function' shadows outer function",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:shadowVariable": {
+  "name": "Local variable 'variable' shadows outer variable",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:unassignedVariable": {
+  "name": "Variable 'varname' is not assigned a value",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:unreachableCode": {
+  "name": "Statements following return, break, continue, goto or throw will never be executed",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:unreadVariable": {
+  "name": "Variable 'varname' is assigned a value that is never used",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:unsignedLessThanZero": {
+  "name": "Checking if unsigned expression 'varname' is less than zero",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:unusedAllocatedMemory": {
+  "name": "Variable 'varname' is allocated memory that is never used",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:unusedPrivateFunction": {
+  "name": "Unused private function: 'classname::funcname'",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:unusedStructMember": {
+  "name": "struct member 'structname::variable' is never used",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:unusedVariable": {
+  "name": "Unused variable: varname",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:useStlAlgorithm": {
+  "name": "Consider using  algorithm instead of a raw loop",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:uselessAssignmentArg": {
+  "name": "Assignment of function parameter has no effect outside the function",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:uselessOverride": {
+  "name": "The function '' overrides a function in a base class but just delegates back to the base class",
+  "lang": "cxx",
+  "tags": [
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cppcheck:variableScope": {
+  "name": "The scope of the variable 'varname' can be reduced",
+  "lang": "cxx",
+  "tags": [
+   "cwe",
+   "cppcheck"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cppcheck"
+ },
+ "cxx:ClassComplexity": {
+  "name": "Classes should not be too complex",
+  "lang": "cxx",
+  "tags": [
+   "brain-overload"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cxx"
+ },
+ "cxx:ClassName": {
+  "name": "Class names should comply with a naming convention",
+  "lang": "cxx",
+  "tags": [
+   "convention"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cxx"
+ },
+ "cxx:FileComplexity": {
+  "name": "Files should not be too complex",
+  "lang": "cxx",
+  "tags": [
+   "brain-overload"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cxx"
+ },
+ "cxx:FileHeader": {
+  "name": "Copyright and license headers should be defined in all source files",
+  "lang": "cxx",
+  "tags": [],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cxx"
+ },
+ "cxx:FileName": {
+  "name": "File names should comply with a naming convention",
+  "lang": "cxx",
+  "tags": [
+   "convention"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cxx"
+ },
+ "cxx:FixmeTagPresence": {
+  "name": "FIXME tags should be handled",
+  "lang": "cxx",
+  "tags": [
+   "bad-practice"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cxx"
+ },
+ "cxx:FunctionCognitiveComplexity": {
+  "name": "Cognitive Complexity of methods/functions should not be too high",
+  "lang": "cxx",
+  "tags": [
+   "brain-overload"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cxx"
+ },
+ "cxx:FunctionComplexity": {
+  "name": "Functions should not be too complex",
+  "lang": "cxx",
+  "tags": [
+   "brain-overload"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cxx"
+ },
+ "cxx:FunctionName": {
+  "name": "Function names should comply with a naming convention",
+  "lang": "cxx",
+  "tags": [
+   "convention"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cxx"
+ },
+ "cxx:MethodName": {
+  "name": "Method names should comply with a naming convention",
+  "lang": "cxx",
+  "tags": [
+   "convention"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cxx"
+ },
+ "cxx:MissingNewLineAtEndOfFile": {
+  "name": "Files should contain an empty new line at the end",
+  "lang": "cxx",
+  "tags": [
+   "convention"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cxx"
+ },
+ "cxx:ParsingErrorRecovery": {
+  "name": "C++ skip parser error",
+  "lang": "cxx",
+  "tags": [
+   "tool-error"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cxx"
+ },
+ "cxx:TabCharacter": {
+  "name": "Tabulation characters should not be used",
+  "lang": "cxx",
+  "tags": [
+   "convention"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cxx"
+ },
+ "cxx:TodoTagPresence": {
+  "name": "TODO tags should be handled",
+  "lang": "cxx",
+  "tags": [
+   "bad-practice"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cxx"
+ },
+ "cxx:TooLongLine": {
+  "name": "Lines of code should not be too long",
+  "lang": "cxx",
+  "tags": [
+   "brain-overload"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cxx"
+ },
+ "cxx:TooManyLinesOfCodeInFile": {
+  "name": "Avoid too many code lines in source file",
+  "lang": "cxx",
+  "tags": [
+   "brain-overload"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cxx"
+ },
+ "cxx:TooManyLinesOfCodeInFunction": {
+  "name": "Avoid too many code lines in a single function",
+  "lang": "cxx",
+  "tags": [
+   "brain-overload"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cxx"
+ },
+ "cxx:TooManyParameters": {
+  "name": "Functions, methods and lambdas should not have too many parameters",
+  "lang": "cxx",
+  "tags": [
+   "brain-overload"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cxx"
+ },
+ "cxx:TooManyStatementsPerLine": {
+  "name": "Statements should be on separate lines",
+  "lang": "cxx",
+  "tags": [
+   "brain-overload"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cxx"
+ },
+ "cxx:UndocumentedApi": {
+  "name": "Public APIs should be documented",
+  "lang": "cxx",
+  "tags": [
+   "convention"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "cxx"
+ },
+ "javascript:S107": {
+  "name": "Functions should not have too many parameters",
+  "lang": "js",
+  "tags": [
+   "brain-overload",
+   "editable-source"
+  ],
+  "cca": "FOCUSED",
+  "ccac": "ADAPTABLE",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S1121": {
+  "name": "Assignments should not be made from within sub-expressions",
+  "lang": "js",
+  "tags": [
+   "cwe",
+   "suspicious"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S1125": {
+  "name": "Boolean literals should not be used in comparisons",
+  "lang": "js",
+  "tags": [
+   "editable-source",
+   "clumsy"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S1126": {
+  "name": "Return of boolean expressions should not be wrapped into an \"if-then-else\" statement",
+  "lang": "js",
+  "tags": [
+   "editable-source",
+   "clumsy"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S1135": {
+  "name": "Track uses of \"TODO\" tags",
+  "lang": "js",
+  "tags": [
+   "cwe",
+   "editable-source"
+  ],
+  "cca": "COMPLETE",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S1186": {
+  "name": "Functions should not be empty",
+  "lang": "js",
+  "tags": [
+   "suspicious"
+  ],
+  "cca": "COMPLETE",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S1481": {
+  "name": "Unused local variables and functions should be removed",
+  "lang": "js",
+  "tags": [
+   "editable-source",
+   "unused"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S1515": {
+  "name": "Functions should not be defined inside loops",
+  "lang": "js",
+  "tags": [
+   "suspicious"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S1516": {
+  "name": "Multiline string literals should not be used",
+  "lang": "js",
+  "tags": [
+   "bad-practice"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S1854": {
+  "name": "Unused assignments should be removed",
+  "lang": "js",
+  "tags": [
+   "cwe",
+   "editable-source",
+   "unused"
+  ],
+  "cca": "LOGICAL",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S1871": {
+  "name": "Two branches in a conditional structure should not have exactly the same implementation",
+  "lang": "js",
+  "tags": [
+   "design",
+   "suspicious"
+  ],
+  "cca": "DISTINCT",
+  "ccac": "ADAPTABLE",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S1874": {
+  "name": "Deprecated APIs should not be used",
+  "lang": "js",
+  "tags": [
+   "cwe",
+   "type-dependent",
+   "obsolete"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S2004": {
+  "name": "Functions should not be nested too deeply",
+  "lang": "js",
+  "tags": [
+   "brain-overload",
+   "editable-source"
+  ],
+  "cca": "FOCUSED",
+  "ccac": "ADAPTABLE",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S2301": {
+  "name": "Methods should not contain selector parameters",
+  "lang": "js",
+  "tags": [
+   "design",
+   "editable-source",
+   "type-dependent"
+  ],
+  "cca": "FOCUSED",
+  "ccac": "ADAPTABLE",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S2392": {
+  "name": "Variables should be used in the blocks where they are declared",
+  "lang": "js",
+  "tags": [
+   "editable-source",
+   "pitfall"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S2486": {
+  "name": "Exceptions should not be ignored",
+  "lang": "js",
+  "tags": [
+   "cwe",
+   "error-handling",
+   "suspicious"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S2685": {
+  "name": "\"arguments.caller\" and \"arguments.callee\" should not be used",
+  "lang": "js",
+  "tags": [
+   "obsolete"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S2703": {
+  "name": "Variables should be declared explicitly",
+  "lang": "js",
+  "tags": [
+   "pitfall"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S2814": {
+  "name": "Variables and functions should not be redeclared",
+  "lang": "js",
+  "tags": [
+   "confusing"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S3358": {
+  "name": "Ternary operators should not be nested",
+  "lang": "js",
+  "tags": [
+   "editable-source",
+   "confusing"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S3504": {
+  "name": "Variables should be declared with \"let\" or \"const\"",
+  "lang": "js",
+  "tags": [
+   "es2015",
+   "editable-source",
+   "bad-practice"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S3516": {
+  "name": "Function returns should not be invariant",
+  "lang": "js",
+  "tags": [
+   "editable-source"
+  ],
+  "cca": "LOGICAL",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S3579": {
+  "name": "Array indexes should be numeric",
+  "lang": "js",
+  "tags": [
+   "type-dependent",
+   "bad-practice"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S3626": {
+  "name": "Jump statements should not be redundant",
+  "lang": "js",
+  "tags": [
+   "editable-source",
+   "redundant",
+   "clumsy"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S3696": {
+  "name": "Literals should not be thrown",
+  "lang": "js",
+  "tags": [
+   "error-handling",
+   "api-design"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S3735": {
+  "name": "\"void\" should not be used",
+  "lang": "js",
+  "tags": [
+   "editable-source",
+   "type-dependent",
+   "confusing"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S3776": {
+  "name": "Cognitive Complexity of functions should not be too high",
+  "lang": "js",
+  "tags": [
+   "brain-overload",
+   "editable-source"
+  ],
+  "cca": "FOCUSED",
+  "ccac": "ADAPTABLE",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S3800": {
+  "name": "Functions should always return the same type",
+  "lang": "js",
+  "tags": [
+   "editable-source",
+   "type-dependent",
+   "confusing"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S4123": {
+  "name": "\"await\" should only be used with promises",
+  "lang": "js",
+  "tags": [
+   "es2017"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S4138": {
+  "name": "\"for of\" should be used with Iterables",
+  "lang": "js",
+  "tags": [
+   "clumsy"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S4144": {
+  "name": "Functions should not have identical implementations",
+  "lang": "js",
+  "tags": [
+   "editable-source",
+   "confusing",
+   "duplicate",
+   "suspicious"
+  ],
+  "cca": "DISTINCT",
+  "ccac": "ADAPTABLE",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S4165": {
+  "name": "Assignments should not be redundant",
+  "lang": "js",
+  "tags": [
+   "editable-source",
+   "redundant"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S4524": {
+  "name": "\"default\" clauses should be last",
+  "lang": "js",
+  "tags": [
+   "editable-source"
+  ],
+  "cca": "FORMATTED",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S4634": {
+  "name": "Shorthand promises should be used",
+  "lang": "js",
+  "tags": [
+   "es2015",
+   "editable-source",
+   "proficiency"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S5843": {
+  "name": "Regular expressions should not be too complicated",
+  "lang": "js",
+  "tags": [
+   "regex",
+   "editable-source",
+   "type-dependent"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S5860": {
+  "name": "Names of regular expressions named groups should be used",
+  "lang": "js",
+  "tags": [
+   "regex",
+   "type-dependent"
+  ],
+  "cca": "LOGICAL",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S5869": {
+  "name": "Character classes in regular expressions should not contain the same character twice",
+  "lang": "js",
+  "tags": [
+   "regex",
+   "type-dependent"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S6035": {
+  "name": "Single-character alternations in regular expressions should be replaced with character classes",
+  "lang": "js",
+  "tags": [
+   "regex",
+   "type-dependent"
+  ],
+  "cca": "EFFICIENT",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S6325": {
+  "name": "Regular expression literals should be used when possible",
+  "lang": "js",
+  "tags": [
+   "regex",
+   "editable-source"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S6353": {
+  "name": "Regular expression quantifiers and character classes should be used concisely",
+  "lang": "js",
+  "tags": [
+   "regex",
+   "editable-source",
+   "type-dependent"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S6535": {
+  "name": "Unnecessary character escapes should be removed",
+  "lang": "js",
+  "tags": [
+   "editable-source"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S6551": {
+  "name": "Objects and classes converted or coerced to strings should define a \"toString()\" method",
+  "lang": "js",
+  "tags": [
+   "string",
+   "type-dependent",
+   "object"
+  ],
+  "cca": "LOGICAL",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S6557": {
+  "name": "Ends of strings should be checked with \"startsWith()\" and \"endsWith()\"",
+  "lang": "js",
+  "tags": [
+   "es2015",
+   "editable-source",
+   "type-dependent"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S6582": {
+  "name": "Optional chaining should be preferred",
+  "lang": "js",
+  "tags": [
+   "editable-source",
+   "type-dependent",
+   "es2020"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S6594": {
+  "name": "\"RegExp.exec()\" should be preferred over \"String.match()\"",
+  "lang": "js",
+  "tags": [
+   "regex",
+   "editable-source",
+   "type-dependent"
+  ],
+  "cca": "EFFICIENT",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S6635": {
+  "name": "Constructors should not return values",
+  "lang": "js",
+  "tags": [],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S6643": {
+  "name": "Prototypes of builtin objects should not be modified",
+  "lang": "js",
+  "tags": [],
+  "cca": "LOGICAL",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S6644": {
+  "name": "Ternary operator should not be used instead of simpler alternatives",
+  "lang": "js",
+  "tags": [
+   "editable-source"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S6653": {
+  "name": "Use Object.hasOwn static method instead of hasOwnProperty",
+  "lang": "js",
+  "tags": [
+   "es2022"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S6660": {
+  "name": "If statements should not be the only statement in else blocks",
+  "lang": "js",
+  "tags": [
+   "editable-source"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S6661": {
+  "name": "Object spread syntax should be used instead of \"Object.assign\"",
+  "lang": "js",
+  "tags": [
+   "es2018",
+   "editable-source"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S6666": {
+  "name": "Spread syntax should be used instead of \"apply()\"",
+  "lang": "js",
+  "tags": [
+   "editable-source"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S6671": {
+  "name": "Literals should not be used for promise rejection",
+  "lang": "js",
+  "tags": [
+   "type-dependent"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "RELIABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S6676": {
+  "name": "Calls to \".call()\" and \".apply()\" methods should not be redundant",
+  "lang": "js",
+  "tags": [
+   "editable-source"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S6836": {
+  "name": "\"case\" and \"default\" clauses should not contain lexical declarations",
+  "lang": "js",
+  "tags": [],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7059": {
+  "name": "Constructors should not contain asynchronous operations",
+  "lang": "js",
+  "tags": [
+   "es2017",
+   "type-dependent"
+  ],
+  "cca": "MODULAR",
+  "ccac": "ADAPTABLE",
+  "impacts": [
+   "RELIABILITY",
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7718": {
+  "name": "Error parameters in catch clauses should follow a consistent naming convention",
+  "lang": "js",
+  "tags": [
+   "convention",
+   "error-handling",
+   "editable-source"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7721": {
+  "name": "Functions should be moved to the highest possible scope",
+  "lang": "js",
+  "tags": [
+   "performance",
+   "optimization",
+   "editable-source",
+   "javascript"
+  ],
+  "cca": "EFFICIENT",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7723": {
+  "name": "Built-in constructors should be called consistently with or without \"new\"",
+  "lang": "js",
+  "tags": [
+   "convention"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "RELIABILITY",
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7724": {
+  "name": "ESLint disable comments should specify which rules to disable",
+  "lang": "js",
+  "tags": [
+   "eslint",
+   "editable-source",
+   "linting"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7726": {
+  "name": "Default exports should be named",
+  "lang": "js",
+  "tags": [
+   "convention",
+   "es2015",
+   "editable-source"
+  ],
+  "cca": "IDENTIFIABLE",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7732": {
+  "name": "\"instanceof\" should not be used with built-in objects",
+  "lang": "js",
+  "tags": [
+   "cross-browser"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "RELIABILITY",
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7737": {
+  "name": "Objects should not be used as default parameters",
+  "lang": "js",
+  "tags": [
+   "editable-source",
+   "confusing",
+   "pitfall"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "RELIABILITY",
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7740": {
+  "name": "Variables should not be assigned the value of \"this\"",
+  "lang": "js",
+  "tags": [
+   "editable-source",
+   "obsolete",
+   "confusing"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7741": {
+  "name": "\"typeof\" should not be used to check for \"undefined\"",
+  "lang": "js",
+  "tags": [
+   "readability",
+   "editable-source",
+   "style"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7744": {
+  "name": "Unnecessary fallback objects should not be used when spreading in object literals",
+  "lang": "js",
+  "tags": [
+   "editable-source",
+   "unnecessary",
+   "spread-operator"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7746": {
+  "name": "Promise.resolve() and Promise.reject() should not be used in async functions or promise callbacks",
+  "lang": "js",
+  "tags": [
+   "async",
+   "editable-source",
+   "promise",
+   "confusing"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7750": {
+  "name": "Array methods \".find()\" and \".findLast()\" should be preferred over \".filter()\" for single element retrieval",
+  "lang": "js",
+  "tags": [
+   "readability",
+   "performance",
+   "es2015",
+   "editable-source"
+  ],
+  "cca": "EFFICIENT",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7754": {
+  "name": "Use \".some()\" instead of \".filter().length\" checks or \".find()\" for existence testing",
+  "lang": "js",
+  "tags": [
+   "readability",
+   "performance",
+   "editable-source"
+  ],
+  "cca": "EFFICIENT",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7755": {
+  "name": "Complex index access patterns should be replaced with \".at()\" method",
+  "lang": "js",
+  "tags": [
+   "readability",
+   "performance",
+   "editable-source",
+   "type-dependent",
+   "es2022"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7756": {
+  "name": "Modern Blob methods should be used instead of FileReader",
+  "lang": "js",
+  "tags": [
+   "modernization",
+   "editable-source",
+   "promise",
+   "javascript"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7757": {
+  "name": "Class properties should be declared as fields rather than assigned in constructors",
+  "lang": "js",
+  "tags": [
+   "convention",
+   "editable-source",
+   "es2022"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7759": {
+  "name": "Use \"Date.now()\" instead of creating Date objects to get current timestamp",
+  "lang": "js",
+  "tags": [
+   "readability",
+   "performance",
+   "editable-source"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7760": {
+  "name": "Default parameters should be used instead of reassigning parameters with literal fallback values",
+  "lang": "js",
+  "tags": [
+   "es2015",
+   "editable-source",
+   "confusing"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7761": {
+  "name": "Data attributes should be accessed using \".dataset\"",
+  "lang": "js",
+  "tags": [
+   "dom",
+   "editable-source",
+   "html",
+   "api"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7762": {
+  "name": "DOM nodes should be removed using \"remove()\" instead of \"removeChild()\"",
+  "lang": "js",
+  "tags": [
+   "dom",
+   "editable-source",
+   "modernize",
+   "javascript"
+  ],
+  "cca": "EFFICIENT",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7763": {
+  "name": "Re-exports should use \"export...from\" syntax",
+  "lang": "js",
+  "tags": [
+   "convention",
+   "es2015",
+   "editable-source"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7765": {
+  "name": "Existence checks should use \".includes()\" instead of \".indexOf()\" or \".lastIndexOf()\"",
+  "lang": "js",
+  "tags": [
+   "readability",
+   "es2016",
+   "editable-source"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7766": {
+  "name": "Ternary expressions should be replaced with \"Math.min()\" or \"Math.max()\" for simple comparisons",
+  "lang": "js",
+  "tags": [
+   "readability",
+   "editable-source",
+   "type-dependent",
+   "confusing"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7767": {
+  "name": "Bitwise operators should not be used to truncate numbers",
+  "lang": "js",
+  "tags": [
+   "es2015",
+   "confusing"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "RELIABILITY",
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7768": {
+  "name": "Modern DOM manipulation methods should be used instead of legacy alternatives",
+  "lang": "js",
+  "tags": [
+   "modernization",
+   "dom",
+   "best-practice",
+   "editable-source"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7770": {
+  "name": "Wrapper functions around built-in type conversion functions should be avoided",
+  "lang": "js",
+  "tags": [
+   "performance",
+   "editable-source",
+   "unnecessary"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7772": {
+  "name": "Node.js built-in modules should be imported using the \"node:\" protocol",
+  "lang": "js",
+  "tags": [
+   "convention",
+   "import",
+   "editable-source",
+   "nodejs"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7773": {
+  "name": "Number static methods and properties should be preferred over global equivalents",
+  "lang": "js",
+  "tags": [
+   "convention",
+   "es2015",
+   "editable-source"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY",
+   "RELIABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7774": {
+  "name": "Methods should be accessed from prototypes, not instances",
+  "lang": "js",
+  "tags": [
+   "readability",
+   "performance",
+   "best-practice",
+   "editable-source"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7776": {
+  "name": "Arrays used only for existence checks should be Sets",
+  "lang": "js",
+  "tags": [
+   "performance",
+   "es2015",
+   "optimization",
+   "editable-source"
+  ],
+  "cca": "EFFICIENT",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7778": {
+  "name": "Multiple consecutive calls to methods that accept multiple arguments should be combined",
+  "lang": "js",
+  "tags": [
+   "readability",
+   "performance",
+   "editable-source",
+   "type-dependent"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7780": {
+  "name": "String literals with escaped backslashes should use `String.raw` template literals",
+  "lang": "js",
+  "tags": [
+   "readability",
+   "es2015",
+   "editable-source"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7781": {
+  "name": "Strings should use \"replaceAll()\" instead of \"replace()\" with global regex",
+  "lang": "js",
+  "tags": [
+   "readability",
+   "editable-source",
+   "es2021"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "RELIABILITY",
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7784": {
+  "name": "\"structuredClone()\" should be used instead of other deep cloning methods",
+  "lang": "js",
+  "tags": [
+   "performance",
+   "es2022",
+   "modernize"
+  ],
+  "cca": "EFFICIENT",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7785": {
+  "name": "Top-level await should be preferred over promise chains and async wrappers",
+  "lang": "js",
+  "tags": [
+   "async",
+   "editable-source",
+   "type-dependent",
+   "es2022",
+   "esm-only",
+   "modernize"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S7786": {
+  "name": "Generic \"Error\" should be \"TypeError\" when thrown after type checking",
+  "lang": "js",
+  "tags": [
+   "convention",
+   "error-handling",
+   "editable-source",
+   "type-checking"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "javascript:S8786": {
+  "name": "Regular expressions should not cause non-linear backtracking",
+  "lang": "js",
+  "tags": [
+   "regex",
+   "performance"
+  ],
+  "cca": "EFFICIENT",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "RELIABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "javascript"
+ },
+ "php:S100": {
+  "name": "Function names should comply with a naming convention",
+  "lang": "php",
+  "tags": [
+   "convention"
+  ],
+  "cca": "IDENTIFIABLE",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S101": {
+  "name": "Class names should comply with a naming convention",
+  "lang": "php",
+  "tags": [
+   "convention"
+  ],
+  "cca": "IDENTIFIABLE",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S105": {
+  "name": "Tabulation characters should not be used",
+  "lang": "php",
+  "tags": [
+   "convention",
+   "psr2"
+  ],
+  "cca": "FORMATTED",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1066": {
+  "name": "Mergeable \"if\" statements should be combined",
+  "lang": "php",
+  "tags": [
+   "clumsy"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1068": {
+  "name": "Unused \"private\" fields should be removed",
+  "lang": "php",
+  "tags": [
+   "unused"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S107": {
+  "name": "Functions should not have too many parameters",
+  "lang": "php",
+  "tags": [
+   "brain-overload"
+  ],
+  "cca": "FOCUSED",
+  "ccac": "ADAPTABLE",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1075": {
+  "name": "URIs should not be hardcoded",
+  "lang": "php",
+  "tags": [],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S108": {
+  "name": "Nested blocks of code should not be left empty",
+  "lang": "php",
+  "tags": [
+   "suspicious"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1110": {
+  "name": "Redundant pairs of parentheses should be removed",
+  "lang": "php",
+  "tags": [
+   "confusing"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1116": {
+  "name": "Empty statements should be removed",
+  "lang": "php",
+  "tags": [
+   "unused"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S112": {
+  "name": "Generic exceptions ErrorException, RuntimeException and Exception should not be thrown",
+  "lang": "php",
+  "tags": [
+   "cwe",
+   "error-handling"
+  ],
+  "cca": "COMPLETE",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1124": {
+  "name": "Modifiers should be declared in the correct order",
+  "lang": "php",
+  "tags": [
+   "convention"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1125": {
+  "name": "Boolean literals should not be redundant",
+  "lang": "php",
+  "tags": [
+   "clumsy"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1126": {
+  "name": "Return of boolean expressions should not be wrapped into an \"if-then-else\" statement",
+  "lang": "php",
+  "tags": [
+   "clumsy"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S113": {
+  "name": "Files should end with a newline",
+  "lang": "php",
+  "tags": [
+   "convention"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1131": {
+  "name": "Lines should not end with trailing whitespaces",
+  "lang": "php",
+  "tags": [
+   "convention",
+   "psr2"
+  ],
+  "cca": "FORMATTED",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1134": {
+  "name": "Track uses of \"FIXME\" tags",
+  "lang": "php",
+  "tags": [
+   "cwe"
+  ],
+  "cca": "COMPLETE",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1135": {
+  "name": "Track uses of \"TODO\" tags",
+  "lang": "php",
+  "tags": [
+   "cwe"
+  ],
+  "cca": "COMPLETE",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S114": {
+  "name": "Interface names should comply with a naming convention",
+  "lang": "php",
+  "tags": [
+   "convention"
+  ],
+  "cca": "IDENTIFIABLE",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1142": {
+  "name": "Functions should not contain too many return statements",
+  "lang": "php",
+  "tags": [
+   "brain-overload"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1144": {
+  "name": "Unused \"private\" methods should be removed",
+  "lang": "php",
+  "tags": [
+   "unused"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S115": {
+  "name": "Constant names should comply with a naming convention",
+  "lang": "php",
+  "tags": [
+   "convention"
+  ],
+  "cca": "IDENTIFIABLE",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1155": {
+  "name": "\"empty()\" should be used to test for emptiness",
+  "lang": "php",
+  "tags": [
+   "clumsy"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S116": {
+  "name": "Field names should comply with a naming convention",
+  "lang": "php",
+  "tags": [
+   "convention"
+  ],
+  "cca": "IDENTIFIABLE",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S117": {
+  "name": "Local variable and function parameter names should comply with a naming convention",
+  "lang": "php",
+  "tags": [
+   "convention"
+  ],
+  "cca": "IDENTIFIABLE",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1172": {
+  "name": "Unused function parameters should be removed",
+  "lang": "php",
+  "tags": [
+   "unused"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1185": {
+  "name": "Overriding methods should do more than simply call the same method in the super class",
+  "lang": "php",
+  "tags": [
+   "redundant",
+   "clumsy"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1186": {
+  "name": "Methods should not be empty",
+  "lang": "php",
+  "tags": [
+   "suspicious"
+  ],
+  "cca": "COMPLETE",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1192": {
+  "name": "String literals should not be duplicated",
+  "lang": "php",
+  "tags": [
+   "design"
+  ],
+  "cca": "DISTINCT",
+  "ccac": "ADAPTABLE",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S121": {
+  "name": "Control structures should use curly braces",
+  "lang": "php",
+  "tags": [
+   "pitfall"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S125": {
+  "name": "Sections of code should not be commented out",
+  "lang": "php",
+  "tags": [
+   "unused"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S127": {
+  "name": "\"for\" loop stop conditions should be invariant",
+  "lang": "php",
+  "tags": [
+   "pitfall"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S128": {
+  "name": "Switch cases should end with an unconditional \"break\" statement",
+  "lang": "php",
+  "tags": [
+   "cwe",
+   "suspicious"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1301": {
+  "name": "\"switch\" statements should have at least 3 \"case\" clauses",
+  "lang": "php",
+  "tags": [
+   "bad-practice"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S131": {
+  "name": "\"switch\" statements should have \"default\" clauses",
+  "lang": "php",
+  "tags": [
+   "cwe"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1313": {
+  "name": "IP addresses should not be hardcoded",
+  "lang": "php",
+  "tags": [
+   "former-hotspot"
+  ],
+  "cca": "TRUSTWORTHY",
+  "ccac": "RESPONSIBLE",
+  "impacts": [
+   "SECURITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S138": {
+  "name": "Functions should not have too many lines of code",
+  "lang": "php",
+  "tags": [
+   "brain-overload"
+  ],
+  "cca": "FOCUSED",
+  "ccac": "ADAPTABLE",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1448": {
+  "name": "Classes should not have too many methods",
+  "lang": "php",
+  "tags": [
+   "brain-overload"
+  ],
+  "cca": "FOCUSED",
+  "ccac": "ADAPTABLE",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1479": {
+  "name": "\"switch\" statements should not have too many \"case\" clauses",
+  "lang": "php",
+  "tags": [
+   "brain-overload"
+  ],
+  "cca": "FOCUSED",
+  "ccac": "ADAPTABLE",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1481": {
+  "name": "Unused local variables should be removed",
+  "lang": "php",
+  "tags": [
+   "unused"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1488": {
+  "name": "Local variables should not be declared and then immediately returned or thrown",
+  "lang": "php",
+  "tags": [
+   "clumsy"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1599": {
+  "name": "Variable variables should not be used",
+  "lang": "php",
+  "tags": [
+   "brain-overload"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1603": {
+  "name": "Deprecated constructor declarations should not be used",
+  "lang": "php",
+  "tags": [
+   "pitfall"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1765": {
+  "name": "The \"var\" keyword should not be used",
+  "lang": "php",
+  "tags": [
+   "convention",
+   "psr2"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1766": {
+  "name": "More than one property should not be declared per statement",
+  "lang": "php",
+  "tags": [
+   "convention"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1780": {
+  "name": "Closing tag \"?>\" should be omitted on files containing only PHP",
+  "lang": "php",
+  "tags": [
+   "bad-practice",
+   "per"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1781": {
+  "name": "PHP keywords and constants \"true\", \"false\", \"null\" should be lower case",
+  "lang": "php",
+  "tags": [
+   "convention",
+   "psr2"
+  ],
+  "cca": "FORMATTED",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1793": {
+  "name": "\"elseif\" keyword should be used in place of \"else if\" keywords",
+  "lang": "php",
+  "tags": [
+   "convention"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1854": {
+  "name": "Unused assignments should be removed",
+  "lang": "php",
+  "tags": [
+   "cwe",
+   "unused"
+  ],
+  "cca": "LOGICAL",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1871": {
+  "name": "Two branches in a conditional structure should not have exactly the same implementation",
+  "lang": "php",
+  "tags": [
+   "design",
+   "suspicious"
+  ],
+  "cca": "DISTINCT",
+  "ccac": "ADAPTABLE",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S1940": {
+  "name": "Boolean checks should not be inverted",
+  "lang": "php",
+  "tags": [
+   "pitfall"
+  ],
+  "cca": "CONVENTIONAL",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S2010": {
+  "name": "\"&&\" and \"||\" should be used",
+  "lang": "php",
+  "tags": [
+   "suspicious"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S2681": {
+  "name": "Multiline blocks should be enclosed in curly braces",
+  "lang": "php",
+  "tags": [
+   "cwe"
+  ],
+  "cca": "FORMATTED",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S3011": {
+  "name": "Reflection should not be used to increase accessibility of classes, methods, or fields",
+  "lang": "php",
+  "tags": [],
+  "cca": "MODULAR",
+  "ccac": "ADAPTABLE",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S3358": {
+  "name": "Ternary operators should not be nested",
+  "lang": "php",
+  "tags": [
+   "confusing"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S3626": {
+  "name": "Jump statements should not be redundant",
+  "lang": "php",
+  "tags": [
+   "redundant",
+   "clumsy"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S3776": {
+  "name": "Cognitive Complexity of functions should not be too high",
+  "lang": "php",
+  "tags": [
+   "brain-overload"
+  ],
+  "cca": "FOCUSED",
+  "ccac": "ADAPTABLE",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S3801": {
+  "name": "Functions should use \"return\" consistently",
+  "lang": "php",
+  "tags": [
+   "api-design",
+   "confusing"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S3972": {
+  "name": "Conditionals should start on new lines",
+  "lang": "php",
+  "tags": [
+   "suspicious"
+  ],
+  "cca": "FORMATTED",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S3973": {
+  "name": "A conditionally executed single line should be denoted by indentation",
+  "lang": "php",
+  "tags": [
+   "confusing",
+   "suspicious"
+  ],
+  "cca": "FORMATTED",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S4144": {
+  "name": "Methods should not have identical implementations",
+  "lang": "php",
+  "tags": [
+   "confusing",
+   "duplicate",
+   "suspicious"
+  ],
+  "cca": "DISTINCT",
+  "ccac": "ADAPTABLE",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S4524": {
+  "name": "\"default\" clauses should be first or last",
+  "lang": "php",
+  "tags": [],
+  "cca": "FORMATTED",
+  "ccac": "CONSISTENT",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S4833": {
+  "name": "Use of namespaces should be preferred to \"include\" or \"require\" functions",
+  "lang": "php",
+  "tags": [],
+  "cca": "MODULAR",
+  "ccac": "ADAPTABLE",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S5361": {
+  "name": "`str_replace` should be preferred to `preg_replace`",
+  "lang": "php",
+  "tags": [
+   "regex",
+   "performance"
+  ],
+  "cca": "EFFICIENT",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S5797": {
+  "name": "Constants should not be used as conditions",
+  "lang": "php",
+  "tags": [
+   "suspicious"
+  ],
+  "cca": "LOGICAL",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S5843": {
+  "name": "Regular expressions should not be too complicated",
+  "lang": "php",
+  "tags": [
+   "regex"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S5857": {
+  "name": "Character classes should be preferred over reluctant quantifiers in regular expressions",
+  "lang": "php",
+  "tags": [
+   "regex"
+  ],
+  "cca": "EFFICIENT",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S5869": {
+  "name": "Character classes in regular expressions should not contain the same character twice",
+  "lang": "php",
+  "tags": [
+   "regex"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S6019": {
+  "name": "Reluctant quantifiers in regular expressions should be followed by an expression that can't match the empty string",
+  "lang": "php",
+  "tags": [
+   "regex"
+  ],
+  "cca": "LOGICAL",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S6035": {
+  "name": "Single-character alternations in regular expressions should be replaced with character classes",
+  "lang": "php",
+  "tags": [
+   "regex"
+  ],
+  "cca": "EFFICIENT",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S6326": {
+  "name": "Regular expressions should not contain multiple spaces",
+  "lang": "php",
+  "tags": [
+   "regex"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S6353": {
+  "name": "Regular expression quantifiers and character classes should be used concisely",
+  "lang": "php",
+  "tags": [
+   "regex"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S6395": {
+  "name": "Non-capturing groups without quantifier should not be used",
+  "lang": "php",
+  "tags": [
+   "regex"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S6396": {
+  "name": "Superfluous curly brace quantifiers should be avoided",
+  "lang": "php",
+  "tags": [
+   "regex"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S6397": {
+  "name": "Character classes in regular expressions should not contain only one character",
+  "lang": "php",
+  "tags": [
+   "regex"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S6600": {
+  "name": "Unnecessary parentheses should not be used for constructs",
+  "lang": "php",
+  "tags": [
+   "pitfall"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ },
+ "php:S907": {
+  "name": "\"goto\" statement should not be used",
+  "lang": "php",
+  "tags": [
+   "brain-overload"
+  ],
+  "cca": "CLEAR",
+  "ccac": "INTENTIONAL",
+  "impacts": [
+   "MAINTAINABILITY"
+  ],
+  "type": "CODE_SMELL",
+  "repo": "php"
+ }
+}
