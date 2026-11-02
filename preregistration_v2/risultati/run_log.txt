@@ -1,0 +1,99 @@
+{
+ "parameters": {
+  "B": 5000,
+  "seed": 2026,
+  "SESOI_rho": 0.1,
+  "margin_dMAE": 0.02
+ },
+ "counts": {
+  "keys": 1730,
+  "hours_gt_0": 1730,
+  "scanned": 1730,
+  "eligible_cxx_at_parent_or_failed": 1475,
+  "analysed": 1385,
+  "missing": 90,
+  "median_hours_analysed": 7.0,
+  "median_hours_missing": 3.658333333333333,
+  "train_issues": 821
+ },
+ "analyser_versions": [
+  "6.85.0.102562"
+ ],
+ "H1-C": {
+  "n": 1385,
+  "partial_rho": 0.07915642970212296,
+  "CI90": [
+   -0.004967040118046302,
+   0.1564200811767101
+  ],
+  "p_one_sided_rho_gt_0": 0.0612,
+  "verdict": "inconclusive"
+ },
+ "H3-C": {
+  "n_train": 821,
+  "n_test": 1385,
+  "MAE_lines_only": 18.256076495959153,
+  "dMAE": -0.018795056113137504,
+  "CI90": [
+   -0.04762888132445635,
+   0.0108799425163737
+  ],
+  "CI90_pct_MAE": [
+   -0.26089330494971713,
+   0.05959628027841522
+  ],
+  "verdict": "equivalent (CI inside +-2% of MAE)"
+ },
+ "secondary": {
+  "H1-C_pooled_with_first_holdout": {
+   "n": 2206,
+   "partial_rho": 0.07625415944783352,
+   "CI90": [
+    -0.00019768145452070605,
+    0.1508220673996408
+   ],
+   "p_one_sided_rho_gt_0": 0.051199999999999996,
+   "verdict": "inconclusive"
+  },
+  "H3-C_pooled_with_first_holdout_cv10": {
+   "n": 2206,
+   "MAE_lines_only": 17.16907566952456,
+   "dMAE": -0.008700438061063222,
+   "CI90": [
+    -0.035591175009619,
+    0.016636224816446287
+   ],
+   "verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "H1-C_twoway_dev_component": {
+   "n": 1385,
+   "partial_rho": 0.07915642970212296,
+   "CI90": [
+    -0.042465045559166394,
+    0.18070725622359082
+   ],
+   "p_one_sided_rho_gt_0": 0.1506,
+   "verdict": "inconclusive"
+  },
+  "H1-C_all_files_measured": {
+   "n": 1252,
+   "partial_rho": 0.068366583372358,
+   "CI90": [
+    -0.021402186831585738,
+    0.1496962559140587
+   ],
+   "p_one_sided_rho_gt_0": 0.1134,
+   "verdict": "inconclusive"
+  },
+  "H1-C_assignee_hours": {
+   "n": 1094,
+   "partial_rho": 0.05734747243655964,
+   "CI90": [
+    -0.046925795387229075,
+    0.14752573387730306
+   ],
+   "p_one_sided_rho_gt_0": 0.1852,
+   "verdict": "inconclusive"
+  }
+ }
+}

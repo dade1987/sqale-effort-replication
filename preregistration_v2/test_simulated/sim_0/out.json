@@ -1,0 +1,99 @@
+{
+ "parameters": {
+  "B": 5000,
+  "seed": 2026,
+  "SESOI_rho": 0.1,
+  "margin_dMAE": 0.02
+ },
+ "counts": {
+  "keys": 1475,
+  "hours_gt_0": 1475,
+  "scanned": 1428,
+  "cxx_file_at_parent": 1475,
+  "analysed": 1400,
+  "missing": 75,
+  "median_hours_analysed": 6.8765,
+  "median_hours_missing": 5.945,
+  "train_issues": 784
+ },
+ "analyser_versions": [
+  "sim"
+ ],
+ "H1-C": {
+  "n": 1400,
+  "partial_rho": 0.009368871529559904,
+  "CI90": [
+   -0.030971366203203485,
+   0.053221616656741404
+  ],
+  "p_one_sided_rho_gt_0": 0.361,
+  "verdict": "practically negligible (CI inside +-0.10)"
+ },
+ "H3-C": {
+  "n_train": 784,
+  "n_test": 1400,
+  "MAE_lines_only": 9.425656821232517,
+  "dMAE": 0.02204229582453602,
+  "CI90": [
+   0.004170307037049613,
+   0.040079319883250995
+  ],
+  "CI90_pct_MAE": [
+   0.044244206171982145,
+   0.42521514037055874
+  ],
+  "verdict": "equivalent (CI inside +-2% of MAE)"
+ },
+ "secondary": {
+  "H1-C_pooled_with_first_holdout": {
+   "n": 2184,
+   "partial_rho": -0.016859021705461743,
+   "CI90": [
+    -0.05020798171464039,
+    0.01689239854818308
+   ],
+   "p_one_sided_rho_gt_0": 0.7969999999999999,
+   "verdict": "practically negligible (CI inside +-0.10)"
+  },
+  "H3-C_pooled_with_first_holdout_cv10": {
+   "n": 2184,
+   "MAE_lines_only": 9.274060180030068,
+   "dMAE": 0.003391842759771339,
+   "CI90": [
+    0.00046522464658302755,
+    0.006196252071807153
+   ],
+   "verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "H1-C_twoway_dev_component": {
+   "n": 1400,
+   "partial_rho": 0.009368871529559904,
+   "CI90": [
+    -0.06477268906744388,
+    0.08956411422206186
+   ],
+   "p_one_sided_rho_gt_0": 0.39959999999999996,
+   "verdict": "practically negligible (CI inside +-0.10)"
+  },
+  "H1-C_all_files_measured": {
+   "n": 1271,
+   "partial_rho": 0.003724376491245504,
+   "CI90": [
+    -0.03888260775219927,
+    0.046853913769167185
+   ],
+   "p_one_sided_rho_gt_0": 0.44239999999999996,
+   "verdict": "practically negligible (CI inside +-0.10)"
+  },
+  "H1-C_assignee_hours": {
+   "n": 1400,
+   "partial_rho": 0.011048464682617458,
+   "CI90": [
+    -0.03068143694778379,
+    0.05298001648333081
+   ],
+   "p_one_sided_rho_gt_0": 0.32799999999999996,
+   "verdict": "practically negligible (CI inside +-0.10)"
+  }
+ }
+}

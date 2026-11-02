@@ -19,6 +19,7 @@ It also contains the preregistered confirmatory study (2,000 hold-out issues fro
 | `data/predictions/` | Per-issue test predictions of every model and baseline; `dev_at_start_current_titles/` and `dev_at_first_commit/` hold those of the earlier definitions (sensitivity analyses) |
 | `code/` | Main pipeline: download, linking, features, SQALE scans, models (see below) |
 | `preregistration/` | The frozen preregistration files and the script that re-runs them (see below) |
+| `preregistration_v2/` | The second preregistration (MariaDB, official C/C++ analyser on a new sample), its scan and its results (see below) |
 | `exploratory/` | Exploratory analyses of Sections 6 and 8 that are not preregistered |
 | `results/` | Result files behind the tables of the paper; `results/confirmatory/` and `results/exploratory/` hold the newer analyses |
 | `sonarqube/` | The C/C++ quality profile used with sonar-cxx (`td_cxx_profile.xml`) |
@@ -93,6 +94,27 @@ The scan files in `data/confirmatory/` keep the field names read by the frozen s
 
 `exploratory/confirmatory_secondary.py` computes the secondary analyses listed in Section 8 of the protocol (`results/confirmatory/secondary_results.json`).
 
+## Second preregistered study (`preregistration_v2/`)
+
+Registered on OSF on 31 October 2026, before any SQALE measurement of the new sample (view-only link: https://osf.io/gb3y9/overview?view_only=8fc547fae037485790870b4707d6079a). It tests H1 and H3 again in MariaDB with SonarSource's official C/C++ analyser (CFamily) on the 1,730 MariaDB issues of the first hold-out pool that were not drawn in the first registration.
+
+| File | Content |
+|---|---|
+| `protocol_confirmatory_v2_mariadb_official.md`, `confermativo_v2.py`, `newsample_keys_mariadb.txt`, `test_simulated/` | The registered files, byte-identical (`SHA256SUMS.txt`); `test_simulated/` is the test of the script on simulated data done before registration |
+| `preregistration_v2_files.zip` | The archive uploaded to OSF |
+| `scan/` | The scan script (one new SonarQube Cloud project per issue, analysis cache off, one retry in a new project on failure), its launcher with the local paths used at the time, and the hand check of the first 10 issues (no hours read) |
+| `risultati/` | The scan records of the new sample (`new_scan_mariadb_v2.jsonl`, all attempts; the script keeps the last per issue), the training scan (`train_scan_mariadb_fresh.jsonl`, = `data/official_cxx/fresh_w*.jsonl` + `fresh_redo.jsonl`), the result of the single run (`risultati_confermativo_v2.json`), its log and `SHA256SUMS_risultati.txt` |
+
+The script was run once, on 2 November 2026:
+
+```
+python3 preregistration_v2/confermativo_v2.py data/features/mariadb_features.csv data/history/mariadb_history.csv \
+  preregistration_v2/newsample_keys_mariadb.txt preregistration_v2/risultati/new_scan_mariadb_v2.jsonl \
+  preregistration_v2/risultati/train_scan_mariadb_fresh.jsonl out.json
+```
+
+1,385 of the 1,475 eligible issues were measured (CFamily 6.85.0.102562, SonarScanner CLI 8.2.0.6438). H1-C: partial ρ 0.079 (90% CI −0.005 to 0.156), inconclusive. H3-C: adding SQALE to lines changes the MAE by −0.019 h (90% CI −0.26% to +0.06% of the MAE), equivalent.
+
 ## Exploratory analyses (`exploratory/`)
 
 None of these analyses is preregistered. All of them run from the distributed data:
@@ -114,6 +136,8 @@ sh exploratory/run_all.sh
 | `size_classes_cutpoints.py` | Online appendix Table B1 and the alternative cut-points (2/8 h, 8/40 h) | `size_classes_cutpoints.json` |
 | `other_quality_measures.py` | Partial ρ of hours with other quality and history measures given size | `other_quality_measures.json` |
 | `h2_two_part.py` | H2 in two parts: any debt on the changed lines, and its amount where it is positive | `h2_two_part_<project>.json` |
+| `v4_checks.py` | H3 with the history measures in place of SQALE, H1 with a two-way (developer × component) bootstrap, H1 with developer and component fixed effects, models vs Jira estimates on log error | `v4_checks_<project>.json` |
+| `v4_null_verdict_sim.py`, `v4_null_verdict_sim_twoway.py` | §6.3 'What the verdicts mean': share of each H1 verdict when the true partial ρ is 0, 0.05 or 0.10, with developer or two-way clusters and at n = 1,400 (expected n of the second MariaDB test); slow, not in `run_all.sh` | `v4_null_verdict_sim_*.json` |
 | `positive_control_h1.py` | Positive control for H1 (history measures through the frozen H1 code) and power simulation; slow, not in `run_all.sh` | `positive_control_h1_<project>.json` |
 | `figure1_partial_rho.py` | Figure 1 (English and Italian labels) | `fig1_partial_rho_en.png`, `fig1_partial_rho_it.png` |
 

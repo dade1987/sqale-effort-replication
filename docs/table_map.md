@@ -8,6 +8,8 @@
 | Table 3, SQALE on the exploratory samples | `code/model.py` | `results/results_<project>.json` | `sqale.all` (`SQALE raw`, `SQALE recalibrated`), `sqale.spearman_*`, `sqale.median_*` |
 | Table 4, SQALE beyond lines of code | `code/model.py`, `exploratory/size_collinearity.py` | `results/results_<project>.json`, `results/exploratory/size_collinearity.json` | `sqale.beyond_size` |
 | Table 5, preregistered tests | `preregistration/run_confirmatory.py` | `results/confirmatory/confirmatory_<project>.json`, `holm_4_tests.json` | H1–H3 |
+| Table 5b, second preregistered test (MariaDB, official C/C++ analyser, new sample) | `preregistration_v2/confermativo_v2.py` | `preregistration_v2/risultati/risultati_confermativo_v2.json` | `H1-C`, `H3-C`, `secondary` |
+| §6.3 'What the verdicts mean' | `exploratory/v4_null_verdict_sim.py`, `exploratory/v4_null_verdict_sim_twoway.py`, `exploratory/v4_checks.py` | `results/exploratory/v4_null_verdict_sim_*.json`, `v4_checks_<project>.json` | `runs.<true rho>.verdict_share` |
 | Table 6, secondary analyses | `exploratory/confirmatory_secondary.py`, `exploratory/debt_removed.py` | `results/confirmatory/secondary_results.json`, `results/exploratory/debt_removed.json` | |
 | Figure 1, partial ρ | `exploratory/figure1_partial_rho.py` | `results/exploratory/fig1_partial_rho_{en,it}.png` | |
 | Table 7 (and 7b, MdAE and within 2×), models on the full test sets | `code/model.py` | `results/results_<project>.json`, `data/predictions/<project>_predictions.csv` | `test` (MAE, MdAE, SA, within2x, spearman), `comparisons` |
