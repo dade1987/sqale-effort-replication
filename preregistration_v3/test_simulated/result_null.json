@@ -1,0 +1,268 @@
+{
+ "parameters": {
+  "B": 5000,
+  "seed": 2026,
+  "SESOI_rho": 0.1,
+  "margin_dMAE": 0.02
+ },
+ "mosip": {
+  "counts": {
+   "issues": 2849,
+   "scanned": 2849,
+   "eligible": 2705,
+   "analysed": 2705,
+   "missing": 0,
+   "median_hours_analysed": 9.0,
+   "median_hours_missing": null,
+   "developers": 174,
+   "modules": 380
+  },
+  "H1": {
+   "n": 2705,
+   "partial_rho": 0.029854006489003933,
+   "CI90": [
+    -0.005352005871619441,
+    0.06544743735279605
+   ],
+   "verdict": "practically negligible (CI inside +-0.10)",
+   "p_one_sided_rho_gt_0": 0.08020000000000001,
+   "p_TOST": 0.0006000000000000001,
+   "boot_se": 0.02160791870839452
+  },
+  "H1_twoway_dev_module": {
+   "n": 2705,
+   "partial_rho": 0.029854006489003933,
+   "CI90": [
+    -0.029363310650913983,
+    0.08356828508687854
+   ],
+   "verdict": "practically negligible (CI inside +-0.10)",
+   "p_one_sided_rho_gt_0": 0.19540000000000002,
+   "p_TOST": 0.017599999999999998,
+   "boot_se": 0.0344826557188564
+  },
+  "H3": {
+   "n_train": 1352,
+   "n_test": 1353,
+   "train_until": "2019-06-07T12:18:26.576+0530",
+   "MAE_lines_only": 13.594162337581578,
+   "dMAE": 0.03806808468359404,
+   "CI90": [
+    0.0005304606679084428,
+    0.07584944669010726
+   ],
+   "CI90_pct_MAE": [
+    0.0039021210335407294,
+    0.5579560167559466
+   ],
+   "verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "secondary": {
+   "H1_bugs_only": {
+    "n": 1074,
+    "partial_rho": -0.017459952028275348,
+    "CI90": [
+     -0.06786382221414643,
+     0.03198744697877399
+    ],
+    "verdict": "practically negligible (CI inside +-0.10)",
+    "p_one_sided_rho_gt_0": 0.7068,
+    "p_TOST": 0.0056,
+    "boot_se": 0.03044063590904172
+   },
+   "H1_all_touched_code_files_measured": {
+    "n": 2705,
+    "partial_rho": 0.029854006489003933,
+    "CI90": [
+     -0.005352005871619441,
+     0.06544743735279605
+    ],
+    "verdict": "practically negligible (CI inside +-0.10)",
+    "p_one_sided_rho_gt_0": 0.08020000000000001,
+    "p_TOST": 0.0006000000000000001,
+    "boot_se": 0.02160791870839452
+   }
+  }
+ },
+ "openlmis": {
+  "counts": {
+   "issues": 1811,
+   "scanned": 1811,
+   "eligible": 1732,
+   "analysed": 1732,
+   "missing": 0,
+   "median_hours_analysed": 12.0,
+   "median_hours_missing": null,
+   "developers": 66,
+   "modules": 349
+  },
+  "H1": {
+   "n": 1732,
+   "partial_rho": -0.02044200051664906,
+   "CI90": [
+    -0.06451242655828278,
+    0.02469991637373602
+   ],
+   "verdict": "practically negligible (CI inside +-0.10)",
+   "p_one_sided_rho_gt_0": 0.7806,
+   "p_TOST": 0.0016,
+   "boot_se": 0.02721832935488358
+  },
+  "H1_twoway_dev_module": {
+   "n": 1732,
+   "partial_rho": -0.02044200051664906,
+   "CI90": [
+    -0.09489627910351882,
+    0.05869214791156086
+   ],
+   "verdict": "practically negligible (CI inside +-0.10)",
+   "p_one_sided_rho_gt_0": 0.6722,
+   "p_TOST": 0.0384,
+   "boot_se": 0.04678392410414655
+  },
+  "H3": {
+   "n_train": 866,
+   "n_test": 866,
+   "train_until": "2017-11-15T02:05:37.589-0800",
+   "MAE_lines_only": 14.045405213687829,
+   "dMAE": -0.000253564205323314,
+   "CI90": [
+    -0.02315237707460884,
+    0.03290887373867474
+   ],
+   "CI90_pct_MAE": [
+    -0.16483950959311514,
+    0.23430348386534036
+   ],
+   "verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "secondary": {
+   "H1_bugs_only": {
+    "n": 668,
+    "partial_rho": 0.03942207251760758,
+    "CI90": [
+     -0.03698774359063134,
+     0.12368500403579773
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.2284,
+    "p_TOST": 0.1136,
+    "boot_se": 0.04862847494955079
+   },
+   "H1_all_touched_code_files_measured": {
+    "n": 1732,
+    "partial_rho": -0.02044200051664906,
+    "CI90": [
+     -0.06451242655828278,
+     0.02469991637373602
+    ],
+    "verdict": "practically negligible (CI inside +-0.10)",
+    "p_one_sided_rho_gt_0": 0.7806,
+    "p_TOST": 0.0016,
+    "boot_se": 0.02721832935488358
+   }
+  }
+ },
+ "openmrs": {
+  "counts": {
+   "issues": 1867,
+   "scanned": 1867,
+   "eligible": 1780,
+   "analysed": 1780,
+   "missing": 0,
+   "median_hours_analysed": 5.0,
+   "median_hours_missing": null,
+   "developers": 314,
+   "modules": 308
+  },
+  "H1": {
+   "n": 1780,
+   "partial_rho": -0.04230482171116378,
+   "CI90": [
+    -0.08024439153248034,
+    -0.0002123583091994768
+   ],
+   "verdict": "practically negligible (CI inside +-0.10)",
+   "p_one_sided_rho_gt_0": 0.9506,
+   "p_TOST": 0.0056,
+   "boot_se": 0.024213655572801637
+  },
+  "H1_twoway_dev_module": {
+   "n": 1780,
+   "partial_rho": -0.04230482171116378,
+   "CI90": [
+    -0.11543870080714799,
+    0.03066144596649111
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.8403999999999999,
+   "p_TOST": 0.10120000000000001,
+   "boot_se": 0.04461857708587424
+  },
+  "H3": {
+   "n_train": 890,
+   "n_test": 890,
+   "train_until": "2016-12-21T17:25:02.000+1100",
+   "MAE_lines_only": 8.011906453684698,
+   "dMAE": 0.07444188177248441,
+   "CI90": [
+    0.01686712417460942,
+    0.13086399773537888
+   ],
+   "CI90_pct_MAE": [
+    0.21052572533285363,
+    1.6333690176224431
+   ],
+   "verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "secondary": {
+   "H1_bugs_only": {
+    "n": 682,
+    "partial_rho": -0.03030320713851627,
+    "CI90": [
+     -0.08730690680568372,
+     0.02722048661623674
+    ],
+    "verdict": "practically negligible (CI inside +-0.10)",
+    "p_one_sided_rho_gt_0": 0.8038,
+    "p_TOST": 0.0252,
+    "boot_se": 0.035019089152851804
+   },
+   "H1_all_touched_code_files_measured": {
+    "n": 1780,
+    "partial_rho": -0.04230482171116378,
+    "CI90": [
+     -0.08024439153248034,
+     -0.0002123583091994768
+    ],
+    "verdict": "practically negligible (CI inside +-0.10)",
+    "p_one_sided_rho_gt_0": 0.9506,
+    "p_TOST": 0.0056,
+    "boot_se": 0.024213655572801637
+   }
+  }
+ },
+ "family": {
+  "holm_one_sided_rho_gt_0": {
+   "mosip": 0.24060000000000004,
+   "openlmis": 1,
+   "openmrs": 1
+  },
+  "holm_TOST": {
+   "mosip": 0.0018000000000000002,
+   "openlmis": 0.0032,
+   "openmrs": 0.0056
+  },
+  "all_equivalent_familywise": true,
+  "all_negligible_under_twoway": false
+ },
+ "pooled_random_effects_secondary": {
+  "rho": -0.009535897863001158,
+  "CI90": [
+   -0.046939876743069535,
+   0.027894785036404083
+  ],
+  "tau2": 0.0009626585082063744,
+  "Q": 5.270284458521756
+ }
+}

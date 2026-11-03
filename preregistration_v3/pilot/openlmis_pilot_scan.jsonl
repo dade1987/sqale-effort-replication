@@ -1,0 +1,12 @@
+{"key": "PILOTOPENLMIS-13", "parent": "134570fb32fb8d7e6efb23333244c5b58e33c05a", "code_files_touched": 1, "code_files_at_parent": 1, "sqale_min": 0, "smells": 0, "ncloc": 35.0, "files_measured": 1}
+{"key": "PILOTOPENLMIS-14", "parent": "869dde429ef167f1d40dc36853c773222d926041", "code_files_touched": 1, "code_files_at_parent": 1, "sqale_min": 22.0, "smells": 2.0, "ncloc": 353.0, "files_measured": 1}
+{"key": "PILOTOPENLMIS-15", "parent": "a3112628f08bb646085fca85a2bf3640e9e6b3ba", "code_files_touched": 1, "code_files_at_parent": 1, "sqale_min": 5.0, "smells": 1.0, "ncloc": 140.0, "files_measured": 1}
+{"key": "PILOTOPENLMIS-16", "parent": "dae048cdfb75d8168f793ffa7b9d151c0f8d9cd6", "code_files_touched": 14, "code_files_at_parent": 14, "sqale_min": 32.0, "smells": 7.0, "ncloc": 2786.0, "files_measured": 14}
+{"key": "PILOTOPENLMIS-17", "parent": "75b583be54108d9ef5def1e5e0fae69ef4265110", "code_files_touched": 1, "code_files_at_parent": 1, "sqale_min": 5.0, "smells": 1.0, "ncloc": 6.0, "files_measured": 1}
+{"key": "PILOTOPENLMIS-18", "parent": "ee5d7c7bc159945ae3cbb70c6cefd990c9b50ebd", "code_files_touched": 1, "code_files_at_parent": 1, "sqale_min": 140.0, "smells": 17.0, "ncloc": 305.0, "files_measured": 1}
+{"key": "PILOTOPENLMIS-19", "parent": "4f3a68966c6085ab1e8c464ae6f0ac12f68ff8fc", "code_files_touched": 1, "code_files_at_parent": 1, "sqale_min": 0, "smells": 0, "ncloc": 0, "files_measured": 1}
+{"key": "PILOTOPENLMIS-20", "parent": "868e6e07158daee8f42f47bf6732697923e67c66", "code_files_touched": 2, "code_files_at_parent": 2, "sqale_min": 0, "smells": 0, "ncloc": 492.0, "files_measured": 2}
+{"key": "PILOTOPENLMIS-21", "parent": "12cc2005b72752f47eac945608a6141520e85ee6", "code_files_touched": 16, "code_files_at_parent": 8, "sqale_min": 31.0, "smells": 7.0, "ncloc": 782.0, "files_measured": 8}
+{"key": "PILOTOPENLMIS-22", "parent": "e7b2230521e53d4ec7c1a53e4da2f7baca46a13e", "code_files_touched": 1, "code_files_at_parent": 1, "sqale_min": 135.0, "smells": 16.0, "ncloc": 289.0, "files_measured": 1}
+{"key": "PILOTOPENLMIS-23", "parent": "64264c4f244701cd28c20b0c980ae1ba2f78f418", "code_files_touched": 9, "code_files_at_parent": 7, "sqale_min": 9.0, "smells": 3.0, "ncloc": 2079.0, "files_measured": 7}
+{"key": "PILOTOPENLMIS-24", "parent": "8fbaef7d16a1eebe620475ef4cd8f77f6eb60a34", "code_files_touched": 1, "code_files_at_parent": 1, "sqale_min": 15.0, "smells": 3.0, "ncloc": 183.0, "files_measured": 1}

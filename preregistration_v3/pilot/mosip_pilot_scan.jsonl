@@ -1,0 +1,12 @@
+{"key": "PILOTMOSIP-1", "parent": "3c55ad53cbeab25bce7a2687b4e7cca9067d6987", "code_files_touched": 6, "code_files_at_parent": 6, "sqale_min": 0, "smells": 0, "ncloc": 248.0, "files_measured": 6}
+{"key": "PILOTMOSIP-2", "parent": "234a3dc5c457e02470b51fc2f7125150d57e1cc0", "code_files_touched": 1, "code_files_at_parent": 1, "sqale_min": 4000.0, "smells": 335.0, "ncloc": 1412.0, "files_measured": 1}
+{"key": "PILOTMOSIP-3", "parent": "0e70d1918dfce75fd225631ef6987e897e4702dc", "code_files_touched": 2, "code_files_at_parent": 2, "sqale_min": 70.0, "smells": 5.0, "ncloc": 274.0, "files_measured": 2}
+{"key": "PILOTMOSIP-4", "parent": "d0e3e2058c282683ea50f377711f52b473f20cba", "code_files_touched": 2, "code_files_at_parent": 2, "sqale_min": 39.0, "smells": 8.0, "ncloc": 448.0, "files_measured": 2}
+{"key": "PILOTMOSIP-5", "parent": "bd079452875a165bfb48701366072774b3d2fa89", "code_files_touched": 1, "code_files_at_parent": 1, "sqale_min": 14.0, "smells": 7.0, "ncloc": 508.0, "files_measured": 1}
+{"key": "PILOTMOSIP-6", "parent": "cd22b5b883fc4cf72a9775ce832ebde337718c6e", "code_files_touched": 28, "code_files_at_parent": 14, "sqale_min": 37.0, "smells": 8.0, "ncloc": 287.0, "files_measured": 14}
+{"key": "PILOTMOSIP-7", "parent": "224471f77fa1c775f954f2bc888d900e16550e5f", "code_files_touched": 1, "code_files_at_parent": 1, "sqale_min": 0, "smells": 0, "ncloc": 78.0, "files_measured": 1}
+{"key": "PILOTMOSIP-8", "parent": "1eb041e9fbce78f734197a78102469c8d72feee9", "code_files_touched": 1, "code_files_at_parent": 1, "sqale_min": 35.0, "smells": 4.0, "ncloc": 29.0, "files_measured": 1}
+{"key": "PILOTMOSIP-9", "parent": "5e64f142a926849c8396ecfb0d7da8f0d14c677f", "code_files_touched": 10, "code_files_at_parent": 10, "sqale_min": 211.0, "smells": 34.0, "ncloc": 1219.0, "files_measured": 10}
+{"key": "PILOTMOSIP-10", "parent": "3efb5c46694f52f4e5efe0d91bf5d3fff8c9676b", "code_files_touched": 5, "code_files_at_parent": 5, "sqale_min": 436.0, "smells": 55.0, "ncloc": 2523.0, "files_measured": 5}
+{"key": "PILOTMOSIP-11", "parent": "20425fa0f5b4eb5e101f09d2f68a9ce23ccf353b", "code_files_touched": 1, "code_files_at_parent": 1, "sqale_min": 0, "smells": 0, "ncloc": 24.0, "files_measured": 1}
+{"key": "PILOTMOSIP-12", "parent": "b71a134b604711f6a28ff7ee3b83a2270b65a8f2", "code_files_touched": 2, "code_files_at_parent": 2, "sqale_min": 25.0, "smells": 4.0, "ncloc": 153.0, "files_measured": 2}

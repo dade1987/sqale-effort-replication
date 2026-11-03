@@ -1,0 +1,268 @@
+{
+ "parameters": {
+  "B": 5000,
+  "seed": 2026,
+  "SESOI_rho": 0.1,
+  "margin_dMAE": 0.02
+ },
+ "mosip": {
+  "counts": {
+   "issues": 2849,
+   "scanned": 2849,
+   "eligible": 2384,
+   "analysed": 2130,
+   "missing": 254,
+   "median_hours_analysed": 9.083333333333332,
+   "median_hours_missing": 11.0,
+   "developers": 159,
+   "modules": 250
+  },
+  "H1": {
+   "n": 2130,
+   "partial_rho": -0.07306222921251557,
+   "CI90": [
+    -0.12084322145220511,
+    -0.0195411931161178
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.988,
+   "p_TOST": 0.1674,
+   "boot_se": 0.030574152991605652
+  },
+  "H1_twoway_dev_module": {
+   "n": 2130,
+   "partial_rho": -0.07306222921251557,
+   "CI90": [
+    -0.1433123836398354,
+    0.008927379635982198
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.9268,
+   "p_TOST": 0.2582,
+   "boot_se": 0.04717713710971003
+  },
+  "H3": {
+   "n_train": 1065,
+   "n_test": 1065,
+   "train_until": "2019-06-07T15:17:43.361+0530",
+   "MAE_lines_only": 16.56608197590343,
+   "dMAE": 0.014748827748276827,
+   "CI90": [
+    -0.09146238553181009,
+    0.12022996643960342
+   ],
+   "CI90_pct_MAE": [
+    -0.5521063197975766,
+    0.7257598182508492
+   ],
+   "verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "secondary": {
+   "H1_bugs_only": {
+    "n": 876,
+    "partial_rho": -0.1155820499275601,
+    "CI90": [
+     -0.17362144944320462,
+     -0.05067372803062407
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.9975999999999999,
+    "p_TOST": 0.6338,
+    "boot_se": 0.03742621595973554
+   },
+   "H1_all_touched_code_files_measured": {
+    "n": 1283,
+    "partial_rho": -0.12786562401378404,
+    "CI90": [
+     -0.1778806858844635,
+     -0.07163557315868689
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 1.0,
+    "p_TOST": 0.7777999999999999,
+    "boot_se": 0.03184104274406562
+   }
+  }
+ },
+ "openlmis": {
+  "counts": {
+   "issues": 1811,
+   "scanned": 1811,
+   "eligible": 1448,
+   "analysed": 945,
+   "missing": 503,
+   "median_hours_analysed": 16.0,
+   "median_hours_missing": 11.0,
+   "developers": 48,
+   "modules": 150
+  },
+  "H1": {
+   "n": 945,
+   "partial_rho": 0.12666992740043995,
+   "CI90": [
+    0.03871058609808258,
+    0.1767758635843543
+   ],
+   "verdict": "positive but of uncertain size (CI above 0, not all above 0.10)",
+   "p_one_sided_rho_gt_0": 0.0128,
+   "p_TOST": 0.71,
+   "boot_se": 0.042870335801381367
+  },
+  "H1_twoway_dev_module": {
+   "n": 945,
+   "partial_rho": 0.12666992740043995,
+   "CI90": [
+    -0.011394782012988556,
+    0.220985071049797
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.065,
+   "p_TOST": 0.5953999999999999,
+   "boot_se": 0.07114395470165955
+  },
+  "H3": {
+   "n_train": 472,
+   "n_test": 473,
+   "train_until": "2017-06-20T06:01:19.403-0700",
+   "MAE_lines_only": 15.727713926097058,
+   "dMAE": -0.06109578466856549,
+   "CI90": [
+    -0.2566944727586278,
+    0.2488398051057346
+   ],
+   "CI90_pct_MAE": [
+    -1.63211560157318,
+    1.5821740290738233
+   ],
+   "verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "secondary": {
+   "H1_bugs_only": {
+    "n": 299,
+    "partial_rho": 0.051222714162295443,
+    "CI90": [
+     -0.04293692834038144,
+     0.12790177512411682
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.165,
+    "p_TOST": 0.1458,
+    "boot_se": 0.05244931124218532
+   },
+   "H1_all_touched_code_files_measured": {
+    "n": 201,
+    "partial_rho": 0.0523482155006943,
+    "CI90": [
+     -0.21045248496898025,
+     0.1997369083670315
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.381,
+    "p_TOST": 0.3238,
+    "boot_se": 0.12906444280618207
+   }
+  }
+ },
+ "openmrs": {
+  "counts": {
+   "issues": 1867,
+   "scanned": 1867,
+   "eligible": 1582,
+   "analysed": 1475,
+   "missing": 107,
+   "median_hours_analysed": 6.0,
+   "median_hours_missing": 2.0,
+   "developers": 276,
+   "modules": 221
+  },
+  "H1": {
+   "n": 1475,
+   "partial_rho": -0.10285817554729908,
+   "CI90": [
+    -0.16716602272732203,
+    -0.034220707727821514
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.9935999999999999,
+   "p_TOST": 0.4962,
+   "boot_se": 0.04082648604924209
+  },
+  "H1_twoway_dev_module": {
+   "n": 1475,
+   "partial_rho": -0.10285817554729908,
+   "CI90": [
+    -0.2166421819829559,
+    0.004280080070085032
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.9444,
+   "p_TOST": 0.4846,
+   "boot_se": 0.06719198852746472
+  },
+  "H3": {
+   "n_train": 737,
+   "n_test": 738,
+   "train_until": "2016-12-21T17:49:38.000+1100",
+   "MAE_lines_only": 9.70137486661022,
+   "dMAE": -0.0896752688854002,
+   "CI90": [
+    -0.18805495154281338,
+    0.004402907179354663
+   ],
+   "CI90_pct_MAE": [
+    -1.9384360889924266,
+    0.045384362937137934
+   ],
+   "verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "secondary": {
+   "H1_bugs_only": {
+    "n": 550,
+    "partial_rho": -0.0608277393898057,
+    "CI90": [
+     -0.16424993607534766,
+     0.0537161982998739
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.8134,
+    "p_TOST": 0.2658,
+    "boot_se": 0.06611148067466853
+   },
+   "H1_all_touched_code_files_measured": {
+    "n": 828,
+    "partial_rho": -0.10430690715678215,
+    "CI90": [
+     -0.180737530089921,
+     -0.02329624510141595
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.9832,
+    "p_TOST": 0.5018,
+    "boot_se": 0.0479378161875204
+   }
+  }
+ },
+ "family": {
+  "holm_one_sided_rho_gt_0": {
+   "openlmis": 0.038400000000000004,
+   "mosip": 1,
+   "openmrs": 1
+  },
+  "holm_TOST": {
+   "mosip": 0.5022,
+   "openmrs": 0.9924,
+   "openlmis": 0.9924
+  },
+  "all_equivalent_familywise": false,
+  "all_negligible_under_twoway": false
+ },
+ "pooled_random_effects_secondary": {
+  "rho": -0.01813769538643517,
+  "CI90": [
+   -0.1269334332657902,
+   0.0910892603201728
+  ],
+  "tau2": 0.011786191434937908,
+  "Q": 18.15134658664379
+ }
+}

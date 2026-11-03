@@ -1,0 +1,12 @@
+{"key": "PILOTOPENMRS-25", "parent": "927f1bf626f47055e9cac00863f41d279ca301fb", "code_files_touched": 1, "code_files_at_parent": 1, "sqale_min": 240.0, "smells": 35.0, "ncloc": 461.0, "files_measured": 1}
+{"key": "PILOTOPENMRS-26", "parent": "1670cb710d1f9be2c666c8348445a8b70723c846", "code_files_touched": 1, "code_files_at_parent": 1, "sqale_min": 0, "smells": 0, "ncloc": 43.0, "files_measured": 1}
+{"key": "PILOTOPENMRS-27", "parent": "aca6a6786e91d4cd0176043005fcff2d503706af", "code_files_touched": 2, "code_files_at_parent": 2, "sqale_min": 120.0, "smells": 16.0, "ncloc": 324.0, "files_measured": 2}
+{"key": "PILOTOPENMRS-28", "parent": "ea35db6b1c10826b94f8d9c50af0ed69cf9131d6", "code_files_touched": 1, "code_files_at_parent": 1, "sqale_min": 251.0, "smells": 28.0, "ncloc": 432.0, "files_measured": 1}
+{"key": "PILOTOPENMRS-29", "parent": "f0934f2a34de3f696c418fb3a1a06e75bdced081", "code_files_touched": 20, "code_files_at_parent": 17, "sqale_min": 165.0, "smells": 32.0, "ncloc": 1795.0, "files_measured": 17}
+{"key": "PILOTOPENMRS-30", "parent": "c8063d8bf5d5ec29caca827589ba7b5116bab388", "code_files_touched": 26, "code_files_at_parent": 24, "sqale_min": 179.0, "smells": 42.0, "ncloc": 2176.0, "files_measured": 24}
+{"key": "PILOTOPENMRS-31", "parent": "03b7214f54b543aeb2a0e8e9ab82b0addbb07eaf", "code_files_touched": 1, "code_files_at_parent": 1, "sqale_min": 30.0, "smells": 4.0, "ncloc": 296.0, "files_measured": 1}
+{"key": "PILOTOPENMRS-32", "parent": "b765e1e7495a35d03dd219fd2b5b6ccf4fedbfa5", "code_files_touched": 1, "code_files_at_parent": 1, "sqale_min": 0, "smells": 0, "ncloc": 111.0, "files_measured": 1}
+{"key": "PILOTOPENMRS-33", "parent": "3e2227c73c69c1a1ddc92b6a3ba0bb5190544a3a", "code_files_touched": 2, "code_files_at_parent": 2, "sqale_min": 5.0, "smells": 1.0, "ncloc": 387.0, "files_measured": 2}
+{"key": "PILOTOPENMRS-34", "parent": "fa2243cad580c6ee730de6f9f97f8251f04721fa", "code_files_touched": 1, "code_files_at_parent": 1, "sqale_min": 0, "smells": 0, "ncloc": 128.0, "files_measured": 1}
+{"key": "PILOTOPENMRS-35", "parent": "8eab9ed6ecde907df4c3b0225df127d2fe88bec9", "code_files_touched": 52, "code_files_at_parent": 37, "sqale_min": 313.0, "smells": 48.0, "ncloc": 2885.0, "files_measured": 37}
+{"key": "PILOTOPENMRS-36", "parent": "811a3c49bdce4a972f55d047065aeb94fc767ea3", "code_files_touched": 4, "code_files_at_parent": 4, "sqale_min": 40.0, "smells": 2.0, "ncloc": 182.0, "files_measured": 4}
