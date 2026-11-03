@@ -1,0 +1,50 @@
+{
+ "n": 2003,
+ "observed_partial_rho": -0.01582876610811577,
+ "B": 400,
+ "reps": 200,
+ "scenarios": [
+  {
+   "true_rho": 0.1,
+   "wrong_share": 0.0,
+   "mean_observed_rho": 0.10096388777410321,
+   "share_called_negligible": 0.08,
+   "share_CI_above_0": 1.0
+  },
+  {
+   "true_rho": 0.1,
+   "wrong_share": 0.133,
+   "mean_observed_rho": 0.08760776475254793,
+   "share_called_negligible": 0.145,
+   "share_CI_above_0": 0.975
+  },
+  {
+   "true_rho": 0.1,
+   "wrong_share": 0.3,
+   "mean_observed_rho": 0.06751986088671677,
+   "share_called_negligible": 0.425,
+   "share_CI_above_0": 0.925
+  },
+  {
+   "true_rho": 0.15,
+   "wrong_share": 0.0,
+   "mean_observed_rho": 0.1504052711690964,
+   "share_called_negligible": 0.0,
+   "share_CI_above_0": 1.0
+  },
+  {
+   "true_rho": 0.15,
+   "wrong_share": 0.133,
+   "mean_observed_rho": 0.12935668991437463,
+   "share_called_negligible": 0.0,
+   "share_CI_above_0": 1.0
+  },
+  {
+   "true_rho": 0.15,
+   "wrong_share": 0.3,
+   "mean_observed_rho": 0.10366939587516175,
+   "share_called_negligible": 0.045,
+   "share_CI_above_0": 1.0
+  }
+ ]
+}

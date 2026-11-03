@@ -36,4 +36,17 @@ interval reaches below -0.10. OpenLMIS is inconclusive, and adding SQALE makes t
    Exploratory, not preregistered: with test-like paths left out (`exploratory_without_test_files/`):
    MOSIP -0.073 (-0.121, -0.020); OpenLMIS 0.127 (0.039, 0.177), positive of uncertain size, two-way CI (-0.011, 0.221);
    OpenMRS -0.103 (-0.167, -0.034). H3 equivalent in all three. Pooled -0.018 (-0.127, 0.091), tau^2 0.012.
-4. Link check (90 links, rater Gianluigi): pending.
+4. Link check (90 links, rater Gianluigi Lucca Fabris): see `../link_check/README.md`.
+
+## Further exploratory checks (3 Nov 2026, after a simulated review; not preregistered)
+
+- `exploratory_wrong_links/`: simulation on the protocol-conforming MOSIP sample. A synthetic debt measure with a known
+  partial rho (0.10 or 0.15) is built; 13% or 30% of the issues get the code measures of a random other issue; then the frozen
+  H1 analysis is applied (200 runs, B = 400). True rho 0.10: mean estimate 0.101 / 0.088 / 0.068 with 0% / 13% / 30% wrong
+  links, and the CI is above 0 in 100% / 98% / 93% of the runs. True rho 0.15: CI above 0 in every run.
+- `exploratory_completeness/`: commits in the main repository that mention the issue key anywhere but are not linked by the
+  strict rule. Issues with at least one such commit: MOSIP 14%, OpenLMIS 9%, OpenMRS 11% (upper bound).
+- `exploratory_without_test_files/results_no_tests_strict_mosip.json`: test-like files left out, on the protocol-conforming
+  MOSIP sample: -0.070 (-0.122 to -0.014), n = 1,787.
+- In the paper, Table 5c reports MOSIP under the protocol's single re-run rule (`sensitivity_strict_rerun_rule/`), with the
+  449 re-run issues counted as missing, as primary. `results_v3.json` keeps the single run that includes them.
