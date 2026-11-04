@@ -50,3 +50,5 @@ interval reaches below -0.10. OpenLMIS is inconclusive, and adding SQALE makes t
   MOSIP sample: -0.070 (-0.122 to -0.014), n = 1,787.
 - In the paper, Table 5c reports MOSIP under the protocol's single re-run rule (`sensitivity_strict_rerun_rule/`), with the
   449 re-run issues counted as missing, as primary. `results_v3.json` keeps the single run that includes them.
+- `exploratory_wrong_links/real/`: protocol-conforming MOSIP sample without the 3 analysed issues the rater judged wrong: -0.015 (-0.066 to 0.035), negligible.
+- `exploratory_without_test_files/test_file_shares.py`: share of lines and of debt in test-like files (OpenLMIS: 62% of lines, 45% of debt).

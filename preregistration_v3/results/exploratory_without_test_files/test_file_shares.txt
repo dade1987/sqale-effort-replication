@@ -1,0 +1,3 @@
+mosip 2003 test share of NCLOC 33%, of debt 58%; debt per kNCLOC production 176.3, tests 492.7 min
+openlmis 1344 test share of NCLOC 62%, of debt 45%; debt per kNCLOC production 93.1, tests 46.5 min
+openmrs 1582 test share of NCLOC 26%, of debt 9%; debt per kNCLOC production 370.2, tests 101.8 min
