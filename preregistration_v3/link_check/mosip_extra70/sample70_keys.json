@@ -1,0 +1,702 @@
+[
+ {
+  "n": 1,
+  "issue": "MOS-29377",
+  "commits": [
+   "f1b10cb917"
+  ]
+ },
+ {
+  "n": 2,
+  "issue": "MOS-27243",
+  "commits": [
+   "0ed8eed8a7",
+   "5122238edb",
+   "be7a2cbb02",
+   "ea189f7585"
+  ]
+ },
+ {
+  "n": 3,
+  "issue": "MOS-17759",
+  "commits": [
+   "c2fa8b6b38"
+  ]
+ },
+ {
+  "n": 4,
+  "issue": "MOS-21592",
+  "commits": [
+   "048d96d84b"
+  ]
+ },
+ {
+  "n": 5,
+  "issue": "MOS-22806",
+  "commits": [
+   "0bb198ed57",
+   "29675dda3d",
+   "48206c05b5"
+  ]
+ },
+ {
+  "n": 6,
+  "issue": "MOS-24367",
+  "commits": [
+   "b4e4541b24"
+  ]
+ },
+ {
+  "n": 7,
+  "issue": "MOS-26081",
+  "commits": [
+   "12eaa89d27",
+   "28f7ae562b",
+   "2b956c99e8",
+   "b63b13debd",
+   "d85edf0012"
+  ]
+ },
+ {
+  "n": 8,
+  "issue": "MOS-1069",
+  "commits": [
+   "59d0cbed7c"
+  ]
+ },
+ {
+  "n": 9,
+  "issue": "MOS-18065",
+  "commits": [
+   "03bc32b214",
+   "0a91390e8c",
+   "0f2aaf2cb4",
+   "19b970e908",
+   "1d8a6138f2",
+   "2631353aae",
+   "4428e8528b",
+   "4bfabc09a7",
+   "588037eeeb",
+   "6e6f3da615",
+   "87b8988267",
+   "89b84733a4",
+   "a2a88fd67d",
+   "a9be4f99bb",
+   "ed5e1f1242"
+  ]
+ },
+ {
+  "n": 10,
+  "issue": "MOS-22975",
+  "commits": [
+   "1bef48d661"
+  ]
+ },
+ {
+  "n": 11,
+  "issue": "INJIMOB-2974",
+  "commits": [
+   "0927c23e9b",
+   "941fece6a3",
+   "e1dbb7c634"
+  ]
+ },
+ {
+  "n": 12,
+  "issue": "MOS-27726",
+  "commits": [
+   "29a20273ec",
+   "59d08a2f4c",
+   "77b9047371",
+   "7fb930a93f",
+   "bf05d182ed",
+   "dd4097f55f",
+   "eb3c171b31",
+   "f1036f7d94",
+   "f1ba850252",
+   "f1d4593327",
+   "fffc9ed4e7"
+  ]
+ },
+ {
+  "n": 13,
+  "issue": "MOSIP-12861",
+  "commits": [
+   "7d3032fd04"
+  ]
+ },
+ {
+  "n": 14,
+  "issue": "MOS-25051",
+  "commits": [
+   "25a8ab6ced",
+   "34e39855b8"
+  ]
+ },
+ {
+  "n": 15,
+  "issue": "MOS-25832",
+  "commits": [
+   "176e9773ac"
+  ]
+ },
+ {
+  "n": 16,
+  "issue": "MOS-30481",
+  "commits": [
+   "b53bd234a7",
+   "c0408f33d3"
+  ]
+ },
+ {
+  "n": 17,
+  "issue": "MOSIP-34131",
+  "commits": [
+   "6810fe5d14"
+  ]
+ },
+ {
+  "n": 18,
+  "issue": "MOS-26760",
+  "commits": [
+   "06c2a6095f",
+   "0969feedeb",
+   "26f4e55d93",
+   "297de7c092",
+   "4372d0b8b2",
+   "45e62cbc45",
+   "48744db905",
+   "4a952cca3c",
+   "61977fe230",
+   "64bb1043fb",
+   "7bfed3b094",
+   "7eb3728fd4",
+   "7eeb3f348c",
+   "8bc58920f0",
+   "92af4369c0",
+   "b26d1e52f4",
+   "b46d8d94f0",
+   "c0e6323887",
+   "c50a658fbe",
+   "c577e328fb",
+   "d6e3ff261c",
+   "e12234c1c2"
+  ]
+ },
+ {
+  "n": 19,
+  "issue": "MOS-28473",
+  "commits": [
+   "8836619117",
+   "eff671ff4a"
+  ]
+ },
+ {
+  "n": 20,
+  "issue": "MOSIP-41642",
+  "commits": [
+   "1a0218a3f5"
+  ]
+ },
+ {
+  "n": 21,
+  "issue": "MOS-12959",
+  "commits": [
+   "68893d203d"
+  ]
+ },
+ {
+  "n": 22,
+  "issue": "MOS-23821",
+  "commits": [
+   "b890e3ca4d"
+  ]
+ },
+ {
+  "n": 23,
+  "issue": "MOS-22844",
+  "commits": [
+   "6bdaf27df9"
+  ]
+ },
+ {
+  "n": 24,
+  "issue": "MOSIP-17537",
+  "commits": [
+   "8d62d7fa1d"
+  ]
+ },
+ {
+  "n": 25,
+  "issue": "MOS-10984",
+  "commits": [
+   "3826215f50",
+   "60e97892f9",
+   "7b3f29d959",
+   "a3b49ddcb7"
+  ]
+ },
+ {
+  "n": 26,
+  "issue": "MOS-23767",
+  "commits": [
+   "35e7859169",
+   "4df56ed067",
+   "7236caef47",
+   "7ae7ffcf55",
+   "df1fe3e006",
+   "ec48b6291a"
+  ]
+ },
+ {
+  "n": 27,
+  "issue": "MOSIP-16638",
+  "commits": [
+   "3af4cbc9ce",
+   "ce9202278c",
+   "e9e86c58c2"
+  ]
+ },
+ {
+  "n": 28,
+  "issue": "MOS-28224",
+  "commits": [
+   "38d2a3e9d1"
+  ]
+ },
+ {
+  "n": 29,
+  "issue": "MOS-15883",
+  "commits": [
+   "3f1a86e651"
+  ]
+ },
+ {
+  "n": 30,
+  "issue": "MOSIP-13443",
+  "commits": [
+   "7f7aef2675",
+   "95f539b677",
+   "cc9f611995"
+  ]
+ },
+ {
+  "n": 31,
+  "issue": "MOS-25470",
+  "commits": [
+   "164258b1c3"
+  ]
+ },
+ {
+  "n": 32,
+  "issue": "MOS-24048",
+  "commits": [
+   "45ef1c8689",
+   "4bd218cef1",
+   "526bbbdcd3",
+   "5822785a55",
+   "719a88698c",
+   "87c3c75ca1",
+   "abedc98a73",
+   "aee15cc9e9",
+   "b9bc74f646",
+   "e07e0455fd",
+   "f041ff55b8"
+  ]
+ },
+ {
+  "n": 33,
+  "issue": "MOS-28646",
+  "commits": [
+   "d176b32266"
+  ]
+ },
+ {
+  "n": 34,
+  "issue": "MOS-18172",
+  "commits": [
+   "08bdbe01db"
+  ]
+ },
+ {
+  "n": 35,
+  "issue": "MOS-31205",
+  "commits": [
+   "ba8a63c790"
+  ]
+ },
+ {
+  "n": 36,
+  "issue": "MOS-3907",
+  "commits": [
+   "07c17c844d"
+  ]
+ },
+ {
+  "n": 37,
+  "issue": "MOS-30469",
+  "commits": [
+   "23cf166362",
+   "bff30257dc"
+  ]
+ },
+ {
+  "n": 38,
+  "issue": "MOS-9732",
+  "commits": [
+   "922706351f",
+   "a6940a477d"
+  ]
+ },
+ {
+  "n": 39,
+  "issue": "MOS-14578",
+  "commits": [
+   "7af7fee3c9",
+   "ce32a843e7"
+  ]
+ },
+ {
+  "n": 40,
+  "issue": "MOS-29833",
+  "commits": [
+   "4586a5b7d4",
+   "a61ecc2d8a",
+   "addaffc668",
+   "b1465691e7",
+   "b68ce272bd",
+   "fd82fd7f76"
+  ]
+ },
+ {
+  "n": 41,
+  "issue": "MOS-20295",
+  "commits": [
+   "d40963bf2b"
+  ]
+ },
+ {
+  "n": 42,
+  "issue": "MOS-28327",
+  "commits": [
+   "56faa72889",
+   "8a9ded96b1"
+  ]
+ },
+ {
+  "n": 43,
+  "issue": "MOS-20436",
+  "commits": [
+   "5b667f1d0f",
+   "857e21e273"
+  ]
+ },
+ {
+  "n": 44,
+  "issue": "MOS-17771",
+  "commits": [
+   "42207572a4",
+   "70d21a8d12",
+   "db13e256e3",
+   "e60fb929d2"
+  ]
+ },
+ {
+  "n": 45,
+  "issue": "MOS-1414",
+  "commits": [
+   "0823761bd9",
+   "23e9c36e03",
+   "2db9c0bde6",
+   "2ff55a3266",
+   "584ff8ecbc",
+   "9359a321bc",
+   "bf6ab9d803",
+   "d98b9368a8",
+   "dbcedcec18",
+   "e46ce1d57f"
+  ]
+ },
+ {
+  "n": 46,
+  "issue": "MOS-29745",
+  "commits": [
+   "a9e17b7699",
+   "b7d36a5ce6"
+  ]
+ },
+ {
+  "n": 47,
+  "issue": "MOS-28201",
+  "commits": [
+   "a51f46987c"
+  ]
+ },
+ {
+  "n": 48,
+  "issue": "MOS-21465",
+  "commits": [
+   "003006887e",
+   "3cc5922f55",
+   "adae4e3e88",
+   "e283138bfb"
+  ]
+ },
+ {
+  "n": 49,
+  "issue": "MOS-25487",
+  "commits": [
+   "9d42c4a5b8"
+  ]
+ },
+ {
+  "n": 50,
+  "issue": "MOS-24407",
+  "commits": [
+   "12568d0c96",
+   "a6c7d5f620"
+  ]
+ },
+ {
+  "n": 51,
+  "issue": "MOS-24364",
+  "commits": [
+   "2cc8965fb2",
+   "303f6c7e02",
+   "7f19ab7f37",
+   "9439c0727b",
+   "967f0cbaf0",
+   "988097cd32",
+   "a1b8b1b12a",
+   "ac868eef02",
+   "da7bcef0da",
+   "e36037d678",
+   "ea487484cc"
+  ]
+ },
+ {
+  "n": 52,
+  "issue": "MOS-30544",
+  "commits": [
+   "1ccb30ab3d"
+  ]
+ },
+ {
+  "n": 53,
+  "issue": "MOS-24652",
+  "commits": [
+   "9e70fe4271",
+   "b7c44def5b",
+   "bd4ec1e7b9"
+  ]
+ },
+ {
+  "n": 54,
+  "issue": "MOS-29977",
+  "commits": [
+   "5f8c02b38e",
+   "b00b54c0c3",
+   "b1210ec4f1",
+   "f6f2c2b20a"
+  ]
+ },
+ {
+  "n": 55,
+  "issue": "MOS-24325",
+  "commits": [
+   "53e161335e"
+  ]
+ },
+ {
+  "n": 56,
+  "issue": "MOS-22960",
+  "commits": [
+   "13e78c1090",
+   "271ebdbb26",
+   "27b281568c",
+   "43cf62dc94",
+   "440b0d7c38",
+   "4707fda643",
+   "81d2b1f5a4",
+   "caaecb0229",
+   "d28e04ccde",
+   "d6126955af"
+  ]
+ },
+ {
+  "n": 57,
+  "issue": "MOS-24719",
+  "commits": [
+   "0a31155129",
+   "6d8534eb0b",
+   "94b8aace62",
+   "d4e7e8a0fc"
+  ]
+ },
+ {
+  "n": 58,
+  "issue": "MOS-23794",
+  "commits": [
+   "0229d45c99",
+   "0ab45d54d9",
+   "0dfa35f665",
+   "0e7561e41a",
+   "27f143b601",
+   "766adab8eb",
+   "948dcc52bf",
+   "adf07887c4",
+   "ae998fa0fe",
+   "c1cbf1e5b4",
+   "cbda18fce5",
+   "cda73cea9d",
+   "fb77c5dd43",
+   "fe9d700a5d"
+  ]
+ },
+ {
+  "n": 59,
+  "issue": "MOS-21383",
+  "commits": [
+   "04ae175403",
+   "3e3ef7c891",
+   "59719ce22d",
+   "87027d8d60",
+   "b0625623a4"
+  ]
+ },
+ {
+  "n": 60,
+  "issue": "MOS-17280",
+  "commits": [
+   "176193b678",
+   "39c037957e",
+   "837e7fc7a9",
+   "a024c9653c"
+  ]
+ },
+ {
+  "n": 61,
+  "issue": "MOS-29366",
+  "commits": [
+   "038a8370da"
+  ]
+ },
+ {
+  "n": 62,
+  "issue": "MOS-23310",
+  "commits": [
+   "08ec7ddebb",
+   "189cfe0a6d",
+   "1c49b84f98",
+   "212fde9f68",
+   "263072ce3e",
+   "31be4893bc",
+   "37ce2dee46",
+   "3e8e89f709",
+   "5ca187603c",
+   "659bb6cb54",
+   "79351f6c19",
+   "7d3163c1e7",
+   "7dca5c7a2e",
+   "90a32a34a5",
+   "995cefdfe8",
+   "9bcfb25fed",
+   "a174e2d37d",
+   "a87a88e46d",
+   "b5ba9e3e1f",
+   "b6e449213e",
+   "ba6e879cea",
+   "c2b86e8720",
+   "cfae4a7e6d",
+   "d738a59d3e",
+   "e79d26b9ae",
+   "fca88e636b"
+  ]
+ },
+ {
+  "n": 63,
+  "issue": "MOS-29421",
+  "commits": [
+   "819d755f58",
+   "c6b6d6a678"
+  ]
+ },
+ {
+  "n": 64,
+  "issue": "MOS-17768",
+  "commits": [
+   "086b668e17",
+   "0a081390a7",
+   "0debba8c91",
+   "1f19cb85f8",
+   "20c82c687f",
+   "35197a181f",
+   "46d04cbcca",
+   "6879db4051",
+   "a2ed7aed29",
+   "b4640ec113",
+   "ec3d696f97",
+   "f73309e4e6"
+  ]
+ },
+ {
+  "n": 65,
+  "issue": "MOS-15391",
+  "commits": [
+   "24949e8ab1",
+   "3aae134eb4",
+   "4d23c31fcc",
+   "5329106104",
+   "614b4ade80",
+   "63d9b2e956",
+   "68c26feb68",
+   "6b8c2c9f35",
+   "709be76b2a",
+   "83bc34a74d",
+   "b3d35ac8c5",
+   "db94a1b838",
+   "e006c25069"
+  ]
+ },
+ {
+  "n": 66,
+  "issue": "MOS-26409",
+  "commits": [
+   "8e21b73f70"
+  ]
+ },
+ {
+  "n": 67,
+  "issue": "MOS-17954",
+  "commits": [
+   "3aa7e31b8d",
+   "4aed4ad7a5",
+   "c4a460636d",
+   "fb1528d230"
+  ]
+ },
+ {
+  "n": 68,
+  "issue": "MOS-28145",
+  "commits": [
+   "18c2902d08",
+   "2b9eea491a",
+   "6572c395e4",
+   "da34a0aba1"
+  ]
+ },
+ {
+  "n": 69,
+  "issue": "MOS-11670",
+  "commits": [
+   "ee5dac599d"
+  ]
+ },
+ {
+  "n": 70,
+  "issue": "MOSIP-41019",
+  "commits": [
+   "9a5ff5f9fd"
+  ]
+ }
+]

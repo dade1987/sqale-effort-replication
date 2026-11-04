@@ -1,0 +1,106 @@
+{
+ "parameters": {
+  "B": 5000,
+  "seed": 2026,
+  "SESOI_rho": 0.1,
+  "margin_dMAE": 0.02
+ },
+ "mosip": {
+  "counts": {
+   "issues": 2849,
+   "scanned": 2393,
+   "eligible": 1999,
+   "analysed": 1996,
+   "missing": 3,
+   "median_hours_analysed": 9.5,
+   "median_hours_missing": 12.0,
+   "developers": 158,
+   "modules": 238
+  },
+  "H1": {
+   "n": 1996,
+   "partial_rho": -0.015168577397320832,
+   "CI90": [
+    -0.06826749376654967,
+    0.035843317225543354
+   ],
+   "verdict": "practically negligible (CI inside +-0.10)",
+   "p_one_sided_rho_gt_0": 0.6868,
+   "p_TOST": 0.004999999999999999,
+   "boot_se": 0.0315243591913409
+  },
+  "H1_twoway_dev_module": {
+   "n": 1996,
+   "partial_rho": -0.015168577397320832,
+   "CI90": [
+    -0.09345786961976485,
+    0.06786218830101645
+   ],
+   "verdict": "practically negligible (CI inside +-0.10)",
+   "p_one_sided_rho_gt_0": 0.6364,
+   "p_TOST": 0.0346,
+   "boot_se": 0.049165433603912075
+  },
+  "H3": {
+   "n_train": 998,
+   "n_test": 998,
+   "train_until": "2019-05-31T13:56:11.186+0530",
+   "MAE_lines_only": 16.386338233977764,
+   "dMAE": 0.055567483362400735,
+   "CI90": [
+    -0.005391180468817518,
+    0.12050093172659128
+   ],
+   "CI90_pct_MAE": [
+    -0.032900458856870644,
+    0.7353743710521459
+   ],
+   "verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "secondary": {
+   "H1_bugs_only": {
+    "n": 745,
+    "partial_rho": -0.10312756479076299,
+    "CI90": [
+     -0.16859974143999248,
+     -0.028123964463007647
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.9884,
+    "p_TOST": 0.5162,
+    "boot_se": 0.04310027516122958
+   },
+   "H1_all_touched_code_files_measured": {
+    "n": 1995,
+    "partial_rho": -0.015218152950594737,
+    "CI90": [
+     -0.068282067256193,
+     0.03588733593548046
+    ],
+    "verdict": "practically negligible (CI inside +-0.10)",
+    "p_one_sided_rho_gt_0": 0.6874,
+    "p_TOST": 0.004999999999999999,
+    "boot_se": 0.031554929743634476
+   }
+  }
+ },
+ "family": {
+  "holm_one_sided_rho_gt_0": {
+   "mosip": 0.6868
+  },
+  "holm_TOST": {
+   "mosip": 0.004999999999999999
+  },
+  "all_equivalent_familywise": true,
+  "all_negligible_under_twoway": true
+ },
+ "pooled_random_effects_secondary": {
+  "rho": -0.015168577397320833,
+  "CI90": [
+   -0.06693899582289205,
+   0.03668329662248861
+  ],
+  "tau2": 0.0,
+  "Q": 0.0
+ }
+}
