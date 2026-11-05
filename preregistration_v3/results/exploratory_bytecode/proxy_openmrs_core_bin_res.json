@@ -1,0 +1,106 @@
+{
+ "parameters": {
+  "B": 5000,
+  "seed": 2026,
+  "SESOI_rho": 0.1,
+  "margin_dMAE": 0.02
+ },
+ "openmrs": {
+  "counts": {
+   "issues": 1867,
+   "scanned": 348,
+   "eligible": 348,
+   "analysed": 348,
+   "missing": 0,
+   "median_hours_analysed": 3.0,
+   "median_hours_missing": null,
+   "developers": 135,
+   "modules": 50
+  },
+  "H1": {
+   "n": 348,
+   "partial_rho": -0.018509984143927266,
+   "CI90": [
+    -0.10311401071566288,
+    0.08036417259075497
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.6058,
+   "p_TOST": 0.056,
+   "boot_se": 0.05554791942997443
+  },
+  "H1_twoway_dev_module": {
+   "n": 348,
+   "partial_rho": -0.018509984143927266,
+   "CI90": [
+    -0.15877745325820652,
+    0.14382227584947985
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.5438,
+   "p_TOST": 0.1394,
+   "boot_se": 0.0933290182325054
+  },
+  "H3": {
+   "n_train": 174,
+   "n_test": 174,
+   "train_until": "2014-10-31T21:16:06.000+1100",
+   "MAE_lines_only": 9.066412436967113,
+   "dMAE": 0.004578696601176247,
+   "CI90": [
+    -0.013900485208624967,
+    0.024320392075163885
+   ],
+   "CI90_pct_MAE": [
+    -0.15331847415133634,
+    0.26824714013671674
+   ],
+   "verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "secondary": {
+   "H1_bugs_only": {
+    "n": 191,
+    "partial_rho": -0.000407264842037709,
+    "CI90": [
+     -0.1324088806128704,
+     0.16001179579306887
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.47459999999999997,
+    "p_TOST": 0.1522,
+    "boot_se": 0.08833242505441602
+   },
+   "H1_all_touched_code_files_measured": {
+    "n": 348,
+    "partial_rho": -0.018509984143927266,
+    "CI90": [
+     -0.10311401071566288,
+     0.08036417259075497
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.6058,
+    "p_TOST": 0.056,
+    "boot_se": 0.05554791942997443
+   }
+  }
+ },
+ "family": {
+  "holm_one_sided_rho_gt_0": {
+   "openmrs": 0.6058
+  },
+  "holm_TOST": {
+   "openmrs": 0.056
+  },
+  "all_equivalent_familywise": false,
+  "all_negligible_under_twoway": false
+ },
+ "pooled_random_effects_secondary": {
+  "rho": -0.018509984143927266,
+  "CI90": [
+   -0.1094791768788011,
+   0.0727667043155907
+  ],
+  "tau2": 0.0,
+  "Q": 0.0
+ }
+}

@@ -1,0 +1,106 @@
+{
+ "parameters": {
+  "B": 5000,
+  "seed": 2026,
+  "SESOI_rho": 0.1,
+  "margin_dMAE": 0.02
+ },
+ "openmrs": {
+  "counts": {
+   "issues": 1867,
+   "scanned": 348,
+   "eligible": 348,
+   "analysed": 348,
+   "missing": 0,
+   "median_hours_analysed": 3.0,
+   "median_hours_missing": null,
+   "developers": 135,
+   "modules": 50
+  },
+  "H1": {
+   "n": 348,
+   "partial_rho": -0.012300393298086354,
+   "CI90": [
+    -0.09925396638931397,
+    0.0788239615486852
+   ],
+   "verdict": "practically negligible (CI inside +-0.10)",
+   "p_one_sided_rho_gt_0": 0.5748,
+   "p_TOST": 0.0492,
+   "boot_se": 0.05504819216101674
+  },
+  "H1_twoway_dev_module": {
+   "n": 348,
+   "partial_rho": -0.012300393298086354,
+   "CI90": [
+    -0.2522105155417859,
+    0.14038025428427275
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.5864,
+   "p_TOST": 0.2636,
+   "boot_se": 0.1188531798198966
+  },
+  "H3": {
+   "n_train": 174,
+   "n_test": 174,
+   "train_until": "2014-10-31T21:16:06.000+1100",
+   "MAE_lines_only": 9.066412436967113,
+   "dMAE": -0.007578170713726007,
+   "CI90": [
+    -0.034162754387520436,
+    0.02035664131029557
+   ],
+   "CI90_pct_MAE": [
+    -0.37680565080214384,
+    0.22452807493396196
+   ],
+   "verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "secondary": {
+   "H1_bugs_only": {
+    "n": 191,
+    "partial_rho": -0.024661748971613245,
+    "CI90": [
+     -0.13635301547736994,
+     0.0959634062529793
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.6155999999999999,
+    "p_TOST": 0.1312,
+    "boot_se": 0.07123060232191544
+   },
+   "H1_all_touched_code_files_measured": {
+    "n": 348,
+    "partial_rho": -0.012300393298086354,
+    "CI90": [
+     -0.09925396638931397,
+     0.0788239615486852
+    ],
+    "verdict": "practically negligible (CI inside +-0.10)",
+    "p_one_sided_rho_gt_0": 0.5748,
+    "p_TOST": 0.0492,
+    "boot_se": 0.05504819216101674
+   }
+  }
+ },
+ "family": {
+  "holm_one_sided_rho_gt_0": {
+   "openmrs": 0.5748
+  },
+  "holm_TOST": {
+   "openmrs": 0.0492
+  },
+  "all_equivalent_familywise": true,
+  "all_negligible_under_twoway": false
+ },
+ "pooled_random_effects_secondary": {
+  "rho": -0.012300393298086354,
+  "CI90": [
+   -0.10250766781283256,
+   0.07810754214653558
+  ],
+  "tau2": 0.0,
+  "Q": 0.0
+ }
+}

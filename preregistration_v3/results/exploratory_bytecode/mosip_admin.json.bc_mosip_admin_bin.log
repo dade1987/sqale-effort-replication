@@ -1,0 +1,119 @@
+19:05:20.484 INFO  Scanner configuration file: /home/user/sonar/sonar-scanner-8.2.0.6438-linux-x64/conf/sonar-scanner.properties
+19:05:20.487 INFO  Project root configuration file: NONE
+19:05:20.503 INFO  SonarScanner CLI 8.2.0.6438
+19:05:20.512 INFO  Linux 6.18.44-fc-v236 amd64
+19:05:21.200 INFO  Communicating with SonarQube Community Build 26.9.0.129388
+19:05:21.201 INFO  JRE provisioning: os[linux], arch[x86_64]
+19:05:21.897 INFO  Starting SonarScanner Engine...
+19:05:21.897 INFO  Java 21.0.11 Eclipse Adoptium (64-bit)
+19:05:23.065 INFO  Load global settings
+19:05:23.167 INFO  Load global settings (done) | time=102ms
+19:05:23.170 INFO  Server id: 147B411E-AaGebO6dx3KtzmiD4VLE
+19:05:23.182 INFO  Loading required plugins
+19:05:23.182 INFO  Load plugins index
+19:05:23.222 INFO  Load plugins index (done) | time=39ms
+19:05:23.222 INFO  Load/download plugins
+19:05:23.261 INFO  Load/download plugins (done) | time=38ms
+19:05:23.597 INFO  Process project properties
+19:05:23.615 INFO  Process project properties (done) | time=17ms
+19:05:23.629 INFO  Project key: bc_mosip_admin_bin
+19:05:23.629 INFO  Base dir: /home/user/bc/as_head/admin
+19:05:23.629 INFO  Working dir: /home/user/bc/as_head/admin/.scannerwork
+19:05:23.639 INFO  Load project settings for component key: 'bc_mosip_admin_bin'
+19:05:23.687 INFO  Load quality profiles
+19:05:23.793 INFO  Load quality profiles (done) | time=103ms
+19:05:23.836 INFO  Load active rules
+19:05:24.341 INFO  Load active rules (done) | time=504ms
+19:05:24.348 INFO  Load analysis cache
+19:05:24.357 INFO  Load analysis cache (404) | time=9ms
+19:05:24.485 INFO  Preprocessing files...
+19:05:24.966 INFO  1 language detected in 1504 preprocessed files (done) | time=469ms
+19:05:24.966 INFO  2 files ignored because of inclusion/exclusion patterns
+19:05:24.971 INFO  Loading plugins for detected languages
+19:05:24.971 INFO  Load/download plugins
+19:05:24.984 INFO  Load/download plugins (done) | time=13ms
+19:05:25.101 INFO  Load project repositories
+19:05:25.109 INFO  Load project repositories (done) | time=12ms
+19:05:25.126 INFO  Indexing files...
+19:05:25.127 INFO  Project configuration:
+19:05:25.128 INFO    Included sources: **/*.java
+19:05:25.129 INFO    Excluded sources for duplication: **/*
+19:05:25.185 INFO  1504 files indexed (done) | time=58ms
+19:05:25.189 INFO  Quality profile for java: Sonar way
+19:05:25.189 INFO  ------------- Run sensors on module bc_mosip_admin_bin
+19:05:25.268 INFO  Load metrics repository
+19:05:25.300 INFO  Load metrics repository (done) | time=32ms
+19:05:26.008 INFO  Sensor IaC YAML File Type Classification Sensor [iac]
+19:05:26.029 INFO  Sensor IaC YAML File Type Classification Sensor [iac] (done) | time=19ms
+19:05:26.029 INFO  Sensor JavaSensor [java]
+19:05:26.080 INFO  Server-side caching is enabled. The Java analyzer will not try to leverage data from a previous analysis.
+19:05:26.085 INFO  Using ECJ batch to parse 1504 Main java source files with batch size 179 KB.
+19:05:26.358 INFO  Starting batch processing.
+19:05:27.517 INFO  The Java analyzer cannot skip unchanged files in this context. A full analysis is performed for all files.
+19:05:27.964 WARN  Test files were detected using a path heuristic because "sonar.tests" is not set. To improve the analysis accuracy, it is recommended to configure it, e.g.: "sonar.tests=src/test".
+19:06:23.154 INFO  100% analyzed
+19:06:23.155 INFO  Batch processing: Done.
+19:06:23.157 INFO  Did not optimize analysis for any files, performed a full analysis for all 1504 files.
+19:06:23.159 WARN  Unresolved imports/types have been detected during analysis. Enable DEBUG mode to see them.
+19:06:23.159 WARN  Use of preview features have been detected during analysis. Enable DEBUG mode to see them.
+19:06:23.160 INFO  No "Test" source files to scan.
+19:06:23.161 INFO  No "Generated" source files to scan.
+19:06:23.166 INFO  Sensor JavaSensor [java] (done) | time=57136ms
+19:06:23.166 INFO  Sensor JaCoCo XML Report Importer [jacoco]
+19:06:23.166 INFO  'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+19:06:23.167 INFO  No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+19:06:23.169 INFO  Sensor JaCoCo XML Report Importer [jacoco] (done) | time=2ms
+19:06:23.169 INFO  Sensor IaC hadolint report Sensor [iac]
+19:06:23.169 INFO  Sensor IaC hadolint report Sensor [iac] (done) | time=0ms
+19:06:23.169 INFO  Sensor Java Config Sensor [iac]
+19:06:23.169 INFO  There are no files to be analyzed for the Java language
+19:06:23.170 INFO  Sensor Java Config Sensor [iac] (done) | time=0ms
+19:06:23.170 INFO  Sensor IaC Docker Sensor [iac]
+19:06:23.192 INFO  There are no files to be analyzed for the Docker language
+19:06:23.192 INFO  Sensor IaC Docker Sensor [iac] (done) | time=25ms
+19:06:23.193 INFO  Sensor SurefireSensor [java]
+19:06:23.193 INFO  parsing [/home/user/bc/as_head/admin/target/surefire-reports]
+19:06:23.193 INFO  Sensor SurefireSensor [java] (done) | time=1ms
+19:06:23.194 INFO  Sensor TextAndSecretsSensor [text]
+19:06:23.245 INFO  Available processors: 4
+19:06:23.247 INFO  Using 4 threads for analysis.
+19:06:23.494 INFO  The property "sonar.tests" is not set. To improve the analysis accuracy, we categorize a file as a test file if any of the following is true:
+  * The filename starts with "test"
+  * The filename contains "test." or "tests."
+  * Any directory in the file path is named: "doc", "docs", "test", "tests", "mock" or "mocks"
+  * Any directory in the file path has a name ending in "test" or "tests"
+
+19:06:23.523 INFO  Start fetching files for the text and secrets analysis
+19:06:23.532 INFO  Using Git CLI to retrieve dirty files
+19:06:23.590 INFO  Retrieving language associated files and files included via "sonar.text.inclusions" that are tracked by git
+19:06:23.591 INFO  Starting the text and secrets analysis
+19:06:23.593 INFO  1504 source files to be analyzed for the text and secrets analysis
+19:06:24.049 INFO  1504/1504 source files have been analyzed for the text and secrets analysis
+19:06:24.050 INFO  Skipped 148 file(s) in the secrets analysis due to automatic test file detection
+19:06:24.053 INFO  Sensor TextAndSecretsSensor [text] (done) | time=858ms
+19:06:24.058 INFO  ------------- Run sensors on project
+19:06:24.239 INFO  Sensor JaCoCo Aggregate XML Report Importer [jacoco]
+19:06:24.240 INFO  Sensor JaCoCo Aggregate XML Report Importer [jacoco] (done) | time=0ms
+19:06:24.240 INFO  Sensor IaC Project Sensor [iac]
+19:06:24.242 INFO  Sensor IaC Project Sensor [iac] (done) | time=2ms
+19:06:24.245 INFO  Sensor JavaProjectSensor [java]
+19:06:24.245 INFO  Sensor JavaProjectSensor [java] (done) | time=1ms
+19:06:24.245 INFO  Sensor Zero Coverage Sensor
+19:06:24.380 INFO  Sensor Zero Coverage Sensor (done) | time=135ms
+19:06:24.381 INFO  Sensor Java CPD Block Indexer
+19:06:24.382 INFO  Sensor Java CPD Block Indexer (done) | time=1ms
+19:06:24.383 INFO  ------------- Gather SCA dependencies on project
+19:06:24.388 INFO  Dependency analysis skipped
+19:06:24.392 INFO  SCM Publisher is disabled
+19:06:24.396 INFO  CPD Executor Calculating CPD for 0 files
+19:06:24.397 INFO  CPD Executor CPD calculation finished (done) | time=0ms
+19:06:24.893 INFO  Analysis report generated in 451ms, dir size=12.0 MB
+19:06:26.057 INFO  Analysis report compressed in 1164ms, zip size=5.0 MB
+19:06:26.885 INFO  Analysis report uploaded in 827ms
+19:06:26.891 INFO  ------------- Check Quality Gate status
+19:06:26.893 INFO  Waiting for the analysis report to be processed (max 7200s)
+19:06:52.029 INFO  QUALITY GATE STATUS: PASSED - View details on http://localhost:9000/dashboard?id=bc_mosip_admin_bin
+19:06:53.048 INFO  Analysis total time: 1:29.744 s
+19:06:53.079 INFO  SonarScanner Engine completed successfully
+19:06:53.141 INFO  EXECUTION SUCCESS
+19:06:53.142 INFO  Total time: 1:32.661s

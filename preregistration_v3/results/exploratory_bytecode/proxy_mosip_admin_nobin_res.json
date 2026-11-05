@@ -1,0 +1,106 @@
+{
+ "parameters": {
+  "B": 5000,
+  "seed": 2026,
+  "SESOI_rho": 0.1,
+  "margin_dMAE": 0.02
+ },
+ "mosip": {
+  "counts": {
+   "issues": 2849,
+   "scanned": 291,
+   "eligible": 291,
+   "analysed": 291,
+   "missing": 0,
+   "median_hours_analysed": 9.0,
+   "median_hours_missing": null,
+   "developers": 39,
+   "modules": 14
+  },
+  "H1": {
+   "n": 291,
+   "partial_rho": -0.04657781907379457,
+   "CI90": [
+    -0.14850154344393715,
+    0.07094285208709439
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.7343999999999999,
+   "p_TOST": 0.18560000000000001,
+   "boot_se": 0.06686643278343364
+  },
+  "H1_twoway_dev_module": {
+   "n": 291,
+   "partial_rho": -0.04657781907379457,
+   "CI90": [
+    -0.2093055564003848,
+    0.28890566203601314
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.6235999999999999,
+   "p_TOST": 0.2424,
+   "boot_se": 0.15668148592631048
+  },
+  "H3": {
+   "n_train": 145,
+   "n_test": 146,
+   "train_until": "2019-07-16T15:11:51.600+0530",
+   "MAE_lines_only": 10.599246397958408,
+   "dMAE": -0.023715735779081017,
+   "CI90": [
+    -0.12887026504182558,
+    0.14280132960916156
+   ],
+   "CI90_pct_MAE": [
+    -1.215843657211782,
+    1.3472781389124746
+   ],
+   "verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "secondary": {
+   "H1_bugs_only": {
+    "n": 67,
+    "partial_rho": 0.05604329725533579,
+    "CI90": [
+     -0.10580171077084298,
+     0.4150518887866621
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.3044,
+    "p_TOST": 0.413,
+    "boot_se": 0.15925073566231193
+   },
+   "H1_all_touched_code_files_measured": {
+    "n": 291,
+    "partial_rho": -0.04657781907379457,
+    "CI90": [
+     -0.14850154344393715,
+     0.07094285208709439
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.7343999999999999,
+    "p_TOST": 0.18560000000000001,
+    "boot_se": 0.06686643278343364
+   }
+  }
+ },
+ "family": {
+  "holm_one_sided_rho_gt_0": {
+   "mosip": 0.7343999999999999
+  },
+  "holm_TOST": {
+   "mosip": 0.18560000000000001
+  },
+  "all_equivalent_familywise": false,
+  "all_negligible_under_twoway": false
+ },
+ "pooled_random_effects_secondary": {
+  "rho": -0.04657781907379457,
+  "CI90": [
+   -0.15557234103993606,
+   0.06353718138202924
+  ],
+  "tau2": 0.0,
+  "Q": 0.0
+ }
+}
