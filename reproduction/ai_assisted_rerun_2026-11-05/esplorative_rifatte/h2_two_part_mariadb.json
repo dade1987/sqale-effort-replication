@@ -1,0 +1,39 @@
+{
+ "project": "mariadb",
+ "n": 851,
+ "share_zero_debt_on_changed_lines": 0.7567567567567568,
+ "median_hours_zero": 5.083333333333334,
+ "median_hours_positive": 12.0,
+ "median_changed_lines_zero": 4.0,
+ "median_changed_lines_positive": 34.0,
+ "H2_frozen": {
+  "n": 851,
+  "rho_parziale": -0.008436753794329144,
+  "IC90": [
+   -0.0847726732707864,
+   0.053670970383416894
+  ],
+  "p_unilaterale_rho_gt_0": 0.5756,
+  "esito": "trascurabile in pratica (IC dentro +-0,10)"
+ },
+ "part1_any_debt": {
+  "n": 851,
+  "rho_parziale": -0.021733072243262586,
+  "IC90": [
+   -0.10050914591733526,
+   0.0408125072965881
+  ],
+  "p_unilaterale_rho_gt_0": 0.7056,
+  "esito": "inconcludente"
+ },
+ "part2_amount_if_positive": {
+  "n": 207,
+  "rho_parziale": -0.0059689172772048864,
+  "IC90": [
+   -0.11701551581199254,
+   0.11246570552264977
+  ],
+  "p_unilaterale_rho_gt_0": 0.5322,
+  "esito": "inconcludente"
+ }
+}

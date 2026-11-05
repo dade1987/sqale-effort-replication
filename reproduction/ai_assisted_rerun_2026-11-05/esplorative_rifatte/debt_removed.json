@@ -1,0 +1,58 @@
+{
+ "moodle": {
+  "n": 2504,
+  "share_debt_removed": 0.12460063897763578,
+  "share_debt_added": 0.33186900958466453,
+  "median_removed_min_when_positive": 9.5,
+  "partial_rho(hours,removed|ncloc_c1_prima)": {
+   "rho": -0.19266273466606346,
+   "CI95_dev_bootstrap": [
+    -0.23005784397500956,
+    -0.15034783611451966
+   ]
+  },
+  "partial_rho(hours,removed_pos|ncloc_c1_prima)": {
+   "rho": 0.0031107710303092152,
+   "CI95_dev_bootstrap": [
+    -0.04116049891321569,
+    0.048321515698369594
+   ]
+  },
+  "partial_rho(hours,removed|ncloc_c1_prima+righe_vecchie_modificate)": {
+   "rho": -0.19183189099536357,
+   "CI95_dev_bootstrap": [
+    -0.22722154770114028,
+    -0.15025542889815316
+   ]
+  },
+  "spearman(hours,removed_pos) raw": 0.020897101204346524
+ },
+ "mariadb": {
+  "n": 2515,
+  "share_debt_removed": 0.08628230616302186,
+  "share_debt_added": 0.26481113320079525,
+  "median_removed_min_when_positive": 15.0,
+  "partial_rho(hours,removed|ncloc_c1_prima)": {
+   "rho": -0.1303528608155947,
+   "CI95_dev_bootstrap": [
+    -0.16689975152932193,
+    -0.08084089017318098
+   ]
+  },
+  "partial_rho(hours,removed_pos|ncloc_c1_prima)": {
+   "rho": 0.06760559260789942,
+   "CI95_dev_bootstrap": [
+    0.038430926748547825,
+    0.09960572078213889
+   ]
+  },
+  "partial_rho(hours,removed|ncloc_c1_prima+righe_vecchie_modificate)": {
+   "rho": -0.09323339791004089,
+   "CI95_dev_bootstrap": [
+    -0.1324355645800711,
+    -0.03391656745124977
+   ]
+  },
+  "spearman(hours,removed_pos) raw": 0.08891142177887856
+ }
+}

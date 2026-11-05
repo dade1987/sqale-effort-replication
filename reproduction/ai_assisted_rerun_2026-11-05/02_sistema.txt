@@ -1,0 +1,3 @@
+Linux 9dfccf14d105 6.18.57 #1 SMP Tue Oct 20 21:56:04 UTC 2026 x86_64 GNU/Linux
+Python 3.13.5
+ENVIRONMENT: system Python due to pip install failure

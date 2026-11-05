@@ -1,0 +1,25 @@
+/mnt/data/riproduzione_sqale/lavoro/dade1987-sqale-effort-replication-7025d86/code/transfer.py:51: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  spearman=float(stats.spearmanr(y, p)[0]) if np.std(p) > 0 else None) for k, p in pr.items()}}
+/mnt/data/riproduzione_sqale/lavoro/dade1987-sqale-effort-replication-7025d86/code/transfer.py:51: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  spearman=float(stats.spearmanr(y, p)[0]) if np.std(p) > 0 else None) for k, p in pr.items()}}
+moodle 100
+                                     SA    MAE  MdAE_log  within2x  spearman
+B0 project median                 0.328  8.260     0.916     0.397       NaN
+B0 median of the other projects   0.316  8.407     1.010     0.357       NaN
+transferred (other two projects)  0.343  8.071     0.862     0.414     0.407
+within project (same features)    0.382  7.610     0.793     0.445     0.398
+transferred + project median      0.376  7.671     0.811     0.440     0.407
+mariadb 100
+                                     SA     MAE  MdAE_log  within2x  spearman
+B0 project median                 0.357  15.946     1.099     0.372       NaN
+B0 median of the other projects   0.351  16.119     1.153     0.332       NaN
+transferred (other two projects)  0.411  14.601     0.936     0.396     0.422
+within project (same features)    0.432  14.115     0.897     0.403     0.494
+transferred + project median      0.409  14.643     0.934     0.386     0.422
+percona 100
+                                     SA     MAE  MdAE_log  within2x  spearman
+B0 project median                 0.252  22.894     1.083     0.319       NaN
+B0 median of the other projects   0.243  23.180     1.126     0.357       NaN
+transferred (other two projects)  0.284  21.945     1.128     0.339     0.472
+within project (same features)    0.321  20.769     0.886     0.381     0.487
+transferred + project median      0.313  21.049     0.953     0.374     0.472

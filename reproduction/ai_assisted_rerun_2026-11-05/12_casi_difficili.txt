@@ -1,0 +1,3 @@
+Revisione umana opzionale NON effettuata: vietato presentare un giudizio AI come analisi indipendente a mano.
+Riferimenti da valutare manualmente: MDL-76867 (0b54a57), MDEV-7850 (aee03ea, 9b1ea69), MDEV-8919 (afbd28a), PMM-2060 (23c0179, 5e7cc2d).
+La procedura automatica su giudizi già presenti ha prodotto: {"precision_strict": 0.99, "no_missing_commit": 0.96, "median_seconds_per_issue": 28.0} 1.0

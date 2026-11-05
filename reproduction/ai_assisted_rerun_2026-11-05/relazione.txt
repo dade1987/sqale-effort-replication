@@ -1,0 +1,85 @@
+RELAZIONE DI RIPRODUZIONE TECNICA ASSISTITA DA AI
+Articolo EMSE: SQALE technical debt e issue effort
+Data di chiusura: 2026-11-05 14:33:08 (Europe/Rome)
+Autore dei comandi e della relazione: assistente AI, non Gianluigi Lucca Fabris.
+IMPORTANTE: questa prova NON soddisfa il requisito della guida di svolgere una verifica indipendente senza AI.
+I comandi sono stati eseguiti su una copia del pacchetto caricato dall’utente, non scaricato in autonomia da Zenodo.
+
+AMBIENTE
+Linux 9dfccf14d105 6.18.57 #1 SMP Tue Oct 20 21:56:04 UTC 2026 x86_64 GNU/Linux
+Python 3.13.5
+ENVIRONMENT: system Python due to pip install failure
+Sono state usate le librerie disponibili in ambiente, non le versioni fissate in requirements.txt.
+Il tentativo pip install -r requirements.txt (esclusa la riga python==3.13) non è riuscito per assenza di accesso al repository.
+Versioni effettive in 03_pip_freeze.txt. CPU con quattro core consentiti; OPENBLAS/OMP/MKL con un thread per processo.
+
+INTEGRITÀ PACCHETTO
+914c2b912989dc751f3527980f98970d0b204f5fd6ff84f8ff6ecd9e577e004f  /mnt/data/riproduzione_sqale/pacchetto_v1.7.zip
+Hash SHA-256 conforme a quello atteso nella guida: 914c2b912989dc751f3527980f98970d0b204f5fd6ff84f8ff6ecd9e577e004f.
+Verifica preregistration SHA256SUMS: 34 OK; 3 FAILED, tutti preregistration_v3/data/features_v3_{mosip,openlmis,openmrs}.csv.
+Queste 3 differenze sono documentate nel README v3 come pseudonimizzazione dei nomi sviluppatori.
+
+PASSAGGI E RISULTATI
+Passo 05, Confermativo 1 (Moodle, MariaDB): exit=0 (OK)
+Passo 06, Confermativo 2 (MariaDB C/C++): exit=0 (OK)
+Passo 07, Confermativo 3: exit=0 (OK)
+Passo 07b, Confermativo 3 strict: exit=0 (OK)
+Passo 08, Modelli principali: exit=0 (OK)
+Passo 09, Esplorative: exit=0 (OK)
+Passo 10, Controllo collegamenti: exit=0 (OK)
+Passo 11, Confronto automatico: exit=0 (OK)
+moodle: H1 rho=-0.02442052, CI90=[-0.09462900784170844, 0.026301190684617927], H2 rho=-0.00399889, H3 dMAE=0.00089646
+mariadb: H1 rho=0.02339038, CI90=[-0.03752109983981925, 0.0839353106159357], H2 rho=-0.00843675, H3 dMAE=-0.01939378
+Confermativo 2: n=1385, H1-C rho=0.07915643, CI90=[-0.004967040118046303, 0.1564200811767101], verdict=inconclusive; H3-C dMAE=-0.01879506, verdict=equivalent (CI inside +-2% of MAE)
+Confermativo 3, mosip: n=2380, H1 rho=-0.01838784, CI90=[-0.06345586857823747, 0.026139058996025803], verdict=practically negligible (CI inside +-0.10)
+Confermativo 3, openlmis: n=1344, H1 rho=0.04058947, CI90=[-0.04619495927075677, 0.1333786956123278], verdict=inconclusive
+Confermativo 3, openmrs: n=1582, H1 rho=-0.08045153, CI90=[-0.13930178711778604, -0.015306500768325813], verdict=inconclusive
+Confermativo 3, family: {'holm_one_sided_rho_gt_0': {'openlmis': 0.7398, 'mosip': 1, 'openmrs': 1}, 'holm_TOST': {'mosip': 0.006, 'openlmis': 0.2792, 'openmrs': 0.2908}, 'all_equivalent_familywise': False, 'all_negligible_under_twoway': False}
+Confermativo 3 strict, mosip: n=2003, H1 rho=-0.01582877, CI90=[-0.06678263684748621, 0.03450329814477605], verdict=practically negligible (CI inside +-0.10)
+Confermativo 3 strict, openlmis: n=1344, H1 rho=0.04058947, CI90=[-0.04619495927075677, 0.1333786956123278], verdict=inconclusive
+Confermativo 3 strict, openmrs: n=1582, H1 rho=-0.08045153, CI90=[-0.13930178711778604, -0.015306500768325813], verdict=inconclusive
+Confermativo 3 strict, family: {'holm_one_sided_rho_gt_0': {'openlmis': 0.7398, 'mosip': 1, 'openmrs': 1}, 'holm_TOST': {'mosip': 0.0114, 'openlmis': 0.2792, 'openmrs': 0.2908}, 'all_equivalent_familywise': False, 'all_negligible_under_twoway': False}
+Modello moodle: n=860, MAE(SQALE grezzo)=18.424050, MAE(SQALE ricalibrato)=7.444218, MAE(M1)=6.532519, dMAE(M1 vs ricalibrato)=-0.911700, intervallo=[-1.406494, -0.536190]
+Modello mariadb: n=828, MAE(SQALE grezzo)=76.946522, MAE(SQALE ricalibrato)=17.005004, MAE(M1)=14.962755, dMAE(M1 vs ricalibrato)=-2.042249, intervallo=[-3.180796, -0.799940]
+Modello percona: n=447, MAE(SQALE grezzo)=47.545991, MAE(SQALE ricalibrato)=33.144678, MAE(M1)=29.747959, dMAE(M1 vs ricalibrato)=-3.396718, intervallo=[-5.621195, -1.313661]
+Confronto guida: File confrontati: 31; con differenze: 10
+Confronto strutturale aggiuntivo (include chiavi e stringhe): File confrontati: 31; file con differenze oltre tolleranza: 10
+DIVERSO code/results_exploratory_mariadb.json
+DIVERSO code/results_exploratory_moodle.json
+DIVERSO code/results_exploratory_percona.json
+DIVERSO code/results_mariadb.json
+DIVERSO code/results_moodle.json
+DIVERSO code/results_transfer.json
+DIVERSO results/exploratory/other_algorithms_mariadb.json
+DIVERSO results/exploratory/other_algorithms_moodle.json
+DIVERSO results/exploratory/other_algorithms_percona.json
+DIVERSO results/exploratory/revision_checks.json
+
+LIMITI DELLA RIPRODUZIONE
+La guida non ripete le scansioni di SonarQube sui repository originali, ma rielabora dati e scansioni distribuiti: non prova dunque la ricostruzione completa delle scansioni grezze.
+Non sono state rifatte la valutazione umana dei collegamenti issue-commit né le verifiche manuali dei casi difficili.
+La ricompilazione delle statistiche sui 100 giudizi archiviati non costituisce una nuova annotazione indipendente.
+La versione richiesta delle librerie non era installabile in questo ambiente; alcune differenze minime possono quindi dipendere dalle versioni numeriche.
+Un tentativo della verifica v3 è stato interrotto e sostituito da una nuova esecuzione completa insieme ad altri passaggi in parallelo.
+
+TEMPI
+INIZIO 05 2026-11-05T13:10:57Z 05_test1
+FINE 05 2026-11-05T13:11:46Z EXIT=0 DURATA=49s
+INIZIO 06 2026-11-05T13:11:46Z 06_test2
+FINE 06 2026-11-05T13:13:06Z EXIT=0 DURATA=80s
+INIZIO 07 2026-11-05T13:13:06Z 07_test3
+INIZIO 07 2026-11-05T13:15:49.490903+00:00 07_test3
+INIZIO 07b 2026-11-05T13:15:49.492028+00:00 07_test3_mosip_regola_protocollo
+INIZIO 08 2026-11-05T13:15:49.492859+00:00 08_modelli
+INIZIO 09 2026-11-05T13:15:49.493501+00:00 09_esplorative
+INIZIO 10 2026-11-05T13:15:49.494394+00:00 10_collegamenti
+FINE 07 2026-11-05T13:18:58.236728+00:00 EXIT=0 DURATA=188.7s
+FINE 07b 2026-11-05T13:20:59.077761+00:00 EXIT=0 DURATA=309.6s
+FINE 08 2026-11-05T13:31:17.531639+00:00 EXIT=0 DURATA=928.0s
+FINE 09 2026-11-05T13:31:17.532259+00:00 EXIT=0 DURATA=928.0s
+FINE 10 2026-11-05T13:31:17.532411+00:00 EXIT=0 DURATA=928.0s
+PROCEDURA_TERMINATA
+
+Dichiarazione AI: il pacchetto è stato eseguito, verificato e descritto con assistenza AI; non va attribuito a Gianluigi Lucca Fabris.
+
+File delle verifiche: 00-13, log_*, out_*.json, results_*.json, esplorative_rifatte/.

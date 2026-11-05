@@ -1,0 +1,20 @@
+RIGENERATO: code/results_moodle.json
+RIGENERATO: code/results_mariadb.json
+RIGENERATO: code/results_percona.json
+RIGENERATO: code/results_transfer.json
+RIGENERATO: code/results_exploratory_moodle.json
+RIGENERATO: code/results_exploratory_mariadb.json
+RIGENERATO: code/results_exploratory_percona.json
+RIGENERATO: out_v2.json
+RIGENERATO: out_v3.json
+RIGENERATO: out_v3_strict.json
+RIGENERATO: results/confirmatory/confirmatory_moodle.json
+RIGENERATO: results/confirmatory/confirmatory_mariadb.json
+NON SONO EMERSI ERRORI NEL LOG: code/log_exploratory_mariadb.txt, 2328 caratteri
+NON SONO EMERSI ERRORI NEL LOG: code/log_exploratory_moodle.txt, 2285 caratteri
+NON SONO EMERSI ERRORI NEL LOG: code/log_exploratory_percona.txt, 2313 caratteri
+NON SONO EMERSI ERRORI NEL LOG: code/log_mariadb.txt, 5518 caratteri
+NON SONO EMERSI ERRORI NEL LOG: code/log_moodle.txt, 5439 caratteri
+NON SONO EMERSI ERRORI NEL LOG: code/log_percona.txt, 5384 caratteri
+NON SONO EMERSI ERRORI NEL LOG: code/log_transfer.txt, 2011 caratteri
+Esplorative rigenerate: 15 file

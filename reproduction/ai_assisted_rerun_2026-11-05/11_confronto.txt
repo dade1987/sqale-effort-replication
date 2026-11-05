@@ -1,0 +1,125 @@
+UGUALE  link_validation/manual_check/results_manual_check.json
+UGUALE  preregistration/results/confermativo_mariadb.json
+UGUALE  preregistration/results/confermativo_moodle.json
+UGUALE  preregistration/results/holm_4test.json
+UGUALE  out_v2.json
+UGUALE  out_v3.json
+UGUALE  out_v3_strict.json
+UGUALE  results/confirmatory/confirmatory_mariadb.json
+UGUALE  results/confirmatory/confirmatory_moodle.json
+UGUALE  results/confirmatory/holm_4_tests.json
+UGUALE  results/confirmatory/secondary_results.json
+UGUALE  results/exploratory/by_issue_type.json
+UGUALE  results/exploratory/debt_removed.json
+UGUALE  results/exploratory/h2_two_part_mariadb.json
+UGUALE  results/exploratory/h2_two_part_moodle.json
+UGUALE  results/exploratory/official_cxx_compare.json
+UGUALE  results/exploratory/official_cxx_models.json
+DIVERSO results/exploratory/other_algorithms_mariadb.json: 49 valori
+    /test/Random forest M0/MAE 15.089149809944352 -> 15.089209452418277
+    /test/Random forest M0/MdAE 3.8140935899341724 -> 3.8073017004512892
+    /test/Random forest M0/SA 0.39191855369243245 -> 0.3919161501453631
+    /test/Random forest M0/MdAE_log 0.9016838049882914 -> 0.8994312006911169
+    /test/Random forest M0/within2x 0.4086720867208672 -> 0.408130081300813
+    /test/Random forest M0/spearman 0.4338704277016299 -> 0.4335723787891949
+    /test/XGBoost M0/MAE 15.13189422030594 -> 15.091849994848271
+    /test/XGBoost M0/MdAE 3.9850900173187256 -> 3.656153082847595
+    /test/XGBoost M0/SA 0.3901959859399996 -> 0.39180973826132115
+    /test/XGBoost M0/MdAE_log 0.905401603350757 -> 0.8960273799688689
+DIVERSO results/exploratory/other_algorithms_moodle.json: 45 valori
+    /test/Random forest M0/MAE 7.674348266831065 -> 7.674125768968443
+    /test/Random forest M0/MdAE 2.014338131439846 -> 2.0127882728188577
+    /test/Random forest M0/SA 0.37655237534709396 -> 0.37657045059715033
+    /test/Random forest M0/MdAE_log 0.7816309892006257 -> 0.7810203347896321
+    /test/Random forest M0/within2x 0.45019262520638414 -> 0.4500091726288754
+    /test/Random forest M0/spearman 0.4854154017736258 -> 0.48546729894494284
+    /test/XGBoost M0/MAE 7.750281168825799 -> 7.761125346212906
+    /test/XGBoost M0/MdAE 1.8563281853993732 -> 1.8271602312723796
+    /test/XGBoost M0/SA 0.3703837489392692 -> 0.3695027911825659
+    /test/XGBoost M0/MdAE_log 0.793689577237779 -> 0.7881904038388423
+DIVERSO results/exploratory/other_algorithms_percona.json: 47 valori
+    /test/Random forest M0/MAE 21.88167882984748 -> 21.884361721900184
+    /test/Random forest M0/MdAE 4.653168722777093 -> 4.633997395808251
+    /test/Random forest M0/SA 0.28445006256618144 -> 0.28436232966161856
+    /test/Random forest M0/MdAE_log 0.9073559644648808 -> 0.9072315974571824
+    /test/Random forest M0/within2x 0.39532019704433496 -> 0.3977832512315271
+    /test/XGBoost M0/MAE 21.860196206305414 -> 21.906668360984973
+    /test/XGBoost M0/MdAE 4.596551561355591 -> 4.593301591873169
+    /test/XGBoost M0/SA 0.2851525630484786 -> 0.2836328831540815
+    /test/XGBoost M0/MdAE_log 0.9311760642024407 -> 0.9410258661737501
+    /test/XGBoost M0/within2x 0.39532019704433496 -> 0.3854679802955665
+UGUALE  results/exploratory/other_quality_measures.json
+DIVERSO results/exploratory/revision_checks.json: 10 valori
+    /percona/nonlinear/rounds/size 117 -> 108
+    /percona/nonlinear/rounds/size+SQALE 128 -> 95
+    /percona/nonlinear/exploratory_test/MAE_size 32.69997011620713 -> 32.71750180265673
+    /percona/nonlinear/exploratory_test/MAE_size_sqale 32.107529479014495 -> 32.22780565080071
+    /percona/nonlinear/exploratory_test/dMAE -0.5924406371926333 -> -0.4896961518560101
+    /percona/nonlinear/exploratory_test/ci95[0] -0.9896810129028537 -> -0.8176830711861399
+    /percona/nonlinear/exploratory_test/ci95[1] -0.21627425176014128 -> -0.17882014642387625
+    /percona/nonlinear/exploratory_test/pct -1.81174672358187 -> -1.4967406582865865
+    /percona/nonlinear/exploratory_test/ci95_pct[0] -3.0265502059658966 -> -2.499222208707091
+    /percona/nonlinear/exploratory_test/ci95_pct[1] -0.6613897535427684 -> -0.5465580700582575
+UGUALE  results/exploratory/size_classes_cutpoints.json
+UGUALE  results/exploratory/size_collinearity.json
+DIVERSO code/results_exploratory_mariadb.json: 57 valori
+    /test/M0+E1+E2/MAE 14.877800433969442 -> 14.87283790053966
+    /test/M0+E1+E2/MdAE 4.0129604799432865 -> 3.9864408951751216
+    /test/M0+E1+E2/SA 0.400435775393971 -> 0.4006357617777859
+    /test/M0+E1+E2/MdAE_log 0.8848454306909694 -> 0.8879358070087152
+    /test/M0+E1+E2/within2x 0.4059620596205962 -> 0.4062330623306233
+    /test/M0+E1+E2/spearman 0.47947055003374045 -> 0.4804449837511141
+    /test/M0+E6 similar issues/MAE 15.078322577248072 -> 15.08138124301944
+    /test/M0+E6 similar issues/MdAE 3.7547702304924897 -> 3.7454739520564115
+    /test/M0+E6 similar issues/SA 0.39235488306820177 -> 0.3922316211263792
+    /test/M0+E6 similar issues/MdAE_log 0.8888181323822206 -> 0.8907290281129698
+DIVERSO code/results_exploratory_moodle.json: 69 valori
+    /valid/M1+E1 embedding/MAE 6.628808520965221 -> 6.614564100366185
+    /valid/M1+E1 embedding/MdAE 1.6543935220055626 -> 1.6721290539142684
+    /valid/M1+E1 embedding/SA 0.4104450175006603 -> 0.4117118920996803
+    /valid/M1+E1 embedding/MdAE_log 0.6092881458386635 -> 0.6113777757798406
+    /valid/M1+E1 embedding/within2x 0.5490272373540857 -> 0.5540856031128405
+    /valid/M1+E1 embedding/spearman 0.5700921291648869 -> 0.5703679294561536
+    /valid/M1+E1+E2+E3+E6/MAE 6.529978364825139 -> 6.545628974009733
+    /valid/M1+E1+E2+E3+E6/MdAE 1.7632066721133344 -> 1.747043617345046
+    /valid/M1+E1+E2+E3+E6/SA 0.4192348038988183 -> 0.41784286527293324
+    /valid/M1+E1+E2+E3+E6/MdAE_log 0.5930100173829256 -> 0.597842263283107
+DIVERSO code/results_exploratory_percona.json: 11 valori
+    /valid/M0+E1 embedding/MAE 15.18799529383237 -> 15.188124823944689
+    /valid/M0+E1 embedding/SA 0.33995891838082726 -> 0.33995328925112434
+    /valid/M0+E1 embedding/spearman 0.41600618244184034 -> 0.41596712216019416
+    /valid/M0+E1+E2/MAE 15.125703239347121 -> 15.125788671007523
+    /valid/M0+E1+E2/SA 0.34266601133307617 -> 0.342662298637329
+    /valid/M0+E1+E2/spearman 0.4117249629312923 -> 0.4117158174558026
+    /valid/M0+E1+E2+E6/MAE 15.037263610964452 -> 15.037398394383278
+    /valid/M0+E1+E2+E6/SA 0.34650942758692505 -> 0.346503570158619
+    /valid/M0+E1+E2+E6/spearman 0.42090557969802744 -> 0.42087406427341756
+    /valid/M1+E1+E2+E3+E6/SA 0.4123866126305009 -> 0.4123871702446301
+DIVERSO code/results_mariadb.json: 76 valori
+    /test/M2 ex post (+ patch)/MAE 12.517579488228447 -> 12.521035752564899
+    /test/M2 ex post (+ patch)/MdAE 3.271272075340951 -> 3.2850180845406585
+    /test/M2 ex post (+ patch)/SA 0.49555091338178137 -> 0.4954116285153043
+    /test/M2 ex post (+ patch)/MdAE_log 0.6976360139960368 -> 0.698299434505785
+    /test/M2 ex post (+ patch)/within2x 0.497289972899729 -> 0.4964769647696477
+    /test/M2 ex post (+ patch)/spearman 0.6630310734280193 -> 0.6627853632006646
+    /test/M1 without developer/MAE 13.828098740102408 -> 13.800674994764316
+    /test/M1 without developer/MdAE 3.8958843787874975 -> 3.823638005739829
+    /test/M1 without developer/SA 0.442737968177391 -> 0.4438431245936503
+    /test/M1 without developer/MdAE_log 0.8445576737999786 -> 0.8454983764722408
+DIVERSO code/results_moodle.json: 82 valori
+    /test/M2 ex post (+ patch)/MAE 6.851001525447304 -> 6.85385913706337
+    /test/M2 ex post (+ patch)/MdAE 1.7402030847017 -> 1.740383041416134
+    /test/M2 ex post (+ patch)/SA 0.44343930207154103 -> 0.4432071558211659
+    /test/M2 ex post (+ patch)/MdAE_log 0.6686541426099304 -> 0.6609642527875914
+    /test/M2 ex post (+ patch)/within2x 0.5177031737295908 -> 0.5164190056870299
+    /test/M2 ex post (+ patch)/spearman 0.6138830894522874 -> 0.6145976106633161
+    /test/M1 without developer/MAE 7.614088894236416 -> 7.614290399252017
+    /test/M1 without developer/MdAE 1.9437018732524263 -> 1.9506255468539906
+    /test/M1 without developer/SA 0.3814477177789174 -> 0.3814313479428135
+    /test/M1 without developer/MdAE_log 0.785275497016074 -> 0.7882292376178566
+UGUALE  code/results_percona.json
+DIVERSO code/results_transfer.json: 2 valori
+    /moodle/within project (same features)/SA 0.3815442773308638 -> 0.3815409055131065
+    /moodle/within project (same features)/MAE 7.609935369397044 -> 7.6099768587296985
+
+File confrontati: 31; con differenze: 10

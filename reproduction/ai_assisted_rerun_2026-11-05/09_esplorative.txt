@@ -1,0 +1,1089 @@
+== moodle
+  all          n= 860 raw 18.42/5.07/22% | recal 7.44/2.17/40% | M0 7.24/1.88/44% | M1 6.53/1.84/48% | dMAE M1-recal -0.91 p_boot 0.0002 p_wil 0.0000
+  Bug          n= 482 raw 12.88/3.96/21% | recal 5.46/1.98/43% | M0 5.27/1.60/47% | M1 4.90/1.57/50% | dMAE M1-recal -0.56 p_boot 0.0010 p_wil 0.0000
+  Improvement  n= 275 raw 24.26/7.68/24% | recal 10.70/2.57/36% | M0 10.48/2.61/42% | M1 9.38/2.76/45% | dMAE M1-recal -1.32 p_boot 0.0142 p_wil 0.0091
+  New Feature  n=  28 raw 31.26/6.82/21% | recal 21.62/3.26/36% | M0 21.27/4.04/36% | M1 16.84/2.56/46% | dMAE M1-recal -4.78 p_boot 0.2246 p_wil 0.1936
+  Task         n=  73 raw 28.47/7.17/21% | recal 3.04/2.46/37% | M0 2.77/1.68/41% | M1 2.79/1.60/48% | dMAE M1-recal -0.25 p_boot 0.4922 p_wil 0.0997
+  altro: n=2 (troppo poche)
+== mariadb
+  all          n= 828 raw 76.95/23.25/21% | recal 17.01/3.87/35% | M0 16.45/4.01/39% | M1 14.96/4.01/43% | dMAE M1-recal -2.04 p_boot 0.0034 p_wil 0.0000
+  Bug          n= 733 raw 59.86/21.03/21% | recal 13.73/3.65/36% | M0 13.43/3.72/40% | M1 12.70/3.52/43% | dMAE M1-recal -1.03 p_boot 0.0210 p_wil 0.0000
+  New Feature: n=13 (troppo poche)
+  Task         n=  77 raw 218.30/76.48/21% | recal 42.68/17.14/25% | M0 39.56/10.74/30% | M1 31.76/13.53/48% | dMAE M1-recal -10.92 p_boot 0.0442 p_wil 0.0001
+  altro: n=5 (troppo poche)
+== percona
+  all          n= 447 raw 47.55/10.92/26% | recal 33.14/6.08/31% | M0 33.20/6.81/31% | M1 29.75/7.27/38% | dMAE M1-recal -3.40 p_boot 0.0018 p_wil 0.0000
+  Bug          n= 252 raw 34.73/12.77/25% | recal 26.90/6.47/35% | M0 27.24/6.71/31% | M1 24.60/6.62/42% | dMAE M1-recal -2.30 p_boot 0.0002 p_wil 0.0000
+  Improvement  n=  90 raw 21.89/5.38/29% | recal 20.59/5.68/23% | M0 21.04/6.65/28% | M1 19.91/6.71/32% | dMAE M1-recal -0.68 p_boot 0.6750 p_wil 0.2145
+  New Feature  n=  59 raw 62.35/12.98/25% | recal 69.09/8.56/29% | M0 69.34/8.93/29% | M1 64.71/12.54/24% | dMAE M1-recal -4.38 p_boot 0.2834 p_wil 0.3691
+  altro        n=  46 raw 148.94/8.67/22% | recal 45.81/8.25/28% | M0 43.26/6.00/41% | M1 32.34/7.88/43% | dMAE M1-recal -13.47 p_boot 0.0022 p_wil 0.1137
+{
+ "moodle": {
+  "n": 2504,
+  "share_debt_removed": 0.12460063897763578,
+  "share_debt_added": 0.33186900958466453,
+  "median_removed_min_when_positive": 9.5,
+  "partial_rho(hours,removed|ncloc_c1_prima)": {
+   "rho": -0.19266273466606346,
+   "CI95_dev_bootstrap": [
+    -0.23005784397500956,
+    -0.15034783611451966
+   ]
+  },
+  "partial_rho(hours,removed_pos|ncloc_c1_prima)": {
+   "rho": 0.0031107710303092152,
+   "CI95_dev_bootstrap": [
+    -0.04116049891321569,
+    0.048321515698369594
+   ]
+  },
+  "partial_rho(hours,removed|ncloc_c1_prima+righe_vecchie_modificate)": {
+   "rho": -0.19183189099536357,
+   "CI95_dev_bootstrap": [
+    -0.22722154770114028,
+    -0.15025542889815316
+   ]
+  },
+  "spearman(hours,removed_pos) raw": 0.020897101204346524
+ },
+ "mariadb": {
+  "n": 2515,
+  "share_debt_removed": 0.08628230616302186,
+  "share_debt_added": 0.26481113320079525,
+  "median_removed_min_when_positive": 15.0,
+  "partial_rho(hours,removed|ncloc_c1_prima)": {
+   "rho": -0.1303528608155947,
+   "CI95_dev_bootstrap": [
+    -0.16689975152932193,
+    -0.08084089017318098
+   ]
+  },
+  "partial_rho(hours,removed_pos|ncloc_c1_prima)": {
+   "rho": 0.06760559260789942,
+   "CI95_dev_bootstrap": [
+    0.038430926748547825,
+    0.09960572078213889
+   ]
+  },
+  "partial_rho(hours,removed|ncloc_c1_prima+righe_vecchie_modificate)": {
+   "rho": -0.09323339791004089,
+   "CI95_dev_bootstrap": [
+    -0.1324355645800711,
+    -0.03391656745124977
+   ]
+  },
+  "spearman(hours,removed_pos) raw": 0.08891142177887856
+ }
+}
+{
+ "moodle": {
+  "n_all": 1729,
+  "n_test": 854,
+  "rho_sqale_ncloc_all": 0.898,
+  "rho_sqale_ncloc_test": 0.9,
+  "rho_hours_ncloc_test": 0.262,
+  "rho_hours_sqale_test": 0.234,
+  "partial_test": -0.004,
+  "partial_test_ci95": [
+   -0.072,
+   0.064
+  ],
+  "rho_sqale_ncloc_holdout": 0.892,
+  "n_holdout": 851
+ },
+ "mariadb": {
+  "n_all": 1688,
+  "n_test": 808,
+  "rho_sqale_ncloc_all": 0.853,
+  "rho_sqale_ncloc_test": 0.881,
+  "rho_hours_ncloc_test": 0.328,
+  "rho_hours_sqale_test": 0.336,
+  "partial_test": 0.106,
+  "partial_test_ci95": [
+   0.016,
+   0.212
+  ],
+  "rho_sqale_ncloc_holdout": 0.887,
+  "n_holdout": 862
+ },
+ "percona": {
+  "n_all": 1790,
+  "n_test": 444,
+  "rho_sqale_ncloc_all": 0.79,
+  "rho_sqale_ncloc_test": 0.843,
+  "rho_hours_ncloc_test": 0.407,
+  "rho_hours_sqale_test": 0.477,
+  "partial_test": 0.272,
+  "partial_test_ci95": [
+   0.137,
+   0.395
+  ]
+ }
+}
+{
+ "moodle": {
+  "removed_debt|lines_changed": {
+   "n": 822,
+   "rho": -0.1954051682634699,
+   "CI90": [
+    -0.25585591744209213,
+    -0.12901895520771597
+   ]
+  },
+  "density": {
+   "n": 851,
+   "rho": 0.057373392442898664,
+   "CI90": [
+    0.00025548544130547996,
+    0.10101771271093882
+   ]
+  },
+  "assignee_hours": {
+   "H1": {
+    "n": 378,
+    "rho": 0.02481677556629225,
+    "CI90": [
+     -0.08369219125766546,
+     0.1141134485568367
+    ]
+   },
+   "H2": {
+    "n": 359,
+    "rho": -0.08977120548635585,
+    "CI90": [
+     -0.15874872918348656,
+     -0.004420385381356217
+    ]
+   },
+   "H3": {
+    "n": 378,
+    "dMAE": 6.445004960878165e-05,
+    "pct_of_MAE": 0.0007625213847824506
+   }
+  },
+  "bugs_only": {
+   "H1": {
+    "n": 497,
+    "rho": -0.06580074002417816,
+    "CI90": [
+     -0.1511525211264468,
+     0.006761483581182076
+    ]
+   },
+   "H2": {
+    "n": 484,
+    "rho": -0.025648996320133656,
+    "CI90": [
+     -0.09723657990436814,
+     0.05161907745022729
+    ]
+   },
+   "H3": {
+    "n": 497,
+    "dMAE": 0.005414940316377756,
+    "pct_of_MAE": 0.09112155739123741
+   }
+  },
+  "month_block_CI90": {
+   "H1": [
+    -0.08155204755928386,
+    0.030869643345575817
+   ],
+   "H2": [
+    -0.05298583116148385,
+    0.04945335486272213
+   ]
+  },
+  "earlier_sample": {
+   "H1": {
+    "n": 1729,
+    "rho": -0.015954333613816412,
+    "CI90": [
+     -0.061950166996123095,
+     0.0326577022599064
+    ]
+   },
+   "H2": {
+    "n": 1680,
+    "rho": 0.02745120087192792,
+    "CI90": [
+     -0.013990170786414551,
+     0.06945735224787175
+    ]
+   }
+  }
+ },
+ "mariadb": {
+  "removed_debt|lines_changed": {
+   "n": 851,
+   "rho": -0.11418024452871303,
+   "CI90": [
+    -0.1686362759506326,
+    -0.06527675035999447
+   ]
+  },
+  "density": {
+   "n": 862,
+   "rho": 0.03696777712441402,
+   "CI90": [
+    -0.03477051668011217,
+    0.10582858652830876
+   ]
+  },
+  "assignee_hours": {
+   "H1": {
+    "n": 675,
+    "rho": 0.038027334331843535,
+    "CI90": [
+     -0.06930578181045537,
+     0.13878854712573294
+    ]
+   },
+   "H2": {
+    "n": 666,
+    "rho": 0.07367824445438732,
+    "CI90": [
+     0.008306680013820148,
+     0.12210548590888894
+    ]
+   },
+   "H3": {
+    "n": 675,
+    "dMAE": -0.022231525430127037,
+    "pct_of_MAE": -0.20290951277766917
+   }
+  },
+  "bugs_only": {
+   "H1": {
+    "n": 744,
+    "rho": 0.0012755758494139714,
+    "CI90": [
+     -0.05787318284672183,
+     0.06187252423090189
+    ]
+   },
+   "H2": {
+    "n": 737,
+    "rho": -0.02178503528938803,
+    "CI90": [
+     -0.0972483751778619,
+     0.0384148800564801
+    ]
+   },
+   "H3": {
+    "n": 744,
+    "dMAE": -0.01755653227366243,
+    "pct_of_MAE": -0.1624168921715132
+   }
+  },
+  "month_block_CI90": {
+   "H1": [
+    -0.037486113610192356,
+    0.08317523356519187
+   ],
+   "H2": [
+    -0.0687751785839177,
+    0.04977478762161771
+   ]
+  },
+  "earlier_sample": {
+   "H1": {
+    "n": 1688,
+    "rho": 0.06853668066240151,
+    "CI90": [
+     -0.02800979040512165,
+     0.17028697088080244
+    ]
+   },
+   "H2": {
+    "n": 1664,
+    "rho": 0.0862292602250239,
+    "CI90": [
+     0.010668618552143497,
+     0.1563295333087039
+    ]
+   }
+  }
+ }
+}
+{
+ "n_sample": 200,
+ "n_cmake_or_scan_error": 0,
+ "n_with_measures": 187,
+ "n_all_files_measured": 170,
+ "median_stmt_parsed_pct": 100.0,
+ "all_issues_with_measures": {
+  "n": 187,
+  "spearman_official_vs_sonarcxx": 0.42,
+  "median_sqale_h_official": 12.5,
+  "median_sqale_h_sonarcxx": 25.75,
+  "median_ratio_official_over_sonarcxx": 0.232,
+  "ratio_p10_p90": [
+   0.02,
+   4.555
+  ],
+  "median_hours_logged": 6.5,
+  "spearman_official_vs_ncloc": 0.573,
+  "spearman_sonarcxx_vs_ncloc": 0.89,
+  "mae_raw_h_official": 51.12,
+  "mae_raw_h_sonarcxx": 90.74,
+  "partial_rho_official": 0.041,
+  "partial_rho_official_ci90": [
+   -0.072,
+   0.18
+  ],
+  "partial_rho_sonarcxx_same_issues": 0.037,
+  "partial_rho_sonarcxx_ci90": [
+   -0.125,
+   0.196
+  ]
+ },
+ "issues_all_files_measured": {
+  "n": 170,
+  "spearman_official_vs_sonarcxx": 0.448,
+  "median_sqale_h_official": 12.12,
+  "median_sqale_h_sonarcxx": 21.47,
+  "median_ratio_official_over_sonarcxx": 0.257,
+  "ratio_p10_p90": [
+   0.027,
+   4.775
+  ],
+  "median_hours_logged": 6.25,
+  "spearman_official_vs_ncloc": 0.606,
+  "spearman_sonarcxx_vs_ncloc": 0.881,
+  "mae_raw_h_official": 42.57,
+  "mae_raw_h_sonarcxx": 74.36,
+  "partial_rho_official": 0.01,
+  "partial_rho_official_ci90": [
+   -0.112,
+   0.139
+  ],
+  "partial_rho_sonarcxx_same_issues": -0.01,
+  "partial_rho_sonarcxx_ci90": [
+   -0.175,
+   0.142
+  ]
+ }
+}
+{
+ "n": 187,
+ "MAE_h": {
+  "SQALE official, raw": 51.12,
+  "SQALE official, recalibrated (CV)": 13.91,
+  "SQALE sonar-cxx, recalibrated": 13.8,
+  "SQALE sonar-cxx, recalibrated (CV)": 13.55,
+  "M0": 13.53,
+  "M1": 13.2
+ },
+ "median_hours": 6.5,
+ "M1_vs_official_recal_cv": {
+  "dMAE_h": -0.71,
+  "ci95": [
+   -4.26,
+   3.03
+  ],
+  "p_boot": 0.6916,
+  "pct_of_baseline_MAE": -5.1
+ },
+ "M0_vs_official_recal_cv": {
+  "dMAE_h": -0.38,
+  "ci95": [
+   -1.36,
+   0.47
+  ],
+  "p_boot": 0.3996,
+  "pct_of_baseline_MAE": -2.7
+ },
+ "M1_vs_official_raw": {
+  "dMAE_h": -37.91,
+  "ci95": [
+   -66.26,
+   -11.81
+  ],
+  "p_boot": 0.0,
+  "pct_of_baseline_MAE": -74.2
+ },
+ "M1_vs_sonarcxx_recal": {
+  "dMAE_h": -0.59,
+  "ci95": [
+   -4.34,
+   3.05
+  ],
+  "p_boot": 0.732,
+  "pct_of_baseline_MAE": -4.3
+ },
+ "official_recal_cv_vs_sonarcxx_recal": {
+  "dMAE_h": 0.12,
+  "ci95": [
+   -0.44,
+   0.5
+  ],
+  "p_boot": 0.6268,
+  "pct_of_baseline_MAE": 0.9
+ },
+ "official_recal_cv_vs_sonarcxx_recal_cv": {
+  "dMAE_h": 0.36,
+  "ci95": [
+   -0.11,
+   0.77
+  ],
+  "p_boot": 0.1316,
+  "pct_of_baseline_MAE": 2.7
+ },
+ "M1_vs_sonarcxx_recal_cv": {
+  "dMAE_h": -0.35,
+  "ci95": [
+   -3.84,
+   3.36
+  ],
+  "p_boot": 0.8188,
+  "pct_of_baseline_MAE": -2.6
+ }
+}
+moodle {
+"timing_test_issues": {
+"n": 5451,
+"median_days_first_worklog_to_first_commit": 4.0,
+"share_issues_with_hours_logged_before_first_commit_day": 0.5956705191707944,
+"median_share_of_hours_before_first_commit_day": 0.2597402597402597,
+"mean_share_of_hours_before_first_commit_day": 0.3668362478051788,
+"share_issues_more_than_half_hours_before": 0.3920381581361218
+},
+"selection_exploratory_test": {
+"analysable": {
+"n": 860,
+"median_hours": 3.2666666666666666,
+"share_bug": 0.5593023255813954,
+"median_files": 4.0,
+"median_dev_prior_issues": 100.0
+},
+"excluded": {
+"n": 134,
+"median_hours": 2.541666666666667,
+"share_bug": 0.6268656716417911,
+"median_files": 2.0,
+"median_dev_prior_issues": 69.0
+}
+},
+"selection_holdout": {
+"analysable_H1": {
+"n": 851,
+"median_hours": 3.25,
+"share_bug": 0.5840188014101058,
+"median_files": 4.0,
+"median_dev_prior_issues": 99.0
+},
+"excluded": {
+"n": 149,
+"median_hours": 2.35,
+"share_bug": 0.5771812080536913,
+"median_files": 2.0,
+"median_dev_prior_issues": 83.0
+}
+},
+"nonlinear": {
+"n_train": 875,
+"rounds": {
+"size": 53,
+"size+SQALE": 54
+},
+"exploratory_test": {
+"n": 854,
+"MAE_size": 7.338589474649866,
+"MAE_size_sqale": 7.362773434469227,
+"dMAE": 0.02418395981936167,
+"ci95": [
+-0.021408380629636244,
+0.08033830138559477
+],
+"pct": 0.3295450699743021,
+"ci95_pct": [
+-0.2917233714133828,
+1.0947376422010282
+]
+},
+"holdout": {
+"n": 851,
+"MAE_size": 8.214750919718966,
+"MAE_size_sqale": 8.226189501516084,
+"dMAE": 0.011438581797115975,
+"ci95": [
+-0.035116154710139756,
+0.05415250367483176
+],
+"pct": 0.13924441421173728,
+"ci95_pct": [
+-0.4274768042673789,
+0.6592105372889914
+]
+}
+},
+"size_classes": {
+"n": 854,
+"acc_sqale": 0.5772833723653396,
+"acc_most_frequent": 0.5655737704918032,
+"acc_diff": 0.0117096018735363,
+"acc_diff_ci95": [
+-0.014109675287018375,
+0.043345496
+mariadb {
+"timing_test_issues": {
+"n": 3622,
+"median_days_first_worklog_to_first_commit": 11.0,
+"share_issues_with_hours_logged_before_first_commit_day": 0.7794036443953617,
+"median_share_of_hours_before_first_commit_day": 0.7423963133640553,
+"mean_share_of_hours_before_first_commit_day": 0.5896376368754838,
+"share_issues_more_than_half_hours_before": 0.6101601325234677
+},
+"selection_exploratory_test": {
+"analysable": {
+"n": 828,
+"median_hours": 5.25,
+"share_bug": 0.8852657004830918,
+"median_files": 4.0,
+"median_dev_prior_issues": 254.5
+},
+"excluded": {
+"n": 132,
+"median_hours": 2.6333333333333333,
+"share_bug": 0.9318181818181818,
+"median_files": 2.0,
+"median_dev_prior_issues": 123.5
+}
+},
+"selection_holdout": {
+"analysable_H1": {
+"n": 862,
+"median_hours": 6.041666666666666,
+"share_bug": 0.8631090487238979,
+"median_files": 4.0,
+"median_dev_prior_issues": 271.5
+},
+"excluded": {
+"n": 138,
+"median_hours": 2.583333333333333,
+"share_bug": 0.8985507246376812,
+"median_files": 2.0,
+"median_dev_prior_issues": 141.5
+}
+},
+"nonlinear": {
+"n_train": 880,
+"rounds": {
+"size": 53,
+"size+SQALE": 74
+},
+"exploratory_test": {
+"n": 808,
+"MAE_size": 17.07656271286011,
+"MAE_size_sqale": 16.931658595919878,
+"dMAE": -0.1449041169402352,
+"ci95": [
+-0.32384379533384267,
+0.0413124294212783
+],
+"pct": -0.848555528280349,
+"ci95_pct": [
+-1.8964226043567929,
+0.2419247369388133
+]
+},
+"holdout": {
+"n": 862,
+"MAE_size": 15.497170810463448,
+"MAE_size_sqale": 15.343229542782423,
+"dMAE": -0.15394126768102517,
+"ci95": [
+-0.2996181954758035,
+-0.049079020757182915
+],
+"pct": -0.9933507835964899,
+"ci95_pct": [
+-1.9333735114638213,
+-0.3166966497139305
+]
+}
+},
+"size_classes": {
+"n": 808,
+"acc_sqale": 0.4034653465346535,
+"acc_most_frequent": 0.4282178217821782,
+"acc_diff": -0.024752475247524754,
+"acc_diff_ci95": [
+-0.132266481
+percona {
+"timing_test_issues": {
+"n": 812,
+"median_days_first_worklog_to_first_commit": 7.0,
+"share_issues_with_hours_logged_before_first_commit_day": 0.7586206896551724,
+"median_share_of_hours_before_first_commit_day": 0.8591596638655462,
+"mean_share_of_hours_before_first_commit_day": 0.6379480580263377,
+"share_issues_more_than_half_hours_before": 0.6674876847290641
+},
+"selection_exploratory_test": {
+"analysable": {
+"n": 447,
+"median_hours": 11.0,
+"share_bug": 0.5458612975391499,
+"median_files": 5.0,
+"median_dev_prior_issues": 27.0
+},
+"excluded": {
+"n": 365,
+"median_hours": 4.0,
+"share_bug": 0.41643835616438357,
+"median_files": 1.0,
+"median_dev_prior_issues": 54.0
+}
+},
+"nonlinear": {
+"n_train": 1346,
+"rounds": {
+"size": 108,
+"size+SQALE": 95
+},
+"exploratory_test": {
+"n": 444,
+"MAE_size": 32.71750180265673,
+"MAE_size_sqale": 32.22780565080071,
+"dMAE": -0.4896961518560101,
+"ci95": [
+-0.8176830711861399,
+-0.17882014642387625
+],
+"pct": -1.4967406582865865,
+"ci95_pct": [
+-2.499222208707091,
+-0.5465580700582575
+]
+}
+},
+"size_classes": {
+"n": 444,
+"acc_sqale": 0.30405405405405406,
+"acc_most_frequent": 0.3108108108108108,
+"acc_diff": -0.006756756756756757,
+"acc_diff_ci95": [
+-0.076743220807969,
+0.05826670474014841
+],
+"kappa_w": 0.09483539716097855,
+"kappa_w_ci95": [
+0.04588630559277823,
+0.14968776114318802
+]
+}
+}
+moodle 4/16 h {'most frequent class': (0.567, 0.0), 'SQALE recalibrated': (0.579, 0.1), 'M0': (0.613, 0.23), 'M1': (0.636, 0.47)}
+moodle 2/8 h {'most frequent class': (0.365, 0.0), 'SQALE recalibrated': (0.414, 0.12), 'M0': (0.466, 0.3), 'M1': (0.522, 0.46)}
+moodle 8/40 h {'most frequent class': (0.758, 0.0), 'SQALE recalibrated': (0.758, 0.0), 'M0': (0.758, 0.11), 'M1': (0.779, 0.42)}
+mariadb 4/16 h {'most frequent class': (0.435, 0.0), 'SQALE recalibrated': (0.405, 0.21), 'M0': (0.455, 0.35), 'M1': (0.546, 0.54)}
+mariadb 2/8 h {'most frequent class': (0.325, 0.0), 'SQALE recalibrated': (0.354, 0.13), 'M0': (0.461, 0.34), 'M1': (0.528, 0.46)}
+mariadb 8/40 h {'most frequent class': (0.606, 0.0), 'SQALE recalibrated': (0.611, 0.11), 'M0': (0.62, 0.25), 'M1': (0.662, 0.51)}
+percona 4/16 h {'most frequent class': (0.311, 0.0), 'SQALE recalibrated': (0.306, 0.1), 'M0': (0.345, 0.16), 'M1': (0.47, 0.39)}
+percona 2/8 h {'most frequent class': (0.548, 0.0), 'SQALE recalibrated': (0.515, 0.32), 'M0': (0.434, 0.17), 'M1': (0.564, 0.42)}
+percona 8/40 h {'most frequent class': (0.452, 0.0), 'SQALE recalibrated': (0.526, 0.34), 'M0': (0.463, 0.19), 'M1': (0.586, 0.45)}
+moodle {
+"n_test_issues": 4680,
+"complexity density (CCN per line)": {
+"partial_rho": 0.042,
+"ci95": [
+0.003,
+0.081
+],
+"n": 4680
+},
+"max function complexity": {
+"partial_rho": 0.045,
+"ci95": [
+0.016,
+0.08
+],
+"n": 4680
+},
+"max file complexity": {
+"partial_rho": 0.058,
+"ci95": [
+0.021,
+0.091
+],
+"n": 4680
+},
+"commits in the last year": {
+"partial_rho": 0.147,
+"ci95": [
+0.086,
+0.199
+],
+"n": 4680
+},
+"churn in the last year": {
+"partial_rho": 0.106,
+"ci95": [
+0.056,
+0.156
+],
+"n": 4680
+},
+"distinct past authors": {
+"partial_rho": 0.033,
+"ci95": [
+-0.017,
+0.079
+],
+"n": 4680
+},
+"prior commits (max)": {
+"partial_rho": 0.02,
+"ci95": [
+-0.03,
+0.07
+],
+"n": 4680
+},
+"co-change partners": {
+"partial_rho": 0.046,
+"ci95": [
+-0.012,
+0.109
+],
+"n": 4680
+},
+"strongly coupled files outside the change": {
+"partial_rho": 0.085,
+"ci95": [
+0.049,
+0.122
+],
+"n": 4680
+},
+"file age (max, days)": {
+"partial_rho": -0.052,
+"ci95": [
+-0.102,
+-0.013
+],
+"n": 4680
+},
+"days since last change (min)": {
+"partial_rho": -0.069,
+"ci95": [
+-0.11,
+-0.023
+],
+"n": 4680
+},
+"SQALE (reference)": {
+"partial_rho": 0.039,
+"ci95": [
+-0.043,
+0.114
+],
+"n": 849
+},
+"SQALE density (reference)": {
+"partial_rho": -0.005,
+"ci95": [
+-0.074,
+0.059
+],
+"n": 849
+}
+}
+mariadb {
+"n_test_issues": 3026,
+"complexity density (CCN per line)": {
+"partial_rho": 0.001,
+"ci95": [
+-0.076,
+0.09
+],
+"n": 3026
+},
+"max function complexity": {
+"partial_rho": 0.055,
+"ci95": [
+0.012,
+0.096
+],
+"n": 3026
+},
+"max file complexity": {
+"partial_rho": -0.018,
+"ci95": [
+-0.075,
+0.057
+],
+"n": 3026
+},
+"commits in the last year": {
+"partial_rho": 0.107,
+"ci95": [
+0.043,
+0.175
+],
+"n": 3026
+},
+"churn in the last year": {
+"partial_rho": 0.112,
+"ci95": [
+0.035,
+0.17
+],
+"n": 3026
+},
+"distinct past authors": {
+"partial_rho": -0.031,
+"ci95": [
+-0.115,
+0.075
+],
+"n": 3026
+},
+"prior commits (max)": {
+"partial_rho": 0.022,
+"ci95": [
+-0.042,
+0.104
+],
+"n": 3026
+},
+"co-change partners": {
+"partial_rho": 0.029,
+"ci95": [
+-0.039,
+0.115
+],
+"n": 3026
+},
+"strongly coupled files outside the change": {
+"partial_rho": 0.046,
+"ci95": [
+0.003,
+0.1
+],
+"n": 3026
+},
+"file age (max, days)": {
+"partial_rho": -0.076,
+"ci95": [
+-0.152,
+0.018
+],
+"n": 3026
+},
+"days since last change (min)": {
+"partial_rho": 0.012,
+"ci95": [
+-0.061,
+0.061
+],
+"n": 3026
+},
+"SQALE (reference)": {
+"partial_rho": 0.051,
+"ci95": [
+-0.03,
+0.16
+],
+"n": 768
+},
+"SQALE density (reference)": {
+"partial_rho": 0.009,
+"ci95": [
+-0.091,
+0.14
+],
+"n": 768
+}
+}
+percona {
+"n_test_issues": 271,
+"complexity density (CCN per line)": {
+"partial_rho": 0.07,
+"ci95": [
+-0.04,
+0.167
+],
+"n": 271
+},
+"max function complexity": {
+"partial_rho": 0.082,
+"ci95": [
+-0.03,
+0.205
+],
+"n": 271
+},
+"max file complexity": {
+"partial_rho": 0.044,
+"ci95": [
+-0.11,
+0.183
+],
+"n": 271
+},
+"commits in the last year": {
+"partial_rho": -0.039,
+"ci95": [
+-0.173,
+0.108
+],
+"n": 271
+},
+"churn in the last year": {
+"partial_rho": -0.043,
+"ci95": [
+-0.216,
+0.114
+],
+"n": 271
+},
+"distinct past authors": {
+"partial_rho": 0.156,
+"ci95": [
+0.042,
+0.293
+],
+"n": 271
+},
+"prior commits (max)": {
+"partial_rho": 0.103,
+"ci95": [
+0.003,
+0.219
+],
+"n": 271
+},
+"co-change partners": {
+"partial_rho": 0.078,
+"ci95": [
+-0.059,
+0.236
+],
+"n": 271
+},
+"strongly coupled files outside the change": {
+"partial_rho": 0.018,
+"ci95": [
+-0.08,
+0.114
+],
+"n": 271
+},
+"file age (max, days)": {
+"partial_rho": 0.14,
+"ci95": [
+0.0,
+0.316
+],
+"n": 271
+},
+"days since last change (min)": {
+"partial_rho": 0.114,
+"ci95": [
+-0.011,
+0.255
+],
+"n": 271
+},
+"SQALE (reference)": {
+"partial_rho": 0.13,
+"ci95": [
+0.027,
+0.235
+],
+"n": 268
+},
+"SQALE density (reference)": {
+"partial_rho": 0.047,
+"ci95": [
+-0.125,
+0.201
+],
+"n": 268
+}
+}
+project moodle
+n 822
+share_zero_debt_on_changed_lines 0.7761557177615572
+median_hours_zero 2.8
+median_hours_positive 4.475
+median_changed_lines_zero 3.0
+median_changed_lines_positive 33.0
+H2_frozen [-0.004, [-0.065, 0.062], 822, 'trascurabile in pratica (IC dentro +-0,10)']
+part1_any_debt [-0.001, [-0.063, 0.066], 822, 'trascurabile in pratica (IC dentro +-0,10)']
+part2_amount_if_positive [-0.048, [-0.163, 0.066], 184, 'inconcludente']
+project mariadb
+n 851
+share_zero_debt_on_changed_lines 0.7567567567567568
+median_hours_zero 5.083333333333334
+median_hours_positive 12.0
+median_changed_lines_zero 4.0
+median_changed_lines_positive 34.0
+H2_frozen [-0.008, [-0.085, 0.054], 851, 'trascurabile in pratica (IC dentro +-0,10)']
+part1_any_debt [-0.022, [-0.101, 0.041], 851, 'inconcludente']
+part2_amount_if_positive [-0.006, [-0.117, 0.112], 207, 'inconcludente']
+                        MAE   MdAE     SA  spearman
+B0 median            22.894  4.167  0.251       NaN
+LightGBM M0 (paper)  21.900  4.585  0.284     0.413
+LightGBM M1 (paper)  19.989  4.582  0.346     0.557
+Random forest M0     21.884  4.634  0.284     0.399
+XGBoost M0           21.907  4.593  0.284     0.408
+CatBoost M0          21.795  5.165  0.287     0.379
+Neural network M0    22.623  5.016  0.260     0.394
+Random forest M1     20.342  4.364  0.335     0.545
+XGBoost M1           19.883  4.510  0.350     0.562
+CatBoost M1          20.112  4.465  0.342     0.542
+Neural network M1    22.902  4.321  0.251     0.530
+                                           dMAE     lo     hi  p_boot  p_holm  p_wilcoxon
+Random forest M0 vs LightGBM M0 (paper)  -0.016 -0.373  0.338   0.960   1.000       0.245
+XGBoost M0 vs LightGBM M0 (paper)         0.007 -0.135  0.135   0.895   1.000       0.593
+CatBoost M0 vs LightGBM M0 (paper)       -0.105 -0.439  0.223   0.560   1.000       0.865
+Neural network M0 vs LightGBM M0 (paper)  0.722 -0.640  2.413   0.303   1.000       0.578
+Random forest M1 vs LightGBM M1 (paper)   0.352 -0.142  0.896   0.161   1.000       0.073
+XGBoost M1 vs LightGBM M1 (paper)        -0.106 -0.401  0.140   0.431   1.000       0.532
+CatBoost M1 vs LightGBM M1 (paper)        0.123 -0.245  0.487   0.513   1.000       0.500
+Neural network M1 vs LightGBM M1 (paper)  2.913  0.351  6.357   0.009   0.069       0.193
+                       MAE   MdAE     SA  spearman
+B0 median            8.260  1.900  0.329       NaN
+LightGBM M0 (paper)  7.796  1.862  0.367     0.473
+LightGBM M1 (paper)  7.130  1.803  0.421     0.559
+Random forest M0     7.674  2.013  0.377     0.485
+XGBoost M0           7.761  1.827  0.370     0.488
+CatBoost M0          7.730  1.843  0.372     0.494
+Neural network M0    8.065  2.315  0.345     0.391
+Random forest M1     7.202  1.958  0.415     0.536
+XGBoost M1           7.063  1.823  0.426     0.558
+CatBoost M1          7.119  1.845  0.422     0.565
+Neural network M1    8.271  2.190  0.328     0.490
+                                           dMAE     lo     hi  p_boot  p_holm  p_wilcoxon
+Random forest M0 vs LightGBM M0 (paper)  -0.122 -0.235 -0.042   0.000   0.002       0.000
+XGBoost M0 vs LightGBM M0 (paper)        -0.035 -0.078  0.004   0.083   0.332       0.002
+CatBoost M0 vs LightGBM M0 (paper)       -0.066 -0.122 -0.017   0.007   0.044       0.000
+Neural network M0 vs LightGBM M0 (paper)  0.269  0.015  0.530   0.034   0.171       0.000
+Random forest M1 vs LightGBM M1 (paper)   0.072 -0.014  0.149   0.103   0.332       0.000
+XGBoost M1 vs LightGBM M1 (paper)        -0.068 -0.194  0.047   0.234   0.468       0.038
+CatBoost M1 vs LightGBM M1 (paper)       -0.012 -0.125  0.126   0.801   0.801       0.214
+Neural network M1 vs LightGBM M1 (paper)  1.141  0.459  2.125   0.000   0.002       0.000
+                        MAE   MdAE     SA  spearman
+B0 median            15.946  3.367  0.357       NaN
+LightGBM M0 (paper)  15.108  3.824  0.391     0.441
+LightGBM M1 (paper)  13.411  3.519  0.460     0.598
+Random forest M0     15.089  3.807  0.392     0.434
+XGBoost M0           15.092  3.656  0.392     0.442
+CatBoost M0          14.995  3.649  0.396     0.456
+Neural network M0    14.995  3.823  0.396     0.446
+Random forest M1     13.364  3.432  0.461     0.599
+XGBoost M1           13.407  3.441  0.460     0.605
+CatBoost M1          13.579  3.484  0.453     0.604
+Neural network M1    14.904  3.963  0.399     0.578
+                                           dMAE     lo     hi  p_boot  p_holm  p_wilcoxon
+Random forest M0 vs LightGBM M0 (paper)  -0.019 -0.084  0.038   0.521   1.000       0.769
+XGBoost M0 vs LightGBM M0 (paper)        -0.016 -0.072  0.034   0.557   1.000       0.465
+CatBoost M0 vs LightGBM M0 (paper)       -0.113 -0.227 -0.024   0.011   0.080       0.000
+Neural network M0 vs LightGBM M0 (paper) -0.113 -0.331  0.075   0.261   1.000       0.002
+Random forest M1 vs LightGBM M1 (paper)  -0.047 -0.501  0.339   0.835   1.000       0.122
+XGBoost M1 vs LightGBM M1 (paper)        -0.004 -0.173  0.177   0.962   1.000       0.005
+CatBoost M1 vs LightGBM M1 (paper)        0.168 -0.134  0.523   0.255   1.000       0.448
+Neural network M1 vs LightGBM M1 (paper)  1.493  0.500  3.244   0.000   0.002       0.002

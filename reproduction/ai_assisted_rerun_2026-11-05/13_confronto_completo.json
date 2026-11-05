@@ -1,0 +1,2948 @@
+[
+  {
+    "file": "code/results_exploratory_mariadb.json",
+    "reference": "results/results_exploratory_mariadb.json",
+    "match": false,
+    "differences": [
+      [
+        "/classes/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5)/F1_macro",
+        "NUMBER",
+        0.568620339869076,
+        0.5692854500023216
+      ],
+      [
+        "/classes/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5)/accuracy",
+        "NUMBER",
+        0.57289972899729,
+        0.5734417344173441
+      ],
+      [
+        "/classes/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5)/two_class_error",
+        "NUMBER",
+        0.032791327913279135,
+        0.032520325203252036
+      ],
+      [
+        "/classes/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5)/weighted_kappa",
+        "NUMBER",
+        0.5273268002535225,
+        0.5279703211949625
+      ],
+      [
+        "/sqale_subset/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5)/MAE",
+        "NUMBER",
+        14.189844153954839,
+        14.207217304180393
+      ],
+      [
+        "/sqale_subset/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5)/MdAE",
+        "NUMBER",
+        4.20673726884947,
+        4.2360545954931865
+      ],
+      [
+        "/sqale_subset/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5)/MdAE_log",
+        "NUMBER",
+        0.777057512124289,
+        0.7734875745010985
+      ],
+      [
+        "/sqale_subset/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5)/SA",
+        "NUMBER",
+        0.4568975539151562,
+        0.4562326135337589
+      ],
+      [
+        "/sqale_subset/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5)/spearman",
+        "NUMBER",
+        0.6401477766041672,
+        0.6399589653579387
+      ],
+      [
+        "/sqale_subset/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5)/vs_SQALE/A12_paired",
+        "NUMBER",
+        0.5893719806763285,
+        0.5845410628019324
+      ],
+      [
+        "/sqale_subset/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5)/vs_SQALE/dMAE",
+        "NUMBER",
+        -2.8151596401092025,
+        -2.797786489883645
+      ],
+      [
+        "/sqale_subset/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5)/vs_SQALE/hi",
+        "NUMBER",
+        -1.6324589727711392,
+        -1.6181066438214373
+      ],
+      [
+        "/sqale_subset/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5)/vs_SQALE/lo",
+        "NUMBER",
+        -3.9541809163740393,
+        -3.9331850835640183
+      ],
+      [
+        "/sqale_subset/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5)/within2x",
+        "NUMBER",
+        0.4528985507246377,
+        0.44565217391304346
+      ],
+      [
+        "/test/M0+E1+E2/MAE",
+        "NUMBER",
+        14.877800433969442,
+        14.87283790053966
+      ],
+      [
+        "/test/M0+E1+E2/MdAE",
+        "NUMBER",
+        4.0129604799432865,
+        3.9864408951751216
+      ],
+      [
+        "/test/M0+E1+E2/MdAE_log",
+        "NUMBER",
+        0.8848454306909694,
+        0.8879358070087152
+      ],
+      [
+        "/test/M0+E1+E2/SA",
+        "NUMBER",
+        0.400435775393971,
+        0.4006357617777859
+      ],
+      [
+        "/test/M0+E1+E2/spearman",
+        "NUMBER",
+        0.47947055003374045,
+        0.4804449837511141
+      ],
+      [
+        "/test/M0+E1+E2/within2x",
+        "NUMBER",
+        0.4059620596205962,
+        0.4062330623306233
+      ],
+      [
+        "/test/M0+E6 similar issues/MAE",
+        "NUMBER",
+        15.078322577248072,
+        15.08138124301944
+      ],
+      [
+        "/test/M0+E6 similar issues/MdAE",
+        "NUMBER",
+        3.7547702304924897,
+        3.7454739520564115
+      ],
+      [
+        "/test/M0+E6 similar issues/MdAE_log",
+        "NUMBER",
+        0.8888181323822206,
+        0.8907290281129698
+      ],
+      [
+        "/test/M0+E6 similar issues/SA",
+        "NUMBER",
+        0.39235488306820177,
+        0.3922316211263792
+      ],
+      [
+        "/test/M0+E6 similar issues/spearman",
+        "NUMBER",
+        0.4514274857132642,
+        0.451840215184271
+      ],
+      [
+        "/test/M0+E6 similar issues/within2x",
+        "NUMBER",
+        0.4073170731707317,
+        0.4067750677506775
+      ],
+      [
+        "/test/M1+E1+E2+E3/MAE",
+        "NUMBER",
+        13.212718926780322,
+        13.23107433034064
+      ],
+      [
+        "/test/M1+E1+E2+E3/MdAE",
+        "NUMBER",
+        3.7206205913111114,
+        3.6933575558446474
+      ],
+      [
+        "/test/M1+E1+E2+E3/MdAE_log",
+        "NUMBER",
+        0.7492809950103076,
+        0.7511126501520873
+      ],
+      [
+        "/test/M1+E1+E2+E3/SA",
+        "NUMBER",
+        0.4675373141728003,
+        0.4667976051444519
+      ],
+      [
+        "/test/M1+E1+E2+E3/spearman",
+        "NUMBER",
+        0.614420128561722,
+        0.6146508956030688
+      ],
+      [
+        "/test/M1+E1+E2+E3/within2x",
+        "NUMBER",
+        0.46233062330623304,
+        0.46178861788617886
+      ],
+      [
+        "/test/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5)/MAE",
+        "NUMBER",
+        13.121455019721688,
+        13.12926719602956
+      ],
+      [
+        "/test/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5)/MdAE",
+        "NUMBER",
+        3.7566852005177385,
+        3.733732471856248
+      ],
+      [
+        "/test/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5)/MdAE_log",
+        "NUMBER",
+        0.7454540018124439,
+        0.7477655018317045
+      ],
+      [
+        "/test/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5)/SA",
+        "NUMBER",
+        0.47121518133555584,
+        0.4709003564761082
+      ],
+      [
+        "/test/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5)/spearman",
+        "NUMBER",
+        0.624677999176523,
+        0.6247194210397574
+      ],
+      [
+        "/test/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5)/within2x",
+        "NUMBER",
+        0.46856368563685635,
+        0.46639566395663956
+      ],
+      [
+        "/test/M1+E1+E2+E3+E6/MAE",
+        "NUMBER",
+        13.335368842372858,
+        13.313200900770008
+      ],
+      [
+        "/test/M1+E1+E2+E3+E6/MdAE",
+        "NUMBER",
+        3.6947631819224065,
+        3.6943740051633016
+      ],
+      [
+        "/test/M1+E1+E2+E3+E6/MdAE_log",
+        "NUMBER",
+        0.7631143686692493,
+        0.7569655330097464
+      ],
+      [
+        "/test/M1+E1+E2+E3+E6/SA",
+        "NUMBER",
+        0.4625946143519092,
+        0.46348796581049434
+      ],
+      [
+        "/test/M1+E1+E2+E3+E6/spearman",
+        "NUMBER",
+        0.6135941524630257,
+        0.6158391706494766
+      ],
+      [
+        "/test/M1+E1+E2+E3+E6/within2x",
+        "NUMBER",
+        0.46368563685636854,
+        0.4634146341463415
+      ],
+      [
+        "/test/M1+E6 similar issues/MAE",
+        "NUMBER",
+        13.445721284366988,
+        13.440347817816718
+      ],
+      [
+        "/test/M1+E6 similar issues/MdAE",
+        "NUMBER",
+        3.5400762734400093,
+        3.490888969940264
+      ],
+      [
+        "/test/M1+E6 similar issues/MdAE_log",
+        "NUMBER",
+        0.7731225636094297,
+        0.7700603551253511
+      ],
+      [
+        "/test/M1+E6 similar issues/SA",
+        "NUMBER",
+        0.4581474935149792,
+        0.45836404019605326
+      ],
+      [
+        "/test/M1+E6 similar issues/spearman",
+        "NUMBER",
+        0.6018694119852843,
+        0.6009180232100556
+      ],
+      [
+        "/test/M1+E6 similar issues/within2x",
+        "NUMBER",
+        0.45826558265582656,
+        0.45718157181571817
+      ],
+      [
+        "/test_comparisons/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5) vs M1/A12_paired",
+        "NUMBER",
+        0.5287262872628726,
+        0.5306233062330623
+      ],
+      [
+        "/test_comparisons/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5) vs M1/dMAE",
+        "NUMBER",
+        -0.28916953980547144,
+        -0.28135736349759627
+      ],
+      [
+        "/test_comparisons/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5) vs M1/hi",
+        "NUMBER",
+        0.006113630525219563,
+        0.015125219575888808
+      ],
+      [
+        "/test_comparisons/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5) vs M1/lo",
+        "NUMBER",
+        -0.6116136604099507,
+        -0.6009371097990064
+      ],
+      [
+        "/test_comparisons/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5) vs M1/p_boot",
+        "NUMBER",
+        0.055799999999999995,
+        0.0618
+      ],
+      [
+        "/test_comparisons/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5) vs M1/p_holm",
+        "NUMBER",
+        0.055799999999999995,
+        0.0618
+      ],
+      [
+        "/test_comparisons/M1+E1+E2+E3 + E4 blend with ATLM (w=0.5) vs M1/p_wilcoxon",
+        "NUMBER",
+        3.493816184202374e-05,
+        2.7509507393497206e-05
+      ]
+    ],
+    "n_differences": 57,
+    "exact": false
+  },
+  {
+    "file": "code/results_exploratory_moodle.json",
+    "reference": "results/results_exploratory_moodle.json",
+    "match": false,
+    "differences": [
+      [
+        "/classes/M1+E1+E2+E3+E6/F1_macro",
+        "NUMBER",
+        0.5344493403435957,
+        0.5357838338078635
+      ],
+      [
+        "/classes/M1+E1+E2+E3+E6/accuracy",
+        "NUMBER",
+        0.638231517152816,
+        0.6393322326178683
+      ],
+      [
+        "/classes/M1+E1+E2+E3+E6/two_class_error",
+        "NUMBER",
+        0.044395523757108785,
+        0.04402861860209136
+      ],
+      [
+        "/classes/M1+E1+E2+E3+E6/weighted_kappa",
+        "NUMBER",
+        0.4746856589679751,
+        0.4764104467684279
+      ],
+      [
+        "/sqale_subset/M1+E1+E2+E3+E6/MAE",
+        "NUMBER",
+        6.5787188322648795,
+        6.570645936035078
+      ],
+      [
+        "/sqale_subset/M1+E1+E2+E3+E6/MdAE",
+        "NUMBER",
+        2.0008692831913115,
+        1.97590043583814
+      ],
+      [
+        "/sqale_subset/M1+E1+E2+E3+E6/MdAE_log",
+        "NUMBER",
+        0.7084501251350912,
+        0.7082194236526772
+      ],
+      [
+        "/sqale_subset/M1+E1+E2+E3+E6/SA",
+        "NUMBER",
+        0.43950516140496365,
+        0.4401929574310114
+      ],
+      [
+        "/sqale_subset/M1+E1+E2+E3+E6/spearman",
+        "NUMBER",
+        0.5407164274105196,
+        0.5402687937646112
+      ],
+      [
+        "/sqale_subset/M1+E1+E2+E3+E6/vs_SQALE/A12_paired",
+        "NUMBER",
+        0.5767441860465117,
+        0.5709302325581396
+      ],
+      [
+        "/sqale_subset/M1+E1+E2+E3+E6/vs_SQALE/dMAE",
+        "NUMBER",
+        -0.8654994401306991,
+        -0.8735723363605022
+      ],
+      [
+        "/sqale_subset/M1+E1+E2+E3+E6/vs_SQALE/hi",
+        "NUMBER",
+        -0.43689936291245945,
+        -0.4453668782350382
+      ],
+      [
+        "/sqale_subset/M1+E1+E2+E3+E6/vs_SQALE/lo",
+        "NUMBER",
+        -1.437483785395377,
+        -1.4485016416362757
+      ],
+      [
+        "/sqale_subset/M1+E1+E2+E3+E6/within2x",
+        "NUMBER",
+        0.48953488372093024,
+        0.4883720930232558
+      ],
+      [
+        "/test/M0+E1+E2+E6/MAE",
+        "NUMBER",
+        7.671373442359189,
+        7.661949771207049
+      ],
+      [
+        "/test/M0+E1+E2+E6/MdAE",
+        "NUMBER",
+        1.9453991463293043,
+        1.9631201612498312
+      ],
+      [
+        "/test/M0+E1+E2+E6/MdAE_log",
+        "NUMBER",
+        0.7840163215477096,
+        0.7853805133733921
+      ],
+      [
+        "/test/M0+E1+E2+E6/SA",
+        "NUMBER",
+        0.3767940437189564,
+        0.37755960259002097
+      ],
+      [
+        "/test/M0+E1+E2+E6/spearman",
+        "NUMBER",
+        0.49583150627044265,
+        0.4949710957494762
+      ],
+      [
+        "/test/M0+E1+E2+E6/within2x",
+        "NUMBER",
+        0.45055953036140156,
+        0.4518436984039626
+      ],
+      [
+        "/test/M0+E2 component history/MAE",
+        "NUMBER",
+        7.779169880253693,
+        7.77096963517758
+      ],
+      [
+        "/test/M0+E2 component history/MdAE",
+        "NUMBER",
+        1.9746548359849077,
+        1.9608277980115782
+      ],
+      [
+        "/test/M0+E2 component history/MdAE_log",
+        "NUMBER",
+        0.802146979833366,
+        0.7988407101159927
+      ],
+      [
+        "/test/M0+E2 component history/SA",
+        "NUMBER",
+        0.3680368918651843,
+        0.36870306222083127
+      ],
+      [
+        "/test/M0+E2 component history/spearman",
+        "NUMBER",
+        0.4655269478878976,
+        0.4663701830803887
+      ],
+      [
+        "/test/M0+E2 component history/within2x",
+        "NUMBER",
+        0.43955237571087874,
+        0.44065309117593104
+      ],
+      [
+        "/test/M0+E6 similar issues/MAE",
+        "NUMBER",
+        7.786295754754798,
+        7.787702651534258
+      ],
+      [
+        "/test/M0+E6 similar issues/MdAE",
+        "NUMBER",
+        1.8197410719942877,
+        1.8396994061272296
+      ],
+      [
+        "/test/M0+E6 similar issues/MdAE_log",
+        "NUMBER",
+        0.7996989554746796,
+        0.8009659971008429
+      ],
+      [
+        "/test/M0+E6 similar issues/SA",
+        "NUMBER",
+        0.36745800107513626,
+        0.36734370779252923
+      ],
+      [
+        "/test/M0+E6 similar issues/spearman",
+        "NUMBER",
+        0.4797632985325133,
+        0.4795263735306577
+      ],
+      [
+        "/test/M0+E6 similar issues/within2x",
+        "NUMBER",
+        0.4459732159236837,
+        0.4452394056136489
+      ],
+      [
+        "/test/M1+E1 embedding/MAE",
+        "NUMBER",
+        7.062713816289472,
+        7.05838104069028
+      ],
+      [
+        "/test/M1+E1 embedding/MdAE",
+        "NUMBER",
+        1.8562181913661622,
+        1.876017475040265
+      ],
+      [
+        "/test/M1+E1 embedding/MdAE_log",
+        "NUMBER",
+        0.6931126931003908,
+        0.6936271037497612
+      ],
+      [
+        "/test/M1+E1 embedding/SA",
+        "NUMBER",
+        0.4262402487778758,
+        0.4265922341923435
+      ],
+      [
+        "/test/M1+E1 embedding/spearman",
+        "NUMBER",
+        0.5682240167310207,
+        0.5682605989025058
+      ],
+      [
+        "/test/M1+E1 embedding/within2x",
+        "NUMBER",
+        0.5000917262887543,
+        0.49972482113373695
+      ],
+      [
+        "/test/M1+E1+E2+E3+E6/MAE",
+        "NUMBER",
+        7.080589843290657,
+        7.077402349329248
+      ],
+      [
+        "/test/M1+E1+E2+E3+E6/MdAE",
+        "NUMBER",
+        1.9300432120307467,
+        1.928675903992839
+      ],
+      [
+        "/test/M1+E1+E2+E3+E6/MdAE_log",
+        "NUMBER",
+        0.6919160498520327,
+        0.6925999289884941
+      ],
+      [
+        "/test/M1+E1+E2+E3+E6/SA",
+        "NUMBER",
+        0.4247880386116668,
+        0.4250469837975954
+      ],
+      [
+        "/test/M1+E1+E2+E3+E6/spearman",
+        "NUMBER",
+        0.5691527148911197,
+        0.5691762365578412
+      ],
+      [
+        "/test/M1+E1+E2+E3+E6/within2x",
+        "NUMBER",
+        0.5011924417538066,
+        0.5004586314437718
+      ],
+      [
+        "/test/M1+E6 similar issues/MAE",
+        "NUMBER",
+        7.076403462009663,
+        7.076974398884656
+      ],
+      [
+        "/test/M1+E6 similar issues/MdAE",
+        "NUMBER",
+        1.8203205891748493,
+        1.8197982752935715
+      ],
+      [
+        "/test/M1+E6 similar issues/MdAE_log",
+        "NUMBER",
+        0.7055712633598848,
+        0.7040568483716678
+      ],
+      [
+        "/test/M1+E6 similar issues/SA",
+        "NUMBER",
+        0.42512813126511173,
+        0.42508174957559686
+      ],
+      [
+        "/test/M1+E6 similar issues/spearman",
+        "NUMBER",
+        0.5601760427661088,
+        0.5585566398623377
+      ],
+      [
+        "/test/M1+E6 similar issues/within2x",
+        "NUMBER",
+        0.49458814896349296,
+        0.4925701706108971
+      ],
+      [
+        "/test_comparisons/M1+E1+E2+E3+E6 vs M1/A12_paired",
+        "NUMBER",
+        0.5081636396991378,
+        0.5070629242340855
+      ],
+      [
+        "/test_comparisons/M1+E1+E2+E3+E6 vs M1/dMAE",
+        "NUMBER",
+        -0.0497937192300208,
+        -0.05298121319142866
+      ],
+      [
+        "/test_comparisons/M1+E1+E2+E3+E6 vs M1/hi",
+        "NUMBER",
+        0.03006179514336372,
+        0.026829756803187898
+      ],
+      [
+        "/test_comparisons/M1+E1+E2+E3+E6 vs M1/lo",
+        "NUMBER",
+        -0.15445686250438326,
+        -0.1592429398589535
+      ],
+      [
+        "/test_comparisons/M1+E1+E2+E3+E6 vs M1/p_boot",
+        "NUMBER",
+        0.2362,
+        0.2106
+      ],
+      [
+        "/test_comparisons/M1+E1+E2+E3+E6 vs M1/p_holm",
+        "NUMBER",
+        0.2362,
+        0.2106
+      ],
+      [
+        "/test_comparisons/M1+E1+E2+E3+E6 vs M1/p_wilcoxon",
+        "NUMBER",
+        0.27767168837157263,
+        0.3040727066141784
+      ],
+      [
+        "/valid/M1+E1 embedding/MAE",
+        "NUMBER",
+        6.628808520965221,
+        6.614564100366185
+      ],
+      [
+        "/valid/M1+E1 embedding/MdAE",
+        "NUMBER",
+        1.6543935220055626,
+        1.6721290539142684
+      ],
+      [
+        "/valid/M1+E1 embedding/MdAE_log",
+        "NUMBER",
+        0.6092881458386635,
+        0.6113777757798406
+      ],
+      [
+        "/valid/M1+E1 embedding/SA",
+        "NUMBER",
+        0.4104450175006603,
+        0.4117118920996803
+      ],
+      [
+        "/valid/M1+E1 embedding/spearman",
+        "NUMBER",
+        0.5700921291648869,
+        0.5703679294561536
+      ],
+      [
+        "/valid/M1+E1 embedding/within2x",
+        "NUMBER",
+        0.5490272373540857,
+        0.5540856031128405
+      ],
+      [
+        "/valid/M1+E1+E2+E3+E6/MAE",
+        "NUMBER",
+        6.529978364825139,
+        6.545628974009733
+      ],
+      [
+        "/valid/M1+E1+E2+E3+E6/MdAE",
+        "NUMBER",
+        1.7632066721133344,
+        1.747043617345046
+      ],
+      [
+        "/valid/M1+E1+E2+E3+E6/MdAE_log",
+        "NUMBER",
+        0.5930100173829256,
+        0.597842263283107
+      ],
+      [
+        "/valid/M1+E1+E2+E3+E6/SA",
+        "NUMBER",
+        0.4192348038988183,
+        0.41784286527293324
+      ],
+      [
+        "/valid/M1+E1+E2+E3+E6/spearman",
+        "NUMBER",
+        0.5897286918776258,
+        0.5893691899980464
+      ],
+      [
+        "/valid/M1+E1+E2+E3+E6/within2x",
+        "NUMBER",
+        0.5634241245136187,
+        0.5688715953307393
+      ]
+    ],
+    "n_differences": 69,
+    "exact": false
+  },
+  {
+    "file": "code/results_exploratory_percona.json",
+    "reference": "results/results_exploratory_percona.json",
+    "match": false,
+    "differences": [
+      [
+        "/valid/M0+E1 embedding/MAE",
+        "NUMBER",
+        15.18799529383237,
+        15.188124823944689
+      ],
+      [
+        "/valid/M0+E1 embedding/SA",
+        "NUMBER",
+        0.33995891838082726,
+        0.33995328925112434
+      ],
+      [
+        "/valid/M0+E1 embedding/spearman",
+        "NUMBER",
+        0.41600618244184034,
+        0.41596712216019416
+      ],
+      [
+        "/valid/M0+E1+E2/MAE",
+        "NUMBER",
+        15.125703239347121,
+        15.125788671007523
+      ],
+      [
+        "/valid/M0+E1+E2/SA",
+        "NUMBER",
+        0.34266601133307617,
+        0.342662298637329
+      ],
+      [
+        "/valid/M0+E1+E2/spearman",
+        "NUMBER",
+        0.4117249629312923,
+        0.4117158174558026
+      ],
+      [
+        "/valid/M0+E1+E2+E6/MAE",
+        "NUMBER",
+        15.037263610964452,
+        15.037398394383278
+      ],
+      [
+        "/valid/M0+E1+E2+E6/SA",
+        "NUMBER",
+        0.34650942758692505,
+        0.346503570158619
+      ],
+      [
+        "/valid/M0+E1+E2+E6/spearman",
+        "NUMBER",
+        0.42090557969802744,
+        0.42087406427341756
+      ],
+      [
+        "/valid/M1+E1+E2+E3+E6/SA",
+        "NUMBER",
+        0.4123866126305009,
+        0.4123871702446301
+      ],
+      [
+        "/valid/M1+E1+E2+E3+E6/spearman",
+        "NUMBER",
+        0.5459969089847095,
+        0.5459990259331577
+      ]
+    ],
+    "n_differences": 11,
+    "exact": false
+  },
+  {
+    "file": "code/results_mariadb.json",
+    "reference": "results/results_mariadb.json",
+    "match": false,
+    "differences": [
+      [
+        "/comparisons/M2 vs M1/A12_paired",
+        "NUMBER",
+        0.5634146341463414,
+        0.5628726287262873
+      ],
+      [
+        "/comparisons/M2 vs M1/dMAE",
+        "NUMBER",
+        -0.8930450712987138,
+        -0.8895888069622606
+      ],
+      [
+        "/comparisons/M2 vs M1/hi",
+        "NUMBER",
+        -0.4498808212881472,
+        -0.44023916004995634
+      ],
+      [
+        "/comparisons/M2 vs M1/lo",
+        "NUMBER",
+        -1.4102679544812595,
+        -1.410423987875567
+      ],
+      [
+        "/rolling_origin_SA/2018/M0",
+        "NUMBER",
+        0.2805819779818358,
+        0.28066870644327924
+      ],
+      [
+        "/rolling_origin_SA/2024/M0",
+        "NUMBER",
+        0.39967262829823924,
+        0.3984997242635149
+      ],
+      [
+        "/rolling_origin_SA/2024/M1",
+        "NUMBER",
+        0.45664629969418835,
+        0.45647363242695826
+      ],
+      [
+        "/rolling_origin_SA/2026/M0",
+        "NUMBER",
+        0.5338375873272357,
+        0.5343224089002038
+      ],
+      [
+        "/rolling_origin_SA/2026/M1",
+        "NUMBER",
+        0.5793568410571139,
+        0.5819586622590367
+      ],
+      [
+        "/sensitivity/without extremes (<0.25 h, >p99)/M1/MAE",
+        "NUMBER",
+        11.0951658963923,
+        11.131834322306538
+      ],
+      [
+        "/sensitivity/without extremes (<0.25 h, >p99)/M1/MdAE",
+        "NUMBER",
+        3.7178012507746496,
+        3.815720140740676
+      ],
+      [
+        "/sensitivity/without extremes (<0.25 h, >p99)/M1/MdAE_log",
+        "NUMBER",
+        0.7563599367947742,
+        0.7544619560483626
+      ],
+      [
+        "/sensitivity/without extremes (<0.25 h, >p99)/M1/SA",
+        "NUMBER",
+        0.40538316122191564,
+        0.4034180113806517
+      ],
+      [
+        "/sensitivity/without extremes (<0.25 h, >p99)/M1/spearman",
+        "NUMBER",
+        0.5763234309884436,
+        0.5748209566305879
+      ],
+      [
+        "/sensitivity/without extremes (<0.25 h, >p99)/M1/within2x",
+        "NUMBER",
+        0.4657610202384253,
+        0.46437482672581093
+      ],
+      [
+        "/sqale/all/M1 without developer/MAE",
+        "NUMBER",
+        15.745685880279378,
+        15.51720719347988
+      ],
+      [
+        "/sqale/all/M1 without developer/MdAE",
+        "NUMBER",
+        4.108572262717618,
+        4.05095868490701
+      ],
+      [
+        "/sqale/all/M1 without developer/MdAE_log",
+        "NUMBER",
+        0.8973545036445247,
+        0.8910319462774252
+      ],
+      [
+        "/sqale/all/M1 without developer/SA",
+        "NUMBER",
+        0.39734922920348414,
+        0.4060940281126727
+      ],
+      [
+        "/sqale/all/M1 without developer/spearman",
+        "NUMBER",
+        0.5222640877565673,
+        0.5276312459483445
+      ],
+      [
+        "/sqale/all/M1 without developer/within2x",
+        "NUMBER",
+        0.41545893719806765,
+        0.4057971014492754
+      ],
+      [
+        "/sqale/all/M1 without developer vs SQALE recalibrated/A12_paired",
+        "NUMBER",
+        0.5760869565217391,
+        0.5736714975845411
+      ],
+      [
+        "/sqale/all/M1 without developer vs SQALE recalibrated/dMAE",
+        "NUMBER",
+        -1.2593179137846615,
+        -1.4877966005841599
+      ],
+      [
+        "/sqale/all/M1 without developer vs SQALE recalibrated/hi",
+        "NUMBER",
+        0.20583169962200645,
+        -0.10763147999598525
+      ],
+      [
+        "/sqale/all/M1 without developer vs SQALE recalibrated/lo",
+        "NUMBER",
+        -2.519976935069541,
+        -2.717895883231321
+      ],
+      [
+        "/sqale/all/M1 without developer vs SQALE recalibrated/p_boot",
+        "NUMBER",
+        0.08900000000000001,
+        0.039
+      ],
+      [
+        "/sqale/all/M1 without developer vs SQALE recalibrated/p_holm",
+        "NUMBER",
+        0.08900000000000001,
+        0.039
+      ],
+      [
+        "/sqale/all/M1 without developer vs SQALE recalibrated/p_wilcoxon",
+        "NUMBER",
+        2.813681059592641e-06,
+        1.7353887659661177e-06
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer/MAE",
+        "NUMBER",
+        8.97517431243738,
+        7.729041272513597
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer/MdAE",
+        "NUMBER",
+        5.135889149561579,
+        4.345794423544137
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer/MdAE_log",
+        "NUMBER",
+        1.0672887393167867,
+        0.9829308152109545
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer/SA",
+        "NUMBER",
+        0.5765891381793584,
+        0.6353764381258502
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer/spearman",
+        "NUMBER",
+        0.19673030464995167,
+        0.25272658783746943
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer/within2x",
+        "NUMBER",
+        0.391304347826087,
+        0.34782608695652173
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer vs SQALE recalibrated/A12_paired",
+        "NUMBER",
+        0.5652173913043478,
+        0.5217391304347826
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer vs SQALE recalibrated/dMAE",
+        "NUMBER",
+        -2.4909237315314816,
+        -3.7370567714552636
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer vs SQALE recalibrated/hi",
+        "NUMBER",
+        2.2672102870939232,
+        1.9259090067216345
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer vs SQALE recalibrated/lo",
+        "NUMBER",
+        -11.447734543960678,
+        -15.199028078691526
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer vs SQALE recalibrated/p_boot",
+        "NUMBER",
+        0.5938,
+        0.5254
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer vs SQALE recalibrated/p_wilcoxon",
+        "NUMBER",
+        0.988100528717041,
+        0.9643125534057617
+      ],
+      [
+        "/test/M1 without change_set/MAE",
+        "NUMBER",
+        13.607888686016056,
+        13.609877725572607
+      ],
+      [
+        "/test/M1 without change_set/MdAE",
+        "NUMBER",
+        3.606178946823652,
+        3.5830723238421123
+      ],
+      [
+        "/test/M1 without change_set/MdAE_log",
+        "NUMBER",
+        0.7900973770352655,
+        0.7846035361007765
+      ],
+      [
+        "/test/M1 without change_set/SA",
+        "NUMBER",
+        0.4516122685764795,
+        0.4515321117707254
+      ],
+      [
+        "/test/M1 without change_set/spearman",
+        "NUMBER",
+        0.5823014674039587,
+        0.5823917944893434
+      ],
+      [
+        "/test/M1 without change_set/within2x",
+        "NUMBER",
+        0.45203252032520325,
+        0.4504065040650406
+      ],
+      [
+        "/test/M1 without developer/MAE",
+        "NUMBER",
+        13.828098740102408,
+        13.800674994764316
+      ],
+      [
+        "/test/M1 without developer/MdAE",
+        "NUMBER",
+        3.8958843787874975,
+        3.823638005739829
+      ],
+      [
+        "/test/M1 without developer/MdAE_log",
+        "NUMBER",
+        0.8445576737999786,
+        0.8454983764722408
+      ],
+      [
+        "/test/M1 without developer/SA",
+        "NUMBER",
+        0.442737968177391,
+        0.4438431245936503
+      ],
+      [
+        "/test/M1 without developer/spearman",
+        "NUMBER",
+        0.5211520260565704,
+        0.520287460243957
+      ],
+      [
+        "/test/M1 without developer/within2x",
+        "NUMBER",
+        0.4211382113821138,
+        0.42005420054200543
+      ],
+      [
+        "/test/M1 without history/MAE",
+        "NUMBER",
+        13.32507397159432,
+        13.333812989902555
+      ],
+      [
+        "/test/M1 without history/MdAE",
+        "NUMBER",
+        3.3724898094183766,
+        3.3661349637920117
+      ],
+      [
+        "/test/M1 without history/MdAE_log",
+        "NUMBER",
+        0.776725479511668,
+        0.7661414508556442
+      ],
+      [
+        "/test/M1 without history/SA",
+        "NUMBER",
+        0.46300948994075375,
+        0.4626573140422363
+      ],
+      [
+        "/test/M1 without history/spearman",
+        "NUMBER",
+        0.5975967304216019,
+        0.5975058678735745
+      ],
+      [
+        "/test/M1 without history/within2x",
+        "NUMBER",
+        0.45907859078590785,
+        0.46070460704607047
+      ],
+      [
+        "/test/M1 without static/MAE",
+        "NUMBER",
+        13.48877934361523,
+        13.499614642495217
+      ],
+      [
+        "/test/M1 without static/MdAE",
+        "NUMBER",
+        3.5465884906843037,
+        3.546593768313987
+      ],
+      [
+        "/test/M1 without static/MdAE_log",
+        "NUMBER",
+        0.7753797517782794,
+        0.7741047200947788
+      ],
+      [
+        "/test/M1 without static/SA",
+        "NUMBER",
+        0.4564122859471139,
+        0.45597563151017706
+      ],
+      [
+        "/test/M1 without static/spearman",
+        "NUMBER",
+        0.6036102492693595,
+        0.6025697635972864
+      ],
+      [
+        "/test/M1 without static/within2x",
+        "NUMBER",
+        0.46070460704607047,
+        0.45555555555555555
+      ],
+      [
+        "/test/M1 without text/MAE",
+        "NUMBER",
+        13.679216743986892,
+        13.685329971163123
+      ],
+      [
+        "/test/M1 without text/MdAE",
+        "NUMBER",
+        3.662702960958053,
+        3.7051670544856434
+      ],
+      [
+        "/test/M1 without text/MdAE_log",
+        "NUMBER",
+        0.78062377258724,
+        0.7774190919508013
+      ],
+      [
+        "/test/M1 without text/SA",
+        "NUMBER",
+        0.44873780121420104,
+        0.44849144273345487
+      ],
+      [
+        "/test/M1 without text/spearman",
+        "NUMBER",
+        0.5912635127881424,
+        0.5915555354368339
+      ],
+      [
+        "/test/M1 without text/within2x",
+        "NUMBER",
+        0.45365853658536587,
+        0.4504065040650406
+      ],
+      [
+        "/test/M2 ex post (+ patch)/MAE",
+        "NUMBER",
+        12.517579488228447,
+        12.521035752564899
+      ],
+      [
+        "/test/M2 ex post (+ patch)/MdAE",
+        "NUMBER",
+        3.271272075340951,
+        3.2850180845406585
+      ],
+      [
+        "/test/M2 ex post (+ patch)/MdAE_log",
+        "NUMBER",
+        0.6976360139960368,
+        0.698299434505785
+      ],
+      [
+        "/test/M2 ex post (+ patch)/SA",
+        "NUMBER",
+        0.49555091338178137,
+        0.4954116285153043
+      ],
+      [
+        "/test/M2 ex post (+ patch)/spearman",
+        "NUMBER",
+        0.6630310734280193,
+        0.6627853632006646
+      ],
+      [
+        "/test/M2 ex post (+ patch)/within2x",
+        "NUMBER",
+        0.497289972899729,
+        0.4964769647696477
+      ]
+    ],
+    "n_differences": 76,
+    "exact": false
+  },
+  {
+    "file": "code/results_moodle.json",
+    "reference": "results/results_moodle.json",
+    "match": false,
+    "differences": [
+      [
+        "/comparisons/M2 vs M1/A12_paired",
+        "NUMBER",
+        0.5576958356264905,
+        0.558062740781508
+      ],
+      [
+        "/comparisons/M2 vs M1/dMAE",
+        "NUMBER",
+        -0.2793820370733738,
+        -0.276524425457308
+      ],
+      [
+        "/comparisons/M2 vs M1/hi",
+        "NUMBER",
+        -0.16979612385227613,
+        -0.16879223059281992
+      ],
+      [
+        "/comparisons/M2 vs M1/lo",
+        "NUMBER",
+        -0.4292080179061361,
+        -0.4276205800895037
+      ],
+      [
+        "/error_analysis/hours_decile/7/MdAE_log_B0",
+        "NUMBER",
+        0.7854224566691161,
+        0.783900385478502
+      ],
+      [
+        "/error_analysis/hours_decile/7/MdAE_log_M0",
+        "NUMBER",
+        0.640177391329539,
+        0.6408593342980456
+      ],
+      [
+        "/error_analysis/hours_decile/7/MdAE_log_M1",
+        "NUMBER",
+        0.6183530695454131,
+        0.6162697424543349
+      ],
+      [
+        "/error_analysis/hours_decile/7/n",
+        "NUMBER",
+        545,
+        544
+      ],
+      [
+        "/error_analysis/hours_decile/7/underestimate_M1",
+        "NUMBER",
+        0.7376146788990826,
+        0.7389705882352942
+      ],
+      [
+        "/error_analysis/hours_decile/8/MdAE_log_B0",
+        "NUMBER",
+        1.2139231351791038,
+        1.2129320545771083
+      ],
+      [
+        "/error_analysis/hours_decile/8/MdAE_log_M0",
+        "NUMBER",
+        0.9293209158562887,
+        0.9288455361194485
+      ],
+      [
+        "/error_analysis/hours_decile/8/MdAE_log_M1",
+        "NUMBER",
+        0.7343843413707454,
+        0.730151446389154
+      ],
+      [
+        "/error_analysis/hours_decile/8/n",
+        "NUMBER",
+        545,
+        546
+      ],
+      [
+        "/error_analysis/hours_decile/8/underestimate_M1",
+        "NUMBER",
+        0.7743119266055046,
+        0.7728937728937729
+      ],
+      [
+        "/rolling_origin_SA/2020/M1",
+        "NUMBER",
+        0.3744299258957601,
+        0.37644414782999513
+      ],
+      [
+        "/rolling_origin_SA/2024/M0",
+        "NUMBER",
+        0.4211910366483399,
+        0.4208612013188826
+      ],
+      [
+        "/sensitivity/assignee hours only/M1/MAE",
+        "NUMBER",
+        8.235995164479597,
+        8.243777194582776
+      ],
+      [
+        "/sensitivity/assignee hours only/M1/MdAE",
+        "NUMBER",
+        2.359072107052831,
+        2.366465104816066
+      ],
+      [
+        "/sensitivity/assignee hours only/M1/MdAE_log",
+        "NUMBER",
+        0.8054023444396958,
+        0.7966601927408569
+      ],
+      [
+        "/sensitivity/assignee hours only/M1/SA",
+        "NUMBER",
+        0.43212308618199247,
+        0.4315865104373524
+      ],
+      [
+        "/sensitivity/assignee hours only/M1/spearman",
+        "NUMBER",
+        0.6169142098632565,
+        0.6121778820986862
+      ],
+      [
+        "/sensitivity/assignee hours only/M1/within2x",
+        "NUMBER",
+        0.4429184549356223,
+        0.4467811158798283
+      ],
+      [
+        "/sensitivity/without extremes (<0.25 h, >p99)/M1/MAE",
+        "NUMBER",
+        5.555547067634432,
+        5.544711141780686
+      ],
+      [
+        "/sensitivity/without extremes (<0.25 h, >p99)/M1/MdAE",
+        "NUMBER",
+        1.8970670774208092,
+        1.8829395562334255
+      ],
+      [
+        "/sensitivity/without extremes (<0.25 h, >p99)/M1/MdAE_log",
+        "NUMBER",
+        0.6763077767656178,
+        0.6758353279075912
+      ],
+      [
+        "/sensitivity/without extremes (<0.25 h, >p99)/M1/SA",
+        "NUMBER",
+        0.39895898676183816,
+        0.4001312990067386
+      ],
+      [
+        "/sensitivity/without extremes (<0.25 h, >p99)/M1/spearman",
+        "NUMBER",
+        0.5458306047745771,
+        0.5485192292323009
+      ],
+      [
+        "/sensitivity/without extremes (<0.25 h, >p99)/M1/within2x",
+        "NUMBER",
+        0.5111492281303602,
+        0.5124833238040786
+      ],
+      [
+        "/sqale/all/M1 without developer/MAE",
+        "NUMBER",
+        7.019669115714221,
+        7.028299380158262
+      ],
+      [
+        "/sqale/all/M1 without developer/MdAE",
+        "NUMBER",
+        2.0112758390670313,
+        1.993190882269667
+      ],
+      [
+        "/sqale/all/M1 without developer/MdAE_log",
+        "NUMBER",
+        0.7997971499687888,
+        0.7996336173778688
+      ],
+      [
+        "/sqale/all/M1 without developer/SA",
+        "NUMBER",
+        0.40193700197272864,
+        0.40120171919200376
+      ],
+      [
+        "/sqale/all/M1 without developer/spearman",
+        "NUMBER",
+        0.43557529937680395,
+        0.4356973461201239
+      ],
+      [
+        "/sqale/all/M1 without developer/within2x",
+        "NUMBER",
+        0.44069767441860463,
+        0.4441860465116279
+      ],
+      [
+        "/sqale/all/M1 without developer vs SQALE recalibrated/A12_paired",
+        "NUMBER",
+        0.5511627906976744,
+        0.5534883720930233
+      ],
+      [
+        "/sqale/all/M1 without developer vs SQALE recalibrated/dMAE",
+        "NUMBER",
+        -0.4245491566813589,
+        -0.41591889223731704
+      ],
+      [
+        "/sqale/all/M1 without developer vs SQALE recalibrated/hi",
+        "NUMBER",
+        -0.14191437484858824,
+        -0.14067078985726747
+      ],
+      [
+        "/sqale/all/M1 without developer vs SQALE recalibrated/lo",
+        "NUMBER",
+        -0.7288643346294473,
+        -0.7128951292316729
+      ],
+      [
+        "/sqale/all/M1 without developer vs SQALE recalibrated/p_boot",
+        "NUMBER",
+        0.0034000000000000002,
+        0.0042
+      ],
+      [
+        "/sqale/all/M1 without developer vs SQALE recalibrated/p_holm",
+        "NUMBER",
+        0.0068000000000000005,
+        0.0084
+      ],
+      [
+        "/sqale/all/M1 without developer vs SQALE recalibrated/p_wilcoxon",
+        "NUMBER",
+        0.0017559347716332085,
+        0.0017234138785297253
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer/MAE",
+        "NUMBER",
+        3.285527328887394,
+        3.276652886211514
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer/MdAE",
+        "NUMBER",
+        1.8522564338587726,
+        1.8318993203147285
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer/MdAE_log",
+        "NUMBER",
+        0.9708020024316846,
+        0.9781737173407232
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer/SA",
+        "NUMBER",
+        0.5722082812144157,
+        0.5733637770315405
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer/spearman",
+        "NUMBER",
+        0.3943671705071073,
+        0.3987406321320773
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer vs SQALE recalibrated/A12_paired",
+        "NUMBER",
+        0.546875,
+        0.5625
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer vs SQALE recalibrated/dMAE",
+        "NUMBER",
+        0.44241139231465487,
+        0.433536949638775
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer vs SQALE recalibrated/hi",
+        "NUMBER",
+        2.189605188748132,
+        2.1868699473184243
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer vs SQALE recalibrated/lo",
+        "NUMBER",
+        -0.5250542645465699,
+        -0.5352607233608143
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer vs SQALE recalibrated/p_boot",
+        "NUMBER",
+        0.6742,
+        0.6774
+      ],
+      [
+        "/sqale/refactoring and clean-up/M1 without developer vs SQALE recalibrated/p_wilcoxon",
+        "NUMBER",
+        0.3158002135579322,
+        0.2727503555367633
+      ],
+      [
+        "/test/M1 without change_set/MAE",
+        "NUMBER",
+        7.184867287910689,
+        7.189120417828494
+      ],
+      [
+        "/test/M1 without change_set/MdAE",
+        "NUMBER",
+        1.8132088221153149,
+        1.8238869935181627
+      ],
+      [
+        "/test/M1 without change_set/MdAE_log",
+        "NUMBER",
+        0.7036854650000092,
+        0.7079532189832891
+      ],
+      [
+        "/test/M1 without change_set/SA",
+        "NUMBER",
+        0.4163167622383731,
+        0.4159712470685629
+      ],
+      [
+        "/test/M1 without change_set/spearman",
+        "NUMBER",
+        0.5538607460305963,
+        0.5487112297584287
+      ],
+      [
+        "/test/M1 without change_set/within2x",
+        "NUMBER",
+        0.4942212438084755,
+        0.4929370757659145
+      ],
+      [
+        "/test/M1 without developer/MAE",
+        "NUMBER",
+        7.614088894236416,
+        7.614290399252017
+      ],
+      [
+        "/test/M1 without developer/MdAE",
+        "NUMBER",
+        1.9437018732524263,
+        1.9506255468539906
+      ],
+      [
+        "/test/M1 without developer/MdAE_log",
+        "NUMBER",
+        0.785275497016074,
+        0.7882292376178566
+      ],
+      [
+        "/test/M1 without developer/SA",
+        "NUMBER",
+        0.3814477177789174,
+        0.3814313479428135
+      ],
+      [
+        "/test/M1 without developer/spearman",
+        "NUMBER",
+        0.4278940202026252,
+        0.4277477783038773
+      ],
+      [
+        "/test/M1 without developer/within2x",
+        "NUMBER",
+        0.4500091726288754,
+        0.4507429829389103
+      ],
+      [
+        "/test/M1 without static/MAE",
+        "NUMBER",
+        7.119873277647596,
+        7.12510540929611
+      ],
+      [
+        "/test/M1 without static/MdAE",
+        "NUMBER",
+        1.8299267656492604,
+        1.822596524222977
+      ],
+      [
+        "/test/M1 without static/MdAE_log",
+        "NUMBER",
+        0.7017505063587199,
+        0.7060733016374425
+      ],
+      [
+        "/test/M1 without static/SA",
+        "NUMBER",
+        0.4215967364989006,
+        0.4211716893242452
+      ],
+      [
+        "/test/M1 without static/spearman",
+        "NUMBER",
+        0.5633112102281863,
+        0.5633408349864497
+      ],
+      [
+        "/test/M1 without static/within2x",
+        "NUMBER",
+        0.49587231700605394,
+        0.49513850669601905
+      ],
+      [
+        "/test/M1 without text/MAE",
+        "NUMBER",
+        7.1791889286239,
+        7.188630501557821
+      ],
+      [
+        "/test/M1 without text/MdAE",
+        "NUMBER",
+        1.8803133841337691,
+        1.9027956696864703
+      ],
+      [
+        "/test/M1 without text/MdAE_log",
+        "NUMBER",
+        0.7051394820949773,
+        0.7136404785784349
+      ],
+      [
+        "/test/M1 without text/SA",
+        "NUMBER",
+        0.4167780599911184,
+        0.41601104681762446
+      ],
+      [
+        "/test/M1 without text/spearman",
+        "NUMBER",
+        0.5518187867289106,
+        0.5495632243058375
+      ],
+      [
+        "/test/M1 without text/within2x",
+        "NUMBER",
+        0.49201981287837093,
+        0.4874334984406531
+      ],
+      [
+        "/test/M2 ex post (+ patch)/MAE",
+        "NUMBER",
+        6.851001525447304,
+        6.85385913706337
+      ],
+      [
+        "/test/M2 ex post (+ patch)/MdAE",
+        "NUMBER",
+        1.7402030847017,
+        1.740383041416134
+      ],
+      [
+        "/test/M2 ex post (+ patch)/MdAE_log",
+        "NUMBER",
+        0.6686541426099304,
+        0.6609642527875914
+      ],
+      [
+        "/test/M2 ex post (+ patch)/SA",
+        "NUMBER",
+        0.44343930207154103,
+        0.4432071558211659
+      ],
+      [
+        "/test/M2 ex post (+ patch)/spearman",
+        "NUMBER",
+        0.6138830894522874,
+        0.6145976106633161
+      ],
+      [
+        "/test/M2 ex post (+ patch)/within2x",
+        "NUMBER",
+        0.5177031737295908,
+        0.5164190056870299
+      ]
+    ],
+    "n_differences": 82,
+    "exact": false
+  },
+  {
+    "file": "code/results_percona.json",
+    "reference": "results/results_percona.json",
+    "match": true,
+    "differences": [],
+    "n_differences": 0,
+    "exact": false
+  },
+  {
+    "file": "code/results_transfer.json",
+    "reference": "results/results_transfer.json",
+    "match": false,
+    "differences": [
+      [
+        "/moodle/within project (same features)/MAE",
+        "NUMBER",
+        7.609935369397044,
+        7.6099768587296985
+      ],
+      [
+        "/moodle/within project (same features)/SA",
+        "NUMBER",
+        0.3815442773308638,
+        0.3815409055131065
+      ]
+    ],
+    "n_differences": 2,
+    "exact": false
+  },
+  {
+    "file": "link_validation/manual_check/results_manual_check.json",
+    "reference": "link_validation/manual_check/results_manual_check.json",
+    "match": true,
+    "differences": [],
+    "n_differences": 0,
+    "exact": true
+  },
+  {
+    "file": "out_v2.json",
+    "reference": "preregistration_v2/risultati/risultati_confermativo_v2.json",
+    "match": true,
+    "differences": [],
+    "n_differences": 0,
+    "exact": false
+  },
+  {
+    "file": "out_v3.json",
+    "reference": "preregistration_v3/results/results_v3.json",
+    "match": true,
+    "differences": [],
+    "n_differences": 0,
+    "exact": false
+  },
+  {
+    "file": "out_v3_strict.json",
+    "reference": "preregistration_v3/results/sensitivity_strict_rerun_rule/results_strict.json",
+    "match": true,
+    "differences": [],
+    "n_differences": 0,
+    "exact": false
+  },
+  {
+    "file": "preregistration/results/confermativo_mariadb.json",
+    "reference": "preregistration/results/confermativo_mariadb.json",
+    "match": true,
+    "differences": [],
+    "n_differences": 0,
+    "exact": false
+  },
+  {
+    "file": "preregistration/results/confermativo_moodle.json",
+    "reference": "preregistration/results/confermativo_moodle.json",
+    "match": true,
+    "differences": [],
+    "n_differences": 0,
+    "exact": false
+  },
+  {
+    "file": "preregistration/results/holm_4test.json",
+    "reference": "preregistration/results/holm_4test.json",
+    "match": true,
+    "differences": [],
+    "n_differences": 0,
+    "exact": true
+  },
+  {
+    "file": "results/confirmatory/confirmatory_mariadb.json",
+    "reference": "results/confirmatory/confirmatory_mariadb.json",
+    "match": true,
+    "differences": [],
+    "n_differences": 0,
+    "exact": false
+  },
+  {
+    "file": "results/confirmatory/confirmatory_moodle.json",
+    "reference": "results/confirmatory/confirmatory_moodle.json",
+    "match": true,
+    "differences": [],
+    "n_differences": 0,
+    "exact": false
+  },
+  {
+    "file": "results/confirmatory/holm_4_tests.json",
+    "reference": "results/confirmatory/holm_4_tests.json",
+    "match": true,
+    "differences": [],
+    "n_differences": 0,
+    "exact": true
+  },
+  {
+    "file": "results/confirmatory/secondary_results.json",
+    "reference": "results/confirmatory/secondary_results.json",
+    "match": true,
+    "differences": [],
+    "n_differences": 0,
+    "exact": false
+  },
+  {
+    "file": "results/exploratory/by_issue_type.json",
+    "reference": "results/exploratory/by_issue_type.json",
+    "match": true,
+    "differences": [],
+    "n_differences": 0,
+    "exact": false
+  },
+  {
+    "file": "results/exploratory/debt_removed.json",
+    "reference": "results/exploratory/debt_removed.json",
+    "match": true,
+    "differences": [],
+    "n_differences": 0,
+    "exact": false
+  },
+  {
+    "file": "results/exploratory/h2_two_part_mariadb.json",
+    "reference": "results/exploratory/h2_two_part_mariadb.json",
+    "match": true,
+    "differences": [],
+    "n_differences": 0,
+    "exact": false
+  },
+  {
+    "file": "results/exploratory/h2_two_part_moodle.json",
+    "reference": "results/exploratory/h2_two_part_moodle.json",
+    "match": true,
+    "differences": [],
+    "n_differences": 0,
+    "exact": false
+  },
+  {
+    "file": "results/exploratory/official_cxx_compare.json",
+    "reference": "results/exploratory/official_cxx_compare.json",
+    "match": true,
+    "differences": [],
+    "n_differences": 0,
+    "exact": true
+  },
+  {
+    "file": "results/exploratory/official_cxx_models.json",
+    "reference": "results/exploratory/official_cxx_models.json",
+    "match": true,
+    "differences": [],
+    "n_differences": 0,
+    "exact": true
+  },
+  {
+    "file": "results/exploratory/other_algorithms_mariadb.json",
+    "reference": "results/exploratory/other_algorithms_mariadb.json",
+    "match": false,
+    "differences": [
+      [
+        "/test/Random forest M0/MAE",
+        "NUMBER",
+        15.089149809944352,
+        15.089209452418277
+      ],
+      [
+        "/test/Random forest M0/MdAE",
+        "NUMBER",
+        3.8140935899341724,
+        3.8073017004512892
+      ],
+      [
+        "/test/Random forest M0/MdAE_log",
+        "NUMBER",
+        0.9016838049882914,
+        0.8994312006911169
+      ],
+      [
+        "/test/Random forest M0/SA",
+        "NUMBER",
+        0.39191855369243245,
+        0.3919161501453631
+      ],
+      [
+        "/test/Random forest M0/spearman",
+        "NUMBER",
+        0.4338704277016299,
+        0.4335723787891949
+      ],
+      [
+        "/test/Random forest M0/within2x",
+        "NUMBER",
+        0.4086720867208672,
+        0.408130081300813
+      ],
+      [
+        "/test/Random forest M1/MAE",
+        "NUMBER",
+        13.363299194180883,
+        13.363941323502292
+      ],
+      [
+        "/test/Random forest M1/MdAE",
+        "NUMBER",
+        3.4412400021940264,
+        3.4324451144836634
+      ],
+      [
+        "/test/Random forest M1/MdAE_log",
+        "NUMBER",
+        0.7743190822186443,
+        0.7750275839910278
+      ],
+      [
+        "/test/Random forest M1/SA",
+        "NUMBER",
+        0.4614690420739993,
+        0.4614431647428443
+      ],
+      [
+        "/test/Random forest M1/spearman",
+        "NUMBER",
+        0.5990258433419348,
+        0.5989804674155725
+      ],
+      [
+        "/test/Random forest M1/within2x",
+        "NUMBER",
+        0.45528455284552843,
+        0.45447154471544715
+      ],
+      [
+        "/test/XGBoost M0/MAE",
+        "NUMBER",
+        15.13189422030594,
+        15.091849994848271
+      ],
+      [
+        "/test/XGBoost M0/MdAE",
+        "NUMBER",
+        3.9850900173187256,
+        3.656153082847595
+      ],
+      [
+        "/test/XGBoost M0/MdAE_log",
+        "NUMBER",
+        0.905401603350757,
+        0.8960273799688689
+      ],
+      [
+        "/test/XGBoost M0/SA",
+        "NUMBER",
+        0.3901959859399996,
+        0.39180973826132115
+      ],
+      [
+        "/test/XGBoost M0/spearman",
+        "NUMBER",
+        0.4368786290779273,
+        0.4417523116898879
+      ],
+      [
+        "/test/XGBoost M0/within2x",
+        "NUMBER",
+        0.4046070460704607,
+        0.4070460704607046
+      ],
+      [
+        "/test/XGBoost M1/MAE",
+        "NUMBER",
+        13.249578796878435,
+        13.406531095477535
+      ],
+      [
+        "/test/XGBoost M1/MdAE",
+        "NUMBER",
+        3.555851380030314,
+        3.4409000873565674
+      ],
+      [
+        "/test/XGBoost M1/MdAE_log",
+        "NUMBER",
+        0.7762849359471915,
+        0.7574487827802353
+      ],
+      [
+        "/test/XGBoost M1/SA",
+        "NUMBER",
+        0.4660518889896532,
+        0.45972682880166715
+      ],
+      [
+        "/test/XGBoost M1/spearman",
+        "NUMBER",
+        0.6014775248149608,
+        0.6045165609844433
+      ],
+      [
+        "/test/XGBoost M1/within2x",
+        "NUMBER",
+        0.46124661246612464,
+        0.4609756097560976
+      ],
+      [
+        "/vs_lightgbm/Random forest M0 vs LightGBM M0 (paper)/A12_appaiato",
+        "NUMBER",
+        0.4981029810298103,
+        0.5016260162601626
+      ],
+      [
+        "/vs_lightgbm/Random forest M0 vs LightGBM M0 (paper)/dMAE",
+        "NUMBER",
+        -0.018851486521454946,
+        -0.018791844047529763
+      ],
+      [
+        "/vs_lightgbm/Random forest M0 vs LightGBM M0 (paper)/hi",
+        "NUMBER",
+        0.03773368567006419,
+        0.03775331333523288
+      ],
+      [
+        "/vs_lightgbm/Random forest M0 vs LightGBM M0 (paper)/lo",
+        "NUMBER",
+        -0.08360341288481046,
+        -0.08366666694073907
+      ],
+      [
+        "/vs_lightgbm/Random forest M0 vs LightGBM M0 (paper)/p_boot",
+        "NUMBER",
+        0.5246,
+        0.5214
+      ],
+      [
+        "/vs_lightgbm/Random forest M0 vs LightGBM M0 (paper)/p_wilcoxon",
+        "NUMBER",
+        0.7778011575643723,
+        0.7692907073255557
+      ],
+      [
+        "/vs_lightgbm/Random forest M1 vs LightGBM M1 (paper)/A12_appaiato",
+        "NUMBER",
+        0.510569105691057,
+        0.5100271002710027
+      ],
+      [
+        "/vs_lightgbm/Random forest M1 vs LightGBM M1 (paper)/dMAE",
+        "NUMBER",
+        -0.04732536534627532,
+        -0.046683236024865904
+      ],
+      [
+        "/vs_lightgbm/Random forest M1 vs LightGBM M1 (paper)/hi",
+        "NUMBER",
+        0.33765362883006583,
+        0.3385730788498642
+      ],
+      [
+        "/vs_lightgbm/Random forest M1 vs LightGBM M1 (paper)/lo",
+        "NUMBER",
+        -0.501761312582801,
+        -0.5011173920927592
+      ],
+      [
+        "/vs_lightgbm/Random forest M1 vs LightGBM M1 (paper)/p_boot",
+        "NUMBER",
+        0.831,
+        0.8346
+      ],
+      [
+        "/vs_lightgbm/Random forest M1 vs LightGBM M1 (paper)/p_wilcoxon",
+        "NUMBER",
+        0.11776050884557002,
+        0.1223671784739181
+      ],
+      [
+        "/vs_lightgbm/XGBoost M0 vs LightGBM M0 (paper)/A12_appaiato",
+        "NUMBER",
+        0.4886178861788618,
+        0.48997289972899727
+      ],
+      [
+        "/vs_lightgbm/XGBoost M0 vs LightGBM M0 (paper)/dMAE",
+        "NUMBER",
+        0.02389292384013172,
+        -0.016151301617537014
+      ],
+      [
+        "/vs_lightgbm/XGBoost M0 vs LightGBM M0 (paper)/hi",
+        "NUMBER",
+        0.09938651145774423,
+        0.03353266847625675
+      ],
+      [
+        "/vs_lightgbm/XGBoost M0 vs LightGBM M0 (paper)/lo",
+        "NUMBER",
+        -0.03513849152168213,
+        -0.07210004926726632
+      ],
+      [
+        "/vs_lightgbm/XGBoost M0 vs LightGBM M0 (paper)/p_boot",
+        "NUMBER",
+        0.46499999999999997,
+        0.5569999999999999
+      ],
+      [
+        "/vs_lightgbm/XGBoost M0 vs LightGBM M0 (paper)/p_wilcoxon",
+        "NUMBER",
+        0.2953393282567117,
+        0.46487047802875525
+      ],
+      [
+        "/vs_lightgbm/XGBoost M1 vs LightGBM M1 (paper)/A12_appaiato",
+        "NUMBER",
+        0.521680216802168,
+        0.5181571815718157
+      ],
+      [
+        "/vs_lightgbm/XGBoost M1 vs LightGBM M1 (paper)/dMAE",
+        "NUMBER",
+        -0.16104576264872433,
+        -0.004093464049625049
+      ],
+      [
+        "/vs_lightgbm/XGBoost M1 vs LightGBM M1 (paper)/hi",
+        "NUMBER",
+        0.046056768044127026,
+        0.17725096206580201
+      ],
+      [
+        "/vs_lightgbm/XGBoost M1 vs LightGBM M1 (paper)/lo",
+        "NUMBER",
+        -0.364120864014479,
+        -0.17342055124620667
+      ],
+      [
+        "/vs_lightgbm/XGBoost M1 vs LightGBM M1 (paper)/p_boot",
+        "NUMBER",
+        0.1154,
+        0.9618
+      ],
+      [
+        "/vs_lightgbm/XGBoost M1 vs LightGBM M1 (paper)/p_holm",
+        "NUMBER",
+        0.6924,
+        1
+      ],
+      [
+        "/vs_lightgbm/XGBoost M1 vs LightGBM M1 (paper)/p_wilcoxon",
+        "NUMBER",
+        0.0011102474693468047,
+        0.005060325635150974
+      ]
+    ],
+    "n_differences": 49,
+    "exact": false
+  },
+  {
+    "file": "results/exploratory/other_algorithms_moodle.json",
+    "reference": "results/exploratory/other_algorithms_moodle.json",
+    "match": false,
+    "differences": [
+      [
+        "/test/Random forest M0/MAE",
+        "NUMBER",
+        7.674348266831065,
+        7.674125768968443
+      ],
+      [
+        "/test/Random forest M0/MdAE",
+        "NUMBER",
+        2.014338131439846,
+        2.0127882728188577
+      ],
+      [
+        "/test/Random forest M0/MdAE_log",
+        "NUMBER",
+        0.7816309892006257,
+        0.7810203347896321
+      ],
+      [
+        "/test/Random forest M0/SA",
+        "NUMBER",
+        0.37655237534709396,
+        0.37657045059715033
+      ],
+      [
+        "/test/Random forest M0/spearman",
+        "NUMBER",
+        0.4854154017736258,
+        0.48546729894494284
+      ],
+      [
+        "/test/Random forest M0/within2x",
+        "NUMBER",
+        0.45019262520638414,
+        0.4500091726288754
+      ],
+      [
+        "/test/Random forest M1/MAE",
+        "NUMBER",
+        7.202285101329764,
+        7.202297979567303
+      ],
+      [
+        "/test/Random forest M1/SA",
+        "NUMBER",
+        0.4149017763626729,
+        0.41490073016222373
+      ],
+      [
+        "/test/Random forest M1/spearman",
+        "NUMBER",
+        0.5356606632339481,
+        0.5356564593059522
+      ],
+      [
+        "/test/XGBoost M0/MAE",
+        "NUMBER",
+        7.750281168825799,
+        7.761125346212906
+      ],
+      [
+        "/test/XGBoost M0/MdAE",
+        "NUMBER",
+        1.8563281853993732,
+        1.8271602312723796
+      ],
+      [
+        "/test/XGBoost M0/MdAE_log",
+        "NUMBER",
+        0.793689577237779,
+        0.7881904038388423
+      ],
+      [
+        "/test/XGBoost M0/SA",
+        "NUMBER",
+        0.3703837489392692,
+        0.3695027911825659
+      ],
+      [
+        "/test/XGBoost M0/spearman",
+        "NUMBER",
+        0.4886400985366528,
+        0.4884827660065691
+      ],
+      [
+        "/test/XGBoost M0/within2x",
+        "NUMBER",
+        0.44377178499357917,
+        0.4467070262337186
+      ],
+      [
+        "/test/XGBoost M1/MAE",
+        "NUMBER",
+        7.040395829392626,
+        7.062866450337643
+      ],
+      [
+        "/test/XGBoost M1/MdAE",
+        "NUMBER",
+        1.8659787575403848,
+        1.8233963648478189
+      ],
+      [
+        "/test/XGBoost M1/MdAE_log",
+        "NUMBER",
+        0.7061368932886685,
+        0.6989522012548224
+      ],
+      [
+        "/test/XGBoost M1/SA",
+        "NUMBER",
+        0.42805331425706583,
+        0.42622784911454736
+      ],
+      [
+        "/test/XGBoost M1/spearman",
+        "NUMBER",
+        0.5594190113794296,
+        0.5575942792473904
+      ],
+      [
+        "/test/XGBoost M1/within2x",
+        "NUMBER",
+        0.4933039809209319,
+        0.4966061273160888
+      ],
+      [
+        "/vs_lightgbm/Neural network M0 vs LightGBM M0 (paper)/p_holm",
+        "NUMBER",
+        0.1368,
+        0.171
+      ],
+      [
+        "/vs_lightgbm/Random forest M0 vs LightGBM M0 (paper)/A12_appaiato",
+        "NUMBER",
+        0.5288937809576224,
+        0.5287103283801138
+      ],
+      [
+        "/vs_lightgbm/Random forest M0 vs LightGBM M0 (paper)/dMAE",
+        "NUMBER",
+        -0.12181101577368283,
+        -0.12203351363630394
+      ],
+      [
+        "/vs_lightgbm/Random forest M0 vs LightGBM M0 (paper)/hi",
+        "NUMBER",
+        -0.04211592090897917,
+        -0.0421020808146857
+      ],
+      [
+        "/vs_lightgbm/Random forest M0 vs LightGBM M0 (paper)/lo",
+        "NUMBER",
+        -0.23432634456531962,
+        -0.23456961097169207
+      ],
+      [
+        "/vs_lightgbm/Random forest M1 vs LightGBM M1 (paper)/dMAE",
+        "NUMBER",
+        0.07190153880908717,
+        0.07191441704662632
+      ],
+      [
+        "/vs_lightgbm/Random forest M1 vs LightGBM M1 (paper)/hi",
+        "NUMBER",
+        0.14864293070824253,
+        0.14865500017278063
+      ],
+      [
+        "/vs_lightgbm/Random forest M1 vs LightGBM M1 (paper)/lo",
+        "NUMBER",
+        -0.014040558192162588,
+        -0.014023586176368206
+      ],
+      [
+        "/vs_lightgbm/Random forest M1 vs LightGBM M1 (paper)/p_holm",
+        "NUMBER",
+        0.20520000000000002,
+        0.332
+      ],
+      [
+        "/vs_lightgbm/Random forest M1 vs LightGBM M1 (paper)/p_wilcoxon",
+        "NUMBER",
+        0.00015285961274644804,
+        0.00015260052812641356
+      ],
+      [
+        "/vs_lightgbm/XGBoost M0 vs LightGBM M0 (paper)/A12_appaiato",
+        "NUMBER",
+        0.516969363419556,
+        0.5112823335167859
+      ],
+      [
+        "/vs_lightgbm/XGBoost M0 vs LightGBM M0 (paper)/dMAE",
+        "NUMBER",
+        -0.04587811377894774,
+        -0.035033936391841054
+      ],
+      [
+        "/vs_lightgbm/XGBoost M0 vs LightGBM M0 (paper)/hi",
+        "NUMBER",
+        -0.006730404681262229,
+        0.004032500558991379
+      ],
+      [
+        "/vs_lightgbm/XGBoost M0 vs LightGBM M0 (paper)/lo",
+        "NUMBER",
+        -0.09531335512890109,
+        -0.07812627509916674
+      ],
+      [
+        "/vs_lightgbm/XGBoost M0 vs LightGBM M0 (paper)/p_boot",
+        "NUMBER",
+        0.022199999999999998,
+        0.083
+      ],
+      [
+        "/vs_lightgbm/XGBoost M0 vs LightGBM M0 (paper)/p_holm",
+        "NUMBER",
+        0.11099999999999999,
+        0.332
+      ],
+      [
+        "/vs_lightgbm/XGBoost M0 vs LightGBM M0 (paper)/p_wilcoxon",
+        "NUMBER",
+        0.0007994992963125878,
+        0.001695638468563841
+      ],
+      [
+        "/vs_lightgbm/XGBoost M1 vs LightGBM M1 (paper)/A12_appaiato",
+        "NUMBER",
+        0.5206384149697303,
+        0.5156851953769951
+      ],
+      [
+        "/vs_lightgbm/XGBoost M1 vs LightGBM M1 (paper)/dMAE",
+        "NUMBER",
+        -0.08998773312805203,
+        -0.06751711218303347
+      ],
+      [
+        "/vs_lightgbm/XGBoost M1 vs LightGBM M1 (paper)/hi",
+        "NUMBER",
+        -0.004766326308985329,
+        0.04733352148648666
+      ],
+      [
+        "/vs_lightgbm/XGBoost M1 vs LightGBM M1 (paper)/lo",
+        "NUMBER",
+        -0.20046703760439735,
+        -0.1944576840257509
+      ],
+      [
+        "/vs_lightgbm/XGBoost M1 vs LightGBM M1 (paper)/p_boot",
+        "NUMBER",
+        0.038599999999999995,
+        0.2338
+      ],
+      [
+        "/vs_lightgbm/XGBoost M1 vs LightGBM M1 (paper)/p_holm",
+        "NUMBER",
+        0.1368,
+        0.4676
+      ],
+      [
+        "/vs_lightgbm/XGBoost M1 vs LightGBM M1 (paper)/p_wilcoxon",
+        "NUMBER",
+        0.011351146539508602,
+        0.03750844707503671
+      ]
+    ],
+    "n_differences": 45,
+    "exact": false
+  },
+  {
+    "file": "results/exploratory/other_algorithms_percona.json",
+    "reference": "results/exploratory/other_algorithms_percona.json",
+    "match": false,
+    "differences": [
+      [
+        "/test/Random forest M0/MAE",
+        "NUMBER",
+        21.88167882984748,
+        21.884361721900184
+      ],
+      [
+        "/test/Random forest M0/MdAE",
+        "NUMBER",
+        4.653168722777093,
+        4.633997395808251
+      ],
+      [
+        "/test/Random forest M0/MdAE_log",
+        "NUMBER",
+        0.9073559644648808,
+        0.9072315974571824
+      ],
+      [
+        "/test/Random forest M0/SA",
+        "NUMBER",
+        0.28445006256618144,
+        0.28436232966161856
+      ],
+      [
+        "/test/Random forest M0/within2x",
+        "NUMBER",
+        0.39532019704433496,
+        0.3977832512315271
+      ],
+      [
+        "/test/Random forest M1/MAE",
+        "NUMBER",
+        20.342697979075588,
+        20.341563509625782
+      ],
+      [
+        "/test/Random forest M1/MdAE",
+        "NUMBER",
+        4.370412528189053,
+        4.364391018015618
+      ],
+      [
+        "/test/Random forest M1/MdAE_log",
+        "NUMBER",
+        0.8518973846611564,
+        0.8537490999080313
+      ],
+      [
+        "/test/Random forest M1/SA",
+        "NUMBER",
+        0.3347760754852436,
+        0.33481317362337737
+      ],
+      [
+        "/test/Random forest M1/spearman",
+        "NUMBER",
+        0.5451016709770364,
+        0.5452560292742655
+      ],
+      [
+        "/test/Random forest M1/within2x",
+        "NUMBER",
+        0.4273399014778325,
+        0.42857142857142855
+      ],
+      [
+        "/test/XGBoost M0/MAE",
+        "NUMBER",
+        21.860196206305414,
+        21.906668360984973
+      ],
+      [
+        "/test/XGBoost M0/MdAE",
+        "NUMBER",
+        4.596551561355591,
+        4.593301591873169
+      ],
+      [
+        "/test/XGBoost M0/MdAE_log",
+        "NUMBER",
+        0.9311760642024407,
+        0.9410258661737501
+      ],
+      [
+        "/test/XGBoost M0/SA",
+        "NUMBER",
+        0.2851525630484786,
+        0.2836328831540815
+      ],
+      [
+        "/test/XGBoost M0/spearman",
+        "NUMBER",
+        0.40972842794195796,
+        0.4075267273701726
+      ],
+      [
+        "/test/XGBoost M0/within2x",
+        "NUMBER",
+        0.39532019704433496,
+        0.3854679802955665
+      ],
+      [
+        "/test/XGBoost M1/MAE",
+        "NUMBER",
+        19.97917970722467,
+        19.88326604789244
+      ],
+      [
+        "/test/XGBoost M1/MdAE",
+        "NUMBER",
+        4.357816616694133,
+        4.509855270385742
+      ],
+      [
+        "/test/XGBoost M1/MdAE_log",
+        "NUMBER",
+        0.8307727342634114,
+        0.8137072840675361
+      ],
+      [
+        "/test/XGBoost M1/SA",
+        "NUMBER",
+        0.34666343927947707,
+        0.34979989939608425
+      ],
+      [
+        "/test/XGBoost M1/spearman",
+        "NUMBER",
+        0.564092471708422,
+        0.5615183613139647
+      ],
+      [
+        "/test/XGBoost M1/within2x",
+        "NUMBER",
+        0.437192118226601,
+        0.42980295566502463
+      ],
+      [
+        "/vs_lightgbm/Random forest M0 vs LightGBM M0 (paper)/A12_appaiato",
+        "NUMBER",
+        0.5258620689655172,
+        0.5295566502463054
+      ],
+      [
+        "/vs_lightgbm/Random forest M0 vs LightGBM M0 (paper)/dMAE",
+        "NUMBER",
+        -0.01842907525423218,
+        -0.015746183201532194
+      ],
+      [
+        "/vs_lightgbm/Random forest M0 vs LightGBM M0 (paper)/hi",
+        "NUMBER",
+        0.3405771690478852,
+        0.33832342716765834
+      ],
+      [
+        "/vs_lightgbm/Random forest M0 vs LightGBM M0 (paper)/lo",
+        "NUMBER",
+        -0.38567483518033474,
+        -0.37348215055067735
+      ],
+      [
+        "/vs_lightgbm/Random forest M0 vs LightGBM M0 (paper)/p_boot",
+        "NUMBER",
+        0.9514,
+        0.9598
+      ],
+      [
+        "/vs_lightgbm/Random forest M0 vs LightGBM M0 (paper)/p_wilcoxon",
+        "NUMBER",
+        0.23702480425174532,
+        0.24543224741248149
+      ],
+      [
+        "/vs_lightgbm/Random forest M1 vs LightGBM M1 (paper)/A12_appaiato",
+        "NUMBER",
+        0.46798029556650245,
+        0.46551724137931033
+      ],
+      [
+        "/vs_lightgbm/Random forest M1 vs LightGBM M1 (paper)/dMAE",
+        "NUMBER",
+        0.35351678180103663,
+        0.35238231235123785
+      ],
+      [
+        "/vs_lightgbm/Random forest M1 vs LightGBM M1 (paper)/hi",
+        "NUMBER",
+        0.8967774977314991,
+        0.895525095364329
+      ],
+      [
+        "/vs_lightgbm/Random forest M1 vs LightGBM M1 (paper)/lo",
+        "NUMBER",
+        -0.13969534702574737,
+        -0.14154768315889618
+      ],
+      [
+        "/vs_lightgbm/Random forest M1 vs LightGBM M1 (paper)/p_boot",
+        "NUMBER",
+        0.1578,
+        0.16140000000000002
+      ],
+      [
+        "/vs_lightgbm/Random forest M1 vs LightGBM M1 (paper)/p_wilcoxon",
+        "NUMBER",
+        0.07111256184058774,
+        0.07310193046676593
+      ],
+      [
+        "/vs_lightgbm/XGBoost M0 vs LightGBM M0 (paper)/A12_appaiato",
+        "NUMBER",
+        0.541871921182266,
+        0.4975369458128079
+      ],
+      [
+        "/vs_lightgbm/XGBoost M0 vs LightGBM M0 (paper)/dMAE",
+        "NUMBER",
+        -0.03991169879629887,
+        0.006560455883257911
+      ],
+      [
+        "/vs_lightgbm/XGBoost M0 vs LightGBM M0 (paper)/hi",
+        "NUMBER",
+        0.22973987442717964,
+        0.13522352452964317
+      ],
+      [
+        "/vs_lightgbm/XGBoost M0 vs LightGBM M0 (paper)/lo",
+        "NUMBER",
+        -0.3050923375340367,
+        -0.13519656558122622
+      ],
+      [
+        "/vs_lightgbm/XGBoost M0 vs LightGBM M0 (paper)/p_boot",
+        "NUMBER",
+        0.7794,
+        0.8946
+      ],
+      [
+        "/vs_lightgbm/XGBoost M0 vs LightGBM M0 (paper)/p_wilcoxon",
+        "NUMBER",
+        0.032057545793313026,
+        0.5933563214375017
+      ],
+      [
+        "/vs_lightgbm/XGBoost M1 vs LightGBM M1 (paper)/A12_appaiato",
+        "NUMBER",
+        0.5258620689655172,
+        0.5135467980295566
+      ],
+      [
+        "/vs_lightgbm/XGBoost M1 vs LightGBM M1 (paper)/dMAE",
+        "NUMBER",
+        -0.010001490049880199,
+        -0.10591514938210547
+      ],
+      [
+        "/vs_lightgbm/XGBoost M1 vs LightGBM M1 (paper)/hi",
+        "NUMBER",
+        0.18174457975282882,
+        0.13955559970591444
+      ],
+      [
+        "/vs_lightgbm/XGBoost M1 vs LightGBM M1 (paper)/lo",
+        "NUMBER",
+        -0.2038807251384483,
+        -0.40139562920405164
+      ],
+      [
+        "/vs_lightgbm/XGBoost M1 vs LightGBM M1 (paper)/p_boot",
+        "NUMBER",
+        0.9298,
+        0.431
+      ],
+      [
+        "/vs_lightgbm/XGBoost M1 vs LightGBM M1 (paper)/p_wilcoxon",
+        "NUMBER",
+        0.21737604815897982,
+        0.5322202494899752
+      ]
+    ],
+    "n_differences": 47,
+    "exact": false
+  },
+  {
+    "file": "results/exploratory/other_quality_measures.json",
+    "reference": "results/exploratory/other_quality_measures.json",
+    "match": true,
+    "differences": [],
+    "n_differences": 0,
+    "exact": true
+  },
+  {
+    "file": "results/exploratory/revision_checks.json",
+    "reference": "results/exploratory/revision_checks.json",
+    "match": false,
+    "differences": [
+      [
+        "/percona/nonlinear/exploratory_test/MAE_size",
+        "NUMBER",
+        32.69997011620713,
+        32.71750180265673
+      ],
+      [
+        "/percona/nonlinear/exploratory_test/MAE_size_sqale",
+        "NUMBER",
+        32.107529479014495,
+        32.22780565080071
+      ],
+      [
+        "/percona/nonlinear/exploratory_test/ci95[0]",
+        "NUMBER",
+        -0.9896810129028537,
+        -0.8176830711861399
+      ],
+      [
+        "/percona/nonlinear/exploratory_test/ci95[1]",
+        "NUMBER",
+        -0.21627425176014128,
+        -0.17882014642387625
+      ],
+      [
+        "/percona/nonlinear/exploratory_test/ci95_pct[0]",
+        "NUMBER",
+        -3.0265502059658966,
+        -2.499222208707091
+      ],
+      [
+        "/percona/nonlinear/exploratory_test/ci95_pct[1]",
+        "NUMBER",
+        -0.6613897535427684,
+        -0.5465580700582575
+      ],
+      [
+        "/percona/nonlinear/exploratory_test/dMAE",
+        "NUMBER",
+        -0.5924406371926333,
+        -0.4896961518560101
+      ],
+      [
+        "/percona/nonlinear/exploratory_test/pct",
+        "NUMBER",
+        -1.81174672358187,
+        -1.4967406582865865
+      ],
+      [
+        "/percona/nonlinear/rounds/size",
+        "NUMBER",
+        117,
+        108
+      ],
+      [
+        "/percona/nonlinear/rounds/size+SQALE",
+        "NUMBER",
+        128,
+        95
+      ]
+    ],
+    "n_differences": 10,
+    "exact": false
+  },
+  {
+    "file": "results/exploratory/size_classes_cutpoints.json",
+    "reference": "results/exploratory/size_classes_cutpoints.json",
+    "match": true,
+    "differences": [],
+    "n_differences": 0,
+    "exact": true
+  },
+  {
+    "file": "results/exploratory/size_collinearity.json",
+    "reference": "results/exploratory/size_collinearity.json",
+    "match": true,
+    "differences": [],
+    "n_differences": 0,
+    "exact": true
+  }
+]

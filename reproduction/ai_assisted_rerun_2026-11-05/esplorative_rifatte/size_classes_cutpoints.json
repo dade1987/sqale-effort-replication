@@ -1,0 +1,173 @@
+{
+ "moodle": {
+  "n": 860,
+  "4/16 h": {
+   "most frequent class": {
+    "accuracy": 0.5674418604651162,
+    "weighted_kappa": 0.0
+   },
+   "SQALE recalibrated": {
+    "accuracy": 0.5790697674418605,
+    "weighted_kappa": 0.10287557477180698
+   },
+   "M0": {
+    "accuracy": 0.6127906976744186,
+    "weighted_kappa": 0.2282199515998925
+   },
+   "M1": {
+    "accuracy": 0.6360465116279069,
+    "weighted_kappa": 0.46558623946707767
+   }
+  },
+  "2/8 h": {
+   "most frequent class": {
+    "accuracy": 0.36511627906976746,
+    "weighted_kappa": 0.0
+   },
+   "SQALE recalibrated": {
+    "accuracy": 0.413953488372093,
+    "weighted_kappa": 0.12256835804652422
+   },
+   "M0": {
+    "accuracy": 0.4662790697674419,
+    "weighted_kappa": 0.30348107793295087
+   },
+   "M1": {
+    "accuracy": 0.522093023255814,
+    "weighted_kappa": 0.4563098612325751
+   }
+  },
+  "8/40 h": {
+   "most frequent class": {
+    "accuracy": 0.7581395348837209,
+    "weighted_kappa": 0.0
+   },
+   "SQALE recalibrated": {
+    "accuracy": 0.7581395348837209,
+    "weighted_kappa": 0.0
+   },
+   "M0": {
+    "accuracy": 0.7581395348837209,
+    "weighted_kappa": 0.1121619821499934
+   },
+   "M1": {
+    "accuracy": 0.7790697674418605,
+    "weighted_kappa": 0.41984636406434805
+   }
+  }
+ },
+ "mariadb": {
+  "n": 828,
+  "4/16 h": {
+   "most frequent class": {
+    "accuracy": 0.43478260869565216,
+    "weighted_kappa": 0.0
+   },
+   "SQALE recalibrated": {
+    "accuracy": 0.40458937198067635,
+    "weighted_kappa": 0.20549158547387048
+   },
+   "M0": {
+    "accuracy": 0.4553140096618358,
+    "weighted_kappa": 0.354609842021923
+   },
+   "M1": {
+    "accuracy": 0.5458937198067633,
+    "weighted_kappa": 0.5399244422999928
+   }
+  },
+  "2/8 h": {
+   "most frequent class": {
+    "accuracy": 0.3248792270531401,
+    "weighted_kappa": 0.0
+   },
+   "SQALE recalibrated": {
+    "accuracy": 0.3538647342995169,
+    "weighted_kappa": 0.13152323550167166
+   },
+   "M0": {
+    "accuracy": 0.4613526570048309,
+    "weighted_kappa": 0.3439587047335231
+   },
+   "M1": {
+    "accuracy": 0.5277777777777778,
+    "weighted_kappa": 0.45591915225734814
+   }
+  },
+  "8/40 h": {
+   "most frequent class": {
+    "accuracy": 0.606280193236715,
+    "weighted_kappa": 0.0
+   },
+   "SQALE recalibrated": {
+    "accuracy": 0.6111111111111112,
+    "weighted_kappa": 0.10704831821550842
+   },
+   "M0": {
+    "accuracy": 0.6195652173913043,
+    "weighted_kappa": 0.25058564634059777
+   },
+   "M1": {
+    "accuracy": 0.6618357487922706,
+    "weighted_kappa": 0.5111736208782622
+   }
+  }
+ },
+ "percona": {
+  "n": 447,
+  "4/16 h": {
+   "most frequent class": {
+    "accuracy": 0.31096196868008946,
+    "weighted_kappa": 0.0
+   },
+   "SQALE recalibrated": {
+    "accuracy": 0.30648769574944074,
+    "weighted_kappa": 0.09997955555004856
+   },
+   "M0": {
+    "accuracy": 0.34451901565995524,
+    "weighted_kappa": 0.16064883941903085
+   },
+   "M1": {
+    "accuracy": 0.4697986577181208,
+    "weighted_kappa": 0.38832104557640756
+   }
+  },
+  "2/8 h": {
+   "most frequent class": {
+    "accuracy": 0.5480984340044742,
+    "weighted_kappa": 0.0
+   },
+   "SQALE recalibrated": {
+    "accuracy": 0.5145413870246085,
+    "weighted_kappa": 0.3213420188721404
+   },
+   "M0": {
+    "accuracy": 0.43400447427293065,
+    "weighted_kappa": 0.17167915472532025
+   },
+   "M1": {
+    "accuracy": 0.5637583892617449,
+    "weighted_kappa": 0.41527613821267906
+   }
+  },
+  "8/40 h": {
+   "most frequent class": {
+    "accuracy": 0.4519015659955257,
+    "weighted_kappa": 0.0
+   },
+   "SQALE recalibrated": {
+    "accuracy": 0.5257270693512305,
+    "weighted_kappa": 0.34452934620901465
+   },
+   "M0": {
+    "accuracy": 0.46308724832214765,
+    "weighted_kappa": 0.18682237811954372
+   },
+   "M1": {
+    "accuracy": 0.5861297539149888,
+    "weighted_kappa": 0.4507498444786049
+   }
+  }
+ }
+}

@@ -1,0 +1,1 @@
+{"precision_strict": 0.99, "no_missing_commit": 0.96, "median_seconds_per_issue": 28.0} 1.0

@@ -1,0 +1,4 @@
+Questo archivio contiene una riproduzione assistita da AI, NON una verifica umana indipendente.
+Non e stato creato o validato da Gianluigi Lucca Fabris.
+Sono state usate versioni diverse delle dipendenze a causa dell’assenza di accesso al repository pip.
+Leggere relazione.txt e i due confronti prima di citare i risultati.

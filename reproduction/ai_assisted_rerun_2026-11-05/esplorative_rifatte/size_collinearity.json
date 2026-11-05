@@ -1,0 +1,45 @@
+{
+ "moodle": {
+  "n_all": 1729,
+  "n_test": 854,
+  "rho_sqale_ncloc_all": 0.898,
+  "rho_sqale_ncloc_test": 0.9,
+  "rho_hours_ncloc_test": 0.262,
+  "rho_hours_sqale_test": 0.234,
+  "partial_test": -0.004,
+  "partial_test_ci95": [
+   -0.072,
+   0.064
+  ],
+  "rho_sqale_ncloc_holdout": 0.892,
+  "n_holdout": 851
+ },
+ "mariadb": {
+  "n_all": 1688,
+  "n_test": 808,
+  "rho_sqale_ncloc_all": 0.853,
+  "rho_sqale_ncloc_test": 0.881,
+  "rho_hours_ncloc_test": 0.328,
+  "rho_hours_sqale_test": 0.336,
+  "partial_test": 0.106,
+  "partial_test_ci95": [
+   0.016,
+   0.212
+  ],
+  "rho_sqale_ncloc_holdout": 0.887,
+  "n_holdout": 862
+ },
+ "percona": {
+  "n_all": 1790,
+  "n_test": 444,
+  "rho_sqale_ncloc_all": 0.79,
+  "rho_sqale_ncloc_test": 0.843,
+  "rho_hours_ncloc_test": 0.407,
+  "rho_hours_sqale_test": 0.477,
+  "partial_test": 0.272,
+  "partial_test_ci95": [
+   0.137,
+   0.395
+  ]
+ }
+}
