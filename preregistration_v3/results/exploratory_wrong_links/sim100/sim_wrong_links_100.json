@@ -1,0 +1,64 @@
+{
+ "n": 2003,
+ "observed_partial_rho": -0.01582876610811577,
+ "B": 400,
+ "reps": 200,
+ "scenarios": [
+  {
+   "true_rho": 0.1,
+   "wrong_share": 0.0,
+   "mean_observed_rho": 0.10096388777410321,
+   "share_called_negligible": 0.08,
+   "share_CI_above_0": 1.0
+  },
+  {
+   "true_rho": 0.1,
+   "wrong_share": 0.08,
+   "mean_observed_rho": 0.09275845913338733,
+   "share_called_negligible": 0.085,
+   "share_CI_above_0": 1.0
+  },
+  {
+   "true_rho": 0.1,
+   "wrong_share": 0.15,
+   "mean_observed_rho": 0.08505441649205178,
+   "share_called_negligible": 0.155,
+   "share_CI_above_0": 0.995
+  },
+  {
+   "true_rho": 0.1,
+   "wrong_share": 0.3,
+   "mean_observed_rho": 0.06518864695225332,
+   "share_called_negligible": 0.495,
+   "share_CI_above_0": 0.91
+  },
+  {
+   "true_rho": 0.15,
+   "wrong_share": 0.0,
+   "mean_observed_rho": 0.1552319840374929,
+   "share_called_negligible": 0.0,
+   "share_CI_above_0": 1.0
+  },
+  {
+   "true_rho": 0.15,
+   "wrong_share": 0.08,
+   "mean_observed_rho": 0.1400865564658451,
+   "share_called_negligible": 0.0,
+   "share_CI_above_0": 1.0
+  },
+  {
+   "true_rho": 0.15,
+   "wrong_share": 0.15,
+   "mean_observed_rho": 0.1311247547552439,
+   "share_called_negligible": 0.0,
+   "share_CI_above_0": 1.0
+  },
+  {
+   "true_rho": 0.15,
+   "wrong_share": 0.3,
+   "mean_observed_rho": 0.107666435998282,
+   "share_called_negligible": 0.005,
+   "share_CI_above_0": 1.0
+  }
+ ]
+}

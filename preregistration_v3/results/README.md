@@ -53,3 +53,6 @@ interval reaches below -0.10. OpenLMIS is inconclusive, and adding SQALE makes t
 - `exploratory_wrong_links/real/`: protocol-conforming MOSIP sample without the 3 analysed issues the rater judged wrong: -0.015 (-0.066 to 0.035), negligible.
 - `exploratory_wrong_links/real100/`: the same, without the 7 analysed issues judged wrong among all 100 MOSIP links checked (30 registered + 70 extra): -0.015 (-0.068 to 0.036), n = 1,996, negligible; H3 equivalent.
 - `exploratory_without_test_files/test_file_shares.py`: share of lines and of debt in test-like files (OpenLMIS: 62% of lines, 45% of debt).
+- `exploratory_wrong_links/real100_no_partial/` (5 Nov 2026): MOSIP without all 14 links judged wrong or partly correct among the 100 checked: -0.014 (-0.067 to 0.037), n = 1,990; H3 equivalent. `checked100_by_repo_type.json`: verdict, repository, issue type and number of commits for each checked link.
+- `exploratory_without_test_files/openlmis_399/` (5 Nov 2026): OpenLMIS split into the 399 issues that touch only test-like files (registered measure: -0.10, -0.19 to -0.01; 95% zero debt) and the 945 that touch production code (0.133, 0.045 to 0.194).
+- `exploratory_wrong_links/sim100/` (5 Nov 2026): the wrong-link simulation repeated with the shares observed on 100 checked MOSIP links (8% wrong, upper 95% limit 15%).
