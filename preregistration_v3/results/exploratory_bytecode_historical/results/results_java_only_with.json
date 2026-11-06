@@ -1,0 +1,187 @@
+{
+ "parameters": {
+  "B": 5000,
+  "seed": 2026,
+  "SESOI_rho": 0.1,
+  "margin_dMAE": 0.02
+ },
+ "openmrs": {
+  "counts": {
+   "issues": 805,
+   "scanned": 805,
+   "eligible": 805,
+   "analysed": 805,
+   "missing": 0,
+   "median_hours_analysed": 4.5,
+   "median_hours_missing": null,
+   "developers": 203,
+   "modules": 138
+  },
+  "H1": {
+   "n": 805,
+   "partial_rho": -0.13270110238143437,
+   "CI90": [
+    -0.2131009007137466,
+    -0.04315503876198638
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.9932,
+   "p_TOST": 0.6961999999999999,
+   "boot_se": 0.0518281181711249
+  },
+  "H1_twoway_dev_module": {
+   "n": 805,
+   "partial_rho": -0.13270110238143437,
+   "CI90": [
+    -0.2632369602022881,
+    0.024551519828283335
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.9129999999999999,
+   "p_TOST": 0.5764,
+   "boot_se": 0.08682804761648032
+  },
+  "H3": {
+   "n_train": 402,
+   "n_test": 403,
+   "train_until": "2015-09-16T22:52:57.000+1000",
+   "MAE_lines_only": 11.487337235435469,
+   "dMAE": 0.11148366360761458,
+   "CI90": [
+    0.04963105628842674,
+    0.17067066422058372
+   ],
+   "CI90_pct_MAE": [
+    0.4320501372182907,
+    1.4857286830067875
+   ],
+   "verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "secondary": {
+   "H1_bugs_only": {
+    "n": 343,
+    "partial_rho": 0.0026064131901734227,
+    "CI90": [
+     -0.10251992001980625,
+     0.12328006094547006
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.4648,
+    "p_TOST": 0.0868,
+    "boot_se": 0.06857738657421436
+   },
+   "H1_all_touched_code_files_measured": {
+    "n": 791,
+    "partial_rho": -0.12989147272096982,
+    "CI90": [
+     -0.21439130798488742,
+     -0.03852332376709326
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.9918,
+    "p_TOST": 0.6784,
+    "boot_se": 0.05338967072255907
+   }
+  }
+ },
+ "openlmis": {
+  "counts": {
+   "issues": 492,
+   "scanned": 492,
+   "eligible": 492,
+   "analysed": 492,
+   "missing": 0,
+   "median_hours_analysed": 12.0,
+   "median_hours_missing": null,
+   "developers": 32,
+   "modules": 64
+  },
+  "H1": {
+   "n": 492,
+   "partial_rho": 0.12025047756177788,
+   "CI90": [
+    0.02248786332081866,
+    0.2112168015376849
+   ],
+   "verdict": "positive but of uncertain size (CI above 0, not all above 0.10)",
+   "p_one_sided_rho_gt_0": 0.0272,
+   "p_TOST": 0.6587999999999999,
+   "boot_se": 0.05755953473616802
+  },
+  "H1_twoway_dev_module": {
+   "n": 492,
+   "partial_rho": 0.12025047756177788,
+   "CI90": [
+    -0.014671646715144227,
+    0.2567841918301814
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.0674,
+   "p_TOST": 0.6056,
+   "boot_se": 0.08291454211242785
+  },
+  "H3": {
+   "n_train": 246,
+   "n_test": 246,
+   "train_until": "2018-01-26T01:57:37.280-0800",
+   "MAE_lines_only": 14.138235726342947,
+   "dMAE": 0.16781470698403916,
+   "CI90": [
+    0.07145184197482311,
+    0.3047537915748651
+   ],
+   "CI90_pct_MAE": [
+    0.5053801857447537,
+    2.1555291443262274
+   ],
+   "verdict": "inconclusive"
+  },
+  "secondary": {
+   "H1_bugs_only": {
+    "n": 192,
+    "partial_rho": 0.21696788767931371,
+    "CI90": [
+     0.0022669944177001297,
+     0.3766912321873394
+    ],
+    "verdict": "positive but of uncertain size (CI above 0, not all above 0.10)",
+    "p_one_sided_rho_gt_0": 0.048799999999999996,
+    "p_TOST": 0.8284,
+    "boot_se": 0.11364170552027969
+   },
+   "H1_all_touched_code_files_measured": {
+    "n": 483,
+    "partial_rho": 0.11414137377651808,
+    "CI90": [
+     0.017315769572520696,
+     0.20299047088024744
+    ],
+    "verdict": "positive but of uncertain size (CI above 0, not all above 0.10)",
+    "p_one_sided_rho_gt_0": 0.032,
+    "p_TOST": 0.6185999999999999,
+    "boot_se": 0.05649594440743462
+   }
+  }
+ },
+ "family": {
+  "holm_one_sided_rho_gt_0": {
+   "openlmis": 0.0544,
+   "openmrs": 0.9932
+  },
+  "holm_TOST": {
+   "openlmis": 1,
+   "openmrs": 1
+  },
+  "all_equivalent_familywise": false,
+  "all_negligible_under_twoway": false
+ },
+ "pooled_random_effects_secondary": {
+  "rho": -0.007560550469696724,
+  "CI90": [
+   -0.2134010342840308,
+   0.19892265623660377
+  ],
+  "tau2": 0.029243057468521277,
+  "Q": 10.441845594810065
+ }
+}

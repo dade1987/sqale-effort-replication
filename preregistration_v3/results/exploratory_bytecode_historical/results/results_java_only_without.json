@@ -1,0 +1,187 @@
+{
+ "parameters": {
+  "B": 5000,
+  "seed": 2026,
+  "SESOI_rho": 0.1,
+  "margin_dMAE": 0.02
+ },
+ "openmrs": {
+  "counts": {
+   "issues": 805,
+   "scanned": 805,
+   "eligible": 805,
+   "analysed": 805,
+   "missing": 0,
+   "median_hours_analysed": 4.5,
+   "median_hours_missing": null,
+   "developers": 203,
+   "modules": 138
+  },
+  "H1": {
+   "n": 805,
+   "partial_rho": -0.10768539800071612,
+   "CI90": [
+    -0.1817626331580221,
+    -0.025385420760202834
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.9853999999999999,
+   "p_TOST": 0.5342,
+   "boot_se": 0.04761128521982593
+  },
+  "H1_twoway_dev_module": {
+   "n": 805,
+   "partial_rho": -0.10768539800071612,
+   "CI90": [
+    -0.2503173103289049,
+    0.03545794204924506
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.8855999999999999,
+   "p_TOST": 0.5072,
+   "boot_se": 0.08603552142591366
+  },
+  "H3": {
+   "n_train": 402,
+   "n_test": 403,
+   "train_until": "2015-09-16T22:52:57.000+1000",
+   "MAE_lines_only": 11.487337235435469,
+   "dMAE": -0.0002997214737959403,
+   "CI90": [
+    -0.0005157600692464351,
+    -7.18402704954273e-05
+   ],
+   "CI90_pct_MAE": [
+    -0.004489813946224617,
+    -0.000625386623749659
+   ],
+   "verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "secondary": {
+   "H1_bugs_only": {
+    "n": 343,
+    "partial_rho": -0.013667565845139857,
+    "CI90": [
+     -0.10660617363824602,
+     0.08994515188909998
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.5846,
+    "p_TOST": 0.06420000000000001,
+    "boot_se": 0.05923901921508607
+   },
+   "H1_all_touched_code_files_measured": {
+    "n": 791,
+    "partial_rho": -0.10452793249354941,
+    "CI90": [
+     -0.18424415334488087,
+     -0.02059124535257316
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.9832,
+    "p_TOST": 0.5118,
+    "boot_se": 0.04957209883853202
+   }
+  }
+ },
+ "openlmis": {
+  "counts": {
+   "issues": 492,
+   "scanned": 492,
+   "eligible": 492,
+   "analysed": 492,
+   "missing": 0,
+   "median_hours_analysed": 12.0,
+   "median_hours_missing": null,
+   "developers": 32,
+   "modules": 64
+  },
+  "H1": {
+   "n": 492,
+   "partial_rho": 0.038806511787296154,
+   "CI90": [
+    -0.02484441378854345,
+    0.1187217762014869
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.1612,
+   "p_TOST": 0.096,
+   "boot_se": 0.044534717470786474
+  },
+  "H1_twoway_dev_module": {
+   "n": 492,
+   "partial_rho": 0.038806511787296154,
+   "CI90": [
+    -0.07173623792141512,
+    0.17648761106189695
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.29359999999999997,
+   "p_TOST": 0.2198,
+   "boot_se": 0.07913928063641085
+  },
+  "H3": {
+   "n_train": 246,
+   "n_test": 246,
+   "train_until": "2018-01-26T01:57:37.280-0800",
+   "MAE_lines_only": 14.138235726342947,
+   "dMAE": 0.01622522943221359,
+   "CI90": [
+    -0.038832526180696485,
+    0.0535699234843397
+   ],
+   "CI90_pct_MAE": [
+    -0.2746631682504919,
+    0.3789010490504554
+   ],
+   "verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "secondary": {
+   "H1_bugs_only": {
+    "n": 192,
+    "partial_rho": 0.1117628819886428,
+    "CI90": [
+     -0.03289348608735269,
+     0.2651945063340209
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.1014,
+    "p_TOST": 0.5398,
+    "boot_se": 0.09156450472234066
+   },
+   "H1_all_touched_code_files_measured": {
+    "n": 483,
+    "partial_rho": 0.036884853864873196,
+    "CI90": [
+     -0.031106523560487844,
+     0.11941703389694285
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.1872,
+    "p_TOST": 0.09780000000000001,
+    "boot_se": 0.046854455424235844
+   }
+  }
+ },
+ "family": {
+  "holm_one_sided_rho_gt_0": {
+   "openlmis": 0.3224,
+   "openmrs": 0.9853999999999999
+  },
+  "holm_TOST": {
+   "openlmis": 0.192,
+   "openmrs": 0.5342
+  },
+  "all_equivalent_familywise": false,
+  "all_negligible_under_twoway": false
+ },
+ "pooled_random_effects_secondary": {
+  "rho": -0.03350032615774614,
+  "CI90": [
+   -0.1531349075890532,
+   0.08710204112399582
+  ],
+  "tau2": 0.00863946436475953,
+  "Q": 5.009344223679179
+ }
+}

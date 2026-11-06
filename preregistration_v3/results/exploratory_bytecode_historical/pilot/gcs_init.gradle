@@ -1,0 +1,8 @@
+def G = 'https://maven-central.storage-download.googleapis.com/maven2'
+def fix = { h -> h.all { r -> if (r instanceof MavenArtifactRepository) { def u = r.url.toString(); if (u.contains('maven.org') || u.contains('maven.apache.org') || u.contains('jcenter')) { r.url = G } else if (u.startsWith('http:')) { r.url = u.replaceFirst('^http:', 'https:') } } } }
+allprojects {
+  repositories { mavenLocal() }; buildscript.repositories { mavenLocal() }
+  fix(buildscript.repositories); fix(repositories)
+  configurations.all { resolutionStrategy.eachDependency { d -> if (d.requested.group == 'org.openlmis' && d.requested.version?.endsWith('-SNAPSHOT')) { d.useVersion(d.requested.version - '-SNAPSHOT') } } }
+}
+gradle.taskGraph.whenReady { g -> g.allTasks.each { t -> if (!(t.name in ['compileJava','compileTestJava','hbCp','compileGroovy','compileTestGroovy'])) t.enabled = false } }

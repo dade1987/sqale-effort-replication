@@ -1,0 +1,1 @@
+<settings><mirrors><mirror><id>gcs-central</id><mirrorOf>central</mirrorOf><url>https://maven-central.storage-download.googleapis.com/maven2</url></mirror><mirror><id>http-to-https</id><mirrorOf>external:http:*</mirrorOf><url>https://mavenrepo.openmrs.org/public</url></mirror></mirrors></settings>
