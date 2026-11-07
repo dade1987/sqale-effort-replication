@@ -1,0 +1,684 @@
+{
+ "openmrs": {
+  "attempted": 1264,
+  "compiled": 805,
+  "not_compiled": 459,
+  "build_ok_but_not_measured": 0,
+  "numeric": {
+   "year": {
+    "median_compiled": 2015.0,
+    "median_not": 2016.0,
+    "mean_compiled": 2015.6248447204969,
+    "mean_not": 2016.165577342048,
+    "smd": -0.225,
+    "mannwhitney_p": 1.9931000049964568e-09
+   },
+   "hours": {
+    "median_compiled": 4.5,
+    "median_not": 6.0,
+    "mean_compiled": 10.379482401656315,
+    "mean_not": 12.16510530137981,
+    "smd_log1p": -0.179,
+    "mannwhitney_p": 0.001539771897120473
+   },
+   "ncloc": {
+    "median_compiled": 515.0,
+    "median_not": 422.0,
+    "mean_compiled": 1387.8658385093167,
+    "mean_not": 1078.148148148148,
+    "smd_log1p": 0.07,
+    "mannwhitney_p": 0.045080086169715004
+   },
+   "sqale": {
+    "median_compiled": 114.0,
+    "median_not": 64.0,
+    "mean_compiled": 516.2658385093167,
+    "mean_not": 260.84531590413945,
+    "smd_log1p": 0.317,
+    "mannwhitney_p": 1.4985045786662983e-09
+   },
+   "files": {
+    "median_compiled": 2.0,
+    "median_not": 3.0,
+    "mean_compiled": 7.6720496894409935,
+    "mean_not": 9.429193899782135,
+    "smd_log1p": -0.236,
+    "mannwhitney_p": 4.3934236093600505e-06
+   },
+   "java_files": {
+    "median_compiled": 2.0,
+    "median_not": 3.0,
+    "mean_compiled": 7.6521739130434785,
+    "mean_not": 9.263616557734204,
+    "smd_log1p": -0.23,
+    "mannwhitney_p": 7.850359546730104e-06
+   }
+  },
+  "compile_rate_by_year": {
+   "2011": [
+    0,
+    2
+   ],
+   "2012": [
+    97,
+    108
+   ],
+   "2013": [
+    130,
+    136
+   ],
+   "2014": [
+    154,
+    216
+   ],
+   "2015": [
+    70,
+    117
+   ],
+   "2016": [
+    74,
+    240
+   ],
+   "2017": [
+    73,
+    166
+   ],
+   "2018": [
+    64,
+    87
+   ],
+   "2019": [
+    24,
+    48
+   ],
+   "2020": [
+    40,
+    57
+   ],
+   "2021": [
+    62,
+    70
+   ],
+   "2022": [
+    9,
+    9
+   ],
+   "2023": [
+    7,
+    7
+   ],
+   "2024": [
+    1,
+    1
+   ]
+  },
+  "compile_rate_by_type": {
+   "Bug": [
+    343,
+    487
+   ],
+   "Enhancement": [
+    14,
+    29
+   ],
+   "Epic": [
+    0,
+    1
+   ],
+   "Improvement": [
+    9,
+    19
+   ],
+   "New Feature": [
+    204,
+    300
+   ],
+   "Story": [
+    27,
+    45
+   ],
+   "Sub-task": [
+    95,
+    161
+   ],
+   "Task": [
+    110,
+    173
+   ],
+   "Technical task": [
+    3,
+    49
+   ]
+  },
+  "compile_rate_by_repo": {
+   "openmrs-contrib-addonindex": [
+    1,
+    1
+   ],
+   "openmrs-contrib-android-client": [
+    0,
+    243
+   ],
+   "openmrs-contrib-qaframework": [
+    10,
+    10
+   ],
+   "openmrs-core": [
+    383,
+    389
+   ],
+   "openmrs-distro-referenceapplication": [
+    24,
+    73
+   ],
+   "openmrs-module-allergyapi": [
+    2,
+    2
+   ],
+   "openmrs-module-appointmentscheduling": [
+    14,
+    14
+   ],
+   "openmrs-module-appui": [
+    2,
+    3
+   ],
+   "openmrs-module-atomfeed": [
+    17,
+    18
+   ],
+   "openmrs-module-attachments": [
+    1,
+    1
+   ],
+   "openmrs-module-cohort": [
+    2,
+    2
+   ],
+   "openmrs-module-coreapps": [
+    3,
+    5
+   ],
+   "openmrs-module-dhisconnector": [
+    21,
+    21
+   ],
+   "openmrs-module-dhisreport": [
+    11,
+    12
+   ],
+   "openmrs-module-emrapi": [
+    9,
+    13
+   ],
+   "openmrs-module-event": [
+    3,
+    3
+   ],
+   "openmrs-module-fhir": [
+    25,
+    26
+   ],
+   "openmrs-module-fhir2": [
+    2,
+    6
+   ],
+   "openmrs-module-hl7query": [
+    2,
+    2
+   ],
+   "openmrs-module-htmlformentry": [
+    17,
+    17
+   ],
+   "openmrs-module-idgen": [
+    1,
+    3
+   ],
+   "openmrs-module-legacyui": [
+    4,
+    6
+   ],
+   "openmrs-module-metadatamapping": [
+    7,
+    10
+   ],
+   "openmrs-module-metadatasharing": [
+    24,
+    27
+   ],
+   "openmrs-module-openconceptlab": [
+    16,
+    27
+   ],
+   "openmrs-module-owa": [
+    2,
+    5
+   ],
+   "openmrs-module-providermanagement": [
+    1,
+    1
+   ],
+   "openmrs-module-radiology": [
+    0,
+    7
+   ],
+   "openmrs-module-referenceapplication": [
+    4,
+    7
+   ],
+   "openmrs-module-referencedemodata": [
+    1,
+    1
+   ],
+   "openmrs-module-registrationapp": [
+    7,
+    14
+   ],
+   "openmrs-module-reporting": [
+    21,
+    34
+   ],
+   "openmrs-module-reportingrest": [
+    3,
+    3
+   ],
+   "openmrs-module-sync": [
+    2,
+    2
+   ],
+   "openmrs-module-sync2": [
+    39,
+    61
+   ],
+   "openmrs-module-uiframework": [
+    8,
+    8
+   ],
+   "openmrs-module-webservices.rest": [
+    94,
+    102
+   ],
+   "openmrs-module-xforms": [
+    1,
+    2
+   ],
+   "openmrs-sdk": [
+    21,
+    83
+   ]
+  },
+  "type_chi2_p": 3.0383167949130535e-16,
+  "dev": {
+   "distinct_compiled": 203,
+   "distinct_not": 78,
+   "distinct_all": 244,
+   "share_not_compiled_issues_whose_dev_appears_among_compiled": 0.649,
+   "top10_compile_rate": [
+    [
+     93,
+     133
+    ],
+    [
+     18,
+     93
+    ],
+    [
+     6,
+     80
+    ],
+    [
+     45,
+     56
+    ],
+    [
+     45,
+     45
+    ],
+    [
+     23,
+     43
+    ],
+    [
+     32,
+     39
+    ],
+    [
+     0,
+     38
+    ],
+    [
+     24,
+     25
+    ],
+    [
+     24,
+     24
+    ]
+   ]
+  },
+  "module": {
+   "distinct_compiled": 138,
+   "distinct_not": 73,
+   "distinct_all": 182,
+   "share_not_compiled_issues_whose_module_appears_among_compiled": 0.407
+  },
+  "H1_registered_measure": {
+   "all_attempted": {
+    "n": 1264,
+    "rho": -0.108,
+    "CI90_dev": [
+     -0.168,
+     -0.045
+    ],
+    "CI90_twoway": [
+     -0.215,
+     -0.002
+    ],
+    "H3_CI90_pct_MAE": [
+     -0.72,
+     -0.1
+    ]
+   },
+   "compiled": {
+    "n": 805,
+    "rho": -0.107,
+    "CI90_dev": [
+     -0.182,
+     -0.023
+    ],
+    "CI90_twoway": [
+     -0.249,
+     0.038
+    ],
+    "H3_CI90_pct_MAE": [
+     0.0,
+     0.02
+    ]
+   },
+   "not_compiled": {
+    "n": 459,
+    "rho": -0.014,
+    "CI90_dev": [
+     -0.104,
+     0.068
+    ],
+    "CI90_twoway": [
+     -0.21,
+     0.1
+    ],
+    "H3_CI90_pct_MAE": [
+     1.69,
+     4.68
+    ]
+   }
+  }
+ },
+ "openlmis": {
+  "attempted": 804,
+  "compiled": 492,
+  "not_compiled": 312,
+  "build_ok_but_not_measured": 0,
+  "numeric": {
+   "year": {
+    "median_compiled": 2018.0,
+    "median_not": 2017.0,
+    "mean_compiled": 2017.7337398373984,
+    "mean_not": 2017.1923076923076,
+    "smd": 0.426,
+    "mannwhitney_p": 1.622157571747859e-14
+   },
+   "hours": {
+    "median_compiled": 12.0,
+    "median_not": 19.5,
+    "mean_compiled": 19.261399051490514,
+    "mean_not": 35.19449786324787,
+    "smd_log1p": -0.457,
+    "mannwhitney_p": 1.0656886538014767e-09
+   },
+   "ncloc": {
+    "median_compiled": 998.0,
+    "median_not": 882.0,
+    "mean_compiled": 1870.7317073170732,
+    "mean_not": 1548.2916666666667,
+    "smd_log1p": 0.196,
+    "mannwhitney_p": 0.06602123347124561
+   },
+   "sqale": {
+    "median_compiled": 25.0,
+    "median_not": 30.0,
+    "mean_compiled": 76.38821138211382,
+    "mean_not": 85.07692307692308,
+    "smd_log1p": -0.03,
+    "mannwhitney_p": 0.36799006180978966
+   },
+   "files": {
+    "median_compiled": 6.0,
+    "median_not": 6.0,
+    "mean_compiled": 11.455284552845528,
+    "mean_not": 10.426282051282051,
+    "smd_log1p": 0.096,
+    "mannwhitney_p": 0.14102289485505617
+   },
+   "java_files": {
+    "median_compiled": 6.0,
+    "median_not": 6.0,
+    "mean_compiled": 11.4369918699187,
+    "mean_not": 10.26602564102564,
+    "smd_log1p": 0.113,
+    "mannwhitney_p": 0.08903939199569644
+   }
+  },
+  "compile_rate_by_year": {
+   "2016": [
+    37,
+    174
+   ],
+   "2017": [
+    196,
+    276
+   ],
+   "2018": [
+    177,
+    200
+   ],
+   "2019": [
+    53,
+    100
+   ],
+   "2020": [
+    8,
+    30
+   ],
+   "2021": [
+    14,
+    16
+   ],
+   "2022": [
+    7,
+    7
+   ],
+   "2023": [
+    0,
+    1
+   ]
+  },
+  "compile_rate_by_type": {
+   "Bug": [
+    192,
+    279
+   ],
+   "Improvement": [
+    12,
+    17
+   ],
+   "New Feature": [
+    8,
+    8
+   ],
+   "Story": [
+    59,
+    140
+   ],
+   "Sub-task": [
+    24,
+    59
+   ],
+   "Task": [
+    197,
+    301
+   ]
+  },
+  "compile_rate_by_repo": {
+   "auth": [
+    19,
+    38
+   ],
+   "cce": [
+    34,
+    37
+   ],
+   "diagnostics": [
+    1,
+    1
+   ],
+   "fulfillment": [
+    85,
+    89
+   ],
+   "hapifhir": [
+    0,
+    5
+   ],
+   "notification": [
+    23,
+    28
+   ],
+   "referencedata": [
+    200,
+    235
+   ],
+   "report": [
+    0,
+    5
+   ],
+   "requisition": [
+    124,
+    304
+   ],
+   "stockmanagement": [
+    5,
+    61
+   ],
+   "template-service": [
+    1,
+    1
+   ]
+  },
+  "type_chi2_p": 6.5959051999813e-09,
+  "dev": {
+   "distinct_compiled": 32,
+   "distinct_not": 30,
+   "distinct_all": 44,
+   "share_not_compiled_issues_whose_dev_appears_among_compiled": 0.862,
+   "top10_compile_rate": [
+    [
+     110,
+     130
+    ],
+    [
+     52,
+     112
+    ],
+    [
+     43,
+     94
+    ],
+    [
+     68,
+     87
+    ],
+    [
+     70,
+     85
+    ],
+    [
+     20,
+     37
+    ],
+    [
+     11,
+     28
+    ],
+    [
+     20,
+     26
+    ],
+    [
+     15,
+     26
+    ],
+    [
+     22,
+     24
+    ]
+   ]
+  },
+  "module": {
+   "distinct_compiled": 64,
+   "distinct_not": 59,
+   "distinct_all": 96,
+   "share_not_compiled_issues_whose_module_appears_among_compiled": 0.644
+  },
+  "H1_registered_measure": {
+   "all_attempted": {
+    "n": 804,
+    "rho": 0.077,
+    "CI90_dev": [
+     0.02,
+     0.154
+    ],
+    "CI90_twoway": [
+     -0.032,
+     0.197
+    ],
+    "H3_CI90_pct_MAE": [
+     -1.09,
+     0.86
+    ]
+   },
+   "compiled": {
+    "n": 492,
+    "rho": 0.041,
+    "CI90_dev": [
+     -0.028,
+     0.13
+    ],
+    "CI90_twoway": [
+     -0.074,
+     0.187
+    ],
+    "H3_CI90_pct_MAE": [
+     -0.41,
+     0.58
+    ]
+   },
+   "not_compiled": {
+    "n": 312,
+    "rho": 0.043,
+    "CI90_dev": [
+     -0.038,
+     0.148
+    ],
+    "CI90_twoway": [
+     -0.121,
+     0.215
+    ],
+    "H3_CI90_pct_MAE": [
+     -1.03,
+     0.86
+    ]
+   }
+  }
+ }
+}

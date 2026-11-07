@@ -1,0 +1,6 @@
+{
+ "Android client (needs the Android SDK, not available)": 243,
+ "other build error": 162,
+ "dependency or parent POM not resolvable": 41,
+ "compilation error": 13
+}

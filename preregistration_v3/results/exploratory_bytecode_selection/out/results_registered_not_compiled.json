@@ -1,0 +1,187 @@
+{
+ "parameters": {
+  "B": 5000,
+  "seed": 2026,
+  "SESOI_rho": 0.1,
+  "margin_dMAE": 0.02
+ },
+ "openmrs": {
+  "counts": {
+   "issues": 459,
+   "scanned": 459,
+   "eligible": 459,
+   "analysed": 459,
+   "missing": 0,
+   "median_hours_analysed": 6.0,
+   "median_hours_missing": null,
+   "developers": 78,
+   "modules": 73
+  },
+  "H1": {
+   "n": 459,
+   "partial_rho": -0.014370438900009204,
+   "CI90": [
+    -0.10442665844428252,
+    0.0680435007706741
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.6062,
+   "p_TOST": 0.0586,
+   "boot_se": 0.05216546983713722
+  },
+  "H1_twoway_dev_module": {
+   "n": 459,
+   "partial_rho": -0.014370438900009204,
+   "CI90": [
+    -0.21027186187960548,
+    0.09970006404472474
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.624,
+   "p_TOST": 0.2362,
+   "boot_se": 0.09434839276138499
+  },
+  "H3": {
+   "n_train": 229,
+   "n_test": 230,
+   "train_until": "2016-10-24T19:15:54.000+1100",
+   "MAE_lines_only": 8.151921420160216,
+   "dMAE": 0.2644267794816683,
+   "CI90": [
+    0.13780288796751783,
+    0.3812393256271613
+   ],
+   "CI90_pct_MAE": [
+    1.6904344493155026,
+    4.6766805759968735
+   ],
+   "verdict": "inconclusive"
+  },
+  "secondary": {
+   "H1_bugs_only": {
+    "n": 144,
+    "partial_rho": -0.08037396648635763,
+    "CI90": [
+     -0.20247412441831994,
+     0.06211401911780757
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.82,
+    "p_TOST": 0.372,
+    "boot_se": 0.0812136180135548
+   },
+   "H1_all_touched_code_files_measured": {
+    "n": 459,
+    "partial_rho": -0.014370438900009204,
+    "CI90": [
+     -0.10442665844428252,
+     0.0680435007706741
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.6062,
+    "p_TOST": 0.0586,
+    "boot_se": 0.05216546983713722
+   }
+  }
+ },
+ "openlmis": {
+  "counts": {
+   "issues": 312,
+   "scanned": 312,
+   "eligible": 312,
+   "analysed": 312,
+   "missing": 0,
+   "median_hours_analysed": 19.5,
+   "median_hours_missing": null,
+   "developers": 30,
+   "modules": 59
+  },
+  "H1": {
+   "n": 312,
+   "partial_rho": 0.043438223415785904,
+   "CI90": [
+    -0.037882331003274684,
+    0.14829819366489905
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.1984,
+   "p_TOST": 0.1656,
+   "boot_se": 0.05676462880380961
+  },
+  "H1_twoway_dev_module": {
+   "n": 312,
+   "partial_rho": 0.043438223415785904,
+   "CI90": [
+    -0.12149081799903115,
+    0.2151074458670719
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.3314,
+   "p_TOST": 0.2772,
+   "boot_se": 0.10317236634484755
+  },
+  "H3": {
+   "n_train": 156,
+   "n_test": 156,
+   "train_until": "2017-01-31T05:09:52.835-0800",
+   "MAE_lines_only": 21.043147452695987,
+   "dMAE": -0.01274416193989544,
+   "CI90": [
+    -0.21604230979655611,
+    0.17997701822511505
+   ],
+   "CI90_pct_MAE": [
+    -1.026663479321281,
+    0.8552761350444129
+   ],
+   "verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "secondary": {
+   "H1_bugs_only": {
+    "n": 87,
+    "partial_rho": 0.060846102972551615,
+    "CI90": [
+     -0.11664129089616593,
+     0.26527137784458155
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.2858,
+    "p_TOST": 0.3928,
+    "boot_se": 0.11573309804086283
+   },
+   "H1_all_touched_code_files_measured": {
+    "n": 312,
+    "partial_rho": 0.043438223415785904,
+    "CI90": [
+     -0.037882331003274684,
+     0.14829819366489905
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.1984,
+    "p_TOST": 0.1656,
+    "boot_se": 0.05676462880380961
+   }
+  }
+ },
+ "family": {
+  "holm_one_sided_rho_gt_0": {
+   "openlmis": 0.3968,
+   "openmrs": 0.6062
+  },
+  "holm_TOST": {
+   "openmrs": 0.1172,
+   "openlmis": 0.1656
+  },
+  "all_equivalent_familywise": false,
+  "all_negligible_under_twoway": false
+ },
+ "pooled_random_effects_secondary": {
+  "rho": 0.012060594443433822,
+  "CI90": [
+   -0.05113987575127519,
+   0.07516485006815142
+  ],
+  "tau2": 0.0,
+  "Q": 0.5615651582334906
+ }
+}

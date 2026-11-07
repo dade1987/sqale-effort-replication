@@ -1,0 +1,102 @@
+{
+ "openmrs": {
+  "ess": 672.3,
+  "n": 805,
+  "balance": {
+   "year": {
+    "smd_unweighted_vs_all": -0.077,
+    "smd_weighted_vs_all": -0.048
+   },
+   "hours": {
+    "smd_unweighted_vs_all": -0.064,
+    "smd_weighted_vs_all": -0.009
+   },
+   "ncloc": {
+    "smd_unweighted_vs_all": 0.025,
+    "smd_weighted_vs_all": 0.02
+   },
+   "files": {
+    "smd_unweighted_vs_all": -0.086,
+    "smd_weighted_vs_all": -0.031
+   }
+  },
+  "registered_unweighted": {
+   "rho": -0.107,
+   "CI90_dev": [
+    -0.183,
+    -0.022
+   ]
+  },
+  "registered_ipw": {
+   "rho": -0.11,
+   "CI90_dev": [
+    -0.183,
+    -0.029
+   ]
+  },
+  "with_bytecode_unweighted": {
+   "rho": -0.136,
+   "CI90_dev": [
+    -0.215,
+    -0.044
+   ]
+  },
+  "with_bytecode_ipw": {
+   "rho": -0.153,
+   "CI90_dev": [
+    -0.229,
+    -0.062
+   ]
+  }
+ },
+ "openlmis": {
+  "ess": 291.1,
+  "n": 492,
+  "balance": {
+   "year": {
+    "smd_unweighted_vs_all": 0.166,
+    "smd_weighted_vs_all": 0.327
+   },
+   "hours": {
+    "smd_unweighted_vs_all": -0.176,
+    "smd_weighted_vs_all": -0.089
+   },
+   "ncloc": {
+    "smd_unweighted_vs_all": 0.077,
+    "smd_weighted_vs_all": 0.018
+   },
+   "files": {
+    "smd_unweighted_vs_all": 0.037,
+    "smd_weighted_vs_all": -0.015
+   }
+  },
+  "registered_unweighted": {
+   "rho": 0.041,
+   "CI90_dev": [
+    -0.028,
+    0.131
+   ]
+  },
+  "registered_ipw": {
+   "rho": 0.186,
+   "CI90_dev": [
+    -0.009,
+    0.393
+   ]
+  },
+  "with_bytecode_unweighted": {
+   "rho": 0.127,
+   "CI90_dev": [
+    0.034,
+    0.219
+   ]
+  },
+  "with_bytecode_ipw": {
+   "rho": 0.161,
+   "CI90_dev": [
+    -0.025,
+    0.325
+   ]
+  }
+ }
+}

@@ -1,0 +1,6 @@
+{
+ "old Spring dependency-management Gradle plugin (2016-early 2017) fails with every Gradle version available (3.5.1, 4.10.3, 6.9.4)": 13,
+ "JasperReports dependencies only on jaspersoft.artifactoryonline.com (host blocked by the environment)": 5,
+ "net.sf.ehcache:ehcache-terracotta:2.4.3 not on Maven Central": 1,
+ "com.github.dnault:xml-patch:0.3.0 not on Maven Central": 1
+}

@@ -1,0 +1,1 @@
+Second build (7 Nov 2026) vs first build (6 Nov 2026), OpenLMIS: 492 of 492 issues with identical SQALE, NCLOC and files measured, both without and with bytecode.

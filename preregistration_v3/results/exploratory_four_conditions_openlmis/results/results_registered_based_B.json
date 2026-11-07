@@ -1,0 +1,106 @@
+{
+ "parameters": {
+  "B": 5000,
+  "seed": 2026,
+  "SESOI_rho": 0.1,
+  "margin_dMAE": 0.02
+ },
+ "openlmis": {
+  "counts": {
+   "issues": 476,
+   "scanned": 476,
+   "eligible": 476,
+   "analysed": 476,
+   "missing": 0,
+   "median_hours_analysed": 12.5,
+   "median_hours_missing": null,
+   "developers": 31,
+   "modules": 63
+  },
+  "H1": {
+   "n": 476,
+   "partial_rho": 0.07419327333290178,
+   "CI90": [
+    -0.01603907252986301,
+    0.14874465975064766
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.0814,
+   "p_TOST": 0.3,
+   "boot_se": 0.05094288385441516
+  },
+  "H1_twoway_dev_module": {
+   "n": 476,
+   "partial_rho": 0.07419327333290178,
+   "CI90": [
+    -0.05702266767489647,
+    0.20970255480673503
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.1574,
+   "p_TOST": 0.3654,
+   "boot_se": 0.08052715604686979
+  },
+  "H3": {
+   "n_train": 238,
+   "n_test": 238,
+   "train_until": "2018-01-25T05:33:00.524-0800",
+   "MAE_lines_only": 14.404912131378586,
+   "dMAE": -0.002597234779004678,
+   "CI90": [
+    -0.09505546978422762,
+    0.14270527346917555
+   ],
+   "CI90_pct_MAE": [
+    -0.6598823298419564,
+    0.9906709056441728
+   ],
+   "verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "secondary": {
+   "H1_bugs_only": {
+    "n": 184,
+    "partial_rho": 0.09279916544140777,
+    "CI90": [
+     -0.030511419006206488,
+     0.22495598327033084
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.1056,
+    "p_TOST": 0.48319999999999996,
+    "boot_se": 0.07878872778948814
+   },
+   "H1_all_touched_code_files_measured": {
+    "n": 56,
+    "partial_rho": 0.2193302111414715,
+    "CI90": [
+     -0.06124939294098294,
+     0.4906404798835722
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.09580000000000001,
+    "p_TOST": 0.7637999999999999,
+    "boot_se": 0.16639170438563178
+   }
+  }
+ },
+ "family": {
+  "holm_one_sided_rho_gt_0": {
+   "openlmis": 0.0814
+  },
+  "holm_TOST": {
+   "openlmis": 0.3
+  },
+  "all_equivalent_familywise": false,
+  "all_negligible_under_twoway": false
+ },
+ "pooled_random_effects_secondary": {
+  "rho": 0.07419327333290178,
+  "CI90": [
+   -0.009934704588436991,
+   0.15727832141460316
+  ],
+  "tau2": 0.0,
+  "Q": 0.0
+ }
+}

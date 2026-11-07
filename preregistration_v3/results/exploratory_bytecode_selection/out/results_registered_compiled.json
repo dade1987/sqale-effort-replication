@@ -1,0 +1,187 @@
+{
+ "parameters": {
+  "B": 5000,
+  "seed": 2026,
+  "SESOI_rho": 0.1,
+  "margin_dMAE": 0.02
+ },
+ "openmrs": {
+  "counts": {
+   "issues": 805,
+   "scanned": 805,
+   "eligible": 805,
+   "analysed": 805,
+   "missing": 0,
+   "median_hours_analysed": 4.5,
+   "median_hours_missing": null,
+   "developers": 203,
+   "modules": 138
+  },
+  "H1": {
+   "n": 805,
+   "partial_rho": -0.10681226368369971,
+   "CI90": [
+    -0.18221342087954542,
+    -0.0229321791012738
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.983,
+   "p_TOST": 0.5237999999999999,
+   "boot_se": 0.04840615806243668
+  },
+  "H1_twoway_dev_module": {
+   "n": 805,
+   "partial_rho": -0.10681226368369971,
+   "CI90": [
+    -0.24909478084278594,
+    0.03802173447182119
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.88,
+   "p_TOST": 0.5015999999999999,
+   "boot_se": 0.08648577525519999
+  },
+  "H3": {
+   "n_train": 402,
+   "n_test": 403,
+   "train_until": "2015-09-16T22:52:57.000+1000",
+   "MAE_lines_only": 11.484364423728362,
+   "dMAE": 0.0015147508764136012,
+   "CI90": [
+    0.00034479063741440434,
+    0.0026313641013170873
+   ],
+   "CI90_pct_MAE": [
+    0.0030022613763633003,
+    0.022912579261942505
+   ],
+   "verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "secondary": {
+   "H1_bugs_only": {
+    "n": 343,
+    "partial_rho": -0.00854219914623384,
+    "CI90": [
+     -0.10053505969004156,
+     0.09391839393415798
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.5526,
+    "p_TOST": 0.051,
+    "boot_se": 0.05903236701083443
+   },
+   "H1_all_touched_code_files_measured": {
+    "n": 805,
+    "partial_rho": -0.10681226368369971,
+    "CI90": [
+     -0.18221342087954542,
+     -0.0229321791012738
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.983,
+    "p_TOST": 0.5237999999999999,
+    "boot_se": 0.04840615806243668
+   }
+  }
+ },
+ "openlmis": {
+  "counts": {
+   "issues": 492,
+   "scanned": 492,
+   "eligible": 492,
+   "analysed": 492,
+   "missing": 0,
+   "median_hours_analysed": 12.0,
+   "median_hours_missing": null,
+   "developers": 32,
+   "modules": 64
+  },
+  "H1": {
+   "n": 492,
+   "partial_rho": 0.04082162299527101,
+   "CI90": [
+    -0.02830428542592208,
+    0.1300627141656316
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.1714,
+   "p_TOST": 0.126,
+   "boot_se": 0.04949093187622666
+  },
+  "H1_twoway_dev_module": {
+   "n": 492,
+   "partial_rho": 0.04082162299527101,
+   "CI90": [
+    -0.07404177495711192,
+    0.18703168764916897
+   ],
+   "verdict": "inconclusive",
+   "p_one_sided_rho_gt_0": 0.29619999999999996,
+   "p_TOST": 0.2378,
+   "boot_se": 0.08194147213541497
+  },
+  "H3": {
+   "n_train": 246,
+   "n_test": 246,
+   "train_until": "2018-01-26T01:57:37.280-0800",
+   "MAE_lines_only": 14.133068792938532,
+   "dMAE": 0.028691306033775264,
+   "CI90": [
+    -0.05797216202816367,
+    0.0822641470741657
+   ],
+   "CI90_pct_MAE": [
+    -0.41018806939600383,
+    0.5820685392493687
+   ],
+   "verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "secondary": {
+   "H1_bugs_only": {
+    "n": 192,
+    "partial_rho": 0.11343717794439502,
+    "CI90": [
+     -0.03659018055327668,
+     0.27027318898666736
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.1076,
+    "p_TOST": 0.5489999999999999,
+    "boot_se": 0.0947086091748515
+   },
+   "H1_all_touched_code_files_measured": {
+    "n": 492,
+    "partial_rho": 0.04082162299527101,
+    "CI90": [
+     -0.02830428542592208,
+     0.1300627141656316
+    ],
+    "verdict": "inconclusive",
+    "p_one_sided_rho_gt_0": 0.1714,
+    "p_TOST": 0.126,
+    "boot_se": 0.04949093187622666
+   }
+  }
+ },
+ "family": {
+  "holm_one_sided_rho_gt_0": {
+   "openlmis": 0.3428,
+   "openmrs": 0.983
+  },
+  "holm_TOST": {
+   "openlmis": 0.252,
+   "openmrs": 0.5237999999999999
+  },
+  "all_equivalent_familywise": false,
+  "all_negligible_under_twoway": false
+ },
+ "pooled_random_effects_secondary": {
+  "rho": -0.03337863309676938,
+  "CI90": [
+   -0.15394092024465225,
+   0.08816296155741223
+  ],
+  "tau2": 0.008534166107720608,
+  "Q": 4.515556610194878
+ }
+}

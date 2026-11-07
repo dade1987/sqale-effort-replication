@@ -1,0 +1,223 @@
+{
+ "issues_with_per_file_data": 492,
+ "registered_based": {
+  "n_same_issues": 476,
+  "A": {
+   "n": 476,
+   "sum_sqale_min": 37237.0,
+   "sum_ncloc": 904276.0,
+   "median_sqale_min": 26.0,
+   "median_ncloc": 1025.0,
+   "spearman_sqale_ncloc": 0.7755027837609493,
+   "H1_rho": 0.048,
+   "H1_CI90_dev": [
+    -0.022,
+    0.139
+   ],
+   "H1_verdict_dev": "inconclusive",
+   "H1_CI90_dev_module": [
+    -0.073,
+    0.198
+   ],
+   "H1_verdict_dev_module": "inconclusive",
+   "H3_dMAE_h": 0.031,
+   "H3_CI90_pct_MAE": [
+    -0.71,
+    0.78
+   ],
+   "H3_verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "B": {
+   "n": 476,
+   "sum_sqale_min": 7198.0,
+   "sum_ncloc": 348247.0,
+   "median_sqale_min": 5.0,
+   "median_ncloc": 427.5,
+   "spearman_sqale_ncloc": 0.6196487157088957,
+   "H1_rho": 0.074,
+   "H1_CI90_dev": [
+    -0.016,
+    0.149
+   ],
+   "H1_verdict_dev": "inconclusive",
+   "H1_CI90_dev_module": [
+    -0.057,
+    0.21
+   ],
+   "H1_verdict_dev_module": "inconclusive",
+   "H3_dMAE_h": -0.003,
+   "H3_CI90_pct_MAE": [
+    -0.66,
+    0.99
+   ],
+   "H3_verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "C": {
+   "n": 476,
+   "sum_sqale_min": 137588.0,
+   "sum_ncloc": 904276.0,
+   "median_sqale_min": 135.0,
+   "median_ncloc": 1025.0,
+   "spearman_sqale_ncloc": 0.8409917381698008,
+   "H1_rho": 0.131,
+   "H1_CI90_dev": [
+    0.034,
+    0.23
+   ],
+   "H1_verdict_dev": "positive but of uncertain size (CI above 0, not all above 0.10)",
+   "H1_CI90_dev_module": [
+    -0.006,
+    0.269
+   ],
+   "H1_verdict_dev_module": "inconclusive",
+   "H3_dMAE_h": 0.158,
+   "H3_CI90_pct_MAE": [
+    0.3,
+    2.15
+   ],
+   "H3_verdict": "inconclusive"
+  },
+  "D": {
+   "n": 476,
+   "sum_sqale_min": 61393.0,
+   "sum_ncloc": 348247.0,
+   "median_sqale_min": 62.0,
+   "median_ncloc": 427.5,
+   "spearman_sqale_ncloc": 0.8002751794507256,
+   "H1_rho": 0.063,
+   "H1_CI90_dev": [
+    -0.033,
+    0.133
+   ],
+   "H1_verdict_dev": "inconclusive",
+   "H1_CI90_dev_module": [
+    -0.096,
+    0.194
+   ],
+   "H1_verdict_dev_module": "inconclusive",
+   "H3_dMAE_h": 0.001,
+   "H3_CI90_pct_MAE": [
+    -0.48,
+    0.94
+   ],
+   "H3_verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "effects_on_H1_rho": {
+   "bytecode_with_tests (C-A)": 0.083,
+   "bytecode_without_tests (D-B)": -0.011,
+   "tests_out_without_bytecode (B-A)": 0.026,
+   "tests_out_with_bytecode (D-C)": -0.068,
+   "interaction (D-C)-(B-A)": -0.094
+  }
+ },
+ "java_only": {
+  "n_same_issues": 476,
+  "A": {
+   "n": 476,
+   "sum_sqale_min": 38995.0,
+   "sum_ncloc": 903623.0,
+   "median_sqale_min": 27.0,
+   "median_ncloc": 1025.0,
+   "spearman_sqale_ncloc": 0.7653429617996098,
+   "H1_rho": 0.042,
+   "H1_CI90_dev": [
+    -0.02,
+    0.12
+   ],
+   "H1_verdict_dev": "inconclusive",
+   "H1_CI90_dev_module": [
+    -0.075,
+    0.189
+   ],
+   "H1_verdict_dev_module": "inconclusive",
+   "H3_dMAE_h": 0.016,
+   "H3_CI90_pct_MAE": [
+    -0.44,
+    0.5
+   ],
+   "H3_verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "B": {
+   "n": 476,
+   "sum_sqale_min": 8006.0,
+   "sum_ncloc": 347594.0,
+   "median_sqale_min": 5.0,
+   "median_ncloc": 425.0,
+   "spearman_sqale_ncloc": 0.6306535788039108,
+   "H1_rho": 0.059,
+   "H1_CI90_dev": [
+    -0.024,
+    0.128
+   ],
+   "H1_verdict_dev": "inconclusive",
+   "H1_CI90_dev_module": [
+    -0.066,
+    0.193
+   ],
+   "H1_verdict_dev_module": "inconclusive",
+   "H3_dMAE_h": -0.001,
+   "H3_CI90_pct_MAE": [
+    -0.44,
+    0.56
+   ],
+   "H3_verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "C": {
+   "n": 476,
+   "sum_sqale_min": 139346.0,
+   "sum_ncloc": 903623.0,
+   "median_sqale_min": 136.0,
+   "median_ncloc": 1025.0,
+   "spearman_sqale_ncloc": 0.8354389454179695,
+   "H1_rho": 0.122,
+   "H1_CI90_dev": [
+    0.025,
+    0.221
+   ],
+   "H1_verdict_dev": "positive but of uncertain size (CI above 0, not all above 0.10)",
+   "H1_CI90_dev_module": [
+    -0.016,
+    0.266
+   ],
+   "H1_verdict_dev_module": "inconclusive",
+   "H3_dMAE_h": 0.165,
+   "H3_CI90_pct_MAE": [
+    0.35,
+    2.24
+   ],
+   "H3_verdict": "inconclusive"
+  },
+  "D": {
+   "n": 476,
+   "sum_sqale_min": 62201.0,
+   "sum_ncloc": 347594.0,
+   "median_sqale_min": 62.0,
+   "median_ncloc": 425.0,
+   "spearman_sqale_ncloc": 0.8005491854954487,
+   "H1_rho": 0.057,
+   "H1_CI90_dev": [
+    -0.039,
+    0.129
+   ],
+   "H1_verdict_dev": "inconclusive",
+   "H1_CI90_dev_module": [
+    -0.104,
+    0.188
+   ],
+   "H1_verdict_dev_module": "inconclusive",
+   "H3_dMAE_h": -0.001,
+   "H3_CI90_pct_MAE": [
+    -0.45,
+    0.83
+   ],
+   "H3_verdict": "equivalent (CI inside +-2% of MAE)"
+  },
+  "effects_on_H1_rho": {
+   "bytecode_with_tests (C-A)": 0.08,
+   "bytecode_without_tests (D-B)": -0.002,
+   "tests_out_without_bytecode (B-A)": 0.017,
+   "tests_out_with_bytecode (D-C)": -0.065,
+   "interaction (D-C)-(B-A)": -0.082
+  }
+ }
+}
