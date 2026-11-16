@@ -26,6 +26,7 @@ It also contains the preregistered confirmatory study (2,000 hold-out issues fro
 | `sonarqube/` | The C/C++ quality profile used with sonar-cxx (`td_cxx_profile.xml`) |
 | `sonarcloud_survey/` | Survey of 365 public SonarQube Cloud projects: remediation functions and signs of active use |
 | `link_validation/` | The AI-rater validation samples, the blind manual check by the author and the second human rater |
+| `statistical_review/` | Report of the independent statistical review of 16 November 2026 (Italian original and English translation) |
 | `docs/` | The maps used to translate the original Italian labels and keys into English |
 
 ## Personal data
