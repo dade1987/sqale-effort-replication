@@ -1,0 +1,22 @@
+{
+ "moodle_link_rate": {
+  "with": [
+   11184,
+   11243
+  ],
+  "without": [
+   861,
+   1117
+  ]
+ },
+ "mariadb_link_rate": {
+  "with": [
+   9001,
+   11029
+  ],
+  "without": [
+   651,
+   1865
+  ]
+ }
+}

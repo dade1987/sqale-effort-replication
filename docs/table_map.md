@@ -31,3 +31,4 @@
 | §6.3 or §8, positive control for H1 and minimum detectable effect | `exploratory/positive_control_h1.py` | `results/exploratory/positive_control_h1_<project>.json` | |
 | §3.2, link validation | `link_validation/manual_check/analyze_manual_check.py` | `link_validation/manual_check/results_manual_check.json` | |
 | §2 and §8, SonarQube Cloud survey | `sonarcloud_survey/*.py` | `sonarcloud_survey/remediation_functions.json`, `active_use.jsonl` | |
+| Table 11 (§8, Selection), included vs excluded issues and reweighting check | `exploratory_selection/compare.py`, `exploratory_selection/reweight.py` | `exploratory_selection/results/` | |
