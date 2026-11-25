@@ -1,6 +1,6 @@
 # Fourth preregistration: Moodle with two-way clustering
 
-Registered on OSF on 24 November 2026 at about 14:32 UTC (https://osf.io/8fdc7, embargo until 1 June 2027), before any SonarQube analysis of the sample.
+Registered on OSF on 24 November 2026 at 14:30:59 UTC (https://osf.io/8fdc7, embargo until 1 June 2027; view-only link: https://osf.io/8fdc7/overview?view_only=b450691c631f4bc5b574e56b42ff7980), before any SonarQube analysis of the sample.
 The protocol, key list, scan wrapper and analysis script are registered with their SHA-256 hashes; the files here match them (`sha256sum -c SHA256SUMS.txt`).
 Paper: Sections 5.7 and 6.3 (Table 5d).
 

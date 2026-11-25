@@ -5,7 +5,7 @@ How each OSF registration maps to the files of this package, and how to check it
 | | First | Second | Third | Fourth |
 |---|---|---|---|---|
 | OSF registration | https://osf.io/ts9n6 | https://osf.io/gb3y9 | https://osf.io/q39g8 | https://osf.io/8fdc7 |
-| Registered (UTC) | 24 Oct 2026, 06:26:50 | 31 Oct 2026, about 21:30 | 3 Nov 2026, 13:06:54 | 24 Nov 2026, about 14:32 |
+| Registered (UTC) | 24 Oct 2026, 06:26:50 | 31 Oct 2026, about 21:30 | 3 Nov 2026, 13:06:54 | 24 Nov 2026, 14:30:59 |
 | Embargo | until 1 Jun 2027 (view-only links in the paper) | same | same | same |
 | Folder here | `preregistration/` | `preregistration_v2/` | `preregistration_v3/` | `preregistration_v4/` |
 | Registered archive | `preregistration_files.zip` (SHA-256 `24baf467…08837`) | none usable: the files attached on OSF are empty (0 bytes, an upload problem); the SHA-256 hashes of the protocol, key list and script are written in the registration's description and in the protocol (table "File / SHA-256") | `preregistrazione_nuovi_progetti_osf.zip` on OSF, SHA-256 `04fb8ca0…4e830` (248,970 bytes), stated in the registration's description | `preregistrazione_v4_osf.zip` on OSF (SHA-256 `117346a5…83d80`), with the per-file hashes in the protocol |
