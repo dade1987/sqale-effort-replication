@@ -1,0 +1,21 @@
+{
+ "project": "mariadb",
+ "target_rho": 0.1,
+ "n_pool_with_code": 4717,
+ "n_sim_issues": 4481,
+ "n_dev": 108,
+ "n_comp": 710,
+ "icc_debt_residual_by_component": 0.474994804364483,
+ "n_scanned_for_icc": 2206,
+ "n_sim": 200,
+ "B": 1000,
+ "verdict_share": {
+  "inconclusive": 0.37,
+  "positive, uncertain size": 0.585,
+  "supported": 0.025,
+  "negligible": 0.02
+ },
+ "mean_rho": 0.1021854421249913,
+ "sd_rho": 0.04580681075502196,
+ "mean_ci_width": 0.1744040715948844
+}

@@ -21,6 +21,7 @@ It also contains the preregistered confirmatory study (2,000 hold-out issues fro
 | `preregistration/` | The frozen preregistration files and the script that re-runs them (see below) |
 | `preregistration_v2/` | The second preregistration (MariaDB, official C/C++ analyser on a new sample), its scan and its results (see below) |
 | `preregistration_v3/` | The third preregistration (three new projects: MOSIP, OpenLMIS, OpenMRS), its data, scans, results and link check (see `preregistration_v3/README.md`) |
+| `preregistration_v4/` | The fourth preregistration (Moodle, H1 with two-way developer × component intervals), its scans and results (see `preregistration_v4/README.md`) |
 | `exploratory/` | Exploratory analyses of Sections 6 and 8 that are not preregistered |
 | `exploratory_selection/` | Exploratory, post hoc comparison of included and excluded issues (Section 8, Table 11): with vs without logged hours, changing vs not changing existing code, and a reweighting check |
 | `results/` | Result files behind the tables of the paper; `results/confirmatory/` and `results/exploratory/` hold the newer analyses |

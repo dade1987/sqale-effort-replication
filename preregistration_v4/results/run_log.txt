@@ -1,0 +1,154 @@
+{
+ "parameters": {
+  "B": 5000,
+  "seed": 2026,
+  "SESOI_rho": 0.1,
+  "margin_dMAE": 0.02,
+  "max_files": 2000
+ },
+ "counts": {
+  "keys": 8117,
+  "hours_gt_0": 8117,
+  "excluded_over_max_files": 5,
+  "with_record": 8112,
+  "eligible_code_at_parent_or_failed": 7122,
+  "analysed": 7080,
+  "missing": 42,
+  "median_hours_analysed": 2.833333333333333,
+  "median_hours_missing": 4.041666666666667
+ },
+ "sonarqube_versions": [
+  "26.9.0.129388"
+ ],
+ "H1-2W": {
+  "n": 7080,
+  "n_dev": 589,
+  "n_comp": 878,
+  "partial_rho": -0.046995508439220415,
+  "CI90": [
+   -0.09772321139650358,
+   0.011587389793639262
+  ],
+  "p_one_sided_rho_gt_0": 0.9196,
+  "p_tost_lower": 0.0412,
+  "p_tost_upper": 0.0007999999999999999,
+  "p_tost": 0.0412,
+  "verdict": "practically negligible (CI inside +-0.10)"
+ },
+ "conclusion_rule": "negligible: practically negligible beyond size under developer x component clustering",
+ "positive_control_h_commits_1y": {
+  "n": 7080,
+  "n_dev": 589,
+  "n_comp": 878,
+  "partial_rho": 0.2360975392877752,
+  "CI90": [
+   0.17597590079070016,
+   0.2901679432836454
+  ],
+  "p_one_sided_rho_gt_0": 0.0002,
+  "p_tost_lower": 0.0002,
+  "p_tost_upper": 1.0,
+  "p_tost": 1.0,
+  "verdict": "supported, practically relevant (CI above 0.10)"
+ },
+ "secondary": {
+  "H1 two-way developer x code module": {
+   "n": 7080,
+   "n_dev": 589,
+   "n_comp": 420,
+   "partial_rho": -0.046995508439220415,
+   "CI90": [
+    -0.12437103460063874,
+    0.033246766190077985
+   ],
+   "p_one_sided_rho_gt_0": 0.8432,
+   "p_tost_lower": 0.1412,
+   "p_tost_upper": 0.0018000000000000002,
+   "p_tost": 0.1412,
+   "verdict": "inconclusive"
+  },
+  "H1 developer-only bootstrap (first registration)": {
+   "n": 7080,
+   "n_dev": 589,
+   "n_comp": 878,
+   "partial_rho": -0.046995508439220415,
+   "CI90": [
+    -0.07664891671734196,
+    -0.014192909405326786
+   ],
+   "p_one_sided_rho_gt_0": 0.9882,
+   "p_tost_lower": 0.001,
+   "p_tost_upper": 0.0002,
+   "p_tost": 0.001,
+   "verdict": "practically negligible (CI inside +-0.10)"
+  },
+  "H1 CGM analytic two-way (developer x component)": {
+   "partial_rho": -0.04699550843922039,
+   "se_twoway": 0.025494341697808783,
+   "CI90": [
+    -0.08893370053211583,
+    -0.00505731634632494
+   ],
+   "verdict": "practically negligible (CI inside +-0.10)"
+  },
+  "H1 assignee hours only": {
+   "n": 3077,
+   "n_dev": 66,
+   "n_comp": 505,
+   "partial_rho": -0.02095885020175677,
+   "CI90": [
+    -0.09539538466654726,
+    0.05735150259487903
+   ],
+   "p_one_sided_rho_gt_0": 0.703,
+   "p_tost_lower": 0.038599999999999995,
+   "p_tost_upper": 0.012,
+   "p_tost": 0.038599999999999995,
+   "verdict": "practically negligible (CI inside +-0.10)"
+  },
+  "H1 resolved from 2023 (period of the first hold-out)": {
+   "n": 2981,
+   "n_dev": 335,
+   "n_comp": 382,
+   "partial_rho": -0.048611749479763905,
+   "CI90": [
+    -0.1079609832597207,
+    0.01379070739522485
+   ],
+   "p_one_sided_rho_gt_0": 0.9036,
+   "p_tost_lower": 0.07200000000000001,
+   "p_tost_upper": 0.0004,
+   "p_tost": 0.07200000000000001,
+   "verdict": "inconclusive"
+  },
+  "H2 two-way developer x component": {
+   "n": 6839,
+   "n_dev": 587,
+   "n_comp": 859,
+   "partial_rho": 0.005848681087734353,
+   "CI90": [
+    -0.03409360991194786,
+    0.048069238822722196
+   ],
+   "p_one_sided_rho_gt_0": 0.4004,
+   "p_tost_lower": 0.0002,
+   "p_tost_upper": 0.0006000000000000001,
+   "p_tost": 0.0006000000000000001,
+   "verdict": "practically negligible (CI inside +-0.10)"
+  },
+  "H3 cv10, two-way developer x component": {
+   "n": 7080,
+   "MAE_lines_only": 7.684969151190058,
+   "dMAE": -0.0013306609270789117,
+   "CI90": [
+    -0.011113225707284949,
+    0.013734364675954387
+   ],
+   "CI90_pct_MAE": [
+    -0.1446098935291628,
+    0.17871723888218272
+   ],
+   "verdict": "equivalent (CI inside +-2% of MAE)"
+  }
+ }
+}

@@ -1,0 +1,18 @@
+MDL-4188 files git 19 sonar 19 raw lines 21812 ncloc 14486 ratio 0.66
+MDL-5311 files git 6 sonar 6 raw lines 1340 ncloc 894 ratio 0.67
+MDL-7339 files git 7 sonar 7 raw lines 7342 ncloc 5052 ratio 0.69
+MDL-9469 files git 6 sonar 6 raw lines 8611 ncloc 5439 ratio 0.63
+MDL-10965 files git 42 sonar 42 raw lines 69692 ncloc 42708 ratio 0.61
+MDL-12643 files git 2 sonar 2 raw lines 801 ncloc 477 ratio 0.60
+MDL-13623 files git 2 sonar 2 raw lines 8759 ncloc 5102 ratio 0.58
+MDL-13745 files git 2 sonar 2 raw lines 1775 ncloc 1685 ratio 0.95
+MDL-14274 files git 3 sonar 3 raw lines 956 ncloc 591 ratio 0.62
+MDL-15594 files git 6 sonar 6 raw lines 2102 ncloc 1289 ratio 0.61
+duplicates (sqale,ncloc): 0
+
+Hand check of the first 10 issues (24 Nov 2026, 2026-11-24T14:39:29Z), no hours read.
+Registration https://osf.io/8fdc7 at about 14:31 UTC; first scan started 2026-11-24T14:37:18Z.
+All 10 scans completed (SonarQube 26.9.0.129388, Sonar way PHP 176 rules / JS 420 rules, default).
+Code files at parent: identical to Git for 10/10. NCLOC / raw lines 0.58-0.95, plausible (comments and blank lines removed).
+No duplicated (SQALE, NCLOC) pair. All temporary SonarQube projects deleted. Hashes of protocol, keys, run_v4.py, confermativo_v4.py, sqale_lines.py verified before the scan.
+Result: OK, full scan started; the 10 records are kept.

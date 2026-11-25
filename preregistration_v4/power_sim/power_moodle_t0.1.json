@@ -1,0 +1,20 @@
+{
+ "project": "moodle",
+ "target_rho": 0.1,
+ "n_pool_with_code": 7075,
+ "n_sim_issues": 7004,
+ "n_dev": 589,
+ "n_comp": 879,
+ "icc_debt_residual_by_component": 0.09068866342903481,
+ "n_scanned_for_icc": 2580,
+ "n_sim": 200,
+ "B": 1000,
+ "verdict_share": {
+  "positive, uncertain size": 0.98,
+  "negligible": 0.015,
+  "supported": 0.005
+ },
+ "mean_rho": 0.09783853262821988,
+ "sd_rho": 0.015821717158386733,
+ "mean_ci_width": 0.07698040248023588
+}
