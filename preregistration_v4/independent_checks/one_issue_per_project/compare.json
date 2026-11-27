@@ -1,0 +1,47 @@
+{
+ "sqale_min": {
+  "n": 7125,
+  "identical": 6585,
+  "share": 0.9242105263157895,
+  "spearman": 0.9986282598261784,
+  "median_rel_diff": 0.0,
+  "single_lower": 528,
+  "single_higher": 12
+ },
+ "ncloc": {
+  "n": 7125,
+  "identical": 7125,
+  "share": 1.0,
+  "spearman": 1.0,
+  "median_rel_diff": 0.0,
+  "single_lower": 0,
+  "single_higher": 0
+ },
+ "sqale_righe_modificate": {
+  "n": 7125,
+  "identical": 7077,
+  "share": 0.9932631578947368,
+  "spearman": 0.9945062657365681,
+  "median_rel_diff": 0.0,
+  "single_lower": 47,
+  "single_higher": 1
+ },
+ "righe_vecchie_modificate": {
+  "n": 7125,
+  "identical": 7125,
+  "share": 1.0,
+  "spearman": 0.9999999999999998,
+  "median_rel_diff": 0.0,
+  "single_lower": 0,
+  "single_higher": 0
+ },
+ "ncloc_c1_prima": {
+  "n": 7125,
+  "identical": 7125,
+  "share": 1.0,
+  "spearman": 1.0,
+  "median_rel_diff": 0.0,
+  "single_lower": 0,
+  "single_higher": 0
+ }
+}
