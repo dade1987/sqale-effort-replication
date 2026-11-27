@@ -1,0 +1,186 @@
+{
+ "dev": {
+  "n_clusters": 589,
+  "top1_share_issues": 0.09364406779661016,
+  "top5_share_issues": 0.22796610169491527,
+  "top10_share_issues": 0.32810734463276836,
+  "top5_share_hours": 0.20041084307831952,
+  "effective_n_clusters": 48.83034498344929,
+  "top5": [
+   {
+    "label_pseudonymised": "dev_1",
+    "issues": 663,
+    "is_missing_label": false
+   },
+   {
+    "label_pseudonymised": "dev_2",
+    "issues": 366,
+    "is_missing_label": false
+   },
+   {
+    "label_pseudonymised": "dev_3",
+    "issues": 219,
+    "is_missing_label": false
+   },
+   {
+    "label_pseudonymised": "dev_4",
+    "issues": 215,
+    "is_missing_label": false
+   },
+   {
+    "label_pseudonymised": "dev_5",
+    "issues": 151,
+    "is_missing_label": false
+   }
+  ],
+  "leave_one_out": [
+   {
+    "left_out": "dev_1",
+    "n": 6417,
+    "partial_rho": -0.045457664819226314,
+    "CI90": [
+     -0.10214378281877289,
+     0.017755094674614124
+    ],
+    "p_tost": 0.057999999999999996,
+    "verdict": "inconclusive"
+   },
+   {
+    "left_out": "dev_2",
+    "n": 6714,
+    "partial_rho": -0.051983216435339125,
+    "CI90": [
+     -0.10696489070043602,
+     0.012022179430604876
+    ],
+    "p_tost": 0.08020000000000001,
+    "verdict": "inconclusive"
+   },
+   {
+    "left_out": "dev_3",
+    "n": 6861,
+    "partial_rho": -0.04470206146540529,
+    "CI90": [
+     -0.09676923335392845,
+     0.013330747402777237
+    ],
+    "p_tost": 0.0378,
+    "verdict": "practically negligible (CI inside +-0.10)"
+   },
+   {
+    "left_out": "dev_4",
+    "n": 6865,
+    "partial_rho": -0.04782891217237823,
+    "CI90": [
+     -0.10068109521599143,
+     0.010880051394156641
+    ],
+    "p_tost": 0.052199999999999996,
+    "verdict": "inconclusive"
+   },
+   {
+    "left_out": "dev_5",
+    "n": 6929,
+    "partial_rho": -0.04728344693707313,
+    "CI90": [
+     -0.09980569447342624,
+     0.012030442339507662
+    ],
+    "p_tost": 0.0496,
+    "verdict": "practically negligible (CI inside +-0.10)"
+   }
+  ]
+ },
+ "comp": {
+  "n_clusters": 878,
+  "top1_share_issues": 0.06384180790960452,
+  "top5_share_issues": 0.19971751412429378,
+  "top10_share_issues": 0.31949152542372883,
+  "top5_share_hours": 0.19610132323886034,
+  "effective_n_clusters": 60.19670713693844,
+  "top5": [
+   {
+    "label_pseudonymised": "comp_1",
+    "issues": 452,
+    "is_missing_label": false
+   },
+   {
+    "label_pseudonymised": "comp_2",
+    "issues": 276,
+    "is_missing_label": false
+   },
+   {
+    "label_pseudonymised": "comp_3",
+    "issues": 268,
+    "is_missing_label": false
+   },
+   {
+    "label_pseudonymised": "comp_4",
+    "issues": 213,
+    "is_missing_label": false
+   },
+   {
+    "label_pseudonymised": "comp_5",
+    "issues": 205,
+    "is_missing_label": false
+   }
+  ],
+  "leave_one_out": [
+   {
+    "left_out": "comp_1",
+    "n": 6628,
+    "partial_rho": -0.03956407063778005,
+    "CI90": [
+     -0.09341986393769333,
+     0.015348301724773241
+    ],
+    "p_tost": 0.0306,
+    "verdict": "practically negligible (CI inside +-0.10)"
+   },
+   {
+    "left_out": "comp_2",
+    "n": 6804,
+    "partial_rho": -0.04665020211265006,
+    "CI90": [
+     -0.10040648064062727,
+     0.013810058589542621
+    ],
+    "p_tost": 0.0516,
+    "verdict": "inconclusive"
+   },
+   {
+    "left_out": "comp_3",
+    "n": 6812,
+    "partial_rho": -0.045285515607154436,
+    "CI90": [
+     -0.09888773563999709,
+     0.01271274036764359
+    ],
+    "p_tost": 0.046599999999999996,
+    "verdict": "practically negligible (CI inside +-0.10)"
+   },
+   {
+    "left_out": "comp_4",
+    "n": 6867,
+    "partial_rho": -0.048893337065908406,
+    "CI90": [
+     -0.10103146037046562,
+     0.010299912070238912
+    ],
+    "p_tost": 0.0542,
+    "verdict": "inconclusive"
+   },
+   {
+    "left_out": "comp_5",
+    "n": 6875,
+    "partial_rho": -0.04969620834532019,
+    "CI90": [
+     -0.10290023060168565,
+     0.009087742197743838
+    ],
+    "p_tost": 0.0624,
+    "verdict": "inconclusive"
+   }
+  ]
+ }
+}

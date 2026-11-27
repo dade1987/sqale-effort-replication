@@ -1,0 +1,27 @@
+{
+ "scan": "isolated",
+ "n": 7080,
+ "B": 100000,
+ "seed": 20261127,
+ "nan_replicates": 0,
+ "estimate": -0.04749166574340401,
+ "CI90": [
+  -0.09960898314851344,
+  0.00945460157409299
+ ],
+ "p_tost": 0.04857,
+ "p_tost_lower": 0.04857,
+ "p_tost_upper": 0.00044,
+ "verdict": "practically negligible (CI inside +-0.10)",
+ "mc_se_lower_bound_batch": 0.0001962162070321764,
+ "lower_bound_blocks_range": [
+  -0.10180251635542807,
+  -0.09812804673082454
+ ],
+ "mc_se_p_tost_batch": 0.0007385048907652612,
+ "lower_bound_order_stat_95ci": [
+  -0.09998685589976553,
+  -0.09925155281918495
+ ],
+ "blocks_negligible": 15
+}

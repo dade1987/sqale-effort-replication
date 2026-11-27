@@ -1,0 +1,77 @@
+[
+{
+"fn": "nanpercentile",
+"n": 5000,
+"nonfinite": 0
+},
+{
+"fn": "nanpercentile",
+"n": 5000,
+"nonfinite": 0
+},
+{
+"fn": "percentile",
+"n": 5000,
+"nonfinite": 0
+},
+{
+"fn": "nanpercentile",
+"n": 5000,
+"nonfinite": 0
+},
+{
+"fn": "nanpercentile",
+"n": 5000,
+"nonfinite": 0
+},
+{
+"fn": "nanpercentile",
+"n": 5000,
+"nonfinite": 0
+},
+{
+"fn": "nanpercentile",
+"n": 5000,
+"nonfinite": 0
+},
+{
+"fn": "percentile",
+"n": 5000,
+"nonfinite": 0
+},
+{
+"fn": "nanpercentile",
+"n": 5000,
+"nonfinite": 0
+},
+{
+"fn": "nanpercentile",
+"n": 5000,
+"nonfinite": 0
+},
+{
+"fn": "nanpercentile",
+"n": 5000,
+"nonfinite": 0
+},
+{
+"fn": "nanpercentile",
+"n": 5000,
+"nonfinite": 0
+},
+{
+"fn": "percentile",
+"n": 5000,
+"nonfinite": 0
+},
+{
+"fn": "nanpercentile",
+"n": 5000,
+"nonfinite": 0
+},
+{
+"fn": "nanpercentile",
+"n": 5000,
+"nonfinite": 0
+}
+]

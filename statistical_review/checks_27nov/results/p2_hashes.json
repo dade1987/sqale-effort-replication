@@ -1,0 +1,130 @@
+[
+ {
+  "registration": "first (osf.io/ts9n6)",
+  "file": "protocol_confirmatory_v1.md",
+  "osf_sha256": "978b2e1bd1c1220616cfe4cd14db42fc63573b1188659b83f55a20e7731c65fc",
+  "package_path": "preregistration/protocol_confirmatory_v1.md",
+  "package_sha256": "978b2e1bd1c1220616cfe4cd14db42fc63573b1188659b83f55a20e7731c65fc",
+  "match": true
+ },
+ {
+  "registration": "first (osf.io/ts9n6)",
+  "file": "holdout_keys_mariadb.txt",
+  "osf_sha256": "771a0a825494596b2cdffc8748fa096fc85a3dd336b0aa9afeff32a97b27c68e",
+  "package_path": "preregistration/holdout_keys_mariadb.txt",
+  "package_sha256": "771a0a825494596b2cdffc8748fa096fc85a3dd336b0aa9afeff32a97b27c68e",
+  "match": true
+ },
+ {
+  "registration": "first (osf.io/ts9n6)",
+  "file": "confermativo.py",
+  "osf_sha256": "068a5162b17b5d87a2741311e36d9462dbfdf4b634b621ecc356693ad090dad2",
+  "package_path": "preregistration/confermativo.py",
+  "package_sha256": "068a5162b17b5d87a2741311e36d9462dbfdf4b634b621ecc356693ad090dad2",
+  "match": true
+ },
+ {
+  "registration": "first (osf.io/ts9n6)",
+  "file": "holdout_keys_moodle.txt",
+  "osf_sha256": "9aface42e8fb6f23aa76344775cadcf26a7e405903dbd49a89d75de102ae3c7a",
+  "package_path": "preregistration/holdout_keys_moodle.txt",
+  "package_sha256": "9aface42e8fb6f23aa76344775cadcf26a7e405903dbd49a89d75de102ae3c7a",
+  "match": true
+ },
+ {
+  "registration": "first (osf.io/ts9n6)",
+  "file": "sqale_lines.py",
+  "osf_sha256": "ba8f20ed277f5a3cea9259f9b302b32ede9821807dbfccd354b52e8f3e46aaeb",
+  "package_path": "preregistration/sqale_lines.py",
+  "package_sha256": "ba8f20ed277f5a3cea9259f9b302b32ede9821807dbfccd354b52e8f3e46aaeb",
+  "match": true
+ },
+ {
+  "registration": "second (osf.io/gb3y9)",
+  "file": "protocol_confirmatory_v2_mariadb_official.md",
+  "osf_sha256": "732a4a03bbdac166d69f018420ba6bdf05100ce058fa9bb6398168500dea0585",
+  "package_path": "preregistration_v2/protocol_confirmatory_v2_mariadb_official.md",
+  "package_sha256": "732a4a03bbdac166d69f018420ba6bdf05100ce058fa9bb6398168500dea0585",
+  "match": true
+ },
+ {
+  "registration": "second (osf.io/gb3y9)",
+  "file": "newsample_keys_mariadb.txt",
+  "osf_sha256": "cf92bddd8c2065826eec5d7eeedbf419e9fe46cee58c82555b1fd6cc49e892c7",
+  "package_path": "preregistration_v2/newsample_keys_mariadb.txt",
+  "package_sha256": "cf92bddd8c2065826eec5d7eeedbf419e9fe46cee58c82555b1fd6cc49e892c7",
+  "match": true
+ },
+ {
+  "registration": "second (osf.io/gb3y9)",
+  "file": "confermativo_v2.py",
+  "osf_sha256": "f07c8435b2d5f24736734793f109ce00352388d8b7699260b495b9df06f48a4b",
+  "package_path": "preregistration_v2/confermativo_v2.py",
+  "package_sha256": "f07c8435b2d5f24736734793f109ce00352388d8b7699260b495b9df06f48a4b",
+  "match": true
+ },
+ {
+  "registration": "third (osf.io/q39g8)",
+  "file": "preregistrazione_nuovi_progetti_osf.zip",
+  "osf_sha256": "04fb8ca0b2cc7f20685f622ea59b5b09b7d3bd4be4bce6c8b71c367088b4e830",
+  "package_path": null,
+  "package_sha256": null,
+  "match": null
+ },
+ {
+  "registration": "fourth (osf.io/8fdc7)",
+  "file": "protocol_confirmatory_v4_moodle_twoway.md",
+  "osf_sha256": "e5acc1c521587ca7fb4a60a8aaa5366ae9662049a9c7938affc80935235c83e3",
+  "package_path": "preregistration_v4/protocol_confirmatory_v4_moodle_twoway.md",
+  "package_sha256": "e5acc1c521587ca7fb4a60a8aaa5366ae9662049a9c7938affc80935235c83e3",
+  "match": true
+ },
+ {
+  "registration": "fourth (osf.io/8fdc7)",
+  "file": "newsample_keys_moodle.txt",
+  "osf_sha256": "2035497833507c065159daf4d05928a8dcaaaeb4a39bdd9debe0e45115d240ed",
+  "package_path": "preregistration_v4/newsample_keys_moodle.txt",
+  "package_sha256": "2035497833507c065159daf4d05928a8dcaaaeb4a39bdd9debe0e45115d240ed",
+  "match": true
+ },
+ {
+  "registration": "fourth (osf.io/8fdc7)",
+  "file": "confermativo_v4.py",
+  "osf_sha256": "be85299e8118da95806bc7abd6031ea7a6d02fc6e12450c8e7abacf701479450",
+  "package_path": "preregistration_v4/confermativo_v4.py",
+  "package_sha256": "be85299e8118da95806bc7abd6031ea7a6d02fc6e12450c8e7abacf701479450",
+  "match": true
+ },
+ {
+  "registration": "fourth (osf.io/8fdc7)",
+  "file": "scan/run_v4.py",
+  "osf_sha256": "81c5f8d4403dfcd872d742c556bfc0d137eee9e2850f2ed2ed6601c771cbc10b",
+  "package_path": "preregistration_v4/scan/run_v4.py",
+  "package_sha256": "81c5f8d4403dfcd872d742c556bfc0d137eee9e2850f2ed2ed6601c771cbc10b",
+  "match": true
+ },
+ {
+  "registration": "fourth (osf.io/8fdc7)",
+  "file": "preregistrazione_v4_osf.zip",
+  "osf_sha256": "117346a5e0afd1ae2e72ad4ce149b0ea683bb0f8da59b11fd66240a9cd383d80",
+  "package_path": null,
+  "package_sha256": null,
+  "match": null
+ },
+ {
+  "registration": "third (osf.io/q39g8)",
+  "file": "protocol",
+  "osf_sha256": "6809353762ae8fa5255450a61ceb9d93f4d8e2c521e44eba6cd89393a652e460",
+  "package_path": "preregistration_v3/protocol_confirmatory_v3_new_projects.md",
+  "package_sha256": "6809353762ae8fa5255450a61ceb9d93f4d8e2c521e44eba6cd89393a652e460",
+  "match": true
+ },
+ {
+  "registration": "third (osf.io/q39g8)",
+  "file": "confermativo_v3.py",
+  "osf_sha256": "5ef65525b5231f47c158afd6b8ddf384faec47e53e2a0f38b46c7463a762f232",
+  "package_path": "preregistration_v3/code/confermativo_v3.py",
+  "package_sha256": "5ef65525b5231f47c158afd6b8ddf384faec47e53e2a0f38b46c7463a762f232",
+  "match": true
+ }
+]

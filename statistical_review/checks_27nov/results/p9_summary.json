@@ -1,0 +1,93 @@
+[
+ {
+  "test": "1st moodle",
+  "ratio_resampled_CI90_pct": [
+   -0.017658936008808888,
+   0.034064157807738284
+  ],
+  "verdict": "equivalente: nessun aiuto rilevante (IC dentro +-2% del MAE)",
+  "registered_CI90_pct": [
+   -0.016154552794957297,
+   0.03630265744982969
+  ],
+  "registered_verdict": "equivalente: nessun aiuto rilevante (IC dentro +-2% del MAE)"
+ },
+ {
+  "test": "1st mariadb",
+  "ratio_resampled_CI90_pct": [
+   -0.33411288693583363,
+   0.10756650265203582
+  ],
+  "verdict": "equivalente: nessun aiuto rilevante (IC dentro +-2% del MAE)",
+  "registered_CI90_pct": [
+   -0.35541118709888875,
+   0.10399075129191492
+  ],
+  "registered_verdict": "equivalente: nessun aiuto rilevante (IC dentro +-2% del MAE)"
+ },
+ {
+  "test": "2nd H3-C",
+  "ratio_resampled_CI90_pct": [
+   -0.28241391424614354,
+   0.055989978976683785
+  ],
+  "verdict": "equivalent (CI inside +-2% of MAE)",
+  "registered_CI90_pct": [
+   -0.26089330494971713,
+   0.05959628027841522
+  ],
+  "registered_verdict": "equivalent (CI inside +-2% of MAE)"
+ },
+ {
+  "test": "3rd mosip",
+  "ratio_resampled_CI90_pct": [
+   -0.03855317318230565,
+   0.7777875816580383
+  ],
+  "verdict": "equivalent (CI inside +-2% of MAE)",
+  "registered_CI90_pct": [
+   -0.03909425456090248,
+   0.7568745201034428
+  ],
+  "registered_verdict": "equivalent (CI inside +-2% of MAE)"
+ },
+ {
+  "test": "3rd openlmis",
+  "ratio_resampled_CI90_pct": [
+   0.3358580822620115,
+   3.2658330696587314
+  ],
+  "verdict": "inconclusive",
+  "registered_CI90_pct": [
+   0.2948169714061142,
+   3.5019010492643874
+  ],
+  "registered_verdict": "inconclusive"
+ },
+ {
+  "test": "3rd openmrs",
+  "ratio_resampled_CI90_pct": [
+   -1.5034091610037397,
+   0.23216000826279587
+  ],
+  "verdict": "equivalent (CI inside +-2% of MAE)",
+  "registered_CI90_pct": [
+   -1.559170879614706,
+   0.22510574372408879
+  ],
+  "registered_verdict": "equivalent (CI inside +-2% of MAE)"
+ },
+ {
+  "test": "4th",
+  "ratio_resampled_CI90_pct": [
+   -0.14811630923014502,
+   0.18861246419160843
+  ],
+  "verdict": "equivalent (CI inside +-2% of MAE)",
+  "registered_CI90_pct": [
+   -0.1446098935291628,
+   0.17871723888218272
+  ],
+  "registered_verdict": "equivalent (CI inside +-2% of MAE)"
+ }
+]
